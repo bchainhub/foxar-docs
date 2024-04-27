@@ -9,7 +9,10 @@ import remarkFediverseUser from "remark-fediverse-user";
 import math from "remark-math";
 import katex from "rehype-katex";
 
+
 import versions from "./versions.json";
+
+
 
 const isDev = process.env.NODE_ENV === "development";
 const isVersioningDisabled = !!process.env.DISABLE_VERSIONING;
@@ -287,6 +290,7 @@ const config: Config = {
       copyright: `Copyright © 2020-${new Date().getFullYear()} CorePass.`,
     },
     prism: {
+      additionalLanguages: ['solidity', 'bash', 'toml', 'json'],
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },

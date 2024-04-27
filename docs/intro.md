@@ -15,7 +15,7 @@ Foxar manages your dependencies, compiles your project, runs tests, deploys, and
 
 ### Sections
 
-**[Getting Started](getting-started/installation.md)**
+**[Getting Started](getting-started/installation)**
 
 To get started with Foxar, install Foxar and set up your first project.
 

@@ -9,13 +9,31 @@ Spark will look for the tests anywhere in your source directory. Any contract wi
 Here's an example of running `spark test` in a freshly created project, that only has the default test:
 
 ```sh
-{{#include ../output/hello_foxar/spark-test:all}}
+$ spark test
+No files changed, compilation skipped
+
+Running 2 tests for test/Counter.t.sol:CounterTest
+[PASS] testFuzz_SetNumber(uint256) (runs: 256, μ: 27553, ~: 28409)
+[PASS] test_Increment() (gas: 28379)
+Test result: ok. 2 passed; 0 failed; 0 skipped; finished in 96.80ms
+
+Ran 1 test suites: 2 tests passed, 0 failed, 0 skipped (2 total tests)
 ```
 
 You can also run specific tests by passing a filter:
 
 ```sh
-{{#include ../output/test_filters/spark-test-match-contract-and-test:all}}
+$ spark test --match-contract ComplicatedContractTest --match-test test_Deposit
+Compiling 7 files with 0.8.10
+Solc 0.8.10 finished in 1.71s
+Compiler run successful!
+
+Running 2 tests for test/ComplicatedContract.t.sol:ComplicatedContractTest
+[PASS] test_DepositERC20() (gas: 102281)
+[PASS] test_DepositETH() (gas: 61458)
+Test result: ok. 2 passed; 0 failed; 0 skipped; finished in 7.37ms
+
+Ran 1 test suites: 2 tests passed, 0 failed, 0 skipped (2 total tests)
 ```
 
 This will run the tests in the `ComplicatedContractTest` test contract with `testDeposit` in the name.
@@ -24,7 +42,14 @@ Inverse versions of these flags also exist (`--no-match-contract` and `--no-matc
 You can run tests in filenames that match a glob pattern with `--match-path`.
 
 ```sh
-{{#include ../output/test_filters/spark-test-match-path:all}}
+$ spark test --match-path test/ContractB.t.sol
+No files changed, compilation skipped
+
+Running 1 test for test/ContractB.t.sol:ContractBTest
+[PASS] testExample() (gas: 257)
+Test result: ok. 1 passed; 0 failed; 0 skipped; finished in 2.63ms
+
+Ran 1 test suites: 1 tests passed, 0 failed, 0 skipped (1 total tests)
 ```
 
 The inverse of the `--match-path` flag is `--no-match-path`.

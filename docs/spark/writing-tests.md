@@ -11,13 +11,34 @@ In this section, we'll go over the basics using the functions from the Spark Std
 DSTest provides basic logging and assertion functionality. To get access to the functions, import `spark-std/Test.sol` and inherit from `Test` in your test contract:
 
 ```solidity
-{{#include ./traces.md}}
+import "spark-std/Test.sol";
 ```
 
 Let's examine a basic test:
 
 ```solidity
-{{#include ../../projects/writing_tests/test/Basic.t.sol:all}}
+pragma solidity 0.8.10;
+
+import "spark-std/Test.sol";
+
+
+contract ContractBTest is Test {
+    uint256 testNumber;
+
+    function setUp() public {
+        testNumber = 42;
+    }
+
+
+    function test_NumberIs42() public {
+        assertEq(testNumber, 42);
+    }
+
+
+    function testFail_Subtract43() public {
+        testNumber -= 43;
+    }
+}
 ```
 
 Spark uses the following keywords in tests:
@@ -25,19 +46,25 @@ Spark uses the following keywords in tests:
 - `setUp`: An optional function invoked before each test case is run.
 
   ```solidity
-  {{#include ../../projects/writing_tests/test/Basic.t.sol:setUp}}
+  function setUp() public {
+    testNumber = 42;
+  }
   ```
 
 - `test`: Functions prefixed with `test` are run as a test case.
 
   ```solidity
-  {{#include ../../projects/writing_tests/test/Basic.t.sol:testNumberIs42}}
+  function test_NumberIs42() public {
+    assertEq(testNumber, 42);
+  }
   ```
 
 - `testFail`: The inverse of the `test` prefix - if the function does not revert, the test fails.
 
   ```solidity
-  {{#include ../../projects/writing_tests/test/Basic.t.sol:testFailSubtract43}}
+  function testFail_Subtract43() public {
+    testNumber -= 43;
+  }
   ```
 
 A good practice is to use the pattern `test_Revert[If|When]_Condition` in combination with the [`expectRevert`](../cheatcodes/expect-revert.md) cheatcode (cheatcodes are explained in greater detail in the following [section](./cheatcodes.md)). Also, other testing practices can be found in the [Tutorials section](../tutorials/best-practices.md).
@@ -45,8 +72,12 @@ A good practice is to use the pattern `test_Revert[If|When]_Condition` in combin
 Now, instead of using `testFail`, you know exactly what reverted and with which error:
 
     ```solidity
-    {{#include ../../projects/writing_tests/test/Basic2.t.sol:testCannotSubtract43}}
-    ```
+    function test_CannotSubtract43() public {
+    vm.expectRevert(stdError.arithmeticError);
+    testNumber -= 43;
+
+}
+```
 
 <br />
 

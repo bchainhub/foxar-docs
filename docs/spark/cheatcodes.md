@@ -11,31 +11,83 @@ You can access cheatcodes easily via the `vm` instance available in Spark Standa
 Let's write a test for a smart contract that is only callable by its owner.
 
 ```solidity
-{{#include ../../projects/cheatcodes/test/OwnerUpOnly.t.sol:prelude}}
+pragma solidity 0.8.10;
 
-{{#include ../../projects/cheatcodes/test/OwnerUpOnly.t.sol:contract}}
+import "spark-std/Test.sol";
 
-{{#include ../../projects/cheatcodes/test/OwnerUpOnly.t.sol:contract_prelude}}
+error Unauthorized();
 
-{{#include ../../projects/cheatcodes/test/OwnerUpOnly.t.sol:simple_test}}
+
+contract OwnerUpOnly {
+    address public immutable owner;
+    uint256 public count;
+
+    constructor() {
+        owner = msg.sender;
+    }
+
+    function increment() external {
+        if (msg.sender != owner) {
+            revert Unauthorized();
+        }
+        count++;
+    }
+}
+
+
+contract OwnerUpOnlyTest is Test {
+    OwnerUpOnly upOnly;
+
+
+    function setUp() public {
+        upOnly = new OwnerUpOnly();
+    }
+
+    function test_IncrementAsOwner() public {
+        assertEq(upOnly.count(), 0);
+        upOnly.increment();
+        assertEq(upOnly.count(), 1);
+    }
+
 }
 ```
 
 If we run `spark test` now, we will see that the test passes, since `OwnerUpOnlyTest` is the owner of `OwnerUpOnly`.
 
 ```ignore
-$ spark test
-{{#include ../output/cheatcodes/spark-test-simple:output}}
+$ spark test -vvvv --match-test testFail_IncrementAsNotOwner
+No files changed, compilation skipped
+
+Running 1 test for test/OwnerUpOnly.t.sol:OwnerUpOnlyTest
+[PASS] testFail_IncrementAsNotOwner() (gas: 8391)
+Traces:
+  [8391] OwnerUpOnlyTest::testFail_IncrementAsNotOwner()
+    ├─ [0] VM::prank(0x0000000000000000000000000000000000000000)
+    │   └─ ← ()
+    ├─ [247] OwnerUpOnly::increment()
+    │   └─ ← Unauthorized()
+    └─ ← Unauthorized()
+
+Test result: ok. 1 passed; 0 failed; 0 skipped; finished in 4.68ms
+
+Ran 1 test suites: 1 tests passed, 0 failed, 0 skipped (1 total tests)
 ```
 
 Let's make sure that someone who is definitely not the owner can't increment the count:
 
 ```solidity
-{{#include ../../projects/cheatcodes/test/OwnerUpOnly.t.sol:contract_prelude}}
+contract OwnerUpOnlyTest is Test {
+    OwnerUpOnly upOnly;
+
 
     // ...
 
-{{#include ../../projects/cheatcodes/test/OwnerUpOnly.t.sol:test_fail}}
+    function testFail_IncrementAsNotOwner() public {
+        vm.prank(address(0));
+        upOnly.increment();
+    }
+
+}
 
 ```
 
@@ -43,7 +95,14 @@ If we run `spark test` now, we will see that all the test pass.
 
 ```ignore
 $ spark test
-{{#include ../output/cheatcodes/spark-test-cheatcodes:output}}
+No files changed, compilation skipped
+
+Running 2 tests for test/OwnerUpOnly.t.sol:OwnerUpOnlyTest
+[PASS] testFail_IncrementAsNotOwner() (gas: 8391)
+[PASS] test_IncrementAsOwner() (gas: 29205)
+Test result: ok. 2 passed; 0 failed; 0 skipped; finished in 3.74ms
+
+Ran 1 test suites: 2 tests passed, 0 failed, 0 skipped (2 total tests)
 ```
 
 The test passed because the `prank` cheatcode changed our identity to the zero address for the next call (`upOnly.increment()`). The test case passed since we used the `testFail` prefix, however, using `testFail` is considered an anti-pattern since it does not tell us anything about _why_ `upOnly.increment()` reverted.
@@ -52,17 +111,38 @@ If we run the tests again with traces turned on, we can see that we reverted wit
 
 ```ignore
 $ spark test -vvvv --match-test testFail_IncrementAsNotOwner
-{{#include ../output/cheatcodes/spark-test-cheatcodes-tracing:output}}
+No files changed, compilation skipped
+
+Running 1 test for test/OwnerUpOnly.t.sol:OwnerUpOnlyTest
+[PASS] testFail_IncrementAsNotOwner() (gas: 8391)
+Traces:
+  [8391] OwnerUpOnlyTest::testFail_IncrementAsNotOwner()
+    ├─ [0] VM::prank(0x0000000000000000000000000000000000000000)
+    │   └─ ← ()
+    ├─ [247] OwnerUpOnly::increment()
+    │   └─ ← Unauthorized()
+    └─ ← Unauthorized()
+
+Test result: ok. 1 passed; 0 failed; 0 skipped; finished in 4.68ms
+
+Ran 1 test suites: 1 tests passed, 0 failed, 0 skipped (1 total tests)
 ```
 
 To be sure in the future, let's make sure that we reverted because we are not the owner using the `expectRevert` cheatcode:
 
 ```solidity
-{{#include ../../projects/cheatcodes/test/OwnerUpOnly.t.sol:contract_prelude}}
+contract OwnerUpOnlyTest is Test {
+    OwnerUpOnly upOnly;
 
     // ...
 
-{{#include ../../projects/cheatcodes/test/OwnerUpOnly.t.sol:test_expectrevert}}
+    // Notice that we replaced `testFail` with `test`
+    function test_RevertWhen_CallerIsNotOwner() public {
+        vm.expectRevert(Unauthorized.selector);
+        vm.prank(address(0));
+        upOnly.increment();
+    }
+}
 
 ```
 
@@ -70,7 +150,13 @@ If we run `spark test` one last time, we see that the test still passes, but thi
 
 ```ignore
 $ spark test
-{{#include ../output/cheatcodes/spark-test-cheatcodes-expectrevert:output}}
+No files changed, compilation skipped
+
+Running 1 test for test/OwnerUpOnly.t.sol:OwnerUpOnlyTest
+[PASS] test_IncrementAsOwner() (gas: 29205)
+Test result: ok. 1 passed; 0 failed; 0 skipped; finished in 3.11ms
+
+Ran 1 test suites: 1 tests passed, 0 failed, 0 skipped (1 total tests)
 ```
 
 Another cheatcode that is perhaps not so intuitive is the `expectEmit` function. Before looking at `expectEmit`, we need to understand what an event is.
@@ -78,7 +164,42 @@ Another cheatcode that is perhaps not so intuitive is the `expectEmit` function.
 Events are inheritable members of contracts. When you emit an event, the arguments are stored on the blockchain. The `indexed` attribute can be added to a maximum of three parameters of an event to form a data structure known as a "topic." Topics allow users to search for events on the blockchain.
 
 ```solidity
-{{#include ../../projects/cheatcodes/test/EmitContract.t.sol:all}}
+pragma solidity 0.8.10;
+
+import "spark-std/Test.sol";
+
+contract EmitContractTest is Test {
+    event Transfer(address indexed from, address indexed to, uint256 amount);
+
+    function test_ExpectEmit() public {
+        ExpectEmit emitter = new ExpectEmit();
+        // Check that topic 1, topic 2, and data are the same as the following emitted event.
+        // Checking topic 3 here doesn't matter, because `Transfer` only has 2 indexed topics.
+        vm.expectEmit(true, true, false, true);
+        // The event we expect
+        emit Transfer(address(this), address(1337), 1337);
+        // The event we get
+        emitter.t();
+    }
+
+    function test_ExpectEmit_DoNotCheckData() public {
+        ExpectEmit emitter = new ExpectEmit();
+        // Check topic 1 and topic 2, but do not check data
+        vm.expectEmit(true, true, false, false);
+        // The event we expect
+        emit Transfer(address(this), address(1337), 1338);
+        // The event we get
+        emitter.t();
+    }
+}
+
+contract ExpectEmit {
+    event Transfer(address indexed from, address indexed to, uint256 amount);
+
+    function t() public {
+        emit Transfer(msg.sender, address(1337), 1337);
+    }
+}
 ```
 
 When we call `vm.expectEmit(true, true, false, true);`, we want to check the 1st and 2nd `indexed` topic for the next event.

@@ -7,26 +7,44 @@ This section provides an overview of the `spark` command line tool. We demonstra
 To start a new project with Foxar, use [`spark init`](../reference/spark/spark-init.md):
 
 ```sh
-{{#include ../output/hello_foxar/spark-init:command}}
+$ spark init hello_foxar
 ```
 
 Let's check out what `spark` generated for us:
 
 ```sh
 $ cd hello_foxar
-{{#include ../output/hello_foxar/tree:all}}
+$ tree . -d -L 1
+.
+├── lib
+├── script
+├── src
+└── test
+
+5 directories
 ```
 
 We can build the project with [`spark build`](../reference/spark/spark-build.md):
 
 ```sh
-{{#include ../output/hello_foxar/spark-build:all}}
+$ spark build
+Compiling 24 files with 0.8.23
+Solc 0.8.23 finished in 4.10s
+Compiler run successful!
 ```
 
 And run the tests with [`spark test`](../reference/spark/spark-test.md):
 
 ```sh
-{{#include ../output/hello_foxar/spark-test:all}}
+$ spark test
+No files changed, compilation skipped
+
+Running 2 tests for test/Counter.t.sol:CounterTest
+[PASS] testFuzz_SetNumber(uint256) (runs: 256, μ: 27553, ~: 28409)
+[PASS] test_Increment() (gas: 28379)
+Test result: ok. 2 passed; 0 failed; 0 skipped; finished in 96.80ms
+
+Ran 1 test suites: 2 tests passed, 0 failed, 0 skipped (2 total tests)
 ```
 
 <br />

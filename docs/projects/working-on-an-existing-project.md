@@ -19,13 +19,25 @@ We run [`spark install`][install] to install the submodule dependencies that are
 To build, use [`spark build`][build]:
 
 ```sh
-{{#include ../output/foxar-template/spark-build:all}}
+$ spark build
+Compiling 23 files with 0.8.23
+Solc 0.8.23 finished in 4.36s
+Compiler run successful!
 ```
 
 And to test, use [`spark test`][test]:
 
 ```sh
-{{#include ../output/foxar-template/spark-test:all}}
+$ spark test
+No files changed, compilation skipped
+
+Running 3 tests for test/Foo.t.sol:FooTest
+[PASS] testFork_Example() (gas: 3759)
+[PASS] testFuzz_Example(uint256) (runs: 1000, μ: 8402, ~: 8402)
+[PASS] test_Example() (gas: 8676)
+Test result: ok. 3 passed; 0 failed; 0 skipped; finished in 385.71ms
+
+Ran 1 test suites: 3 tests passed, 0 failed, 0 skipped (3 total tests)
 ```
 
 [paul]: https://github.com/PaulRBerg

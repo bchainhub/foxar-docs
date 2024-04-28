@@ -17,13 +17,17 @@ $ probe <subcommand>
 Let's use `probe` to retrieve the total supply of the DAI token:
 
 ```bash
-{{#include ../output/probe/probe-call:all}}
+$ probe call 0x6b175474e89094c44da98b954eedeac495271d0f "totalSupply()(uint256)" --rpc-url https://eth-mainnet.alchemyapi.io/v2/Lc7oIGYeL_QvInzI0Wiu_pOZZDEKBrdf
+3687858787626171424333349502 [3.687e27]
 ```
 
 `probe` also provides many convenient subcommands, such as for decoding calldata:
 
 ```bash
-{{#include ../output/probe/probe-4byte-decode:all}}
+$ probe 4byte-decode 0x1F1F897F676d00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003e7
+1) "fulfillRandomness(bytes32,uint256)"
+0x676d000000000000000000000000000000000000000000000000000000000000
+999
 ```
 
 You can also use `probe` to send arbitrary messages. Here's an example of sending a message between two Shuttle accounts.

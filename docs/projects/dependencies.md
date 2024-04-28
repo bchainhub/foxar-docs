@@ -9,7 +9,9 @@ Spark manages dependencies using [git submodules](https://git-scm.com/book/en/v2
 To add a dependency, run [`spark install`](../reference/spark/spark-install.md):
 
 ```sh
-{{#include ../output/deps/spark-install:all}}
+$ spark install transmissions11/solmate
+Installing solmate in /tmp/tmp.RARskz40S1/deps/lib/solmate (url: Some("https://github.com/transmissions11/solmate"), tag: None)
+    Installed solmate
 ```
 
 This pulls the `solmate` library, stages the `.gitmodules` file in git and makes a commit with the message "Installed solmate".
@@ -17,7 +19,13 @@ This pulls the `solmate` library, stages the `.gitmodules` file in git and makes
 If we now check the `lib` folder:
 
 ```sh
-{{#include ../output/deps/tree:all}}
+$ tree lib -L 1
+lib
+├── spark-std
+├── solmate
+└── weird-erc20
+
+4 directories, 0 files
 ```
 
 We can see that Spark installed `solmate`!
@@ -33,7 +41,11 @@ $ spark install transmissions11/solmate@v7
 Spark can remap dependencies to make them easier to import. Spark will automatically try to deduce some remappings for you:
 
 ```sh
-{{#include ../output/deps/spark-remappings:all}}
+$ spark remappings
+ds-test/=lib/spark-std/lib/ds-test/src/
+spark-std/=lib/spark-std/src/
+solmate/=lib/solmate/src/
+weird-erc20/=lib/weird-erc20/src/
 ```
 
 These remappings mean:

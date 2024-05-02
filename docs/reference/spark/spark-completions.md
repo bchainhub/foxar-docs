@@ -24,6 +24,12 @@ Supported shells are:
 
 ### OPTIONS
 
+#### Common Options
+
+`-h`  
+`--help`  
+&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+
 ### EXAMPLES
 
 1. Generate shell completions script for zsh:

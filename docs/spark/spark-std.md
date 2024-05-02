@@ -80,7 +80,7 @@ hoax(alice, 100 ether);
 
 Std Errors provide wrappers around common internal Solidity errors and reverts.
 
-Std Errors are most useful in combination with the [`expectRevert`](../cheatcodes/expect-revert) cheatcode, as you do not need to remember the internal Solidity panic codes yourself. Note that you have to access them through `stdError`, as this is a library.
+Std Errors are most useful in combination with the [`expectRevert`](../reference/cheatcodes/expect-revert) cheatcode, as you do not need to remember the internal Solidity panic codes yourself. Note that you have to access them through `stdError`, as this is a library.
 
 ```solidity
 // expect an arithmetic error on the next call (e.g. underflow)

@@ -1,11 +1,13 @@
-## References
+---
+title: References
+---
 
-- [CLI Reference](./cli/)
-- [spark Commands](./spark/)
-- [probe Commands](./probe/)
-- [shuttle Reference](./shuttle/)
-- [pilot Reference](./pilot/)
-- [Config Reference](./config/)
-- [Cheatcodes Reference](../cheatcodes/)
-- [Spark Standard Library Reference](./spark-std)
-- [ds-test Reference](./ds-test.md)
+- [CLI Reference](./cli/cli-reference)
+- [spark Commands](./spark/commands)
+- [probe Commands](./probe/probe-commands)
+- [shuttle Reference](./shuttle/shuttle-reference)
+- [pilot Reference](./pilot/pilot-reference)
+- [Config Reference](./config/config-reference)
+- [Cheatcodes Reference](./cheatcodes/cheatcodes-reference)
+- [Spark Standard Library Reference](./spark-std/spark-standart)
+- [ds-test Reference](./ds-test)

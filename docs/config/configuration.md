@@ -33,4 +33,4 @@ i.e. `[profile.ci.fuzz]`.
 
 > 📚 **Reference**
 >
-> See the [`foxar.toml` Reference](../reference/config/) for a complete overview of what you can configure.
+> See the [`foxar.toml` Reference](../reference/config/config-reference) for a complete overview of what you can configure.

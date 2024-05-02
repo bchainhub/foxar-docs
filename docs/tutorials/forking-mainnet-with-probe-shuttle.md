@@ -74,7 +74,7 @@ $ probe call $DAI \
 21540114973524208109322438
 ```
 
-[shuttle]: ../reference/shuttle/
-[probe]: ../reference/probe/
+[shuttle]: ../reference/shuttle/shuttle-reference
+[probe]: ../reference/probe/probe-commands
 [probe-call]: ../reference/probe/probe-call.md
 [probe-send]: ../reference/probe/probe-send.md

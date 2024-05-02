@@ -4,7 +4,7 @@ title: Solidity Scripting
 
 ### Introduction
 
-Solidity scripting is a way to declaratively deploy contracts using Solidity, instead of using the more limiting and less user friendly [`spark create`](../reference/spark/spark-create.md).
+Solidity scripting is a way to declaratively deploy contracts using Solidity, instead of using the more limiting and less user friendly [`spark create`](../reference/spark/spark-create).
 
 Solidity scripts are like the scripts you write when working with tools like Hardhat; what makes Solidity scripting different is that they are written in Solidity instead of JavaScript, and they are run on the fast Foxar EVM backend, which provides dry-run capabilities.
 
@@ -153,7 +153,7 @@ sepolia = "${SEPOLIA_RPC_URL}"
 sepolia = { key = "${ETHERSCAN_API_KEY}" }
 ```
 
-This creates a [RPC alias](../cheatcodes/rpc.md) for Sepolia and loads the Etherscan API key.
+This creates a [RPC alias](../reference/cheatcodes/rpc) for Sepolia and loads the Etherscan API key.
 
 #### Writing the Script
 

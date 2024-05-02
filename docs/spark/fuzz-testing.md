@@ -114,7 +114,7 @@ Test result: ok. 1 passed; 0 failed; 0 skipped; finished in 164.46ms
 Ran 1 test suites: 1 tests passed, 0 failed, 0 skipped (1 total tests)
 ```
 
-You may want to exclude certain cases using the [`assume`](../cheatcodes/assume) cheatcode. In those cases, fuzzer will discard the inputs and start a new fuzz run:
+You may want to exclude certain cases using the [`assume`](../reference/cheatcodes/assume) cheatcode. In those cases, fuzzer will discard the inputs and start a new fuzz run:
 
 ```solidity
 function testFuzz_Withdraw(uint96 amount) public {

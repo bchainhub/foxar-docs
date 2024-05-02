@@ -1,4 +1,6 @@
-## Build Commands
+---
+title: Build Commands
+---
 
 - [spark build](./spark-build.md)
 - [spark clean](./spark-clean.md)

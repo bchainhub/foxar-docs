@@ -18,7 +18,11 @@ Dependencies can be a raw URL (`https://foo.com/dep`), the path to a GitHub repo
 
 ### OPTIONS
 
-<!-- {{#include common-options.md}} -->
+#### Common Options
+
+`-h`  
+`--help`  
+&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
 
 ### EXAMPLES
 

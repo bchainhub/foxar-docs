@@ -1,4 +1,6 @@
-## `spark cache clean`
+---
+title: Spark cache clean
+---
 
 ### NAME
 
@@ -20,6 +22,12 @@ Removes files in the `~/.foxar/cache` folder which is used to cache Etherscan ve
 
 `--etherscan`
 &nbsp;&nbsp;&nbsp;&nbsp;A boolean flag that specifies to only remove the block explorer portion of the cache
+
+#### Common Options
+
+`-h`  
+`--help`  
+&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
 
 ### EXAMPLES
 

@@ -205,10 +205,10 @@ Connection failed because access to the URL from your location may be restricted
 You could run `export http_proxy=http://127.0.0.1:7890 https_proxy=http://127.0.0.1:7890` first in the terminal then you will `spark build` successfully.
 
 [tg-support]: https://t.me/foxar_support
-[spark-test]: ./reference/spark/spark-test.md
+[spark-test]: ./reference/spark/spark-test
 [traces]: ./spark/traces.md
 [config-solc]: ./reference/config/solidity-compiler.md#solc_version
-[config]: ./config/
+[config]: ./config/configuration
 [spark-build]: ./reference/spark/spark-build.md
 [console-log]: ./reference/spark-std/console-log.md
 [spark-std]: https://github.com/foxar-rs/spark-std

@@ -21,7 +21,11 @@ If no argument is provided, then all dependencies are updated.
 
 ### OPTIONS
 
-<!-- {{#include common-options.md}} -->
+#### Common Options
+
+`-h`  
+`--help`  
+&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
 
 ### EXAMPLES
 

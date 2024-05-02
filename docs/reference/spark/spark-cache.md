@@ -1,4 +1,6 @@
-## `spark cache`
+---
+title: Spark cache
+---
 
 ### NAME
 
@@ -29,3 +31,9 @@ This program is a set of tools to manage the Foxar cache.
 `-V`  
 `--version`  
 &nbsp;&nbsp;&nbsp;&nbsp;Print version info and exit.
+
+#### Common Options
+
+`-h`  
+`--help`  
+&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.

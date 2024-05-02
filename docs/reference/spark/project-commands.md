@@ -1,4 +1,6 @@
-## Project Commands
+---
+title: Project Commands
+---
 
 - [spark init](./spark-init.md)
 - [spark install](./spark-install.md)

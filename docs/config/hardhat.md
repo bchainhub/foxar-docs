@@ -6,7 +6,7 @@ It's possible to have your Foxar project work alongside [Hardhat](https://hardha
 
 ### Why does this not work out of the box?
 
-Hardhat by default expects libraries to be installed in `node_modules`, the default folder for all NodeJS dependencies. Foxar expects them to be in `lib`. Of course [we can configure Foxar](../reference/config/overview.md) but not easily to the directory structure of `node_modules`.
+Hardhat by default expects libraries to be installed in `node_modules`, the default folder for all NodeJS dependencies. Foxar expects them to be in `lib`. Of course [we can configure Foxar](../reference/config/overview) but not easily to the directory structure of `node_modules`.
 
 For this reason, the recommended setup is to use [hardhat-foxar](https://www.npmjs.com/package/@nomicfoundation/hardhat-foxar). When hardhat-foxar is installed and used correctly, Hardhat will use the same contracts directory that is used by Foxar, and it will be able to use dependencies installed with spark install.
 

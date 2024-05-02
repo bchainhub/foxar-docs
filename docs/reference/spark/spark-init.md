@@ -17,7 +17,28 @@ Create a new Spark project in the directory _root_ (by default the current worki
 The default template creates the following project layout:
 
 ```ignore
-<!-- {{#include ../../output/hello_foxar/tree-with-files:output}} -->
+.
+├── foxar.toml
+├── lib
+│   └── spark-std
+│       ├── foxar.toml
+│       ├── lib
+│       ├── LICENSE-APACHE
+│       ├── LICENSE-MIT
+│       ├── package.json
+│       ├── README.md
+│       ├── scripts
+│       ├── src
+│       └── test
+├── README.md
+├── script
+│   └── Counter.s.sol
+├── src
+│   └── Counter.sol
+└── test
+    └── Counter.t.sol
+
+10 directories, 10 files
 ```
 
 However, it is possible to create a project from another using `--template`.
@@ -57,7 +78,11 @@ If you do not want this behavior, pass `--no-git`.
 `--quiet`  
 &nbsp;&nbsp;&nbsp;&nbsp;Do not print any messages.
 
-<!-- {{#include common-options.md}} -->
+#### Common Options
+
+`-h`  
+`--help`  
+&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
 
 ### EXAMPLES
 

@@ -1,4 +1,6 @@
-## `spark cache ls`
+---
+title: Spark cache ls
+---
 
 ### NAME
 
@@ -13,6 +15,12 @@ spark-cache-ls - Shows cached data from `~/.foxar`.
 Lists what is in the `~/.foxar/cache` folder currently.
 
 ### OPTIONS
+
+#### Common Options
+
+`-h`  
+`--help`  
+&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
 
 ### EXAMPLES
 

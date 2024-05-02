@@ -122,7 +122,11 @@ This program is a set of tools to build, test, fuzz, debug and deploy Solidity s
 `--version`  
 &nbsp;&nbsp;&nbsp;&nbsp;Print version info and exit.
 
-<!-- {{#include common-options.md}} -->
+#### Common Options
+
+`-h`  
+`--help`  
+&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
 
 ### FILES
 
@@ -136,7 +140,7 @@ This program is a set of tools to build, test, fuzz, debug and deploy Solidity s
 &nbsp;&nbsp;&nbsp;&nbsp;Spark's cache directory, where it stores cached block data and more.
 
 `~/.foxar/foxar.toml`  
-&nbsp;&nbsp;&nbsp;&nbsp;The global [Foxar config](../config/overview.md).
+&nbsp;&nbsp;&nbsp;&nbsp;The global [Foxar config](../config/overview).
 
 `~/.svm`  
 &nbsp;&nbsp;&nbsp;&nbsp;The location of the Spark-managed solc binaries.
@@ -162,4 +166,4 @@ This program is a set of tools to build, test, fuzz, debug and deploy Solidity s
 
 ### BUGS
 
-<!-- See <https://github.com/foxar-rs/foxar/issues> for issues. -->
+See https://github.com/foxar-rs/foxar/issues for issues.

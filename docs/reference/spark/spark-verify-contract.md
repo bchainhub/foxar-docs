@@ -1,4 +1,6 @@
-## spark verify-contract
+---
+title: Spark verify-contract
+---
 
 ### NAME
 
@@ -35,7 +37,12 @@ you can specify a file containing **space-separated** constructor arguments with
 
 #### Verify Contract Options
 
-<!-- {{#include ../common/verifier-options.md}} -->
+`--verifier` _name_  
+&nbsp;&nbsp;&nbsp;&nbsp;The verification provider. Available options: `etherscan`, `sourcify` & `blockscout`. Default: `etherscan`. Note: make sure you add "/api\?" to the end of the Blockscout homepage explorer URL.
+
+`--verifier-url` _url_  
+&nbsp;&nbsp;&nbsp;&nbsp;The optional verifier url for submitting the verification request.  
+&nbsp;&nbsp;&nbsp;&nbsp;Environment: `VERIFIER_URL`
 
 `--compiler-version` _version_  
 &nbsp;&nbsp;&nbsp;&nbsp;The compiler version used to build the smart contract.
@@ -67,7 +74,11 @@ you can specify a file containing **space-separated** constructor arguments with
 `--force`  
 &nbsp;&nbsp;&nbsp;&nbsp;Do not compile the flattened smart contract before verifying.
 
-<!-- {{#include ../common/retry-options.md}} -->
+`--delay` _delay_  
+&nbsp;&nbsp;&nbsp;&nbsp;Optional timeout to apply in between attempts in seconds. Defaults to 3.
+
+`--retries` _retries_  
+&nbsp;&nbsp;&nbsp;&nbsp;Number of attempts for retrying. Defaults to 15.
 
 `--show-standard-json-input`  
 &nbsp;&nbsp;&nbsp;&nbsp;Command outputs JSON suitable for saving to a file and uploading to block explorers for verification.
@@ -76,10 +87,46 @@ you can specify a file containing **space-separated** constructor arguments with
 &nbsp;&nbsp;&nbsp;&nbsp;Wait for verification result after submission.  
 &nbsp;&nbsp;&nbsp;&nbsp;Automatically runs `spark verify-check` until the verification either fails or succeeds.
 
-<!--
-{{#include project-options.md}}
+#### Project Options
 
-{{#include common-options.md}} -->
+`--build-info`  
+&nbsp;&nbsp;&nbsp;&nbsp;Generate build info files.
+
+`--build-info-path` _path_  
+&nbsp;&nbsp;&nbsp;&nbsp;Output path to directory that build info files will be written to.
+
+`--root` _path_  
+&nbsp;&nbsp;&nbsp;&nbsp;The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
+
+`-C` _path_  
+`--contracts` _path_  
+&nbsp;&nbsp;&nbsp;&nbsp;The contracts source directory.  
+&nbsp;&nbsp;&nbsp;&nbsp;Environment: `DAPP_SRC`
+
+`--lib-paths` _path_  
+&nbsp;&nbsp;&nbsp;&nbsp;The path to the library folder.
+
+`-R` _remappings_  
+`--remappings` _remappings_  
+&nbsp;&nbsp;&nbsp;&nbsp;The project's remappings.
+
+&nbsp;&nbsp;&nbsp;&nbsp;The parameter is a comma-separated list of remappings in the format `<source>=<dest>`.
+
+`--cache-path` _path_  
+&nbsp;&nbsp;&nbsp;&nbsp;The path to the compiler cache.
+
+`--config-path` _file_  
+&nbsp;&nbsp;&nbsp;&nbsp;Path to the config file.
+
+`--hh`  
+`--hardhat`  
+&nbsp;&nbsp;&nbsp;&nbsp;This is a convenience flag, and is the same as passing `--contracts contracts --lib-paths node-modules`.
+
+#### Common Options
+
+`-h`  
+`--help`  
+&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
 
 ### EXAMPLES
 

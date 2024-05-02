@@ -1,0 +1,46 @@
+---
+title: Probe index
+---
+
+### NAME
+
+probe-index - Compute the storage slot location for an entry in a mapping.
+
+### SYNOPSIS
+
+`probe index` _key_type_ _key_ _slot_
+
+### DESCRIPTION
+
+Compute the storage slot location for an entry in a mapping.
+
+Use `probe storage` to get the value.
+
+### OPTIONS
+
+#### Common Options
+
+`-h`  
+`--help`  
+&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+
+### EXAMPLES
+
+```solidity
+// World.sol
+
+mapping (address => uint256) public mapping1;
+mapping (string => string) public mapping2;
+```
+
+1. Compute the storage slot of an entry (`hello`) in a mapping of type `mapping(string => string)`, located at slot 1:
+   ```sh
+   >> probe index string "hello" 1
+   0x3556fc8e3c702d4479a1ab7928dd05d87508462a12f53307b5407c969223d1f8
+   >> probe storage [address] 0x3556fc8e3c702d4479a1ab7928dd05d87508462a12f53307b5407c969223d1f8
+   world
+   ```
+
+### SEE ALSO
+
+[probe](./probe.md)

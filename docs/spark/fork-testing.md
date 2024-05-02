@@ -19,14 +19,14 @@ spark test --fork-url <your_rpc_url>
 
 The following values are changed to reflect those of the chain at the moment of forking:
 
-- [`block_number`](../reference/config/testing.md#block_number)
-- [`chain_id`](../reference/config/testing.md#chain_id)
-- [`gas_limit`](../reference/config/testing.md#gas_limit)
-- [`gas_price`](../reference/config/testing.md#gas_price)
-- [`block_base_fee_per_gas`](../reference/config/testing.md#block_base_fee_per_gas)
-- [`block_coinbase`](../reference/config/testing.md#block_coinbase)
-- [`block_timestamp`](../reference/config/testing.md#block_timestamp)
-- [`block_difficulty`](../reference/config/testing.md#block_difficulty)
+- [`block_number`](../reference/config/testing#block_number)
+- [`chain_id`](../reference/config/testing#chain_id)
+- [`gas_limit`](../reference/config/testing#gas_limit)
+- [`gas_price`](../reference/config/testing#gas_price)
+- [`block_base_fee_per_gas`](../reference/config/testing#block_base_fee_per_gas)
+- [`block_coinbase`](../reference/config/testing#block_coinbase)
+- [`block_timestamp`](../reference/config/testing#block_timestamp)
+- [`block_difficulty`](../reference/config/testing#block_difficulty)
 
 It is possible to specify a block from which to fork with `--fork-block-number`:
 
@@ -64,15 +64,15 @@ Forking cheatcodes allow you to enter forking mode programmatically in your Soli
 
 Important to keep in mind that _all_ test functions are isolated, meaning each test function is executed with a _copy_ of the state _after_ `setUp` and is executed in its own stand-alone EVM.
 
-Therefore forks created during `setUp` are available in tests. The code example below uses [`createFork`](../cheatcodes/create-fork) to create two forks, but does _not_ select one initially. Each fork is identified with a unique identifier (`uint256 forkId`), which is assigned when it is first created.
+Therefore forks created during `setUp` are available in tests. The code example below uses [`createFork`](../reference/cheatcodes/create-fork) to create two forks, but does _not_ select one initially. Each fork is identified with a unique identifier (`uint256 forkId`), which is assigned when it is first created.
 
-Enabling a specific fork is done via passing that `forkId` to [`selectFork`](../cheatcodes/select-fork.md).
+Enabling a specific fork is done via passing that `forkId` to [`selectFork`](../reference/cheatcodes/select-fork.md).
 
-[`createSelectFork`](../cheatcodes/create-select-fork) is a one-liner for `createFork` plus `selectFork`.
+[`createSelectFork`](../reference/cheatcodes/create-select-fork) is a one-liner for `createFork` plus `selectFork`.
 
-There can only be one fork active at a time, and the identifier for the currently active fork can be retrieved via [`activeFork`](../cheatcodes/active-fork).
+There can only be one fork active at a time, and the identifier for the currently active fork can be retrieved via [`activeFork`](../reference/cheatcodes/active-fork).
 
-Similar to [`roll`](../cheatcodes/roll), you can set `block.number` of a fork with [`rollFork`](../cheatcodes/roll-fork).
+Similar to [`roll`](../reference/cheatcodes/roll), you can set `block.number` of a fork with [`rollFork`](../reference/cheatcodes/roll-fork).
 
 To understand what happens when a fork is selected, it is important to know how the forking mode works in general:
 
@@ -148,7 +148,7 @@ contract ForkTest is Test {
 
 As mentioned each fork is essentially an independent EVM with separated storage.
 
-Only the accounts of `msg.sender` and the test contract (`ForkTest`) are persistent when forks are selected. But any account can be turned into a persistent account: [`makePersistent`](../cheatcodes/make-persistent).
+Only the accounts of `msg.sender` and the test contract (`ForkTest`) are persistent when forks are selected. But any account can be turned into a persistent account: [`makePersistent`](../reference/cheatcodes/make-persistent).
 
 An account that is _persistent_ is unique, i.e. it exists on all forks
 
@@ -223,4 +223,4 @@ contract SimpleStorageContract {
 }
 ```
 
-For more details and examples, see the [forking cheatcodes](../cheatcodes/forking) reference.
+For more details and examples, see the [forking cheatcodes](../reference/cheatcodes/forking) reference.

@@ -25,7 +25,11 @@ Detects usage of unsafe cheat codes in a foxar project and its dependencies.
 `--full`  
 &nbsp;&nbsp;&nbsp;&nbsp;Print a full report of all files even if no unsafe functions are found.
 
-<!-- {{#include common-options.md}} -->
+#### Common Options
+
+`-h`  
+`--help`  
+&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
 
 ### SEE ALSO
 

@@ -1,4 +1,6 @@
-## Test Commands
+---
+title: Test Commands
+---
 
 - [spark test](./spark-test.md)
 - [spark snapshot](./spark-snapshot.md)

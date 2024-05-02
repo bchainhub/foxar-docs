@@ -2,7 +2,7 @@
 title: Differential Testing
 ---
 
-Spark can be used for differential testing and differential fuzzing. You can even test against non-EVM executables using the `ffi` [cheatcode](../cheatcodes/ffi).
+Spark can be used for differential testing and differential fuzzing. You can even test against non-EVM executables using the `ffi` [cheatcode](../reference/cheatcodes/ffi).
 
 ### Background
 
@@ -22,7 +22,7 @@ Below are some examples of how Spark is used for differential testing.
 
 ### Primer: The `ffi` cheatcode
 
-[`ffi`](../cheatcodes/ffi) allows you to execute an arbitrary shell command and capture the output. Here's a mock example:
+[`ffi`](../reference/cheatcodes/ffi) allows you to execute an arbitrary shell command and capture the output. Here's a mock example:
 
 ```solidity
 import "spark-std/Test.sol";

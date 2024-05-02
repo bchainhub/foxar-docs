@@ -4,15 +4,12 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 import remarkCorepass from "remark-corepass";
 import remarkCorebc from "remark-corebc";
-import remarkCurrencyFormatter from 'remark-currency-formatter';
+import remarkCurrencyFormatter from "remark-currency-formatter";
 import remarkFediverseUser from "remark-fediverse-user";
 import math from "remark-math";
 import katex from "rehype-katex";
 
-
 import versions from "./versions.json";
-
-
 
 const isDev = process.env.NODE_ENV === "development";
 const isVersioningDisabled = !!process.env.DISABLE_VERSIONING;
@@ -126,8 +123,8 @@ const config: Config = {
             [
               katex,
               {
-                output: 'mathml',
-                strict: 'newLineInDisplayMode',
+                output: "mathml",
+                strict: "newLineInDisplayMode",
               },
             ],
           ],
@@ -155,21 +152,26 @@ const config: Config = {
       },
     },
     {
-      tagName: 'script',
+      tagName: "script",
       attributes: {
-        type: 'application/ld+json',
+        type: "application/ld+json",
       },
       innerHTML: JSON.stringify({
-        '@context': 'https://schema.org/',
-        '@type': 'Organization',
-        name: 'CorePass',
-        url: 'https://corepass.net',
-        logo: 'https://docs.corepass.net/img/logo.svg',
+        "@context": "https://schema.org/",
+        "@type": "Organization",
+        name: "CorePass",
+        url: "https://corepass.net",
+        logo: "https://docs.corepass.net/img/logo.svg",
       }),
     },
   ],
 
   themeConfig: {
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
+    },
     image: "img/social-card.png",
     metadata: [
       {
@@ -189,9 +191,12 @@ const config: Config = {
         content:
           "corepass, developer, development, hub, core, documentation, docs, core coin, core token, connector, protocol",
       },
-      { name: "theme-color", content: "#1362d5"},
-      { name: "apple-mobile-web-app-capable", content: "yes"},
-      { name: "apple-mobile-web-app-status-bar-style", content: "black-translucent"},
+      { name: "theme-color", content: "#1362d5" },
+      { name: "apple-mobile-web-app-capable", content: "yes" },
+      {
+        name: "apple-mobile-web-app-status-bar-style",
+        content: "black-translucent",
+      },
     ],
     colorMode: {
       defaultMode: "light",
@@ -290,7 +295,7 @@ const config: Config = {
       copyright: `Copyright © 2020-${new Date().getFullYear()} CorePass.`,
     },
     prism: {
-      additionalLanguages: ['solidity', 'bash', 'toml', 'json'],
+      additionalLanguages: ["solidity", "bash", "toml", "json"],
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },

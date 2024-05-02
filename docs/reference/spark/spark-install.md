@@ -53,7 +53,11 @@ the repository. If you want to change the name of the folder, prepend `<folder>=
 `--quiet`  
 &nbsp;&nbsp;&nbsp;&nbsp;Do not print any messages.
 
-<!-- {{#include common-options.md}} -->
+#### Common Options
+
+`-h`  
+`--help`  
+&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
 
 ### EXAMPLES
 

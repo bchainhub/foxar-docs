@@ -40,4 +40,4 @@ $ probe send --private-key <Your Private Key> 0x3c44cdddb6a900fa2b585dd299e03d12
 
 > 📚 **Reference**
 >
-> See the [`probe` Reference](../reference/probe/) for a complete overview of all the available subcommands.
+> See the [`probe` Reference](../reference/probe/probe-commands) for a complete overview of all the available subcommands.

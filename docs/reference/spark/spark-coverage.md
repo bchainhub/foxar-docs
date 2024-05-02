@@ -1,4 +1,6 @@
-## spark coverage
+---
+title: Spark coverage
+---
 
 ### NAME
 
@@ -29,7 +31,11 @@ It has three different options and is set to `summary` by default.
 `debug`  
 &nbsp;&nbsp;&nbsp;&nbsp;Outputs lines describing the location of uncovered code.
 
-<!-- {{#include common-options.md}} -->
+#### Common Options
+
+`-h`  
+`--help`  
+&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
 
 #### Optimization Option
 

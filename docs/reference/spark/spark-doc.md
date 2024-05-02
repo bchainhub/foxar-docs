@@ -1,4 +1,6 @@
-## spark doc
+---
+title: Spark doc
+---
 
 ### NAME
 
@@ -32,7 +34,11 @@ Generates and builds an mdbook from Solidity source files.
 `--port` _port_
 &nbsp;&nbsp;&nbsp;&nbsp;Port for serving documentation. Requires `--serve`.
 
-<!-- {{#include common-options.md}} -->
+#### Common Options
+
+`-h`  
+`--help`  
+&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
 
 ### EXAMPLES
 
@@ -51,4 +57,4 @@ Generates and builds an mdbook from Solidity source files.
 
 ### SEE ALSO
 
-[Doc config](../config/doc-generator.md)
+[Doc config](../config/doc-generator)

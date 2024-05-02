@@ -21,4 +21,4 @@ To see available commands, type `!help` within the REPL.
 
 > 📚 **Reference**
 >
-> See the [`pilot` Reference](../reference/pilot/) for in depth information on Pilot and its capabilities.
+> See the [`pilot` Reference](../reference/pilot/pilot-reference) for in depth information on Pilot and its capabilities.

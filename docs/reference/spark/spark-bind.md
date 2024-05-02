@@ -1,4 +1,6 @@
-## spark bind
+---
+title: Spark bind
+---
 
 ### NAME
 

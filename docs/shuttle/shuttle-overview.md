@@ -29,4 +29,4 @@ shuttle  -p, --port <PORT>
 
 > 📚 **Reference**
 >
-> See the [`shuttle` Reference](../reference/shuttle/) for in depth information on Shuttle and its capabilities.
+> See the [`shuttle` Reference](../reference/shuttle/shuttle-reference) for in depth information on Shuttle and its capabilities.

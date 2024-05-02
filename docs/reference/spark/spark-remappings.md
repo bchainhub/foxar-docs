@@ -24,7 +24,11 @@ Get the automatically inferred remappings for the project.
 `--lib-path` _path_  
 &nbsp;&nbsp;&nbsp;&nbsp;The path to the library folder.
 
-<!-- {{#include common-options.md}} -->
+#### Common Options
+
+`-h`  
+`--help`  
+&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
 
 ### EXAMPLES
 

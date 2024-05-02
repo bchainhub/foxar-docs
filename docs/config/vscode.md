@@ -39,7 +39,7 @@ To enable the built-in formatter that comes with Foxar to automatically format y
 }
 ```
 
-To configure the formatter settings, refer to the [Formatter](../reference/config/formatter.md) reference.
+To configure the formatter settings, refer to the [Formatter](../reference/config/formatter) reference.
 
 ### 4. Solc Version
 

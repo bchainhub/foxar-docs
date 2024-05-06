@@ -3,7 +3,7 @@ title: Introduction
 sidebar_position: 1
 ---
 
-<img src={require("../static/img/docs/foxar-banner.png").default} style= {{borderRadius: "20px"}} />
+<img src={require("@site/static/img/docs/foxar-banner.png").default} style= {{borderRadius: "20px"}} />
 
 Foxar is a smart contract development toolchain.
 

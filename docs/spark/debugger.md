@@ -40,7 +40,7 @@ If your source file contains more than one contract, specify the contract you wa
 
 ### Debugger layout
 
-![An image of the debugger UI](../../static/img/docs/debugger.png)
+![An image of the debugger UI](@site/static/img/docs/debugger.png)
 
 When the debugger is run, you are presented with a terminal divided into four quadrants:
 

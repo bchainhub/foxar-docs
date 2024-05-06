@@ -35,13 +35,13 @@ function getLastVersion() {
 }
 
 function getNextVersionName() {
-  return "Canary";
+  return "1.0.0";
 }
 
 const config: Config = {
-  title: "CorePass Developer Hub",
-  tagline: "CorePass Developer Hub",
-  favicon: "img/favicon.ico",
+  title: "Foxar",
+  tagline: "Foxar",
+  favicon: "img/Brand_Mark_2@3x.png",
   url: "https://docs.corepass.net",
 
   baseUrl,
@@ -93,7 +93,7 @@ const config: Config = {
           })(),
           versions: {
             current: {
-              label: `${getNextVersionName()} 🚧`,
+              label: `${getNextVersionName()}`,
             },
             ...versions.reduce((acc, version) => {
               if (isPrerelease(version)) {
@@ -204,10 +204,10 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: "CorePass Dev Hub",
+      // title: "CorePass Dev Hub",
       logo: {
         alt: "CorePass",
-        src: "img/logo.png",
+        src: "/img/Horizontal-One_Ink_2@3x.png",
       },
       items: [
         {
@@ -237,19 +237,25 @@ const config: Config = {
       style: "dark",
       logo: {
         alt: "CorePass",
-        src: "img/logo.png",
+        src: "img/Vertical-One_Ink_2@3x.png",
+        height: 124,
+        width: 186,
       },
       links: [
         {
           title: "Ecosystem",
           items: [
             {
-              label: "CorePass Homepage",
-              href: "https://corepass.net",
+              label: "CoreBC Homepage",
+              href: "https://coreblockchain.net/",
+            },
+            {
+              label: "Blockindex",
+              href: "https://blockindex.net/",
             },
             {
               label: "Payto Money",
-              href: "https://payto.money",
+              href: "https://payto.money/",
             },
           ],
         },
@@ -257,16 +263,16 @@ const config: Config = {
           title: "Resources",
           items: [
             {
-              label: "Google Play",
-              href: "https://play.google.com/store/apps/details?id=net.corepass.app",
+              label: "Blog",
+              href: "https://blog.coreblockchain.net/",
             },
             {
-              label: "App Store",
-              href: "https://apps.apple.com/app/corepass-id/id1644928641",
+              label: "CIP",
+              href: "https://cip.coreblockchain.net/",
             },
             {
-              label: "GitHub",
-              href: "https://github.com/CorePass",
+              label: "Booster",
+              href: "https://coreblockchain.net/#booster",
             },
           ],
         },
@@ -275,24 +281,24 @@ const config: Config = {
           items: [
             {
               label: "X",
-              href: "https://x.com/CorePassCC",
+              href: "https://twitter.com/corecoincc",
             },
             {
-              label: "Instagram",
-              href: "https://www.instagram.com/corepasscc/",
+              label: "GitHub",
+              href: "https://github.com/core-coin",
             },
             {
-              label: "LinkedIn",
-              href: "https://www.linkedin.com/company/corepass",
+              label: "Discord",
+              href: "https://discord.com/invite/SCxmFr5Pwp",
             },
             {
               label: "Core◆Talk",
-              href: "https://coretalk.space/@corepass",
+              href: "https://coretalk.space/@coreblockchain",
             },
           ],
         },
       ],
-      copyright: `Copyright © 2020-${new Date().getFullYear()} CorePass.`,
+      copyright: `Copyright © 2020-${new Date().getFullYear()} Foxar.`,
     },
     prism: {
       additionalLanguages: ["solidity", "bash", "toml", "json"],

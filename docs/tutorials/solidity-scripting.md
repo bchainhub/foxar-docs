@@ -43,7 +43,7 @@ Next, we have to delete the `Counter.sol` file in the `src` folder and create an
 rm src/Counter.sol test/Counter.t.sol && touch src/NFT.sol && ls src
 ```
 
-![set up commands](../../static/img/docs/solidity-scripting/set-up-commands.png)
+![set up commands](@site/static/img/docs/solidity-scripting/set-up-commands.png)
 
 Once that’s done, you should open up your preferred code editor and copy the code below into the `NFT.sol` file.
 
@@ -121,7 +121,7 @@ spark build
 ```
 
 If your output looks like this, the contracts successfully compiled.
-![compile successful](../../static/img/docs/solidity-scripting/compile-successful.png)
+![compile successful](@site/static/img/docs/solidity-scripting/compile-successful.png)
 
 ### Deploying our contract
 
@@ -244,7 +244,7 @@ spark script script/NFT.s.sol:MyScript --rpc-url $SEPOLIA_RPC_URL --broadcast --
 
 Spark is going to run our script and broadcast the transactions for us - this can take a little while, since Spark will also wait for the transaction receipts. You should see something like this after a minute or so:
 
-![contract verified](../..//static/img/docs/solidity-scripting/contract-verified.png)
+![contract verified](@site/static/img/docs/solidity-scripting/contract-verified.png)
 
 This confirms that you have successfully deployed the `NFT` contract to the Sepolia testnet and have also verified it on Etherscan, all with one command.
 

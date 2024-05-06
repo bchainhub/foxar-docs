@@ -18,7 +18,7 @@ These dependencies will be added as git submodules to your project.
 
 If you have followed the instructions correctly your project should be structured like this:
 
-![Project structure](../../static/img/docs/nft-tutorial/nft-tutorial-project-structure.png)
+![Project structure](@site/static/img/docs/nft-tutorial/nft-tutorial-project-structure.png)
 
 ### Implement a basic NFT
 
@@ -355,9 +355,9 @@ Let's have a look at the gas savings we made by substituting OpenZeppelin with S
 
 As you can see, our implementation using Solmate saves around 500 gas on a successful mint (the max gas cost of the `mintTo` function calls).
 
-![Gas report solmate NFT](../../static/img/docs/nft-tutorial/gas-report-solmate-nft.png)
+![Gas report solmate NFT](@site/static/img/docs/nft-tutorial/gas-report-solmate-nft.png)
 
-![Gas report OZ NFT](../../static/img/docs/nft-tutorial/gas-report-oz-nft.png)
+![Gas report OZ NFT](@site/static/img/docs/nft-tutorial/gas-report-oz-nft.png)
 
 That's it, I hope this will give you a good practical basis of how to get started with foxar. We think there is no better way to deeply understand solidity than writing your tests in solidity. You will also experience less context switching between javascript and solidity. Happy coding!
 

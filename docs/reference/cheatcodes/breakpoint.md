@@ -27,7 +27,7 @@ function testBreakpoint() public {
 
 Opening up the debugger in a test environment and pressing `'a` will then place the debugger step at the place where the breakpoint cheatcode was called.
 
-![breakpoint a](../../../static/img/docs/breakpoint.png)
+![breakpoint a](@site/static/img/docs/breakpoint.png)
 
 ### SEE ALSO
 

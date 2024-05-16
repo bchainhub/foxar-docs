@@ -22,7 +22,7 @@ jobs:
     - name: Run markdownlint
       uses: ruzickap/action-my-markdown-linter@v1
       with:
-        config_file: .github/lintconfig.yml
+        config_file: .github/markdownlint.yml
         search_paths: |
           docs
           versioned_docs

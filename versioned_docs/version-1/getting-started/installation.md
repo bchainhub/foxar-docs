@@ -16,7 +16,7 @@ Foxarup is the Foxar toolchain installer. You can find more about it [here](http
 Open your terminal and run the following command:
 
 ```sh
-curl -L https://foxar.paradigm.xyz | bash
+curl -L https://up.foxar.dev | bash
 ```
 
 This will install Foxarup, then simply follow the instructions on-screen,

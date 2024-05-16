@@ -35,7 +35,7 @@ function getLastVersion() {
 }
 
 function getNextVersionName() {
-  return "1.0.0";
+  return "Canary";
 }
 
 const config: Config = {
@@ -48,8 +48,8 @@ const config: Config = {
   organizationName: "bchainhub",
   projectName: "foxar-docs",
 
-  onBrokenLinks: "warn",
-  onBrokenAnchors: "warn",
+  onBrokenLinks: "throw",
+  onBrokenAnchors: "throw",
   onBrokenMarkdownLinks: "warn",
 
   i18n: {

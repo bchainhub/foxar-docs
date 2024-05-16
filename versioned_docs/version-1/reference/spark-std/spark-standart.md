@@ -26,7 +26,7 @@ What's included:
   import "spark-std/console2.sol";
   ```
 
-- `Script.sol`: Basic utilities for [Solidity scripting](../../tutorials/solidity-scripting.md)
+- `Script.sol`: Basic utilities for [Ylem scripting](../../tutorials/ylem-scripting.md)
 
   ```solidity
   import "spark-std/Script.sol";

@@ -10,7 +10,7 @@ It provides all the essential functionality you need to get started writing test
 
 - `Vm.sol`: Up-to-date cheatcodes interface
 - `console.sol` and `console2.sol`: Hardhat-style logging functionality
-- `Script.sol`: Basic utilities for [Solidity scripting](../tutorials/solidity-scripting)
+- `Script.sol`: Basic utilities for [Solidity scripting](../tutorials/ylem-scripting)
 - `Test.sol`: A superset of DSTest containing standard libraries, a cheatcodes instance (`vm`), and Hardhat console
 
 Simply import `Test.sol` and inherit from `Test` in your test contract:

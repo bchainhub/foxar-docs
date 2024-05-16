@@ -361,4 +361,4 @@ As you can see, our implementation using Solmate saves around 500 gas on a succe
 
 That's it, I hope this will give you a good practical basis of how to get started with foxar. We think there is no better way to deeply understand solidity than writing your tests in solidity. You will also experience less context switching between javascript and solidity. Happy coding!
 
-> Note: Follow [this](./solidity-scripting.md) tutorial to learn how to deploy the NFT contract used here with solidity scripting.
+> Note: Follow [this](./ylem-scripting.md) tutorial to learn how to deploy the NFT contract used here with solidity scripting.

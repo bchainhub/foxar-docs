@@ -5,21 +5,20 @@ title: Best Practices
 This guide documents the suggested best practices when developing with Foxar.
 In general, it's recommended to handle as much as possible with [`spark fmt`](../reference/config/formatter), and anything this doesn't handle is below.
 
-- [Best Practices](#best-practices)
-  - [General Contract Guidance](#general-contract-guidance)
-  - [Tests](#tests)
-    - [General Test Guidance](#general-test-guidance)
-    - [Fork Tests](#fork-tests)
-    - [Test Harnesses](#test-harnesses)
-      - [Internal Functions](#internal-functions)
-      - [Private Functions](#private-functions)
-      - [Workaround Functions](#workaround-functions)
-    - [Best practices](#best-practices-1)
-    - [Taint Analysis](#taint-analysis)
-  - [Scripts](#scripts)
-    - [Private Key Management](#private-key-management)
-  - [Comments](#comments)
-  - [Resources](#resources)
+- [General Contract Guidance](#general-contract-guidance)
+- [Tests](#tests)
+  - [General Test Guidance](#general-test-guidance)
+  - [Fork Tests](#fork-tests)
+  - [Test Harnesses](#test-harnesses)
+    - [Internal Functions](#internal-functions)
+    - [Private Functions](#private-functions)
+    - [Workaround Functions](#workaround-functions)
+  - [Best practices](#best-practices)
+  - [Taint Analysis](#taint-analysis)
+- [Scripts](#scripts)
+  - [Private Key Management](#private-key-management)
+- [Comments](#comments)
+- [Resources](#resources)
 
 ## General Contract Guidance
 
@@ -116,7 +115,7 @@ Additional best practices from [samsczun](https://twitter.com/samczsun)'s [How D
 1. Be careful with fuzz tests on a fork to avoid burning through RPC requests with non-deterministic fuzzing. If the input to your fork fuzz test is some parameter which is used in an RPC call to fetch data (e.g. querying the token balance of an address), each run of a fuzz test uses at least 1 RPC request, so you'll quickly hit rate limits or usage limits. Solutions to consider:
 
    - Replace multiple RPC calls with a single [multicall](https://github.com/mds1/multicall).
-   - Specify a fuzz/invariant [seed](/src/reference/config/testing#seed): this makes sure each `spark test` invocation uses the same fuzz inputs. RPC results are cached locally, so you'll only query the node the first time.
+   - Specify a fuzz/invariant [seed](../reference/config/testing.md#seed): this makes sure each `spark test` invocation uses the same fuzz inputs. RPC results are cached locally, so you'll only query the node the first time.
    - In CI, consider setting the fuzz seed using a [computed environment variable](https://github.com/sablier-labs/v2-core/blob/d1157b49ed4bceeff0c4e437c9f723e88c134d3a/.github/workflows/ci.yml#L252-L254) so it changes every day or every week. This gives flexibility on the tradeoff between increasing randomness to find more bugs vs. using a seed to reduce RPC requests.
    - Structure your tests so the data you are fuzzing over is computed locally by your contract, and not data that is used in an RPC call (may or may not be feasible based on what you're doing).
    - Lastly, you can of course always run a local node or bump your RPC plan.

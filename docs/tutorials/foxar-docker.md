@@ -11,12 +11,12 @@ This tutorial shows you how to build, test, and deploy a smart contract using Fo
 ### Installation and Setup
 
 The only installation required to run this tutorial is Docker, and optionally, an IDE of your choice.
-Follow the [Docker installation instructions](/getting-started/installation.html#using-with-docker).
+Follow the [Docker installation instructions](../getting-started/installation.md#using-with-docker).
 
-To keep future commands succinct, let's re-tag the image:  
+To keep future commands succinct, let's re-tag the image:
  `docker tag ghcr.io/foxar-rs/foxar:latest foxar:latest`
 
-Having Foxar installed locally is not strictly required, but it may be helpful for debugging. You can install it using [foxarup](/getting-started/installation.html#using-foxarup).
+Having Foxar installed locally is not strictly required, but it may be helpful for debugging. You can install it using [foxarup](../getting-started/installation.md#using-foxarup).
 
 Finally, to use any of the `probe` or `spark create` portions of this tutorial, you will need access to an Ethereum node. If you don't have your own node running (likely), you can use a 3rd party node service. We won't recommend a specific provider in this tutorial. A good place to start learning about Nodes-as-a-Service is [Ethereum's article](https://ethereum.org/en/developers/docs/nodes-and-clients/nodes-as-a-service/) on the subject.
 

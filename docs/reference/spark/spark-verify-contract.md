@@ -21,7 +21,7 @@ You must provide:
   In case of Etherscan verification, you must also provide:
 - Your Etherscan API key, either by passing it as an argument or setting `ETHERSCAN_API_KEY`
 
-To find the exact compiler version, run `~/.svm/x.y.z/solc-x.y.z --version` and search for the 8 hex digits in the version string [here](https://etherscan.io/solcversions).
+To find the exact compiler version, run `~/.svm/x.y.z/solc-x.y.z --version` and search for the 8 hex digits in the version string.
 
 The path to the contract is in the format `<path>:<contract>`, e.g. `src/Contract.sol:Contract`.
 
@@ -31,101 +31,101 @@ This command will try to compile the source code of the flattened contract if `-
 
 You can specify **ABI-encoded** constructor arguments with `--constructor-args`. Alternatively,
 you can specify a file containing **space-separated** constructor arguments with `--constructor-args-path`.
-(Note that [cache](../config/project.html#cache) must be enabled in the config for the latter to work.)
+(Note that [cache](../config/project.md#cache) must be enabled in the config for the latter to work.)
 
 ### OPTIONS
 
 #### Verify Contract Options
 
-`--verifier` _name_  
+`--verifier` _name_
 &nbsp;&nbsp;&nbsp;&nbsp;The verification provider. Available options: `etherscan`, `sourcify` & `blockscout`. Default: `etherscan`. Note: make sure you add "/api\?" to the end of the Blockscout homepage explorer URL.
 
-`--verifier-url` _url_  
-&nbsp;&nbsp;&nbsp;&nbsp;The optional verifier url for submitting the verification request.  
+`--verifier-url` _url_
+&nbsp;&nbsp;&nbsp;&nbsp;The optional verifier url for submitting the verification request.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `VERIFIER_URL`
 
-`--compiler-version` _version_  
+`--compiler-version` _version_
 &nbsp;&nbsp;&nbsp;&nbsp;The compiler version used to build the smart contract.
 
 &nbsp;&nbsp;&nbsp;&nbsp;To find the exact compiler version, run `~/.svm/x.y.z/solc-x.y.z --version` where `x` and
-`y` are major and minor version numbers respectively, then search for the 8 hex digits in the version string [here](https://etherscan.io/solcversions).
+`y` are major and minor version numbers respectively, then search for the 8 hex digits in the version string.
 
-`--num-of-optimizations` _num_  
-`--optimizer-runs` _num_  
+`--num-of-optimizations` _num_
+`--optimizer-runs` _num_
 &nbsp;&nbsp;&nbsp;&nbsp;The number of optimization runs used to build the smart contract.
 
-`--constructor-args` _args_  
+`--constructor-args` _args_
 &nbsp;&nbsp;&nbsp;&nbsp;The ABI-encoded constructor arguments. Conflicts with `--constructor-args-path`.
 
-`--constructor-args-path` _file_  
+`--constructor-args-path` _file_
 &nbsp;&nbsp;&nbsp;&nbsp;The path to a file containing the constructor arguments. Conflicts with `--constructor-args`.
 
-`--chain-id` _chain_  
-`--chain` _chain_  
-&nbsp;&nbsp;&nbsp;&nbsp;The ID or name of the chain the contract is deployed to.  
+`--chain-id` _chain_
+`--chain` _chain_
+&nbsp;&nbsp;&nbsp;&nbsp;The ID or name of the chain the contract is deployed to.
 &nbsp;&nbsp;&nbsp;&nbsp;Default: mainnet
 
-`--flatten`  
+`--flatten`
 &nbsp;&nbsp;&nbsp;&nbsp;Flag indicating whether to flatten the source code before verifying.
 
 &nbsp;&nbsp;&nbsp;&nbsp;If this flag is not provided, the JSON standard input will be used instead.
 
-`-f`  
-`--force`  
+`-f`
+`--force`
 &nbsp;&nbsp;&nbsp;&nbsp;Do not compile the flattened smart contract before verifying.
 
-`--delay` _delay_  
+`--delay` _delay_
 &nbsp;&nbsp;&nbsp;&nbsp;Optional timeout to apply in between attempts in seconds. Defaults to 3.
 
-`--retries` _retries_  
+`--retries` _retries_
 &nbsp;&nbsp;&nbsp;&nbsp;Number of attempts for retrying. Defaults to 15.
 
-`--show-standard-json-input`  
+`--show-standard-json-input`
 &nbsp;&nbsp;&nbsp;&nbsp;Command outputs JSON suitable for saving to a file and uploading to block explorers for verification.
 
-`--watch`  
-&nbsp;&nbsp;&nbsp;&nbsp;Wait for verification result after submission.  
+`--watch`
+&nbsp;&nbsp;&nbsp;&nbsp;Wait for verification result after submission.
 &nbsp;&nbsp;&nbsp;&nbsp;Automatically runs `spark verify-check` until the verification either fails or succeeds.
 
 #### Project Options
 
-`--build-info`  
+`--build-info`
 &nbsp;&nbsp;&nbsp;&nbsp;Generate build info files.
 
-`--build-info-path` _path_  
+`--build-info-path` _path_
 &nbsp;&nbsp;&nbsp;&nbsp;Output path to directory that build info files will be written to.
 
-`--root` _path_  
+`--root` _path_
 &nbsp;&nbsp;&nbsp;&nbsp;The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
 
-`-C` _path_  
-`--contracts` _path_  
-&nbsp;&nbsp;&nbsp;&nbsp;The contracts source directory.  
+`-C` _path_
+`--contracts` _path_
+&nbsp;&nbsp;&nbsp;&nbsp;The contracts source directory.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `DAPP_SRC`
 
-`--lib-paths` _path_  
+`--lib-paths` _path_
 &nbsp;&nbsp;&nbsp;&nbsp;The path to the library folder.
 
-`-R` _remappings_  
-`--remappings` _remappings_  
+`-R` _remappings_
+`--remappings` _remappings_
 &nbsp;&nbsp;&nbsp;&nbsp;The project's remappings.
 
 &nbsp;&nbsp;&nbsp;&nbsp;The parameter is a comma-separated list of remappings in the format `<source>=<dest>`.
 
-`--cache-path` _path_  
+`--cache-path` _path_
 &nbsp;&nbsp;&nbsp;&nbsp;The path to the compiler cache.
 
-`--config-path` _file_  
+`--config-path` _file_
 &nbsp;&nbsp;&nbsp;&nbsp;Path to the config file.
 
-`--hh`  
-`--hardhat`  
+`--hh`
+`--hardhat`
 &nbsp;&nbsp;&nbsp;&nbsp;This is a convenience flag, and is the same as passing `--contracts contracts --lib-paths node-modules`.
 
 #### Common Options
 
-`-h`  
-`--help`  
+`-h`
+`--help`
 &nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
 
 ### EXAMPLES

@@ -67,7 +67,7 @@ Spark uses the following keywords in tests:
   }
   ```
 
-A good practice is to use the pattern `test_Revert[If|When]_Condition` in combination with the [`expectRevert`](../cheatcodes/expect-revert.md) cheatcode (cheatcodes are explained in greater detail in the following [section](./cheatcodes.md)). Also, other testing practices can be found in the [Tutorials section](../tutorials/best-practices.md).
+A good practice is to use the pattern `test_Revert[If|When]_Condition` in combination with the [`expectRevert`](../reference/cheatcodes/expect-revert.md) cheatcode (cheatcodes are explained in greater detail in the following [section](./cheatcodes.md)). Also, other testing practices can be found in the [Tutorials section](../tutorials/best-practices.md).
 
 Now, instead of using `testFail`, you know exactly what reverted and with which error:
 
@@ -120,4 +120,4 @@ contract MyOtherContractTest is Test, HelperContract {
 
 > 💡 **Tip**
 >
-> Use the [`getCode`](../cheatcodes/get-code.md) cheatcode to deploy contracts with incompatible Solidity versions.
+> Use the [`getCode`](../reference/cheatcodes/get-code.md) cheatcode to deploy contracts with incompatible Solidity versions.

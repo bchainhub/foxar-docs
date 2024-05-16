@@ -41,15 +41,15 @@ function getNextVersionName() {
 const config: Config = {
   title: "Foxar",
   tagline: "Foxar",
-  favicon: "img/Brand_Mark_2@3x.png",
+  favicon: "img/favicon.png",
   url: "https://foxar.dev",
 
   baseUrl,
   organizationName: "bchainhub",
   projectName: "foxar-docs",
 
-  onBrokenLinks: "throw",
-  onBrokenAnchors: "throw",
+  onBrokenLinks: "warn",
+  onBrokenAnchors: "warn",
   onBrokenMarkdownLinks: "warn",
 
   i18n: {

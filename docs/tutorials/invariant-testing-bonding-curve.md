@@ -8,7 +8,7 @@ This tutorial will cover invariant testing, using **Bonding Curve Implementation
 
 However, this guide is for educational purposes only. The code is not audited. Please do not use it in production.
 
-> 💡 Note: A full implementation of the bonding curve can be found [here](https://github.com/Ratimon/bonding-curves), and for further reading about invariant testing, we can check out the `Invariant Testing` [reference](../reference/spark/invariant-testing.md).
+> 💡 Note: A full implementation of the bonding curve can be found [here](https://github.com/Ratimon/bonding-curves), and for further reading about invariant testing, we can check out the `Invariant Testing` [reference](../spark/invariant-testing.md).
 
 ### Quick Start
 

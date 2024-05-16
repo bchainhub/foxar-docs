@@ -36,4 +36,4 @@ emit log_uint(uint256(reads[0])); // 1
 
 Spark Standard Library
 
-[Std Storage](../reference/spark-std/std-storage.md)
+[Std Storage](../spark-std/std-storage.md)

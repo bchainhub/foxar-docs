@@ -22,4 +22,4 @@ If the alternative signature of `startPrank` is used, then `tx.origin` is set as
 
 Spark Standard Library
 
-[`startHoax`](../reference/spark-std/startHoax.md), [`changePrank`](../reference/spark-std/change-prank.md)
+[`startHoax`](../spark-std/startHoax.md), [`changePrank`](../spark-std/change-prank.md)

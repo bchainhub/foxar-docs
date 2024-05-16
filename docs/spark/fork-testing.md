@@ -5,7 +5,7 @@ title: Fork Testing
 Spark supports testing in a forked environment with two different approaches:
 
 - [**Forking Mode**](#forking-mode) — use a single fork for all your tests via the `spark test --fork-url` flag
-- [**Forking Cheatcodes**](#forking-cheatcodes) — create, select, and manage multiple forks directly in Solidity test code via [forking cheatcodes](../cheatcodes/forking)
+- [**Forking Cheatcodes**](#forking-cheatcodes) — create, select, and manage multiple forks directly in Solidity test code via [forking cheatcodes](../reference/cheatcodes/forking.md)
 
 Which approach to use? Forking mode affords running an entire test suite against a specific forked environment, while forking cheatcodes provide more flexibility and expressiveness to work with multiple forks in your tests. Your particular use case and testing strategy will help inform which approach to use.
 

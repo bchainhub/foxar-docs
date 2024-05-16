@@ -12,7 +12,7 @@ function bound(uint256 x, uint256 min, uint256 max) public returns (uint256 resu
 
 A mathematical function for wrapping inputs of fuzz tests into a certain range.
 
-You can use it instead of the `assume` cheatcode to get better performance in some cases. Read more [here](../../cheatcodes/assume.md).
+You can use it instead of the `assume` cheatcode to get better performance in some cases. Read more [here](../cheatcodes/assume.md).
 
 ### Examples
 

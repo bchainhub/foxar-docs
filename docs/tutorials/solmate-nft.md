@@ -8,7 +8,7 @@ This tutorial will walk you through creating an OpenSea compatible NFT with Foxa
 
 ### Create project and install dependencies
 
-Start by setting up a Foxar project following the steps outlined in the [Getting started section](../getting-started/installation.html). We will also install Solmate for their ERC721 implementation, as well as some OpenZeppelin utility libraries. Install the dependencies by running the following commands from the root of your project:
+Start by setting up a Foxar project following the steps outlined in the [Getting started section](../getting-started/installation.md). We will also install Solmate for their ERC721 implementation, as well as some OpenZeppelin utility libraries. Install the dependencies by running the following commands from the root of your project:
 
 ```bash
 spark install transmissions11/solmate Openzeppelin/openzeppelin-contracts

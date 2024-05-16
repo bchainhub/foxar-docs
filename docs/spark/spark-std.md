@@ -117,4 +117,4 @@ uint256 ten = stdMath.abs(-10)
 
 > 📚 **Reference**
 >
-> See the [Spark Standard Library Reference](../reference/spark-std/) for a complete overview of Spark Standard Library.
+> See the Spark Standard Library Reference for a complete overview of Spark Standard Library.

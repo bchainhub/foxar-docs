@@ -800,7 +800,7 @@ const sidebars: SidebarsConfig = {
                     "reference/cheatcodes/pause-gas-metering",
                     "reference/cheatcodes/resume-gas-metering",
                     "reference/cheatcodes/tx-gas-price",
-                    "reference/cheatcodes/start-state",
+                    "reference/cheatcodes/start-state-diff-recording",
                     "reference/cheatcodes/stop-and-return-state-diff",
                   ],
                 },

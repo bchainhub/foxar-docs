@@ -1,11 +1,11 @@
 {
-  "name": "CorePass Docs",
-  "short_name": "CorePass",
+  "name": "Foxar Docs",
+  "short_name": "Foxar",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#1362d5",
   "background_color": "#303846",
-  "description": "CorePass Developer Platform",
+  "description": "Foxar Platform",
   "icons": [
     {
       "src": "img/icons/icon-32.png",
@@ -31,20 +31,6 @@
       "src": "img/icons/icon-256.png",
       "sizes": "256x256",
       "type": "image/png"
-    }
-  ],
-  "related_applications": [
-    {
-      "platform": "webapp",
-      "url": "https://docs.corepass.net/manifest.json"
-    },
-    {
-      "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=net.corepass.app"
-    },
-    {
-      "platform": "itunes",
-      "url": "https://itunes.apple.com/app/corepass-id/id1644928641"
     }
   ]
 }

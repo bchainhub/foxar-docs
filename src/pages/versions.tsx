@@ -44,11 +44,11 @@ export default function Version(): JSX.Element {
   return (
     <Layout
       title="Versions"
-      description="CorePass Versions page listing all documented site versions"
+      description="Foxar Versions page listing all documented site versions"
     >
       <main className="container margin-vert--lg">
         <Heading as="h1">
-          <Translate id="versionsPage.title">CorePass versions</Translate>
+          <Translate id="versionsPage.title">Foxar versions</Translate>
         </Heading>
 
         <div className="margin-bottom--lg">
@@ -113,8 +113,7 @@ export default function Version(): JSX.Element {
             </Heading>
             <p>
               <Translate id="versionsPage.archived.description">
-                Here you can find documentation for previous versions of
-                CorePass.
+                Here you can find documentation for previous versions of Foxar.
               </Translate>
             </p>
             <table>

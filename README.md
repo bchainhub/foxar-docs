@@ -1,10 +1,10 @@
-# CorePass Developer Hub
+# Foxar Documentation
 
-Welcome to the CorePass Developer Hub! This repository hosts the documentation for CorePass, a revolutionary platform for digital identity management that empowers users with full control over their personal data. Our documentation is built using Docusaurus system.
+Welcome to the Foxar Documentation! This repository hosts the documentation for Foxar. The documentation is built using Docusaurus system.
 
-## About CorePass
+## About Foxar
 
-CorePass is dedicated to revolutionizing the way digital identities are managed. By giving users control over their personal data, CorePass paves the way for a more secure and privacy-respecting digital environment.
+Foxar is a blazing fast, portable and modular toolkit for Core BC app development.
 
 ## Getting Started with the Documentation
 
@@ -67,12 +67,8 @@ We welcome contributions to the CorePass Developer Hub! Whether it's improving t
 
 ## License
 
-This project is licensed under the CORE license - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the CORE license.
 
 ## Support
 
 For support, please open an issue in the GitHub issue tracker.
-
-## Stay in Touch
-
-For the latest updates and news about CorePass, follow us on social media or visit our [official website](https://corepass.net).

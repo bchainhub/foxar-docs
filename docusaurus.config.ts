@@ -4,7 +4,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 import remarkCorepass from "remark-corepass";
 import remarkCorebc from "remark-corebc";
-import remarkCurrencyFormatter from 'remark-currency-formatter';
+import remarkCurrencyFormatter from "remark-currency-formatter";
 import remarkFediverseUser from "remark-fediverse-user";
 import math from "remark-math";
 import katex from "rehype-katex";
@@ -39,14 +39,14 @@ function getNextVersionName() {
 }
 
 const config: Config = {
-  title: "CorePass Developer Hub",
-  tagline: "CorePass Developer Hub",
-  favicon: "img/favicon.ico",
-  url: "https://docs.corepass.net",
+  title: "Foxar",
+  tagline: "Foxar",
+  favicon: "img/favicon.png",
+  url: "https://foxar.dev",
 
   baseUrl,
-  organizationName: "CorePass",
-  projectName: "CorePass",
+  organizationName: "bchainhub",
+  projectName: "foxar-docs",
 
   onBrokenLinks: "throw",
   onBrokenAnchors: "throw",
@@ -64,7 +64,7 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.ts",
           editUrl: ({ versionDocsDirPath, docPath }) => {
-            return `https://github.com/CorePass/corepass-docs/edit/master/${versionDocsDirPath}/${docPath}`;
+            return `https://github.com/bchainhub/foxar-docs/edit/master/${versionDocsDirPath}/${docPath}`;
           },
           routeBasePath: "/",
           path: "docs",
@@ -93,21 +93,21 @@ const config: Config = {
           })(),
           versions: {
             current: {
-              label: `${getNextVersionName()} 🚧`,
+              label: `${getNextVersionName()}`,
             },
             ...versions.reduce((acc, version) => {
               if (isPrerelease(version)) {
                 return {
                   ...acc,
                   [version]: {
-                    label: `CP v. ${version}`,
+                    label: `v. ${version}`,
                   },
                 };
               }
               return {
                 ...acc,
                 [version]: {
-                  label: `CP v. ${version}`,
+                  label: `v. ${version}`,
                 },
               };
             }, {}),
@@ -123,8 +123,8 @@ const config: Config = {
             [
               katex,
               {
-                output: 'mathml',
-                strict: 'newLineInDisplayMode',
+                output: "mathml",
+                strict: "newLineInDisplayMode",
               },
             ],
           ],
@@ -148,47 +148,55 @@ const config: Config = {
       tagName: "meta",
       attributes: {
         name: "generator",
-        content: "CorePass Generator",
+        content: "Foxar Generator",
       },
     },
     {
-      tagName: 'script',
+      tagName: "script",
       attributes: {
-        type: 'application/ld+json',
+        type: "application/ld+json",
       },
       innerHTML: JSON.stringify({
-        '@context': 'https://schema.org/',
-        '@type': 'Organization',
-        name: 'CorePass',
-        url: 'https://corepass.net',
-        logo: 'https://docs.corepass.net/img/logo.svg',
+        "@context": "https://schema.org/",
+        "@type": "Organization",
+        name: "Foxar",
+        url: "https://foxar.dev",
+        logo: "https://foxar.dev/img/logo.svg",
       }),
     },
   ],
 
   themeConfig: {
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
+    },
     image: "img/social-card.png",
     metadata: [
       {
         name: "description",
         content:
-          "A CorePass Developer platform providing documentation and information for the integration and deployment process of the application.",
+          "Foxar is a blazing fast, portable and modular toolkit for Core BC app development.",
       },
-      { property: "og:title", content: "CorePass Developer Hub" },
+      { property: "og:title", content: "Foxar" },
       {
         property: "og:description",
         content:
-          "A CorePass Developer platform providing documentation and information for the integration and deployment process of the application.",
+          "Foxar is a blazing fast, portable and modular toolkit for Core BC app development.",
       },
       { property: "og:type", content: "website" },
       {
         name: "keywords",
         content:
-          "corepass, developer, development, hub, core, documentation, docs, core coin, core token, connector, protocol",
+          "foxar, spark, probe, shuttle, pilot, developer, development, hub, core, documentation, docs, core coin, core token, connector, protocol",
       },
-      { name: "theme-color", content: "#1362d5"},
-      { name: "apple-mobile-web-app-capable", content: "yes"},
-      { name: "apple-mobile-web-app-status-bar-style", content: "black-translucent"},
+      { name: "theme-color", content: "#1362d5" },
+      { name: "apple-mobile-web-app-capable", content: "yes" },
+      {
+        name: "apple-mobile-web-app-status-bar-style",
+        content: "black-translucent",
+      },
     ],
     colorMode: {
       defaultMode: "light",
@@ -196,10 +204,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: "CorePass Dev Hub",
       logo: {
-        alt: "CorePass",
-        src: "img/logo.png",
+        alt: "Foxar",
+        src: "/img/logo-text.svg",
       },
       items: [
         {
@@ -218,7 +225,7 @@ const config: Config = {
           ],
         },
         {
-          href: "https://github.com/CorePass",
+          href: "https://github.com/bchainhub/foxar",
           position: "right",
           className: "header-github-link",
           "aria-label": "GitHub repository",
@@ -228,20 +235,26 @@ const config: Config = {
     footer: {
       style: "dark",
       logo: {
-        alt: "CorePass",
-        src: "img/logo.png",
+        alt: "Foxar",
+        src: "img/logo-footer.svg",
+        width: 224,
+        height: 149,
       },
       links: [
         {
           title: "Ecosystem",
           items: [
             {
-              label: "CorePass Homepage",
-              href: "https://corepass.net",
+              label: "CoreBC Homepage",
+              href: "https://coreblockchain.net/",
+            },
+            {
+              label: "Blockindex",
+              href: "https://blockindex.net/",
             },
             {
               label: "Payto Money",
-              href: "https://payto.money",
+              href: "https://payto.money/",
             },
           ],
         },
@@ -249,16 +262,16 @@ const config: Config = {
           title: "Resources",
           items: [
             {
-              label: "Google Play",
-              href: "https://play.google.com/store/apps/details?id=net.corepass.app",
+              label: "Blog",
+              href: "https://blog.coreblockchain.net/",
             },
             {
-              label: "App Store",
-              href: "https://apps.apple.com/app/corepass-id/id1644928641",
+              label: "CIP",
+              href: "https://cip.coreblockchain.net/",
             },
             {
-              label: "GitHub",
-              href: "https://github.com/CorePass",
+              label: "Booster",
+              href: "https://coreblockchain.net/#booster",
             },
           ],
         },
@@ -267,26 +280,27 @@ const config: Config = {
           items: [
             {
               label: "X",
-              href: "https://x.com/CorePassCC",
+              href: "https://twitter.com/corecoincc",
             },
             {
-              label: "Instagram",
-              href: "https://www.instagram.com/corepasscc/",
+              label: "GitHub",
+              href: "https://github.com/core-coin",
             },
             {
-              label: "LinkedIn",
-              href: "https://www.linkedin.com/company/corepass",
+              label: "Discord",
+              href: "https://discord.com/invite/SCxmFr5Pwp",
             },
             {
-              label: "Core◆Talk",
-              href: "https://coretalk.space/@corepass",
+              label: "Core ◆ Talk",
+              href: "https://coretalk.space/@coreblockchain",
             },
           ],
         },
       ],
-      copyright: `Copyright © 2020-${new Date().getFullYear()} CorePass.`,
+      copyright: `Copyright © 2020-${new Date().getFullYear()} Foxar.`,
     },
     prism: {
+      additionalLanguages: ["solidity", "bash", "toml", "json"],
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },

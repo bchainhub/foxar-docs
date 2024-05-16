@@ -1,0 +1,31 @@
+---
+title: store
+---
+
+### Signature
+
+```solidity
+function store(address account, bytes32 slot, bytes32 value) external;
+```
+
+### Description
+
+Stores the value `value` in storage slot `slot` on account `account`.
+
+### Examples
+
+```solidity
+/// contract LeetContract {
+///     uint256 private leet = 1337; // slot 0
+/// }
+
+vm.store(address(leetContract), bytes32(uint256(0)), bytes32(uint256(31337)));
+bytes32 leet = vm.load(address(leetContract), bytes32(uint256(0)));
+emit log_uint(uint256(leet)); // 31337
+```
+
+### SEE ALSO
+
+Spark Standard Library
+
+[Std Storage](../spark-std/std-storage)

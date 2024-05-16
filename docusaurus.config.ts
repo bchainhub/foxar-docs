@@ -42,11 +42,11 @@ const config: Config = {
   title: "Foxar",
   tagline: "Foxar",
   favicon: "img/Brand_Mark_2@3x.png",
-  url: "https://docs.corepass.net",
+  url: "https://foxar.dev",
 
   baseUrl,
-  organizationName: "CorePass",
-  projectName: "CorePass",
+  organizationName: "bchainhub",
+  projectName: "foxar-docs",
 
   onBrokenLinks: "throw",
   onBrokenAnchors: "throw",
@@ -64,7 +64,7 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.ts",
           editUrl: ({ versionDocsDirPath, docPath }) => {
-            return `https://github.com/CorePass/corepass-docs/edit/master/${versionDocsDirPath}/${docPath}`;
+            return `https://github.com/bchainhub/foxar-docs/edit/master/${versionDocsDirPath}/${docPath}`;
           },
           routeBasePath: "/",
           path: "docs",
@@ -100,14 +100,14 @@ const config: Config = {
                 return {
                   ...acc,
                   [version]: {
-                    label: `CP v. ${version}`,
+                    label: `v. ${version}`,
                   },
                 };
               }
               return {
                 ...acc,
                 [version]: {
-                  label: `CP v. ${version}`,
+                  label: `v. ${version}`,
                 },
               };
             }, {}),
@@ -148,7 +148,7 @@ const config: Config = {
       tagName: "meta",
       attributes: {
         name: "generator",
-        content: "CorePass Generator",
+        content: "Foxar Generator",
       },
     },
     {
@@ -159,9 +159,9 @@ const config: Config = {
       innerHTML: JSON.stringify({
         "@context": "https://schema.org/",
         "@type": "Organization",
-        name: "CorePass",
-        url: "https://corepass.net",
-        logo: "https://docs.corepass.net/img/logo.svg",
+        name: "Foxar",
+        url: "https://foxar.dev",
+        logo: "https://foxar.dev/img/logo.svg",
       }),
     },
   ],
@@ -177,19 +177,19 @@ const config: Config = {
       {
         name: "description",
         content:
-          "A CorePass Developer platform providing documentation and information for the integration and deployment process of the application.",
+          "Foxar is a blazing fast, portable and modular toolkit for Core BC app development.",
       },
-      { property: "og:title", content: "CorePass Developer Hub" },
+      { property: "og:title", content: "Foxar" },
       {
         property: "og:description",
         content:
-          "A CorePass Developer platform providing documentation and information for the integration and deployment process of the application.",
+          "Foxar is a blazing fast, portable and modular toolkit for Core BC app development.",
       },
       { property: "og:type", content: "website" },
       {
         name: "keywords",
         content:
-          "corepass, developer, development, hub, core, documentation, docs, core coin, core token, connector, protocol",
+          "foxar, spark, probe, shuttle, pilot, developer, development, hub, core, documentation, docs, core coin, core token, connector, protocol",
       },
       { name: "theme-color", content: "#1362d5" },
       { name: "apple-mobile-web-app-capable", content: "yes" },
@@ -204,10 +204,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      // title: "CorePass Dev Hub",
       logo: {
-        alt: "CorePass",
-        src: "/img/Horizontal-One_Ink_2@3x.png",
+        alt: "Foxar",
+        src: "/img/logo-text.svg",
       },
       items: [
         {
@@ -226,7 +225,7 @@ const config: Config = {
           ],
         },
         {
-          href: "https://github.com/CorePass",
+          href: "https://github.com/bchainhub/foxar",
           position: "right",
           className: "header-github-link",
           "aria-label": "GitHub repository",
@@ -236,10 +235,10 @@ const config: Config = {
     footer: {
       style: "dark",
       logo: {
-        alt: "CorePass",
-        src: "img/Vertical-One_Ink_2@3x.png",
-        height: 124,
-        width: 186,
+        alt: "Foxar",
+        src: "img/logo-footer.svg",
+        width: 224,
+        height: 149,
       },
       links: [
         {
@@ -292,7 +291,7 @@ const config: Config = {
               href: "https://discord.com/invite/SCxmFr5Pwp",
             },
             {
-              label: "Core◆Talk",
+              label: "Core ◆ Talk",
               href: "https://coretalk.space/@coreblockchain",
             },
           ],

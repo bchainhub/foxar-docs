@@ -5,15 +5,11 @@ sidebar_position: 1
 
 <img src={require("@site/static/img/docs/foxar-banner.png").default} style= {{borderRadius: "20px"}} />
 
-Foxar is a smart contract development toolchain.
+> Foxar is a blazing fast, portable and modular toolkit for Core BC app development.
 
-Foxar manages your dependencies, compiles your project, runs tests, deploys, and lets you interact with the chain from the command-line and via Solidity scripts.
+Foxar manages your dependencies, compiles your project, runs tests, deploys, and lets you interact with the chain from the command-line and via Ylem scripts.
 
-> 📖 **Contributing**
->
-> You can contribute to this book on [GitHub](https://github.com/foxar-rs/book).
-
-### Sections
+## Sections
 
 **[Getting Started](getting-started/installation)**
 
@@ -39,7 +35,7 @@ Learn about `shuttle`, Foxar's local node.
 
 Learn how to use `pilot`, Foxar's integrated Solidity REPL.
 
-**Configuration**
+## Configuration
 
 Guides on configuring Foxar.
 
@@ -50,7 +46,7 @@ Guides on configuring Foxar.
 - [Static Analyzers](./config/static-analyzers.md)
 - [Integrating with Hardhat](./config/hardhat.md)
 
-**Tutorials**
+## Tutorials
 
 Tutorials on building smart contracts with Foxar.
 
@@ -60,13 +56,12 @@ Tutorials on building smart contracts with Foxar.
 - [Solidity Scripting](./tutorials/solidity-scripting.md)
 - [Forking Mainnet with Probe and Shuttle](./tutorials/forking-mainnet-with-probe-shuttle.md)
 - [Learning Foxar Videos](./tutorials/learn-foxar.md)
-<!-- - [Incremental Adoption]() -->
 
-**Contributing**
+## Contributing
 
 Help us improve Foxar: [Contributing](./contributing.md)
 
-**Appendix**
+## Appendix
 
 References, troubleshooting, and more.
 
@@ -81,7 +76,3 @@ References, troubleshooting, and more.
 - [Spark Standard Library Reference](./reference/spark-std/spark-standart)
 - [DSTest Reference](./reference/ds-test)
 - [Miscellaneous](misc/miscellaneous)
-
-<br />
-
-> You can also check out [Awesome Foxar](https://github.com/crisgarner/awesome-foxar), a curated list of awesome Foxar resources, tutorials, tools, and libraries!

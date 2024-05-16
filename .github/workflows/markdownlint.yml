@@ -1,25 +1,28 @@
-name: Docs linter
+name: Markdown Lint
+
 on:
-  pull_request:
-    branches:
-      - master
+  push:
     paths:
-      - "docs/**/*.md"
-      - "versioned_docs/**/*.md"
-      - ".github/workflows/markdownlint.yml"
-      - ".github/.markdownlint.json"
+      - 'docs/**/*.md'
+      - 'versioned_docs/**/*.md'
+  pull_request:
+    paths:
+      - 'docs/**/*.md'
+      - 'versioned_docs/**/*.md'
 
 jobs:
-  docs-linter:
+  lint:
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    steps:
-      - uses: actions/checkout@v3
 
-      - name: Markdown Lint
-        uses: ruzickap/action-my-markdown-linter@v1
-        with:
-          config_file: .github/lintconfig.yml
-          search_paths: |
-            docs/**/*.md
-            versioned_docs/**/*.md
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run markdownlint
+      uses: ruzickap/action-my-markdown-linter@v1
+      with:
+        config_file: .github/lintconfig.yml
+        search_paths: |
+          docs
+          versioned_docs

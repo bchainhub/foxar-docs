@@ -214,7 +214,7 @@ For example, we want the data from the expected event in `test_ExpectEmit` - whi
 
 In other words, `test_ExpectEmit_DoNotCheckData` is a valid test case, even though the amounts differ, since we do not check the data.
 
-<br />
+&nbsp;
 
 > 📚 **Reference**
 >

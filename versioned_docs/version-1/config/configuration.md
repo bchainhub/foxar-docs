@@ -29,6 +29,8 @@ i.e. `[fmt]` is equivalent to `[profile.default.fmt]`.
 To configure the standalone section for different profiles other than `default`, use syntax `[profile.<profile name>.<standalone>]`.
 i.e. `[profile.ci.fuzz]`.
 
+&nbsp;
+
 > 📚 **Reference**
 >
 > See the [`foxar.toml` Reference](../reference/config/config-reference) for a complete overview of what you can configure.

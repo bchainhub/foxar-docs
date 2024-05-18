@@ -56,7 +56,7 @@ emit log("here");
 // here
 ```
 
-##
+&nbsp;
 
 ---
 
@@ -73,7 +73,7 @@ emit logs(bytes("abcd"));
 // 0x6162636400000000000000000000000000000000000000000000000000000000
 ```
 
-##
+&nbsp;
 
 ---
 
@@ -93,7 +93,7 @@ emit log_uint(amount);
 // 1000000000000000000
 ```
 
-##
+&nbsp;
 
 ---
 
@@ -113,7 +113,7 @@ emit log_named_uint("Amount", amount);
 // amount: 1000000000000000000
 ```
 
-##
+&nbsp;
 
 ---
 
@@ -230,7 +230,7 @@ bool success = contract.fun();
 assertTrue(success);
 ```
 
-##
+&nbsp;
 
 ---
 
@@ -252,7 +252,7 @@ uint256 b = 1e18 wei;
 assertEq(a, b);
 ```
 
-##
+&nbsp;
 
 ---
 
@@ -274,7 +274,7 @@ uint256 b = 1e18 wei;
 assertEqDecimal(a, b, 18);
 ```
 
-##
+&nbsp;
 
 ---
 
@@ -292,7 +292,7 @@ Asserts `a` is equal to `b`.
 assertEq(bytes32("abcd"), 0x6162636400000000000000000000000000000000000000000000000000000000);
 ```
 
-##
+&nbsp;
 
 ---
 
@@ -312,7 +312,7 @@ string memory name2 = "Bob";
 assertEq0(bytes(name1), bytes(name2)); // [FAIL]
 ```
 
-##
+&nbsp;
 
 ---
 
@@ -334,7 +334,7 @@ uint256 b = 1e18 wei;
 assertGt(a, b);
 ```
 
-##
+&nbsp;
 
 ---
 
@@ -356,7 +356,7 @@ uint256 b = 1e18 wei;
 assertGtDecimal(a, b, 18);
 ```
 
-##
+&nbsp;
 
 ---
 
@@ -378,7 +378,7 @@ uint256 b = 1e18 wei;
 assertGe(a, b);
 ```
 
-##
+&nbsp;
 
 ---
 
@@ -400,7 +400,7 @@ uint256 b = 1e18 wei;
 assertGeDecimal(a, b, 18);
 ```
 
-##
+&nbsp;
 
 ---
 
@@ -422,7 +422,7 @@ uint256 b = 2e18 wei;
 assertLt(a, b);
 ```
 
-##
+&nbsp;
 
 ---
 
@@ -444,7 +444,7 @@ uint256 b = 2e18 wei;
 assertLtDecimal(a, b, 18);
 ```
 
-##
+&nbsp;
 
 ---
 
@@ -466,7 +466,7 @@ uint256 b = 1e18 wei;
 assertLe(a, b);
 ```
 
-##
+&nbsp;
 
 ---
 
@@ -488,7 +488,7 @@ uint256 b = 1e18 wei;
 assertLeDecimal(a, b, 18);
 ```
 
-##
+&nbsp;
 
 ---
 
@@ -513,7 +513,7 @@ function testFail () external {
 }
 ```
 
-##
+&nbsp;
 
 ---
 
@@ -537,7 +537,7 @@ function testFail () external {
 }
 ```
 
-##
+&nbsp;
 
 > ℹ️ **Information**
 >

@@ -20,8 +20,8 @@ You can use it instead of the `assume` cheatcode to get better performance in so
 input = bound(input, 99, 101);
 ```
 
-Returns `99` for input `0`.<br />
-Returns `100` for input `1`.<br />
-Returns `101` for input `2`.<br />
-Returns `99` for input `3`.<br />
+Returns `99` for input `0`.  
+Returns `100` for input `1`.  
+Returns `101` for input `2`.  
+Returns `99` for input `3`.  
 And so on.

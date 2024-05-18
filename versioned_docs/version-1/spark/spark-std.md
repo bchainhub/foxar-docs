@@ -113,7 +113,7 @@ Note that you have to access them through `stdMath`, as this is a library.
 uint256 ten = stdMath.abs(-10)
 ```
 
-<br />
+##
 
 > 📚 **Reference**
 >

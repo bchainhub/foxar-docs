@@ -9,9 +9,9 @@ Usage: spark cache ls [CHAINS]...
 Arguments:
   [CHAINS]...
           The chains to list the cache for.
-          
+
           Can also be "all" to list all chains.
-          
+
           [env: CHAIN=]
           [default: all]
 

@@ -8,7 +8,7 @@ probe-completions - Generate shell completions script
 
 ### SYNOPSIS
 
-`probe completions` _shell_
+`probe completions` *shell*
 
 ### DESCRIPTION
 

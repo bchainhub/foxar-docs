@@ -8,7 +8,7 @@ probe-sig-event - Generate event signatures from event string.
 
 ### SYNOPSIS
 
-`probe sig-event` [*options*] _event_string_
+`probe sig-event` [*options*] *event_string*
 
 ### DESCRIPTION
 

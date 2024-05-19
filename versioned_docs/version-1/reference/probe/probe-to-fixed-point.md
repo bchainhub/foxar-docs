@@ -8,7 +8,7 @@ probe-to-fixed-point - Convert an integer into a fixed point number.
 
 ### SYNOPSIS
 
-`probe to-fixed-point` [*options*] _decimals_ _value_
+`probe to-fixed-point` [*options*] *decimals* *value*
 
 ### DESCRIPTION
 

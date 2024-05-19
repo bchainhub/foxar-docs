@@ -8,7 +8,7 @@ spark-cache - Manage the Foxar cache.
 
 ### SYNOPSIS
 
-`spark cache` [*options*] _command_ [*args*]  
+`spark cache` [*options*] *command* [*args*]  
 `spark cache` [*options*] `--version`  
 `spark cache` [*options*] `--help`
 

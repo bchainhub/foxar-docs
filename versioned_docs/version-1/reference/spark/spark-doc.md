@@ -16,10 +16,10 @@ Generates and builds an mdbook from Solidity source files.
 
 ### OPTIONS
 
-`--root` _path_  
+`--root` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
 
-`--out` _path_
+`--out` *path*
 &nbsp;&nbsp;&nbsp;&nbsp;The output path for the generated mdbook. By default, it is the `docs/` in project root.
 
 `--build`
@@ -28,10 +28,10 @@ Generates and builds an mdbook from Solidity source files.
 `--serve`
 &nbsp;&nbsp;&nbsp;&nbsp;Serve the documentation locally.
 
-`--hostname` _hostname_
+`--hostname` *hostname*
 &nbsp;&nbsp;&nbsp;&nbsp;Hostname for serving documentation. Requires `--serve`.
 
-`--port` _port_
+`--port` *port*
 &nbsp;&nbsp;&nbsp;&nbsp;Port for serving documentation. Requires `--serve`.
 
 #### Common Options

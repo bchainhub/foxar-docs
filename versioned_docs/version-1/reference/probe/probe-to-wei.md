@@ -8,7 +8,7 @@ probe-to-wei - Convert an eth amount to wei.
 
 ### SYNOPSIS
 
-`probe to-wei` [*options*] _value_ [*unit*]
+`probe to-wei` [*options*] *value* [*unit*]
 
 ### DESCRIPTION
 

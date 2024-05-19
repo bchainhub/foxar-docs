@@ -12,7 +12,7 @@ spark-init - Create a new Spark project.
 
 ### DESCRIPTION
 
-Create a new Spark project in the directory _root_ (by default the current working directory).
+Create a new Spark project in the directory *root* (by default the current working directory).
 
 The default template creates the following project layout:
 
@@ -54,8 +54,8 @@ If you do not want this behavior, pass `--no-git`.
 `--force`  
 &nbsp;&nbsp;&nbsp;&nbsp;Create the project even if the specified root directory is not empty.
 
-`-t` _template_  
-`--template` _template_  
+`-t` *template*  
+`--template` *template*  
 &nbsp;&nbsp;&nbsp;&nbsp;The template to start from.
 
 `--vscode`  

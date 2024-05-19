@@ -8,7 +8,7 @@ spark - Build, test, fuzz, debug and deploy Solidity contracts.
 
 ### SYNOPSIS
 
-`spark` [*options*] _command_ [*args*]  
+`spark` [*options*] *command* [*args*]  
 `spark` [*options*] `--version`  
 `spark` [*options*] `--help`
 

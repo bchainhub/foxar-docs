@@ -8,7 +8,7 @@ probe-4byte-decode - Decode ABI-encoded calldata using https://sig.eth.samczsun.
 
 ### SYNOPSIS
 
-`probe 4byte-decode` [*options*] _calldata_
+`probe 4byte-decode` [*options*] *calldata*
 
 ### DESCRIPTION
 
@@ -18,7 +18,7 @@ Decode ABI-encoded calldata using https://sig.eth.samczsun.com.
 
 #### 4byte Options
 
-`--id` _id_  
+`--id` *id*  
 &nbsp;&nbsp;&nbsp;&nbsp;The index of the resolved signature to use.
 &nbsp;&nbsp;&nbsp;&nbsp;  
 &nbsp;&nbsp;&nbsp;&nbsp;https://sig.eth.samczsun.com can have multiple possible signatures for a given selector.  

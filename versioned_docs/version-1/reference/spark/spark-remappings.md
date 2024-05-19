@@ -18,10 +18,10 @@ Get the automatically inferred remappings for the project.
 
 #### Project Options
 
-`--root` _path_  
+`--root` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
 
-`--lib-path` _path_  
+`--lib-path` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The path to the library folder.
 
 #### Common Options

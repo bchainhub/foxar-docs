@@ -8,7 +8,7 @@ probe-lookup-address - Perform an ENS reverse lookup.
 
 ### SYNOPSIS
 
-`probe lookup-address` [*options*] _who_
+`probe lookup-address` [*options*] *who*
 
 ### DESCRIPTION
 
@@ -26,7 +26,7 @@ If `--verify` is passed, then a normal lookup is performed after the reverse loo
 
 #### RPC Options
 
-`--rpc-url` _url_  
+`--rpc-url` *url*  
 &nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
 

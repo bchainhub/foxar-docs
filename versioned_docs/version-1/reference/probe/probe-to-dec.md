@@ -8,7 +8,7 @@ probe-to-dec - Converts a number of one base to decimal
 
 ### SYNOPSIS
 
-`probe to-dec` [*options*] _value_
+`probe to-dec` [*options*] *value*
 
 ### DESCRIPTION
 
@@ -16,7 +16,7 @@ Converts a number of one base to decimal
 
 ### OPTIONS
 
-`--base-in` _base_in_
+`--base-in` *base_in*
 &nbsp;&nbsp;&nbsp;&nbsp;The input base.
 
 #### Common Options

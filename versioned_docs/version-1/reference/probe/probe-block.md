@@ -14,12 +14,12 @@ probe-block - Get information about a block.
 
 Get information about a block.
 
-The specified _block_ can be a block number, or any of the tags: `earliest`, `finalized`, `safe`, `latest` or `pending`. Default to `latest`.
+The specified *block* can be a block number, or any of the tags: `earliest`, `finalized`, `safe`, `latest` or `pending`. Default to `latest`.
 
 ### OPTIONS
 
-`-f` _field_  
-`--field` _field_  
+`-f` *field*  
+`--field` *field*  
 &nbsp;&nbsp;&nbsp;&nbsp; If specified, only get the given field of the block.
 
 #### Display Options
@@ -30,7 +30,7 @@ The specified _block_ can be a block number, or any of the tags: `earliest`, `fi
 
 #### RPC Options
 
-`--rpc-url` _url_  
+`--rpc-url` *url*  
 &nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
 

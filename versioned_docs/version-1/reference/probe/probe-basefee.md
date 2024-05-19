@@ -14,13 +14,13 @@ probe-base-fee - Get the basefee of a block.
 
 Get the basefee of a block.
 
-The specified _block_ can be a block number, or any of the tags: `earliest`, `finalized`, `safe`, `latest` or `pending`. Default to `latest`.
+The specified *block* can be a block number, or any of the tags: `earliest`, `finalized`, `safe`, `latest` or `pending`. Default to `latest`.
 
 ### OPTIONS
 
 #### RPC Options
 
-`--rpc-url` _url_  
+`--rpc-url` *url*  
 &nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
 

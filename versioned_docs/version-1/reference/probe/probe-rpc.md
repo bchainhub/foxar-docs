@@ -8,7 +8,7 @@ probe-rpc - Perform a raw JSON-RPC request
 
 ### SYNOPSIS
 
-`probe rpc` [*options*] _METHOD_ [*PARAMS...*]
+`probe rpc` [*options*] *METHOD* [*PARAMS...*]
 
 ### DESCRIPTION
 
@@ -18,8 +18,8 @@ Perform a simple JSON-RPC POST request for the given method and with the params
 
 #### Query Options
 
-`-r` _url_
-`--rpc-url` _url_
+`-r` *url*
+`--rpc-url` *url*
 &nbsp;&nbsp;&nbsp;&nbsp;The URL of the provider
 
 `-w`

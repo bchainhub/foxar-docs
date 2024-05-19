@@ -8,7 +8,7 @@ probe-publish - Publish a raw transaction to the network.
 
 ### SYNOPSIS
 
-`probe publish` [*options*] _tx_
+`probe publish` [*options*] *tx*
 
 ### DESCRIPTION
 
@@ -25,7 +25,7 @@ Publish a raw pre-signed transaction to the network.
 
 #### RPC Options
 
-`--rpc-url` _url_  
+`--rpc-url` *url*  
 &nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
 

@@ -16,7 +16,7 @@ Detects usage of unsafe cheat codes in a foxar project and its dependencies.
 
 ### OPTIONS
 
-`--root` _path_  
+`--root` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
 
 `--check`  

@@ -8,7 +8,7 @@ probe-index - Compute the storage slot location for an entry in a mapping.
 
 ### SYNOPSIS
 
-`probe index` _key_type_ _key_ _slot_
+`probe index` *key_type* *key* *slot*
 
 ### DESCRIPTION
 

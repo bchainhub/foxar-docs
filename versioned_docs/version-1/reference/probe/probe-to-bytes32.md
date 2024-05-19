@@ -8,7 +8,7 @@ probe-to-bytes32 - Right-pads hex data to 32 bytes.
 
 ### SYNOPSIS
 
-`probe to-bytes32` [*options*] _bytes_
+`probe to-bytes32` [*options*] *bytes*
 
 ### DESCRIPTION
 

@@ -8,13 +8,13 @@ probe-abi-encode - ABI encode the given function arguments, excluding the select
 
 ### SYNOPSIS
 
-`probe abi-encode` [*options*] _sig_ [*args...*]
+`probe abi-encode` [*options*] *sig* [*args...*]
 
 ### DESCRIPTION
 
 ABI encode the given function, excluding the selector.
 
-The signature (_sig_) is a fragment in the form `<function name>(<types...>)`.
+The signature (*sig*) is a fragment in the form `<function name>(<types...>)`.
 
 ### OPTIONS
 

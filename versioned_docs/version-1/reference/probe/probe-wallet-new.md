@@ -14,8 +14,8 @@ probe-wallet-new - Create a new random keypair.
 
 Create a new random keypair.
 
-If _path_ is specified, then the new keypair will be written to a JSON keystore encrypted with a password.
-(_path_ should be an existing directory.)
+If *path* is specified, then the new keypair will be written to a JSON keystore encrypted with a password.
+(*path* should be an existing directory.)
 
 ### OPTIONS
 
@@ -26,7 +26,7 @@ If _path_ is specified, then the new keypair will be written to a JSON keystore 
 &nbsp;&nbsp;&nbsp;&nbsp;Triggers a hidden password prompt for the JSON keystore.  
 &nbsp;&nbsp;&nbsp;&nbsp;**Deprecated: prompting for a hidden password is now the default.**
 
-`--unsafe-password` _password_  
+`--unsafe-password` *password*  
 &nbsp;&nbsp;&nbsp;&nbsp;Password for the JSON keystore in cleartext.
 
 &nbsp;&nbsp;&nbsp;&nbsp;This is **unsafe** to use and we recommend using `--password` instead.  

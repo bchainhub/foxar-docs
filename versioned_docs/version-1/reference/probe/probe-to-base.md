@@ -8,7 +8,7 @@ probe-to-base - Convert a number of one base to another.
 
 ### SYNOPSIS
 
-`probe to-base` [*options*] _value_ _base_
+`probe to-base` [*options*] *value* *base*
 
 ### DESCRIPTION
 
@@ -18,7 +18,7 @@ Convert a number of one base to another.
 
 #### Base Options
 
-`--base-in` _base_
+`--base-in` *base*
 &nbsp;&nbsp;&nbsp;&nbsp;The base of the input number. Available options:
 
 &nbsp;&nbsp;&nbsp;&nbsp;10, d, dec, decimal

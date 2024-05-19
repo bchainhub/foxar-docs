@@ -8,7 +8,7 @@ spark-completions - Generate shell completions script
 
 ### SYNOPSIS
 
-`spark completions` _shell_
+`spark completions` *shell*
 
 ### DESCRIPTION
 

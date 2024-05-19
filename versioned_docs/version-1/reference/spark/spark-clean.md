@@ -18,7 +18,7 @@ Remove the build artifacts and cache directories.
 
 #### Clean Options
 
-`--root` _path_  
+`--root` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The project's root path. Defaults to the current working directory.
 
 #### Common Options

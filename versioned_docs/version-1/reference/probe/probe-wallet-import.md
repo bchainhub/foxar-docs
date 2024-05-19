@@ -8,13 +8,13 @@ probe-wallet-import - Import a private key into an encrypted keystore
 
 ### SYNOPSIS
 
-`probe wallet import` [*options*] _account_name_
+`probe wallet import` [*options*] *account_name*
 
 ### DESCRIPTION
 
 Import a private key into an encrypted keystore.
 
-If no _keystore-dir_ is specified, it will be saved in the default `~/.foxar/keystores`, so it can be accessed through the `--account` option in methods like `spark script`, `probe send` or any other that requires a private key.
+If no *keystore-dir* is specified, it will be saved in the default `~/.foxar/keystores`, so it can be accessed through the `--account` option in methods like `spark script`, `probe send` or any other that requires a private key.
 
 ### OPTIONS
 

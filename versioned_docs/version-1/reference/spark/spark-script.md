@@ -8,7 +8,7 @@ spark-script - Run a smart contract as a script, building transactions that can 
 
 ### SYNOPSIS
 
-`spark script` [*options*] _path_ [*args...*]
+`spark script` [*options*] *path* [*args...*]
 
 ### DESCRIPTION
 
@@ -25,7 +25,7 @@ Scripts can be used to apply state transitions on live contracts, or deploy and 
 &nbsp;&nbsp;&nbsp;&nbsp;Open the script in the [debugger][debugger]. Takes precedence over broadcast.
 
 `-g`
-`--gas-estimate-multiplier` _multiplier_
+`--gas-estimate-multiplier` *multiplier*
 &nbsp;&nbsp;&nbsp;&nbsp;Relative percentage by which to multiply all gas estimates. (i.e. set to 200 to double them)
 &nbsp;&nbsp;&nbsp;&nbsp;Default: 130
 
@@ -40,7 +40,7 @@ Scripts can be used to apply state transitions on live contracts, or deploy and 
 &nbsp;&nbsp;&nbsp;&nbsp;Resumes submitting transactions that failed or timed-out previously.
 
 `-s`
-`--sig` _signature_
+`--sig` *signature*
 &nbsp;&nbsp;&nbsp;&nbsp;The signature of the function you want to call in the contract, or raw calldata.
 &nbsp;&nbsp;&nbsp;&nbsp;Default: `run()`
 
@@ -56,22 +56,22 @@ Scripts can be used to apply state transitions on live contracts, or deploy and 
 `--slow`
 &nbsp;&nbsp;&nbsp;&nbsp;Makes sure a transaction is sent, only after its previous one has been confirmed and succeeded.
 
-`--target-contract` _contract_name_
+`--target-contract` *contract_name*
 &nbsp;&nbsp;&nbsp;&nbsp;The name of the contract you want to run.
 
 `--priority-gas-price`
 &nbsp;&nbsp;&nbsp;&nbsp;Sets the priority gas price for EIP1559 transactions. Useful for when gas prices are volatile and you want to get your transaction included.
 
-`--with-gas-price` _price_
+`--with-gas-price` *price*
 &nbsp;&nbsp;&nbsp;&nbsp;Sets the gas price for **broadcasted** legacy transactions, or the max fee for broadcasted EIP1559 transactions.
 &nbsp;&nbsp;&nbsp;&nbsp;Note: To set the gas price in the execution environment of the script use `--gas-price` instead (see below).
 
 #### Etherscan Options
 
-`--chain` _chain_name_
+`--chain` *chain_name*
 &nbsp;&nbsp;&nbsp;&nbsp;The Etherscan chain.
 
-`--etherscan-api-key` _key_
+`--etherscan-api-key` *key*
 &nbsp;&nbsp;&nbsp;&nbsp;Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan#etherscan).
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETHERSCAN_API_KEY`
 
@@ -80,17 +80,17 @@ Scripts can be used to apply state transitions on live contracts, or deploy and 
 `--verify`
 &nbsp;&nbsp;&nbsp;&nbsp;If it finds a matching broadcast log, it tries to verify every contract found in the receipts.
 
-`--verifier` _name_
+`--verifier` *name*
 &nbsp;&nbsp;&nbsp;&nbsp;The verification provider. Available options: `etherscan`, `sourcify` & `blockscout`. Default: `etherscan`. Note: make sure you add "/api\?" to the end of the Blockscout homepage explorer URL.
 
-`--verifier-url` _url_
+`--verifier-url` *url*
 &nbsp;&nbsp;&nbsp;&nbsp;The optional verifier url for submitting the verification request.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `VERIFIER_URL`
 
-`--delay` _delay_
+`--delay` *delay*
 &nbsp;&nbsp;&nbsp;&nbsp;Optional timeout to apply in between attempts in seconds. Defaults to 3.
 
-`--retries` _retries_
+`--retries` *retries*
 &nbsp;&nbsp;&nbsp;&nbsp;Number of attempts for retrying. Defaults to 15.
 
 #### Cache Options
@@ -100,7 +100,7 @@ Scripts can be used to apply state transitions on live contracts, or deploy and 
 
 #### Linker Options
 
-`--libraries` _libraries_
+`--libraries` *libraries*
 &nbsp;&nbsp;&nbsp;&nbsp;Set pre-linked libraries.
 
 &nbsp;&nbsp;&nbsp;&nbsp;The parameter must be in the format `<remapped path to lib>:<library name>:<address>`, e.g. `src/Contract.sol:Library:0x...`.
@@ -112,7 +112,7 @@ Scripts can be used to apply state transitions on live contracts, or deploy and 
 `--optimize`
 &nbsp;&nbsp;&nbsp;&nbsp;Activate the Solidity optimizer.
 
-`--optimizer-runs` _runs_
+`--optimizer-runs` *runs*
 &nbsp;&nbsp;&nbsp;&nbsp;The number of optimizer runs.
 
 `--via-ir`
@@ -121,7 +121,7 @@ Scripts can be used to apply state transitions on live contracts, or deploy and 
 `--revert-strings`
 &nbsp;&nbsp;&nbsp;&nbsp;How to treat revert and require reason strings.
 
-`--use` _solc_version_
+`--use` *solc_version*
 &nbsp;&nbsp;&nbsp;&nbsp;Specify the solc version, or a path to a local solc, to build with.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Valid values are in the format `x.y.z`, `solc:x.y.z` or `path/to/solc`.
@@ -132,24 +132,24 @@ Scripts can be used to apply state transitions on live contracts, or deploy and 
 `--no-auto-detect`
 &nbsp;&nbsp;&nbsp;&nbsp;Do not auto-detect solc.
 
-`--ignored-error-codes` _error_codes_
+`--ignored-error-codes` *error_codes*
 &nbsp;&nbsp;&nbsp;&nbsp;Ignore solc warnings by error code. The parameter is a comma-separated list of error codes.
 
-`--extra-output` _selector_
+`--extra-output` *selector*
 &nbsp;&nbsp;&nbsp;&nbsp;Extra output to include in the contract's artifact.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Example keys: `abi`, `storageLayout`, `evm.assembly`, `ewasm`, `ir`, `ir-optimized`, `metadata`.
 
 &nbsp;&nbsp;&nbsp;&nbsp;For a full description, see the [Solidity docs][output-desc].
 
-`--extra-output-files` _selector_
+`--extra-output-files` *selector*
 &nbsp;&nbsp;&nbsp;&nbsp;Extra output to write to separate files.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Example keys: `abi`, `storageLayout`, `evm.assembly`, `ewasm`, `ir`, `ir-optimized`, `metadata`.
 
 &nbsp;&nbsp;&nbsp;&nbsp;For a full description, see the [Solidity docs][output-desc].
 
-`--evm-version` _version_
+`--evm-version` *version*
 &nbsp;&nbsp;&nbsp;&nbsp;The target EVM version.
 
 [output-desc]: https://docs.soliditylang.org/en/latest/using-the-compiler.html#compiler-api
@@ -159,38 +159,38 @@ Scripts can be used to apply state transitions on live contracts, or deploy and 
 `--build-info`
 &nbsp;&nbsp;&nbsp;&nbsp;Generate build info files.
 
-`--build-info-path` _path_
+`--build-info-path` *path*
 &nbsp;&nbsp;&nbsp;&nbsp;Output path to directory that build info files will be written to.
 
-`--root` _path_
+`--root` *path*
 &nbsp;&nbsp;&nbsp;&nbsp;The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
 
-`-C` _path_
-`--contracts` _path_
+`-C` *path*
+`--contracts` *path*
 &nbsp;&nbsp;&nbsp;&nbsp;The contracts source directory.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `DAPP_SRC`
 
-`--lib-paths` _path_
+`--lib-paths` *path*
 &nbsp;&nbsp;&nbsp;&nbsp;The path to the library folder.
 
-`-R` _remappings_
-`--remappings` _remappings_
+`-R` *remappings*
+`--remappings` *remappings*
 &nbsp;&nbsp;&nbsp;&nbsp;The project's remappings.
 
 &nbsp;&nbsp;&nbsp;&nbsp;The parameter is a comma-separated list of remappings in the format `<source>=<dest>`.
 
-`--cache-path` _path_
+`--cache-path` *path*
 &nbsp;&nbsp;&nbsp;&nbsp;The path to the compiler cache.
 
-`--config-path` _file_
+`--config-path` *file*
 &nbsp;&nbsp;&nbsp;&nbsp;Path to the config file.
 
 `--hh`
 `--hardhat`
 &nbsp;&nbsp;&nbsp;&nbsp;This is a convenience flag, and is the same as passing `--contracts contracts --lib-paths node-modules`.
 
-`-o` _path_
-`--out` _path_
+`-o` *path*
+`--out` *path*
 &nbsp;&nbsp;&nbsp;&nbsp;The project's artifacts directory.
 
 `--silent`
@@ -212,8 +212,8 @@ Scripts can be used to apply state transitions on live contracts, or deploy and 
 
 &nbsp;&nbsp;&nbsp;&nbsp;By default, the project's source directory is watched.
 
-`-d` _delay_
-`--delay` _delay_
+`-d` *delay*
+`--delay` *delay*
 &nbsp;&nbsp;&nbsp;&nbsp;File update debounce delay.
 
 &nbsp;&nbsp;&nbsp;&nbsp;During the delay, incoming change events are accumulated and only once the delay has passed, is an action taken.
@@ -232,34 +232,34 @@ Scripts can be used to apply state transitions on live contracts, or deploy and 
 #### Wallet Options - Raw
 
 `-i`
-`--interactives` _num_
+`--interactives` *num*
 &nbsp;&nbsp;&nbsp;&nbsp;Open an interactive prompt to enter your private key. Takes a value for the number of keys to enter.
 &nbsp;&nbsp;&nbsp;&nbsp;Default: 0
 
-`--mnemonic-indexes` _indexes_
+`--mnemonic-indexes` *indexes*
 &nbsp;&nbsp;&nbsp;&nbsp;Use the private key from the given mnemonic index. Used with --mnemonic-path.
 &nbsp;&nbsp;&nbsp;&nbsp;Default: 0
 
-`--mnemonic-paths` _paths_
+`--mnemonic-paths` *paths*
 &nbsp;&nbsp;&nbsp;&nbsp;Use the mnemonic file at the specified path(s).
 
-`--private-key` _raw_private_key_
+`--private-key` *raw_private_key*
 &nbsp;&nbsp;&nbsp;&nbsp;Use the provided private key.
 
-`--private-keys` _raw_private_keys_
+`--private-keys` *raw_private_keys*
 &nbsp;&nbsp;&nbsp;&nbsp;Use the provided private keys.
 
 #### Wallet Options - Keystore
 
-`--keystores` _paths_
+`--keystores` *paths*
 &nbsp;&nbsp;&nbsp;&nbsp;Use the keystores in the given folders or files.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_KEYSTORE`
 
-`--account` _account-name_
+`--account` *account-name*
 &nbsp;&nbsp;&nbsp;&nbsp;Use a keystore from the default keystores folder (~/.foxar/keystores) by its filename.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_KEYSTORE_ACCOUNT`
 
-`--password` _passwords_
+`--password` *passwords*
 &nbsp;&nbsp;&nbsp;&nbsp;The keystore passwords. Used with `--keystore`.
 
 #### Wallet Options - Hardware Wallet
@@ -272,27 +272,27 @@ Scripts can be used to apply state transitions on live contracts, or deploy and 
 `--ledger`
 &nbsp;&nbsp;&nbsp;&nbsp;Use a Ledger hardware wallet.
 
-`--hd-paths` _paths_
+`--hd-paths` *paths*
 &nbsp;&nbsp;&nbsp;&nbsp;The derivation paths to use with hardware wallets.
 
 #### Wallet Options - Remote
 
-`-a` _addresses_
-`--froms` _addresses_
+`-a` *addresses*
+`--froms` *addresses*
 &nbsp;&nbsp;&nbsp;&nbsp;Sign the transaction with the specified accounts on the RPC.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_FROM`
 
 #### EVM Options
 
-`-f` _url_
-`--rpc-url` _url_
-`--fork-url` _url_
+`-f` *url*
+`--rpc-url` *url*
+`--fork-url` *url*
 &nbsp;&nbsp;&nbsp;&nbsp;Fetch state over a remote endpoint instead of starting from an empty state.
 
 &nbsp;&nbsp;&nbsp;&nbsp;If you want to fetch state from a specific block number, see
 `--fork-block-number`.
 
-`--fork-block-number` _block_
+`--fork-block-number` *block*
 &nbsp;&nbsp;&nbsp;&nbsp;Fetch state from a specific block number over a remote endpoint. See `--fork-url`.
 
 `--fork-retry-backoff <BACKOFF>`
@@ -315,10 +315,10 @@ Scripts can be used to apply state transitions on live contracts, or deploy and 
 &nbsp;&nbsp;&nbsp;&nbsp;- 4: Print execution traces for all tests, and setup traces for failing tests
 &nbsp;&nbsp;&nbsp;&nbsp;- 5: Print execution and setup traces for all tests
 
-`--sender` _address_
+`--sender` *address*
 &nbsp;&nbsp;&nbsp;&nbsp;The address which will be executing tests
 
-`--initial-balance` _balance_
+`--initial-balance` *balance*
 &nbsp;&nbsp;&nbsp;&nbsp;The initial balance of deployed contracts
 
 `--ffi`
@@ -332,31 +332,31 @@ Scripts can be used to apply state transitions on live contracts, or deploy and 
 `--block-base-fee-per-gas <FEE>`
 &nbsp;&nbsp;&nbsp;&nbsp;The base fee in a block (in wei).
 
-`--block-coinbase` _address_
+`--block-coinbase` *address*
 &nbsp;&nbsp;&nbsp;&nbsp;The coinbase of the block.
 
-`--block-difficulty` _difficulty_
+`--block-difficulty` *difficulty*
 &nbsp;&nbsp;&nbsp;&nbsp;The block difficulty.
 
-`--block-gas-limit` _gas_limit_
+`--block-gas-limit` *gas_limit*
 &nbsp;&nbsp;&nbsp;&nbsp;The block gas limit.
 
-`--block-number` _block_
+`--block-number` *block*
 &nbsp;&nbsp;&nbsp;&nbsp;The block number.
 
-`--block-timestamp` _timestamp_
+`--block-timestamp` *timestamp*
 &nbsp;&nbsp;&nbsp;&nbsp;The timestamp of the block (in seconds).
 
-`--chain-id` _chain_id_
+`--chain-id` *chain_id*
 &nbsp;&nbsp;&nbsp;&nbsp;The chain ID.
 
-`--gas-limit` _gas_limit_
+`--gas-limit` *gas_limit*
 &nbsp;&nbsp;&nbsp;&nbsp;The block gas limit.
 
-`--gas-price` _gas_price_
+`--gas-price` *gas_price*
 &nbsp;&nbsp;&nbsp;&nbsp;The gas price (in wei).
 
-`--tx-origin` _address_
+`--tx-origin` *address*
 &nbsp;&nbsp;&nbsp;&nbsp;The transaction origin.
 
 #### Common Options
@@ -374,7 +374,7 @@ Scripts can be used to apply state transitions on live contracts, or deploy and 
        -vvv --fork-url $SEPOLIA_RPC_URL
    ```
 
-2. Deploy a contract on Polygon [(see scripting tutorial for an example script)](../../tutorials/ylem-scripting.md). _The verifier url is different for every network._
+2. Deploy a contract on Polygon [(see scripting tutorial for an example script)](../../tutorials/ylem-scripting.md). *The verifier url is different for every network.*
 
    ```sh
    spark script script/NFT.s.sol:MyScript --chain-id 137 --rpc-url $RPC_URL \

@@ -14,7 +14,7 @@ spark-update - Update one or more dependencies.
 
 Update one or more dependencies.
 
-The argument _dep_ is a path to the dependency you want to update.
+The argument *dep* is a path to the dependency you want to update.
 Spark will update to the latest version on the ref you specified for the dependency when you ran [`spark install`](./spark-install.md).
 
 If no argument is provided, then all dependencies are updated.

@@ -8,15 +8,15 @@ probe-access-list - Create an access list for a transaction.
 
 ### SYNOPSIS
 
-`probe access-list` [*options*] _to_ _sig_ [*args...*]
+`probe access-list` [*options*] *to* *sig* [*args...*]
 
 ### DESCRIPTION
 
 Create an access list for a transaction.
 
-The destination (_to_) can be an ENS name or an address.
+The destination (*to*) can be an ENS name or an address.
 
-The signature (_sig_) can be:
+The signature (*sig*) can be:
 
 - A fragment: `someFunction(uint256,bytes32)`
 - A selector and encoded calldata: `0xcdba2fd40000000000000000000000000000000000000000000000000000000000007a69`
@@ -26,8 +26,8 @@ The signature (_sig_) can be:
 
 #### Query Options
 
-`-B` _block_  
-`--block` _block_  
+`-B`  *block *  
+`--block`  *block *  
 &nbsp;&nbsp;&nbsp;&nbsp;The block height you want to query at.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Can be a block number, or any of the tags: `earliest`, `finalized`, `safe`, `latest` or `pending`.
@@ -60,17 +60,17 @@ The signature (_sig_) can be:
 
 #### Wallet Options - Keystore
 
-`--keystore` _path_  
+`--keystore`  *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;Use the keystore in the given folder or file.  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_KEYSTORE`
 
-`--account` _account-name_  
+`--account` *account-name*  
 &nbsp;&nbsp;&nbsp;&nbsp;Use a keystore from the default keystores folder (~/.foxar/keystores) by its filename.  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_KEYSTORE_ACCOUNT`
 
 `--interactive`
 
-`--password` _password_  
+`--password` *password*  
 &nbsp;&nbsp;&nbsp;&nbsp;The keystore password. Used with `--keystore`.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_PASSWORD`
 
@@ -86,14 +86,14 @@ The signature (_sig_) can be:
 
 #### Wallet Options - Remote
 
-`-f` _address_  
-`--from` _address_  
+`-f` *address*  
+`--from` *address*  
 &nbsp;&nbsp;&nbsp;&nbsp;Sign the transaction with the specified account on the RPC.  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_FROM`
 
 #### RPC Options
 
-`--rpc-url` _url_  
+`--rpc-url` *url*  
 &nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
 
@@ -102,10 +102,10 @@ The signature (_sig_) can be:
 
 #### Etherscan Options
 
-`--chain` _chain_name_  
+`--chain` *chain_name*  
 &nbsp;&nbsp;&nbsp;&nbsp;The Etherscan chain.
 
-`--etherscan-api-key` _key_  
+`--etherscan-api-key` *key*  
 &nbsp;&nbsp;&nbsp;&nbsp;Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan#etherscan).  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETHERSCAN_API_KEY`
 

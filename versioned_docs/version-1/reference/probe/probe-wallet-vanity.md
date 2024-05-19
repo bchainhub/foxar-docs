@@ -20,16 +20,16 @@ If `--nonce` is specified, then the command will try to generate a vanity contra
 
 #### Keystore Options
 
-`--starts-with` _hex_  
+`--starts-with` *hex*  
 &nbsp;&nbsp;&nbsp;&nbsp;Prefix for the vanity address.
 
-`--ends-with` _hex_  
+`--ends-with` *hex*  
 &nbsp;&nbsp;&nbsp;&nbsp;Suffix for the vanity address.
 
-`--nonce` _nonce_  
+`--nonce` *nonce*  
 &nbsp;&nbsp;&nbsp;&nbsp;Generate a vanity contract address created by the generated keypair with the specified nonce.
 
-`--save-path` _path_  
+`--save-path` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;Path to save the generated vanity wallet. If provided, the wallet details will be saved in a JSON file at this location.
 
 #### Common Options

@@ -21,6 +21,10 @@ MD033:
     - sub
     - sup
     - br
+    - table
+    - tr
+    - td
+    - th
 MD034: false
 MD035:
   style: "---"

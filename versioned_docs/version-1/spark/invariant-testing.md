@@ -28,8 +28,8 @@ Invariants are conditions expressions that should always hold true over the cour
 
 Examples of invariants are:
 
-- *"The xy=k formula always holds"* for Uniswap
-- *"The sum of all user balances is equal to the total supply"* for an ERC-20 token.
+- _"The xy=k formula always holds"_ for Uniswap
+- _"The sum of all user balances is equal to the total supply"_ for an ERC-20 token.
 
 There are different ways to assert invariants, as outlined in the table below:
 
@@ -106,7 +106,7 @@ function invariant_example() external {
 }
 ```
 
-Another approach to handle different invariants across protocol states is to utilize dedicated invariant testing contracts for different scenarios. These scenarios can be bootstrapped using the `setUp` function, but it is more powerful to leverage *invariant targets* to govern the fuzzer to behave in a way that will only yield certain results (e.g., avoid liquidations).
+Another approach to handle different invariants across protocol states is to utilize dedicated invariant testing contracts for different scenarios. These scenarios can be bootstrapped using the `setUp` function, but it is more powerful to leverage _invariant targets_ to govern the fuzzer to behave in a way that will only yield certain results (e.g., avoid liquidations).
 
 ## Invariant Targets
 

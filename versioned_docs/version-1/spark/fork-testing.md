@@ -62,9 +62,9 @@ Forking cheatcodes allow you to enter forking mode programmatically in your Soli
 
 #### Usage
 
-Important to keep in mind that _all_ test functions are isolated, meaning each test function is executed with a _copy_ of the state _after_ `setUp` and is executed in its own stand-alone EVM.
+Important to keep in mind that *all* test functions are isolated, meaning each test function is executed with a *copy* of the state *after* `setUp` and is executed in its own stand-alone EVM.
 
-Therefore forks created during `setUp` are available in tests. The code example below uses [`createFork`](../reference/cheatcodes/create-fork) to create two forks, but does _not_ select one initially. Each fork is identified with a unique identifier (`uint256 forkId`), which is assigned when it is first created.
+Therefore forks created during `setUp` are available in tests. The code example below uses [`createFork`](../reference/cheatcodes/create-fork) to create two forks, but does *not* select one initially. Each fork is identified with a unique identifier (`uint256 forkId`), which is assigned when it is first created.
 
 Enabling a specific fork is done via passing that `forkId` to [`selectFork`](../reference/cheatcodes/select-fork.md).
 
@@ -77,9 +77,9 @@ Similar to [`roll`](../reference/cheatcodes/roll), you can set `block.number` of
 To understand what happens when a fork is selected, it is important to know how the forking mode works in general:
 
 Each fork is a standalone EVM, i.e. all forks use completely independent storage. The only exception is the state of the `msg.sender` and the test contract itself, which are persistent across fork swaps.
-In other words all changes that are made while fork `A` is active (`selectFork(A)`) are only recorded in fork `A`'s storage and are not available if another fork is selected. However, changes recorded in the test contract itself (variables) are still available because the test contract is a _persistent_ account.
+In other words all changes that are made while fork `A` is active (`selectFork(A)`) are only recorded in fork `A`'s storage and are not available if another fork is selected. However, changes recorded in the test contract itself (variables) are still available because the test contract is a *persistent* account.
 
-The `selectFork` cheatcode sets the _remote_ section with the fork's data source, however the _local_ memory remains persistent across fork swaps. This also means `selectFork` can be called at all times with any fork, to set the _remote_ data source. However, it is important to keep in mind the above rules for `read/write` access always apply, meaning _writes_ are persistent across fork swaps.
+The `selectFork` cheatcode sets the *remote* section with the fork's data source, however the *local* memory remains persistent across fork swaps. This also means `selectFork` can be called at all times with any fork, to set the *remote* data source. However, it is important to keep in mind the above rules for `read/write` access always apply, meaning *writes* are persistent across fork swaps.
 
 #### Examples
 
@@ -98,7 +98,7 @@ contract ForkTest is Test {
     //string MAINNET_RPC_URL = vm.envString("MAINNET_RPC_URL");
     //string OPTIMISM_RPC_URL = vm.envString("OPTIMISM_RPC_URL");
 
-    // create two _different_ forks during setup
+    // create two *different* forks during setup
     function setUp() public {
         mainnetFork = vm.createFork(MAINNET_RPC_URL);
         optimismFork = vm.createFork(OPTIMISM_RPC_URL);
@@ -150,7 +150,7 @@ As mentioned each fork is essentially an independent EVM with separated storage.
 
 Only the accounts of `msg.sender` and the test contract (`ForkTest`) are persistent when forks are selected. But any account can be turned into a persistent account: [`makePersistent`](../reference/cheatcodes/make-persistent).
 
-An account that is _persistent_ is unique, i.e. it exists on all forks
+An account that is *persistent* is unique, i.e. it exists on all forks
 
 ```solidity
 contract ForkTest is Test {
@@ -165,7 +165,7 @@ contract ForkTest is Test {
     //string MAINNET_RPC_URL = vm.envString("MAINNET_RPC_URL");
     //string OPTIMISM_RPC_URL = vm.envString("OPTIMISM_RPC_URL");
 
-    // create two _different_ forks during setup
+    // create two *different* forks during setup
     function setUp() public {
         mainnetFork = vm.createFork(MAINNET_RPC_URL);
         optimismFork = vm.createFork(OPTIMISM_RPC_URL);
@@ -195,7 +195,7 @@ contract ForkTest is Test {
         simple.value();
     }
 
-     // creates a new _persistent_ contract while a fork is active
+     // creates a new *persistent* contract while a fork is active
      function testCreatePersistentContract() public {
         vm.selectFork(mainnetFork);
         SimpleStorageContract simple = new SimpleStorageContract();

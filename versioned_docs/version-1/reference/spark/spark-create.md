@@ -8,7 +8,7 @@ spark-create - Deploy a smart contract.
 
 ### SYNOPSIS
 
-`spark create` [*options*] _contract_
+`spark create` [*options*] *contract*
 
 ### DESCRIPTION
 
@@ -29,19 +29,19 @@ Dynamic linking is not supported: you should predeploy your libraries and manual
 
 #### Build Options
 
-`--constructor-args` _args..._  
+`--constructor-args` *args...*  
 &nbsp;&nbsp;&nbsp;&nbsp;The constructor arguments.
 
-`--constructor-args-path` _file_  
+`--constructor-args-path` *file*  
 &nbsp;&nbsp;&nbsp;&nbsp;The path to a file containing the constructor arguments.
 
 `--verify`  
 &nbsp;&nbsp;&nbsp;&nbsp;Verify contract after creation. Runs `spark verify-contract` with the appropriate parameters.
 
-`--verifier` _name_  
+`--verifier` *name*  
 &nbsp;&nbsp;&nbsp;&nbsp;The verification provider. Available options: `etherscan`, `sourcify` & `blockscout`. Default: `etherscan`. Note: make sure you add "/api\?" to the end of the Blockscout homepage explorer URL.
 
-`--verifier-url` _url_  
+`--verifier-url` *url*  
 &nbsp;&nbsp;&nbsp;&nbsp;The optional verifier url for submitting the verification request.  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `VERIFIER_URL`
 
@@ -50,16 +50,16 @@ Dynamic linking is not supported: you should predeploy your libraries and manual
 
 #### Transaction Options
 
-`--gas-limit` _gas_limit_  
+`--gas-limit` *gas_limit*  
 &nbsp;&nbsp;&nbsp;&nbsp;Gas limit for the transaction.
 
-`--gas-price` _price_  
+`--gas-price` *price*  
 &nbsp;&nbsp;&nbsp;&nbsp;Gas price for the transaction, or max fee per gas for EIP1559 transactions.
 
-`--priority-gas-price` _price_  
+`--priority-gas-price` *price*  
 &nbsp;&nbsp;&nbsp;&nbsp;Max priority fee per gas for EIP1559 transactions.
 
-`--value` _value_  
+`--value` *value*  
 &nbsp;&nbsp;&nbsp;&nbsp;Ether to send in the transaction.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Either specified as an integer (wei), or as a string with a unit, for example:  
@@ -67,7 +67,7 @@ Dynamic linking is not supported: you should predeploy your libraries and manual
 &nbsp;&nbsp;&nbsp;&nbsp;- `10gwei`  
 &nbsp;&nbsp;&nbsp;&nbsp;- `0.01ether`
 
-`--nonce` _nonce_  
+`--nonce` *nonce*  
 &nbsp;&nbsp;&nbsp;&nbsp;Nonce for the transaction.
 
 `--legacy`  
@@ -103,17 +103,17 @@ Dynamic linking is not supported: you should predeploy your libraries and manual
 
 #### Wallet Options - Keystore
 
-`--keystore` _path_  
+`--keystore` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;Use the keystore in the given folder or file.  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_KEYSTORE`
 
-`--account` _account-name_  
+`--account` *account-name*  
 &nbsp;&nbsp;&nbsp;&nbsp;Use a keystore from the default keystores folder (~/.foxar/keystores) by its filename.  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_KEYSTORE_ACCOUNT`
 
 `--interactive`
 
-`--password` _password_  
+`--password` *password*  
 &nbsp;&nbsp;&nbsp;&nbsp;The keystore password. Used with `--keystore`.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_PASSWORD`
 
@@ -129,14 +129,14 @@ Dynamic linking is not supported: you should predeploy your libraries and manual
 
 #### Wallet Options - Remote
 
-`-f` _address_  
-`--from` _address_  
+`-f` *address*  
+`--from` *address*  
 &nbsp;&nbsp;&nbsp;&nbsp;Sign the transaction with the specified account on the RPC.  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_FROM`
 
 #### RPC Options
 
-`--rpc-url` _url_  
+`--rpc-url` *url*  
 &nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
 
@@ -145,10 +145,10 @@ Dynamic linking is not supported: you should predeploy your libraries and manual
 
 #### Etherscan Options
 
-`--chain` _chain_name_  
+`--chain` *chain_name*  
 &nbsp;&nbsp;&nbsp;&nbsp;The Etherscan chain.
 
-`--etherscan-api-key` _key_  
+`--etherscan-api-key` *key*  
 &nbsp;&nbsp;&nbsp;&nbsp;Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan#etherscan).  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETHERSCAN_API_KEY`
 
@@ -159,7 +159,7 @@ Dynamic linking is not supported: you should predeploy your libraries and manual
 
 #### Linker Options
 
-`--libraries` _libraries_  
+`--libraries` *libraries*  
 &nbsp;&nbsp;&nbsp;&nbsp;Set pre-linked libraries.
 
 &nbsp;&nbsp;&nbsp;&nbsp;The parameter must be in the format `<remapped path to lib>:<library name>:<address>`, e.g. `src/Contract.sol:Library:0x...`.
@@ -171,7 +171,7 @@ Dynamic linking is not supported: you should predeploy your libraries and manual
 `--optimize`  
 &nbsp;&nbsp;&nbsp;&nbsp;Activate the Solidity optimizer.
 
-`--optimizer-runs` _runs_  
+`--optimizer-runs` *runs*  
 &nbsp;&nbsp;&nbsp;&nbsp;The number of optimizer runs.
 
 `--via-ir`  
@@ -180,7 +180,7 @@ Dynamic linking is not supported: you should predeploy your libraries and manual
 `--revert-strings`  
 &nbsp;&nbsp;&nbsp;&nbsp;How to treat revert and require reason strings.
 
-`--use` _solc_version_  
+`--use` *solc_version*  
 &nbsp;&nbsp;&nbsp;&nbsp;Specify the solc version, or a path to a local solc, to build with.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Valid values are in the format `x.y.z`, `solc:x.y.z` or `path/to/solc`.
@@ -191,24 +191,24 @@ Dynamic linking is not supported: you should predeploy your libraries and manual
 `--no-auto-detect`  
 &nbsp;&nbsp;&nbsp;&nbsp;Do not auto-detect solc.
 
-`--ignored-error-codes` _error_codes_  
+`--ignored-error-codes` *error_codes*  
 &nbsp;&nbsp;&nbsp;&nbsp;Ignore solc warnings by error code. The parameter is a comma-separated list of error codes.
 
-`--extra-output` _selector_  
+`--extra-output` *selector*  
 &nbsp;&nbsp;&nbsp;&nbsp;Extra output to include in the contract's artifact.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Example keys: `abi`, `storageLayout`, `evm.assembly`, `ewasm`, `ir`, `ir-optimized`, `metadata`.
 
 &nbsp;&nbsp;&nbsp;&nbsp;For a full description, see the [Solidity docs][output-desc].
 
-`--extra-output-files` _selector_  
+`--extra-output-files` *selector*  
 &nbsp;&nbsp;&nbsp;&nbsp;Extra output to write to separate files.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Example keys: `abi`, `storageLayout`, `evm.assembly`, `ewasm`, `ir`, `ir-optimized`, `metadata`.
 
 &nbsp;&nbsp;&nbsp;&nbsp;For a full description, see the [Solidity docs][output-desc].
 
-`--evm-version` _version_  
+`--evm-version` *version*  
 &nbsp;&nbsp;&nbsp;&nbsp;The target EVM version.
 
 [output-desc]: https://docs.soliditylang.org/en/latest/using-the-compiler.html#compiler-api
@@ -218,38 +218,38 @@ Dynamic linking is not supported: you should predeploy your libraries and manual
 `--build-info`  
 &nbsp;&nbsp;&nbsp;&nbsp;Generate build info files.
 
-`--build-info-path` _path_  
+`--build-info-path` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;Output path to directory that build info files will be written to.
 
-`--root` _path_  
+`--root` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
 
-`-C` _path_  
-`--contracts` _path_  
+`-C` *path*  
+`--contracts` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The contracts source directory.  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `DAPP_SRC`
 
-`--lib-paths` _path_  
+`--lib-paths` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The path to the library folder.
 
-`-R` _remappings_  
-`--remappings` _remappings_  
+`-R` *remappings*  
+`--remappings` *remappings*  
 &nbsp;&nbsp;&nbsp;&nbsp;The project's remappings.
 
 &nbsp;&nbsp;&nbsp;&nbsp;The parameter is a comma-separated list of remappings in the format `<source>=<dest>`.
 
-`--cache-path` _path_  
+`--cache-path` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The path to the compiler cache.
 
-`--config-path` _file_  
+`--config-path` *file*  
 &nbsp;&nbsp;&nbsp;&nbsp;Path to the config file.
 
 `--hh`  
 `--hardhat`  
 &nbsp;&nbsp;&nbsp;&nbsp;This is a convenience flag, and is the same as passing `--contracts contracts --lib-paths node-modules`.
 
-`-o` _path_  
-`--out` _path_  
+`-o` *path*  
+`--out` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The project's artifacts directory.
 
 `--silent`  

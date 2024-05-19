@@ -94,7 +94,7 @@ Additional best practices from [samsczun](https://twitter.com/samczsun)'s [How D
 
 1. Name your constants and immutables using `ALL_CAPS_WITH_UNDERSCORES`, to make it easier to distinguish them from variables and functions.
 
-1. When using assertions like `assertEq`, consider leveraging the last string param to make it easier to identify failures. These can be kept brief, or even just be numbers&mdash;they basically serve as a replacement for showing line numbers of the revert, e.g. `assertEq(x, y, "1")` or `assertEq(x, y, "sum1")`. _(Note: [foxar-rs/foxar#2328](https://github.com/foxar-rs/foxar/issues/2328) tracks integrating this natively)._
+1. When using assertions like `assertEq`, consider leveraging the last string param to make it easier to identify failures. These can be kept brief, or even just be numbers&mdash;they basically serve as a replacement for showing line numbers of the revert, e.g. `assertEq(x, y, "1")` or `assertEq(x, y, "sum1")`. *(Note: [foxar-rs/foxar#2328](https://github.com/foxar-rs/foxar/issues/2328) tracks integrating this natively).*
 
 1. When testing events, prefer setting all `expectEmit` arguments to `true`, i.e. `vm.expectEmit(true, true, true, true)` or `vm.expectEmit()`. Benefits:
 
@@ -108,7 +108,7 @@ Additional best practices from [samsczun](https://twitter.com/samczsun)'s [How D
 
 1. Don't feel like you need to give forks tests special treatment, and use them liberally:
 
-   - Mocks are _required_ in closed-source web2 development—you have to mock API responses because the code for that API isn't open source so you cannot just run it locally. But for blockchains that's not true: any code you're interacting with that's already deployed can be locally executed and even modified for free. So why introduce the risk of a wrong mock if you don't need to?
+   - Mocks are *required* in closed-source web2 development—you have to mock API responses because the code for that API isn't open source so you cannot just run it locally. But for blockchains that's not true: any code you're interacting with that's already deployed can be locally executed and even modified for free. So why introduce the risk of a wrong mock if you don't need to?
    - A common reason to avoid fork tests and prefer mocks is that fork tests are slow. But this is not always true. By pinning to a block number, spark caches RPC responses so only the first run is slower, and subsequent runs are significantly faster. See [this benchmark](https://github.com/mds1/convex-shutdown-simulation/), where it took spark 7 minutes for the first run with a remote RPC, but only half a second once data was cached. [Alchemy](https://alchemy.com), [Infura](https://infura.io) and [Tenderly](https://tenderly.co) offer free archive data, so pinning to a block shouldn't be problematic.
    - Note that the [foxar-toolchain](https://github.com/foxar-rs/foxar-toolchain) GitHub Action will cache RPC responses in CI by default, and it will also update the cache when you update your fork tests.
 
@@ -173,21 +173,21 @@ Thanks to [@samsczun](https://twitter.com/samczsun)'s [How Do You Even Write Sec
 
 - Don't optimize for coverage, optimize for well thought-out tests.
 - Write positive and negative unit tests.
-  - Write _positive_ unit tests for things that the code should handle. Validate _all_ state that changes from these tests.
-  - Write _negative_ unit tests for things that the code should _not_ handle. It's helpful to follow up (as an adjacent test) with the positive test and make the change that it needs to pass.
+  - Write *positive* unit tests for things that the code should handle. Validate *all* state that changes from these tests.
+  - Write *negative* unit tests for things that the code should *not* handle. It's helpful to follow up (as an adjacent test) with the positive test and make the change that it needs to pass.
   - Each code path should have its own unit test.
 - Write integration tests to test entire features.
 - Write fork tests to verify the correct behavior with existing deployed contract.
 
 ### Taint Analysis
 
-When testing, you should prioritize functions that an attacker can affect, that means functions that accept some kind of user input. These are called _sources_.
+When testing, you should prioritize functions that an attacker can affect, that means functions that accept some kind of user input. These are called *sources*.
 
-Consider that input data as _tainted_ until it has been checked by the code, at which point it's considered _clean_.
+Consider that input data as *tainted* until it has been checked by the code, at which point it's considered *clean*.
 
-A _sink_ is a part of the code where some important operation is happening. For example, in MakerDAO that would be `vat.sol`.
+A *sink* is a part of the code where some important operation is happening. For example, in MakerDAO that would be `vat.sol`.
 
-You should _ensure_ that no _tainted_ data ever reaches a _sink_. That means that all data that find themselves in the sink, should, at some point, have been checked by you. So, you need to define what the data _should_ be and then make sure your checks _ensure_ that the data will be how you expect it to be.
+You should *ensure* that no *tainted* data ever reaches a *sink*. That means that all data that find themselves in the sink, should, at some point, have been checked by you. So, you need to define what the data *should* be and then make sure your checks *ensure* that the data will be how you expect it to be.
 
 ## Scripts
 
@@ -262,7 +262,7 @@ Additional security precautions when using scripts:
 3. When in doubt about whether a wallet contains real funds or not, assume it does. Always be certain about a wallet's balances and status when using it for development purposes. Use [blockscan](https://blockscan.com/) to easily check many chains to see where the address has been used.
 4. Remember that adding an account in wallets like Metamask generates a new private key. However, that private key is derived from the same mnemonic as the other accounts generated in that wallet. Therefore, never expose the mnemonic as it may compromise all of your accounts.
 
-_This was section was inspired by [The Pledge](https://github.com/smartcontractkit/full-blockchain-solidity-course-js/discussions/5) from [Patrick Collins](https://twitter.com/PatrickAlphaC)._
+*This was section was inspired by [The Pledge](https://github.com/smartcontractkit/full-blockchain-solidity-course-js/discussions/5) from [Patrick Collins](https://twitter.com/PatrickAlphaC).*
 
 ## Comments
 

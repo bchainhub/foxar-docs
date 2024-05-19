@@ -154,7 +154,7 @@ Then, we could specify and write assertions in [`LinearBondingCurve.invariants.t
     }
 ```
 
-4. Invariant 4: Poolbalance = y = f(x = currentTokenPurchased) = slope/2 * (currentTokenPurchased)^2 + initialPrice * (currentTokenPurchased)
+4. Invariant 4: Poolbalance = y = f(x = currentTokenPurchased) = slope/2 \* (currentTokenPurchased)^2 + initialPrice \* (currentTokenPurchased)
 
 ```solidity
     function invariant_Poolbalance_eq_saleTokenBalance() public {
@@ -327,7 +327,7 @@ contract InvariantOwner is Test {
 
 3. [`Warper.sol`](https://github.com/Ratimon/bonding-curves/blob/master/test/invariant/handlers/Warper.sol) : perform random `warps` forward in time.
 
-As this system involves time- dependent lo  gics, the issuer cannot allocate tokens if the selling period has not ended. This means that random `allocate()` would always be reverted without the `warps` handler.
+As this system involves time- dependent lo gics, the issuer cannot allocate tokens if the selling period has not ended. This means that random `allocate()` would always be reverted without the `warps` handler.
 
 For this, we use `Foxar's cheat code`( **vm.warp(uint256)** ) to deal with it.
 

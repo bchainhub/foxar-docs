@@ -141,7 +141,7 @@ Make sure the private key is correct.
 
 ##### `Compiler version commit for verify`
 
-If you want to check the exact commit you are running locally, try: ` ~/.svm/0.x.y/solc-0.x.y --version` where `x` and
+If you want to check the exact commit you are running locally, try: `~/.svm/0.x.y/solc-0.x.y --version` where `x` and
 `y` are major and minor version numbers respectively. The output of this will be something like:
 
 ```ignore

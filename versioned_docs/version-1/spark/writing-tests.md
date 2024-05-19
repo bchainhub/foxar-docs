@@ -77,9 +77,7 @@ Now, instead of using `testFail`, you know exactly what reverted and with which 
     testNumber -= 43;
 
 }
-
-````
-
+```
 &nbsp;
 
 Tests are deployed to `0xb4c79daB8f259C7Aee6E5b2Aa729821864227e84`. If you deploy a contract within your test, then
@@ -115,7 +113,7 @@ contract MyOtherContractTest is Test, HelperContract {
       ...
   }
 }
-````
+```
 
 &nbsp;
 

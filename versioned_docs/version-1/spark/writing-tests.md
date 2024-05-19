@@ -71,11 +71,10 @@ A good practice is to use the pattern `test_Revert[If|When]_Condition` in combin
 
 Now, instead of using `testFail`, you know exactly what reverted and with which error:
 
-    ```solidity
-    function test_CannotSubtract43() public {
-    vm.expectRevert(stdError.arithmeticError);
-    testNumber -= 43;
-
+```solidity
+function test_CannotSubtract43() public {
+  vm.expectRevert(stdError.arithmeticError);
+  testNumber -= 43;
 }
 ```
 &nbsp;

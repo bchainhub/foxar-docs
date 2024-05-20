@@ -8,7 +8,7 @@ probe-pretty-calldata - Pretty print calldata.
 
 ### SYNOPSIS
 
-`probe pretty-calldata` [*options*] _calldata_
+`probe pretty-calldata` [*options*] *calldata*
 
 ### DESCRIPTION
 

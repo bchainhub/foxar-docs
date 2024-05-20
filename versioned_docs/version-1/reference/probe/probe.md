@@ -8,7 +8,7 @@ probe - Perform Ethereum RPC calls from the comfort of your command line.
 
 ### SYNOPSIS
 
-`probe` [*options*] _command_ [*args*]
+`probe` [*options*] *command* [*args*]
 `probe` [*options*] `--version`
 `probe` [*options*] `--help`
 

@@ -36,7 +36,7 @@ the repository. If you want to change the name of the folder, prepend `<folder>=
 
 #### Project Options
 
-`--root` _path_  
+`--root` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
 
 #### VCS Options

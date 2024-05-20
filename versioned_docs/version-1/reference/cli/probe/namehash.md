@@ -7,7 +7,7 @@ $ probe namehash --help
 Usage: probe namehash [NAME]
 
 Arguments:
-  [NAME]  
+  [NAME]
 
 Options:
   -h, --help  Print help

@@ -8,13 +8,13 @@ probe-to-unit - Convert an eth amount to another unit.
 
 ### SYNOPSIS
 
-`probe to-unit` [*options*] _value_ [*unit*]
+`probe to-unit` [*options*] *value* [*unit*]
 
 ### DESCRIPTION
 
 Convert an eth amount to another unit.
 
-The value to convert (_value_) can be a quantity of eth (in wei), or a number with a unit attached to it.
+The value to convert (*value*) can be a quantity of eth (in wei), or a number with a unit attached to it.
 
 Valid units are:
 

@@ -13,19 +13,19 @@ Arguments:
 Options:
   -p, --password
           Triggers a hidden password prompt for the JSON keystore.
-          
+
           Deprecated: prompting for a hidden password is now the default.
 
       --unsafe-password <PASSWORD>
           Password for the JSON keystore in cleartext.
-          
+
           This is UNSAFE to use and we recommend using the --password.
-          
+
           [env: PROBE_PASSWORD=]
 
   -n, --number <NUMBER>
           Number of wallets to generate
-          
+
           [default: 1]
 
   -j, --json

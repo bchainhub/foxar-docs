@@ -16,12 +16,12 @@ Arguments:
 Options:
       --from-block <FROM_BLOCK>
           The block height to start query at.
-          
+
           Can also be the tags earliest, finalized, safe, latest, or pending.
 
       --to-block <TO_BLOCK>
           The block height to stop query at.
-          
+
           Can also be the tags earliest, finalized, safe, latest, or pending.
 
       --address <ADDRESS>
@@ -40,7 +40,7 @@ Display options:
 Ethereum options:
   -r, --rpc-url <URL>
           The RPC endpoint
-          
+
           [env: ETH_RPC_URL=]
 
       --flashbots
@@ -48,28 +48,28 @@ Ethereum options:
 
       --jwt-secret <JWT_SECRET>
           JWT Secret for the RPC endpoint.
-          
+
           The JWT secret will be used to create a JWT for a RPC. For example, the following can be used to simulate a CL `engine_forkchoiceUpdated` call:
-          
+
           probe rpc --jwt-secret <JWT_SECRET> engine_forkchoiceUpdatedV2 '["0x6bb38c26db65749ab6e472080a3d20a2f35776494e72016d1e339593f21c59bc", "0x6bb38c26db65749ab6e472080a3d20a2f35776494e72016d1e339593f21c59bc",
           "0x6bb38c26db65749ab6e472080a3d20a2f35776494e72016d1e339593f21c59bc"]'
-          
+
           [env: ETH_RPC_JWT_SECRET=]
 
   -e, --etherscan-api-key <KEY>
           The Etherscan (or equivalent) API key
-          
+
           [env: ETHERSCAN_API_KEY=]
 
   -c, --chain <CHAIN>
           The chain name or EIP-155 chain ID
-          
+
           [env: CHAIN=]
 
 Wallet options - raw:
   -f, --from <ADDRESS>
           The sender account
-          
+
           [env: ETH_FROM=]
 
   -i, --interactive
@@ -86,37 +86,37 @@ Wallet options - raw:
 
       --mnemonic-derivation-path <PATH>
           The wallet derivation path.
-          
+
           Works with both --mnemonic-path and hardware wallets.
 
       --mnemonic-index <INDEX>
           Use the private key from the given mnemonic index.
-          
+
           Used with --mnemonic-path.
-          
+
           [default: 0]
 
 Wallet options - keystore:
       --keystore <PATH>
           Use the keystore in the given folder or file
-          
+
           [env: ETH_KEYSTORE=]
 
       --account <ACCOUNT_NAME>
           Use a keystore from the default keystores folder (~/.foxar/keystores) by its filename
-          
+
           [env: ETH_KEYSTORE_ACCOUNT=]
 
       --password <PASSWORD>
           The keystore password.
-          
+
           Used with --keystore.
 
       --password-file <PASSWORD_FILE>
           The keystore password file path.
-          
+
           Used with --keystore.
-          
+
           [env: ETH_PASSWORD=]
 
 Wallet options - hardware wallet:

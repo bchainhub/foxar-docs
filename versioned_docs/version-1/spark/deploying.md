@@ -111,7 +111,7 @@ $ spark verify-check --chain-id 11155111 <GUID> <your_etherscan_api_key>
 Contract successfully verified.
 ```
 
-<br />
+&nbsp;
 
 > 💡 **Tip**
 >
@@ -119,7 +119,7 @@ Contract successfully verified.
 >
 > In this example, we ran `probe abi-encode "constructor(string,string,uint8,uint256)" "SparkUSD" "FUSD" 18 1000000000000000000000` to ABI-encode the arguments.
 
-<br />
+&nbsp;
 
 ### Troubleshooting
 
@@ -141,7 +141,7 @@ Make sure the private key is correct.
 
 ##### `Compiler version commit for verify`
 
-If you want to check the exact commit you are running locally, try: ` ~/.svm/0.x.y/solc-0.x.y --version` where `x` and
+If you want to check the exact commit you are running locally, try: `~/.svm/0.x.y/solc-0.x.y --version` where `x` and
 `y` are major and minor version numbers respectively. The output of this will be something like:
 
 ```ignore

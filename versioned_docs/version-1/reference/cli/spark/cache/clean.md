@@ -9,9 +9,9 @@ Usage: spark cache clean [OPTIONS] [CHAINS]...
 Arguments:
   [CHAINS]...
           The chains to clean the cache for.
-          
+
           Can also be "all" to clean all chains.
-          
+
           [env: CHAIN=]
           [default: all]
 

@@ -9,12 +9,12 @@ Usage: spark doc [OPTIONS]
 Options:
       --root <PATH>
           The project's root path.
-          
+
           By default root of the Git repository, if in one, or the current working directory.
 
   -o, --out <PATH>
           The doc's output path.
-          
+
           By default, it is the `docs/` in project root.
 
   -b, --build

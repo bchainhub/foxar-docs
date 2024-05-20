@@ -13,7 +13,7 @@ Arguments:
 Options:
   -o, --output <PATH>
           The path to output the flattened contract.
-          
+
           If not specified, the flattened contract will be output to stdout.
 
   -h, --help
@@ -22,7 +22,7 @@ Options:
 Project options:
       --root <PATH>
           The project's root path.
-          
+
           By default root of the Git repository, if in one, or the current working directory.
 
   -C, --contracts <PATH>
@@ -42,9 +42,9 @@ Project options:
 
       --hardhat
           Use the Hardhat-style project layout.
-          
+
           This is the same as using: `--contracts contracts --lib-paths node_modules`.
-          
+
           [aliases: hh]
 
       --config-path <FILE>

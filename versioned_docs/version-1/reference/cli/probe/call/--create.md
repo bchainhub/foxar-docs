@@ -19,9 +19,9 @@ Arguments:
 Options:
       --value <VALUE>
           Ether to send in the transaction.
-          
+
           Either specified in wei, or as a string with a unit type.
-          
+
           Examples: 1ether, 10gwei, 0.01ether
 
   -h, --help

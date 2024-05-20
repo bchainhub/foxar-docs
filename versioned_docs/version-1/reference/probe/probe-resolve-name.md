@@ -8,7 +8,7 @@ probe-resolve-name - Perform an ENS lookup.
 
 ### SYNOPSIS
 
-`probe resolve-name` [*options*] _who_
+`probe resolve-name` [*options*] *who*
 
 ### DESCRIPTION
 
@@ -26,7 +26,7 @@ If `--verify` is passed, then a reverse lookup is performed after the normal loo
 
 #### RPC Options
 
-`--rpc-url` _url_  
+`--rpc-url` *url*  
 &nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
 

@@ -8,13 +8,13 @@ spark-inspect - Get specialized information about a smart contract
 
 ### SYNOPSIS
 
-`spark inspect` [*options*] _contract_name_ _field_
+`spark inspect` [*options*] *contract_name* *field*
 
 ### DESCRIPTION
 
 Get specialized information about a smart contract.
 
-The field to inspect (_field_) can be any of:
+The field to inspect (*field*) can be any of:
 
 - `abi`
 - `b`/`bytes`/`bytecode`
@@ -43,7 +43,7 @@ The field to inspect (_field_) can be any of:
 
 #### Linker Options
 
-`--libraries` _libraries_  
+`--libraries` *libraries*  
 &nbsp;&nbsp;&nbsp;&nbsp;Set pre-linked libraries.
 
 &nbsp;&nbsp;&nbsp;&nbsp;The parameter must be in the format `<remapped path to lib>:<library name>:<address>`, e.g. `src/Contract.sol:Library:0x...`.
@@ -55,7 +55,7 @@ The field to inspect (_field_) can be any of:
 `--optimize`  
 &nbsp;&nbsp;&nbsp;&nbsp;Activate the Solidity optimizer.
 
-`--optimizer-runs` _runs_  
+`--optimizer-runs` *runs*  
 &nbsp;&nbsp;&nbsp;&nbsp;The number of optimizer runs.
 
 `--via-ir`  
@@ -64,7 +64,7 @@ The field to inspect (_field_) can be any of:
 `--revert-strings`  
 &nbsp;&nbsp;&nbsp;&nbsp;How to treat revert and require reason strings.
 
-`--use` _solc_version_  
+`--use` *solc_version*  
 &nbsp;&nbsp;&nbsp;&nbsp;Specify the solc version, or a path to a local solc, to build with.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Valid values are in the format `x.y.z`, `solc:x.y.z` or `path/to/solc`.
@@ -75,24 +75,24 @@ The field to inspect (_field_) can be any of:
 `--no-auto-detect`  
 &nbsp;&nbsp;&nbsp;&nbsp;Do not auto-detect solc.
 
-`--ignored-error-codes` _error_codes_  
+`--ignored-error-codes` *error_codes*  
 &nbsp;&nbsp;&nbsp;&nbsp;Ignore solc warnings by error code. The parameter is a comma-separated list of error codes.
 
-`--extra-output` _selector_  
+`--extra-output` *selector*  
 &nbsp;&nbsp;&nbsp;&nbsp;Extra output to include in the contract's artifact.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Example keys: `abi`, `storageLayout`, `evm.assembly`, `ewasm`, `ir`, `ir-optimized`, `metadata`.
 
 &nbsp;&nbsp;&nbsp;&nbsp;For a full description, see the [Solidity docs][output-desc].
 
-`--extra-output-files` _selector_  
+`--extra-output-files` *selector*  
 &nbsp;&nbsp;&nbsp;&nbsp;Extra output to write to separate files.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Example keys: `abi`, `storageLayout`, `evm.assembly`, `ewasm`, `ir`, `ir-optimized`, `metadata`.
 
 &nbsp;&nbsp;&nbsp;&nbsp;For a full description, see the [Solidity docs][output-desc].
 
-`--evm-version` _version_  
+`--evm-version` *version*  
 &nbsp;&nbsp;&nbsp;&nbsp;The target EVM version.
 
 [output-desc]: https://docs.soliditylang.org/en/latest/using-the-compiler.html#compiler-api
@@ -102,38 +102,38 @@ The field to inspect (_field_) can be any of:
 `--build-info`  
 &nbsp;&nbsp;&nbsp;&nbsp;Generate build info files.
 
-`--build-info-path` _path_  
+`--build-info-path` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;Output path to directory that build info files will be written to.
 
-`--root` _path_  
+`--root` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
 
-`-C` _path_  
-`--contracts` _path_  
+`-C` *path*  
+`--contracts` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The contracts source directory.  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `DAPP_SRC`
 
-`--lib-paths` _path_  
+`--lib-paths` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The path to the library folder.
 
-`-R` _remappings_  
-`--remappings` _remappings_  
+`-R` *remappings*  
+`--remappings` *remappings*  
 &nbsp;&nbsp;&nbsp;&nbsp;The project's remappings.
 
 &nbsp;&nbsp;&nbsp;&nbsp;The parameter is a comma-separated list of remappings in the format `<source>=<dest>`.
 
-`--cache-path` _path_  
+`--cache-path` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The path to the compiler cache.
 
-`--config-path` _file_  
+`--config-path` *file*  
 &nbsp;&nbsp;&nbsp;&nbsp;Path to the config file.
 
 `--hh`  
 `--hardhat`  
 &nbsp;&nbsp;&nbsp;&nbsp;This is a convenience flag, and is the same as passing `--contracts contracts --lib-paths node-modules`.
 
-`-o` _path_  
-`--out` _path_  
+`-o` *path*  
+`--out` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The project's artifacts directory.
 
 `--silent`  

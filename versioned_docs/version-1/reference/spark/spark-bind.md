@@ -30,17 +30,17 @@ You can overwrite the existing bindings by passing `--overwrite`.
 
 #### Project Options
 
-`-b` _path_  
-`--bindings-path` _path_  
+`-b` *path*  
+`--bindings-path` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
 
-`--crate-name` _name_  
+`--crate-name` *name*  
 &nbsp;&nbsp;&nbsp;&nbsp;The name of the Rust crate to generate, if you are generating a crate (default).  
 &nbsp;&nbsp;&nbsp;&nbsp;This should be a valid crates.io crate name.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Default: foxar-contracts
 
-`--crate-version` _semver_  
+`--crate-version` *semver*  
 &nbsp;&nbsp;&nbsp;&nbsp;The version of the Rust crate to generate, if you are generating a crate (default).  
 &nbsp;&nbsp;&nbsp;&nbsp;This should be a standard semver version string.
 
@@ -56,7 +56,7 @@ You can overwrite the existing bindings by passing `--overwrite`.
 &nbsp;&nbsp;&nbsp;&nbsp;Overwrite existing generated bindings. By default, the command will check that the bindings are correct, and then exit.  
 &nbsp;&nbsp;&nbsp;&nbsp;If `--overwrite` is passed, it will instead delete and overwrite the bindings.
 
-`--root` _path_  
+`--root` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
 
 `--skip-cargo-toml`  
@@ -71,10 +71,10 @@ You can overwrite the existing bindings by passing `--overwrite`.
 `--select-all`  
 &nbsp;&nbsp;&nbsp;&nbsp;By default all contracts ending with `Test` or `Script` are excluded. This will explicitly generate bindings for all contracts. Conflicts with `--select` and `--skip`.
 
-`--select` _regex+_  
+`--select` *regex+*  
 &nbsp;&nbsp;&nbsp;&nbsp;Create bindings only for contracts whose names match the specified filter(s). Conflicts with `--skip`.
 
-`--skip` _regex+_  
+`--skip` *regex+*  
 &nbsp;&nbsp;&nbsp;&nbsp;Create bindings only for contracts whose names do not match the specified filter(s). Conflicts with `--select`.
 
 ### SEE ALSO

@@ -8,7 +8,7 @@ probe-selectors - Extracts function selectors and arguments from bytecode
 
 ### SYNOPSIS
 
-`probe selectors` [*options*] _bytecode_
+`probe selectors` [*options*] *bytecode*
 
 ### DESCRIPTION
 

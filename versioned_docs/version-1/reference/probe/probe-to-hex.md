@@ -8,7 +8,7 @@ probe-to-hex - Converts a number of one base to another
 
 ### SYNOPSIS
 
-`probe to-hex` [*options*] _value_
+`probe to-hex` [*options*] *value*
 
 ### DESCRIPTION
 
@@ -16,7 +16,7 @@ Converts a number of one base to another
 
 ### OPTIONS
 
-`--base-in` _base_in_
+`--base-in` *base_in*
 &nbsp;&nbsp;&nbsp;&nbsp;The input base.
 
 #### Common Options

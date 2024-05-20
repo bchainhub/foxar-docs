@@ -18,7 +18,7 @@ Options:
 
       --save-path <PATH>
           Path to save the generated vanity contract address to.
-          
+
           If provided, the generated vanity addresses will appended to a JSON array in the specified file.
 
   -h, --help

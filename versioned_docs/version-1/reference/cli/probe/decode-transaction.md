@@ -7,7 +7,7 @@ $ probe decode-transaction --help
 Usage: probe decode-transaction [TX]
 
 Arguments:
-  [TX]  
+  [TX]
 
 Options:
   -h, --help  Print help

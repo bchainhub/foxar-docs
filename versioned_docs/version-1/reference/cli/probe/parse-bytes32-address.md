@@ -7,7 +7,7 @@ $ probe parse-bytes32-address --help
 Usage: probe parse-bytes32-address [BYTES]
 
 Arguments:
-  [BYTES]  
+  [BYTES]
 
 Options:
   -h, --help  Print help

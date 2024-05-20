@@ -8,7 +8,7 @@ probe-shr - Perform a right shifting operation.
 
 ### SYNOPSIS
 
-`probe shr` [*options*] _value_ _shift_
+`probe shr` [*options*] *value* *shift*
 
 ### DESCRIPTION
 
@@ -18,14 +18,14 @@ Perform a right shifting operation.
 
 #### Base Options
 
-`--base-in` _base_
+`--base-in` *base*
 &nbsp;&nbsp;&nbsp;&nbsp;The base of the input number. Available options:
 
 &nbsp;&nbsp;&nbsp;&nbsp;10, d, dec, decimal
 
 &nbsp;&nbsp;&nbsp;&nbsp;16, h, hex, hexadecimal
 
-`--base-out` _base_
+`--base-out` *base*
 &nbsp;&nbsp;&nbsp;&nbsp;The desired base of the output. Available options:
 
 &nbsp;&nbsp;&nbsp;&nbsp;2, b, bin, binary

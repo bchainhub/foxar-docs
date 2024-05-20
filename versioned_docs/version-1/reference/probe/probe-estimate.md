@@ -8,15 +8,15 @@ probe-estimate - Estimate the gas cost of a transaction.
 
 ### SYNOPSIS
 
-`probe estimate` [*options*] _to_ _sig_ [*args...*]
+`probe estimate` [*options*] *to* *sig* [*args...*]
 
 ### DESCRIPTION
 
 Estimate the gas cost of a transaction.
 
-The destination (_to_) can be an ENS name or an address.
+The destination (*to*) can be an ENS name or an address.
 
-The signature (_sig_) can be:
+The signature (*sig*) can be:
 
 - A fragment: `someFunction(uint256,bytes32)`
 - A selector and encoded calldata: `0xcdba2fd40000000000000000000000000000000000000000000000000000000000007a69`
@@ -26,7 +26,7 @@ The signature (_sig_) can be:
 
 #### Transaction Options
 
-`--value` _value_  
+`--value` *value*  
 &nbsp;&nbsp;&nbsp;&nbsp;Ether to send in the transaction.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Either specified as an integer (wei), or as a string with a unit, for example:  
@@ -36,7 +36,7 @@ The signature (_sig_) can be:
 
 #### RPC Options
 
-`--rpc-url` _url_  
+`--rpc-url` *url*  
 &nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
 
@@ -45,10 +45,10 @@ The signature (_sig_) can be:
 
 #### Etherscan Options
 
-`--chain` _chain_name_  
+`--chain` *chain_name*  
 &nbsp;&nbsp;&nbsp;&nbsp;The Etherscan chain.
 
-`--etherscan-api-key` _key_  
+`--etherscan-api-key` *key*  
 &nbsp;&nbsp;&nbsp;&nbsp;Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan#etherscan).  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETHERSCAN_API_KEY`
 

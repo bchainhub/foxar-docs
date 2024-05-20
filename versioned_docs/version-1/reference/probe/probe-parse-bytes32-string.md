@@ -8,7 +8,7 @@ probe-parse-bytes32-string - Parses a string from bytes32 encoding.
 
 ### SYNOPSIS
 
-`probe parse-bytes32-string` [*options*] _bytes_
+`probe parse-bytes32-string` [*options*] *bytes*
 
 ### DESCRIPTION
 

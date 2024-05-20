@@ -8,9 +8,9 @@ spark-verify-check - Check verification status on a chosen verification provider
 
 ### SYNOPSIS
 
-`spark verify-check` [*options*] _id_ [*etherscan_key*]
+`spark verify-check` [*options*] *id* [*etherscan_key*]
 
-The _id_ is the verification identifier. For Etherscan & Bloxroute - it is the submission GUID, for Sourcify - it's the contract address.
+The *id* is the verification identifier. For Etherscan & Bloxroute - it is the submission GUID, for Sourcify - it's the contract address.
 
 ### DESCRIPTION
 
@@ -22,21 +22,21 @@ For Etherscan, you must provide an Etherscan API key, either by passing it as an
 
 #### Verify Contract Options
 
-`--verifier` _name_  
+`--verifier` *name*  
 &nbsp;&nbsp;&nbsp;&nbsp;The verification provider. Available options: `etherscan`, `sourcify` & `blockscout`. Default: `etherscan`. Note: make sure you add "/api\?" to the end of the Blockscout homepage explorer URL.
 
-`--verifier-url` _url_  
+`--verifier-url` *url*  
 &nbsp;&nbsp;&nbsp;&nbsp;The optional verifier url for submitting the verification request.  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `VERIFIER_URL`
 
-`--chain-id` _chain_id_  
+`--chain-id` *chain_id*  
 &nbsp;&nbsp;&nbsp;&nbsp;The chain ID the contract is deployed to (either a number or a chain name).  
 &nbsp;&nbsp;&nbsp;&nbsp;Default: mainnet
 
-`--delay` _delay_  
+`--delay` *delay*  
 &nbsp;&nbsp;&nbsp;&nbsp;Optional timeout to apply in between attempts in seconds. Defaults to 3.
 
-`--retries` _retries_  
+`--retries` *retries*  
 &nbsp;&nbsp;&nbsp;&nbsp;Number of attempts for retrying. Defaults to 15.
 
 #### Common Options

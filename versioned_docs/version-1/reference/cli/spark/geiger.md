@@ -13,12 +13,12 @@ Arguments:
 Options:
       --root <PATH>
           The project's root path.
-          
+
           By default root of the Git repository, if in one, or the current working directory.
 
       --check
           Run in "check" mode.
-          
+
           The exit code of the program will be the number of unsafe cheatcodes found.
 
       --ignore <PATH>...

@@ -60,5 +60,3 @@ Spark Standard Library
 
 [`deployCode`](../spark-std/deployCode)
 [`deployCodeTo`](../spark-std/deployCodeTo)
-
-[spark-std]: ../reference/spark-std

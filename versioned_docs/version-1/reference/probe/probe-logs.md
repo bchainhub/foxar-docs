@@ -8,13 +8,13 @@ probe logs - Get logs by signature or topic.
 
 ### SYNOPSIS
 
-`probe logs` [*options*] _sig_or_topic_ [*topics_or_args...*]
+`probe logs` [*options*] *sig_or_topic* [*topics_or_args...*]
 
 ### DESCRIPTION
 
 Get logs by signature or topic.
 
-The (_sig_or_topic_) may either be the event signature or its hashed topic (located at topics[0]).
+The (*sig_or_topic*) may either be the event signature or its hashed topic (located at topics[0]).
 
 If using a signature, remaining arguments must be in their ordinary form. If using a topic, the arguments must be as they themselves appear as topics.
 
@@ -22,17 +22,17 @@ If using a signature, remaining arguments must be in their ordinary form. If usi
 
 ### Query Options
 
-`--from-block` _from_block_
+`--from-block` *from_block*
 &nbsp;&nbsp;&nbsp;&nbsp;The block height to start query at.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Can also be the tags: `earliest`, `finalized`, `safe`, `latest`, or `pending`.
 
-`--to-block` _to_block_
+`--to-block` *to_block*
 &nbsp;&nbsp;&nbsp;&nbsp;The block height to stop query at.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Can also be the tags: `earliest`, `finalized`, `safe`, `latest`, or `pending`.
 
-`--address` _address_
+`--address` *address*
 &nbsp;&nbsp;&nbsp;&nbsp;The contract address to filter on
 
 #### WALLET OPTIONS - RAW:
@@ -63,17 +63,17 @@ If using a signature, remaining arguments must be in their ordinary form. If usi
 
 #### Wallet Options - Keystore
 
-`--keystore` _path_  
+`--keystore` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;Use the keystore in the given folder or file.  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_KEYSTORE`
 
-`--account` _account-name_  
+`--account` *account-name*  
 &nbsp;&nbsp;&nbsp;&nbsp;Use a keystore from the default keystores folder (~/.foxar/keystores) by its filename.  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_KEYSTORE_ACCOUNT`
 
 `--interactive`
 
-`--password` _password_  
+`--password` *password*  
 &nbsp;&nbsp;&nbsp;&nbsp;The keystore password. Used with `--keystore`.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_PASSWORD`
 
@@ -89,14 +89,14 @@ If using a signature, remaining arguments must be in their ordinary form. If usi
 
 #### Wallet Options - Remote
 
-`-f` _address_  
-`--from` _address_  
+`-f` *address*  
+`--from` *address*  
 &nbsp;&nbsp;&nbsp;&nbsp;Sign the transaction with the specified account on the RPC.  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_FROM`
 
 #### RPC Options
 
-`--rpc-url` _url_  
+`--rpc-url` *url*  
 &nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
 
@@ -105,10 +105,10 @@ If using a signature, remaining arguments must be in their ordinary form. If usi
 
 #### Etherscan Options
 
-`--chain` _chain_name_  
+`--chain` *chain_name*  
 &nbsp;&nbsp;&nbsp;&nbsp;The Etherscan chain.
 
-`--etherscan-api-key` _key_  
+`--etherscan-api-key` *key*  
 &nbsp;&nbsp;&nbsp;&nbsp;Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan#etherscan).  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETHERSCAN_API_KEY`
 

@@ -8,7 +8,7 @@ spark-flatten - Flatten a source file and all of its imports into one file.
 
 ### SYNOPSIS
 
-`spark flatten` [*options*] _file_
+`spark flatten` [*options*] *file*
 
 ### DESCRIPTION
 
@@ -20,8 +20,8 @@ If `--output <FILE>` is not set, then the flattened contract will be output to s
 
 #### Flatten Options
 
-`-o` _file_  
-`--output` _file_  
+`-o` *file*  
+`--output` *file*  
 &nbsp;&nbsp;&nbsp;&nbsp;The path to output the flattened contract. If not specified, the flattened contract will be output to stdout.
 
 #### Project Options
@@ -29,30 +29,30 @@ If `--output <FILE>` is not set, then the flattened contract will be output to s
 `--build-info`  
 &nbsp;&nbsp;&nbsp;&nbsp;Generate build info files.
 
-`--build-info-path` _path_  
+`--build-info-path` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;Output path to directory that build info files will be written to.
 
-`--root` _path_  
+`--root` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
 
-`-C` _path_  
-`--contracts` _path_  
+`-C` *path*  
+`--contracts` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The contracts source directory.  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `DAPP_SRC`
 
-`--lib-paths` _path_  
+`--lib-paths` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The path to the library folder.
 
-`-R` _remappings_  
-`--remappings` _remappings_  
+`-R` *remappings*  
+`--remappings` *remappings*  
 &nbsp;&nbsp;&nbsp;&nbsp;The project's remappings.
 
 &nbsp;&nbsp;&nbsp;&nbsp;The parameter is a comma-separated list of remappings in the format `<source>=<dest>`.
 
-`--cache-path` _path_  
+`--cache-path` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The path to the compiler cache.
 
-`--config-path` _file_  
+`--config-path` *file*  
 &nbsp;&nbsp;&nbsp;&nbsp;Path to the config file.
 
 `--hh`  

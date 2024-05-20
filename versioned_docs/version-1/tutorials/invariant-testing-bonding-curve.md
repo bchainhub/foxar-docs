@@ -44,9 +44,9 @@ In this guide, we can run the fuzzing campaign by running the following command:
 make invariant-LinearBondingCurve
 ```
 
-> 💡 Note: Other commands for this tutorial can be found in [ `Makefile`](https://github.com/Ratimon/bonding-curves/blob/master/Makefile).
+> 💡 Note: Other commands for this tutorial can be found in [`Makefile`](https://github.com/Ratimon/bonding-curves/blob/master/Makefile).
 
-I note that the default configuration (at [ `foxar.toml`](https://github.com/Ratimon/bonding-curves/blob/master/foxar.toml)) for invariant testing is as follows:
+I note that the default configuration (at [`foxar.toml`](https://github.com/Ratimon/bonding-curves/blob/master/foxar.toml)) for invariant testing is as follows:
 
 ```toml
 [invariant]
@@ -122,7 +122,7 @@ In our case, our state variables (found in [`BondingCurve.sol`](https://github.c
 
 Then, we could specify and write assertions in [`LinearBondingCurve.invariants.t.sol`](https://github.com/Ratimon/bonding-curves/blob/master/test/invariant/LinearBondingCurve.invariants.t.sol) as follows:
 
-1.  Invariant 1: totalPurchased + availableToSell = cap
+1. Invariant 1: totalPurchased + availableToSell = cap
 
 ```solidity
 
@@ -135,7 +135,7 @@ Then, we could specify and write assertions in [`LinearBondingCurve.invariants.t
 
 ```
 
-2.  Invariant 2: availableToSell >= 0
+2. Invariant 2: availableToSell >= 0
 
 ```solidity
 
@@ -146,7 +146,7 @@ Then, we could specify and write assertions in [`LinearBondingCurve.invariants.t
 
 ```
 
-3.  Invariant 3: availableToSell = amount of ERC20 token amount in bonding curve contract
+3. Invariant 3: availableToSell = amount of ERC20 token amount in bonding curve contract
 
 ```solidity
     function invariant_AvailableToSell_eq_saleTokenBalance() public {
@@ -154,7 +154,7 @@ Then, we could specify and write assertions in [`LinearBondingCurve.invariants.t
     }
 ```
 
-4.  Invariant 4: Poolbalance = y = f(x = currentTokenPurchased) = slope/2 _ (currentTokenPurchased)^2 + initialPrice _ (currentTokenPurchased)
+4. Invariant 4: Poolbalance = y = f(x = currentTokenPurchased) = slope/2 \* (currentTokenPurchased)^2 + initialPrice \* (currentTokenPurchased)
 
 ```solidity
     function invariant_Poolbalance_eq_saleTokenBalance() public {
@@ -234,7 +234,7 @@ We can think of **Foxar Fuzzer** as an externally owned account and of **Handler
 
 These handlers are specified in **handler files** located in [`test/invariant/handlers`](https://github.com/Ratimon/bonding-curves/blob/master/test/invariant/handlers) as follows:
 
-1.  [`Buyer.sol`](https://github.com/Ratimon/bonding-curves/blob/master/test/invariant/handlers/Buyer.sol) : perform random `purchase()`
+1. [`Buyer.sol`](https://github.com/Ratimon/bonding-curves/blob/master/test/invariant/handlers/Buyer.sol) : perform random `purchase()`
 
 We can think of this set of smart contracts as having external stakeholder properties. In general, we want a fuzzer to generate a number of buyers. Now, we define **InvariantBuyerManager** as follows.
 
@@ -297,7 +297,7 @@ contract InvariantBuyer is Test {
 
 ```
 
-2.  [`Owner.sol`](https://github.com/Ratimon/bonding-curves/blob/master/test/invariant/handlers/Owner.sol) : perform random `allocate()`
+2. [`Owner.sol`](https://github.com/Ratimon/bonding-curves/blob/master/test/invariant/handlers/Owner.sol) : perform random `allocate()`
 
 Again, we ensure that the balance state of an external contract (acceptable tokens ) is correctly updated after the token is allocated to the issuer. The implementation is as follows:
 
@@ -325,9 +325,9 @@ contract InvariantOwner is Test {
 
 ```
 
-3.  [`Warper.sol`](https://github.com/Ratimon/bonding-curves/blob/master/test/invariant/handlers/Warper.sol) : perform random `warps` forward in time.
+3. [`Warper.sol`](https://github.com/Ratimon/bonding-curves/blob/master/test/invariant/handlers/Warper.sol) : perform random `warps` forward in time.
 
-As this system involves time- dependent logics, the issuer cannot allocate tokens if the selling period has not ended. This means that random `allocate()` would always be reverted without the `warps` handler.
+As this system involves time- dependent lo gics, the issuer cannot allocate tokens if the selling period has not ended. This means that random `allocate()` would always be reverted without the `warps` handler.
 
 For this, we use `Foxar's cheat code`( **vm.warp(uint256)** ) to deal with it.
 

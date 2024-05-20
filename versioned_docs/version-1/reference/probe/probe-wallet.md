@@ -8,7 +8,7 @@ probe-wallet - Wallet management utilities.
 
 ### SYNOPSIS
 
-`probe wallet` [*options*] _command_ [*args*]  
+`probe wallet` [*options*] *command* [*args*]  
 `probe wallet` [*options*] `--version`  
 `probe wallet` [*options*] `--help`
 

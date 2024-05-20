@@ -8,7 +8,7 @@ probe-keccak - Hash arbitrary data using keccak-256.
 
 ### SYNOPSIS
 
-`probe keccak` [*options*] _data_
+`probe keccak` [*options*] *data*
 
 ### DESCRIPTION
 

@@ -8,19 +8,19 @@ probe-tx - Get information about a transaction.
 
 ### SYNOPSIS
 
-`probe tx` [*options*] _tx_hash_ [*field*]
+`probe tx` [*options*] *tx_hash* [*field*]
 
 ### DESCRIPTION
 
 Get information about a transaction.
 
-If _field_ is specified, then only the given field of the transaction is displayed.
+If *field* is specified, then only the given field of the transaction is displayed.
 
 ### OPTIONS
 
 #### RPC Options
 
-`--rpc-url` _url_  
+`--rpc-url` *url*  
 &nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
 

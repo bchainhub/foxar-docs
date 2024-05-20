@@ -8,7 +8,7 @@ probe-namehash - Calculate the ENS namehash of a name.
 
 ### SYNOPSIS
 
-`probe namehash` [*options*] _name_
+`probe namehash` [*options*] *name*
 
 ### DESCRIPTION
 

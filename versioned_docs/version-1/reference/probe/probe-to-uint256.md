@@ -8,7 +8,7 @@ probe-to-uint256 - Convert a number to a hex-encoded uint256.
 
 ### SYNOPSIS
 
-`probe to-uint256` [*options*] _value_
+`probe to-uint256` [*options*] *value*
 
 ### DESCRIPTION
 

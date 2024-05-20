@@ -8,13 +8,13 @@ probe-interface - Generate a Solidity interface from a given ABI.
 
 ### SYNOPSIS
 
-`probe interface` [*options*] _address_or_path_
+`probe interface` [*options*] *address_or_path*
 
 ### DESCRIPTION
 
 Generates a Solidity interface from a given ABI.
 
-The argument (_address_or_path_) can either be the path to a file containing an ABI, or an address.
+The argument (*address_or_path*) can either be the path to a file containing an ABI, or an address.
 
 If an address is provided, then the interface is generated from the ABI of the account, which is fetched from Etherscan.
 
@@ -26,15 +26,15 @@ If an address is provided, then the interface is generated from the ABI of the a
 
 #### Interface Options
 
-`-n` _name_  
-`--name` _name_  
+`-n` *name*  
+`--name` *name*  
 &nbsp;&nbsp;&nbsp;&nbsp;The name to use for the generated interface. The default name is `Interface`.
 
-`-o` _path_  
+`-o` *path*  
 &nbsp;&nbsp;&nbsp;&nbsp;The path to the output file. If not specified, the interface will be output to stdout.
 
-`-p` _version_  
-`--pragma` _version_  
+`-p` *version*  
+`--pragma` *version*  
 &nbsp;&nbsp;&nbsp;&nbsp;The Solidity pragma version to use in the interface. Default: `^0.8.10`.
 
 `-j`  
@@ -43,10 +43,10 @@ If an address is provided, then the interface is generated from the ABI of the a
 
 #### Etherscan Options
 
-`--chain` _chain_name_  
+`--chain` *chain_name*  
 &nbsp;&nbsp;&nbsp;&nbsp;The Etherscan chain.
 
-`--etherscan-api-key` _key_  
+`--etherscan-api-key` *key*  
 &nbsp;&nbsp;&nbsp;&nbsp;Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan#etherscan).  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETHERSCAN_API_KEY`
 

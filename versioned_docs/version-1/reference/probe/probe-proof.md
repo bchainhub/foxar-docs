@@ -8,13 +8,13 @@ probe-proof - Generate a storage proof for a given storage slot.
 
 ### SYNOPSIS
 
-`probe proof` [*options*] _address_ [*slots...*]
+`probe proof` [*options*] *address* [*slots...*]
 
 ### DESCRIPTION
 
 Generate a storage proof for a given storage slot.
 
-The address (_address_) can be an ENS name or an address.
+The address (*address*) can be an ENS name or an address.
 
 The displayed output is a JSON object with the following keys:
 
@@ -33,15 +33,15 @@ The displayed output is a JSON object with the following keys:
 
 #### Query Options
 
-`-B` _block_  
-`--block` _block_  
+`-B` *block*  
+`--block` *block*  
 &nbsp;&nbsp;&nbsp;&nbsp;The block height you want to query at.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Can be a block number, or any of the tags: `earliest`, `finalized`, `safe`, `latest` or `pending`.
 
 #### RPC Options
 
-`--rpc-url` _url_  
+`--rpc-url` *url*  
 &nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
 

@@ -8,7 +8,7 @@ probe-format-bytes32-string - Formats a string into bytes32 encoding.
 
 ### SYNOPSIS
 
-`probe format-bytes32-string` [*options*] _string_
+`probe format-bytes32-string` [*options*] *string*
 
 ### DESCRIPTION
 

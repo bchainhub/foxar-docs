@@ -17,7 +17,7 @@ Options:
 Wallet options - raw:
   -f, --from <ADDRESS>
           The sender account
-          
+
           [env: ETH_FROM=]
 
   -i, --interactive
@@ -34,37 +34,37 @@ Wallet options - raw:
 
       --mnemonic-derivation-path <PATH>
           The wallet derivation path.
-          
+
           Works with both --mnemonic-path and hardware wallets.
 
       --mnemonic-index <INDEX>
           Use the private key from the given mnemonic index.
-          
+
           Used with --mnemonic-path.
-          
+
           [default: 0]
 
 Wallet options - keystore:
       --keystore <PATH>
           Use the keystore in the given folder or file
-          
+
           [env: ETH_KEYSTORE=]
 
       --account <ACCOUNT_NAME>
           Use a keystore from the default keystores folder (~/.foxar/keystores) by its filename
-          
+
           [env: ETH_KEYSTORE_ACCOUNT=]
 
       --password <PASSWORD>
           The keystore password.
-          
+
           Used with --keystore.
 
       --password-file <PASSWORD_FILE>
           The keystore password file path.
-          
+
           Used with --keystore.
-          
+
           [env: ETH_PASSWORD=]
 
 Wallet options - hardware wallet:

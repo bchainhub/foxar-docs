@@ -71,15 +71,13 @@ A good practice is to use the pattern `test_Revert[If|When]_Condition` in combin
 
 Now, instead of using `testFail`, you know exactly what reverted and with which error:
 
-    ```solidity
-    function test_CannotSubtract43() public {
-    vm.expectRevert(stdError.arithmeticError);
-    testNumber -= 43;
-
+```solidity
+function test_CannotSubtract43() public {
+  vm.expectRevert(stdError.arithmeticError);
+  testNumber -= 43;
 }
 ```
-
-<br />
+&nbsp;
 
 Tests are deployed to `0xb4c79daB8f259C7Aee6E5b2Aa729821864227e84`. If you deploy a contract within your test, then
 `0xb4c...7e84` will be its deployer. If the contract deployed within a test gives special permissions to its deployer,
@@ -116,7 +114,7 @@ contract MyOtherContractTest is Test, HelperContract {
 }
 ```
 
-<br />
+&nbsp;
 
 > 💡 **Tip**
 >

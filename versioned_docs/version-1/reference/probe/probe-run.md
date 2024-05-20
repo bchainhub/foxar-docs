@@ -8,7 +8,7 @@ probe-run - Runs a published transaction in a local environment and prints the t
 
 ### SYNOPSIS
 
-`probe run` [*options*] `--rpc-url` _url_ _tx_hash_
+`probe run` [*options*] `--rpc-url` *url* *tx_hash*
 
 ### DESCRIPTION
 
@@ -23,7 +23,7 @@ You can also open the transaction in a debugger by passing `--debug`.
 
 #### Run Options
 
-`--label` _label_  
+`--label` *label*  
 &nbsp;&nbsp;&nbsp;&nbsp;Labels an address in the trace.  
 &nbsp;&nbsp;&nbsp;&nbsp;The format is `<address>:<label>`. Can be passed multiple times.
 
@@ -42,7 +42,7 @@ You can also open the transaction in a debugger by passing `--debug`.
 
 #### RPC Options
 
-`--rpc-url` _url_  
+`--rpc-url` *url*  
 &nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
 

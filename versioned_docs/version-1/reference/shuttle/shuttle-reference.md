@@ -452,7 +452,7 @@ shuttle --order fifo
 
 ### Shell Completions
 
-`shuttle completions` _shell_
+`shuttle completions` *shell*
 
 Generates a shell completions script for the given shell.
 

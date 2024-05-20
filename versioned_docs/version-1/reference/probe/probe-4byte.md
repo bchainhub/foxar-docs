@@ -8,7 +8,7 @@ probe-4byte - Get the function signatures for the given selector from https://si
 
 ### SYNOPSIS
 
-`probe 4byte` [*options*] _sig_
+`probe 4byte` [*options*] *sig*
 
 ### DESCRIPTION
 

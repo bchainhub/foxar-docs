@@ -166,4 +166,4 @@ This program is a set of tools to build, test, fuzz, debug and deploy Solidity s
 
 ### BUGS
 
-See https://github.com/foxar-rs/foxar/issues for issues.
+See https://github.com/bchainhub/foxar/issues for issues.

@@ -8,7 +8,7 @@ Using Spark Std is the preferred way of writing tests with Foxar.
 
 What's included:
 
-- `Vm.sol`: Up-to-date [cheatcodes interface](../cheatcodes/cheatcodes-reference/#cheatcodes-interface)
+- `Vm.sol`: Up-to-date [cheatcodes interface](../cheatcodes/cheatcodes-reference#cheatcodes-interface)
 
   ```solidity
   import "spark-std/Vm.sol";

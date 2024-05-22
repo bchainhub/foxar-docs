@@ -26,7 +26,7 @@ To run Slither on a single file, use this command:
 slither src/Contract.sol
 ```
 
-Note, this requires configuring the [solc version in the foxar config file](https://book.getfoxar.sh/reference/config/solidity-compiler#solc_version).
+Note, this requires configuring the [solc version in the foxar config file](../reference/config/solidity-compiler#solc_version).
 
 You do not need to provide remappings via the `solc_remaps` option as Slither will automatically detect remappings in a Foxar project. Slither will invoke `spark` to perform the build.
 

@@ -12,9 +12,9 @@ This document will help you get started. Do not let the document intimidate you.
 
 The [dev Telegram](https://t.me/foxar_rs) is available for any concerns you may have that are not covered in this guide.
 
-First check the [Contribution guidelines](https://github.com/foxar-rs/foxar/blob/master/CONTRIBUTING.md)
+First check the [Contribution guidelines](https://github.com/bchainhub/foxar/blob/master/CONTRIBUTING.md)
 
 Some articles to walk you through the first steps:
 
 - [Make a first contribution](https://dev.to/teddav/foxar-open-source-contribution-1k2d)
-- [Add a cheatcode](https://dev.to/teddav/foxar-add-a-cheatcode-5hc8) (outdated, see the [Foxar dev docs](https://github.com/foxar-rs/foxar/blob/master/docs/dev/cheatcodes.md#adding-a-new-cheatcode) for a shorter but up-to-date tutorial)
+- [Add a cheatcode](https://dev.to/teddav/foxar-add-a-cheatcode-5hc8) (outdated, see the [Foxar dev docs](https://github.com/bchainhub/foxar/blob/master/docs/dev/cheatcodes.md#adding-a-new-cheatcode) for a shorter but up-to-date tutorial)

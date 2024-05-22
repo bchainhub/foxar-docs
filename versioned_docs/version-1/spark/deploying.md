@@ -60,7 +60,7 @@ $ spark create --rpc-url <your_rpc_url> \
 ## Verifying a pre-existing contract
 
 It is recommended to use the `--verify` flag with `spark create` to automatically verify the contract on explorer after a deployment.
-Note that for Etherscan [`ETHERSCAN_API_KEY`](../reference/config/etherscan#etherscan_api_key) must be set.
+Note that for Etherscan [`ETHERSCAN_API_KEY`](../reference/config/etherscan) must be set.
 
 If you are verifying an already deployed contract, read on.
 

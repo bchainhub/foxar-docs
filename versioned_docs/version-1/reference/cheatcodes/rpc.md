@@ -70,4 +70,4 @@ assertEq(hex"10b7c11bcb51e6", result);
 
 Spark Config
 
-[Config Reference](../config/testing/#rpc_endpoints)
+[Config Reference](../config/testing#rpc_endpoints)

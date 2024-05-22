@@ -182,7 +182,7 @@ contract NFT is ERC721, Ownable {
 
 Among other things, we have added metadata that can be queried from any front-end application like OpenSea, by calling the `tokenURI` method on our NFT contract.
 
-> **Note**: If you want to provide a real URL to the constructor at deployment, and host the metadata of this NFT contract please follow the steps outlined [here](https://docs.opensea.io/docs/part-3-adding-metadata-and-payments-to-your-contract#intro-to-nft-metadata).
+> **Note**: If you want to provide a real URL to the constructor at deployment, and host the metadata of this NFT contract please follow the steps outlined [here](https://docs.opensea.io/docs/part-3-add-metadata-to-your-contract).
 
 Let's test some of this added functionality to make sure it works as intended. Foxar offers an extremely fast EVM native testing framework through Spark.
 
@@ -333,7 +333,7 @@ The test suite is set up as a contract with a `setUp` method which runs before e
 As you can see, Spark offers a number of [cheatcodes](../reference/cheatcodes/cheatcodes-reference/) to manipulate state to accommodate your testing scenario.
 
 For example, our `testFailMaxSupplyReached` test checks that an attempt to mint fails when the max supply of NFT is reached. Thus, the `currentTokenId` of the NFT contract needs to be set to the max supply by using the store cheatcode which allows you to write data to your contracts storage slots. The storage slots you wish to write to can easily be found using the
-[`spark-std`](https://github.com/foxar-rs/spark-std/) helper library. You can run the test with the following command:
+[`spark-std`](https://github.com/bchainhub/spark-std/) helper library. You can run the test with the following command:
 
 ```bash
 spark test

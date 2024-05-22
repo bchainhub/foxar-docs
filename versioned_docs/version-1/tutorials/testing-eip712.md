@@ -141,7 +141,7 @@ While the Permit struct passed in the getStructHash() function above doesn't con
 
 - Deploy a mock ERC-20 token and `SigUtils` helper with the token's EIP-712 domain separator
 - Create private keys to mock the owner and spender
-- Derive their addresses using the `vm.addr` [cheatcode](https://book.getfoxar.sh/cheatcodes/addr.html)
+- Derive their addresses using the `vm.addr` [cheatcode](../reference/cheatcodes/addr)
 - Mint the owner a test token
 
 ```solidity
@@ -173,7 +173,7 @@ contract ERC20Test is Test {
 
 - Create an approval for the spender
 - Compute its digest using `sigUtils.getTypedDataHash`
-- Sign the digest using the `vm.sign` [cheatcode](https://book.getfoxar.sh/cheatcodes/sign.html) with the owner's private key
+- Sign the digest using the `vm.sign` [cheatcode](../reference/cheatcodes/sign) with the owner's private key
 - Store the `uint8 v, bytes32 r, bytes32 s` of the signature
 - Call `permit` with the signed permit and signature to execute the approval on-chain
 
@@ -325,7 +325,7 @@ contract ERC20Test is Test {
 **Testing: `transferFrom`**
 
 - Create, sign, and execute an approval for the spender
-- Call `tokenTransfer` as the spender using the `vm.prank` [cheatcode](https://book.getfoxar.sh/cheatcodes/prank.html) to execute the transfer
+- Call `tokenTransfer` as the spender using the `vm.prank` [cheatcode](../reference/cheatcodes/prank) to execute the transfer
 
 ```solidity
     function test_TransferFromLimitedPermit() public {
@@ -516,7 +516,7 @@ Here is a section of a [mock contract](https://github.com/kulkarohan/deposit/blo
 
 - Deploy the `Deposit` contract, a mock ERC-20 token, and `SigUtils` helper with the token's EIP-712 domain separator
 - Create a private key to mock the owner (the spender is now the `Deposit` address)
-- Derive the owner address using the `vm.addr` [cheatcode](https://book.getfoxar.sh/cheatcodes/addr.html)
+- Derive the owner address using the `vm.addr` [cheatcode](../reference/cheatcodes/addr)
 - Mint the owner a test token
 
 ```solidity
@@ -544,7 +544,7 @@ contract DepositTest is Test {
 
 - Create an approval for the `Deposit` contract
 - Compute its digest using `sigUtils.getTypedDataHash`
-- Sign the digest using the `vm.sign` [cheatcode](https://book.getfoxar.sh/cheatcodes/sign.html) with the owner's private key
+- Sign the digest using the `vm.sign` [cheatcode](../reference/cheatcodes/sign) with the owner's private key
 - Store the `uint8 v, bytes32 r, bytes32 s` of the signature
   - *Note:* can convert to bytes via `bytes signature = abi.encodePacked(r, s, v)`
 - Call `depositWithPermit` with the signed approval and signature to transfer the tokens into the contract

@@ -109,7 +109,7 @@ If using a signature, remaining arguments must be in their ordinary form. If usi
 &nbsp;&nbsp;&nbsp;&nbsp;The Etherscan chain.
 
 `--etherscan-api-key` *key*  
-&nbsp;&nbsp;&nbsp;&nbsp;Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan#etherscan).  
+&nbsp;&nbsp;&nbsp;&nbsp;Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan).  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETHERSCAN_API_KEY`
 
 ### EXAMPLES

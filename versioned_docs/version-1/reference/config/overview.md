@@ -39,7 +39,7 @@ Exceptions are:
 
 Configuration files are written in the [TOML format](https://toml.io), with simple key-value pairs inside of sections.
 
-This page describes each configuration key in detail. To see the default values, either refer to the specific key in this document, or see the [default config](../../../static/config.default.toml).
+This page describes each configuration key in detail. To see the default values, either refer to the specific key in this document, or see the [default config](../../../../static/config.default.toml).
 
 ### Configuration keys
 

@@ -6,12 +6,12 @@ If you face any issues while installing, check out the [FAQ](../faq.md).
 
 ### Precompiled binaries
 
-Precompiled binaries are available from the [GitHub releases page](https://github.com/foxar-rs/foxar/releases).
+Precompiled binaries are available from the [GitHub releases page](https://github.com/bchainhub/foxar/releases).
 These are better managed by using [Foxarup](#using-foxarup).
 
 ### Using Foxarup
 
-Foxarup is the Foxar toolchain installer. You can find more about it [here](https://github.com/foxar-rs/foxar/blob/master/foxarup/README.md).
+Foxarup is the Foxar toolchain installer. You can find more about it [here](https://github.com/bchainhub/foxar/blob/master/foxarup/README.md).
 
 Open your terminal and run the following command:
 
@@ -62,7 +62,7 @@ Or, by using a single Cargo command:
 cargo install --git https://github.com/foxar-rs/foxar --profile local --locked spark probe pilot shuttle
 ```
 
-Or, by manually building from a local copy of the [Foxar repository](https://github.com/foxar-rs/foxar):
+Or, by manually building from a local copy of the [Foxar repository](https://github.com/bchainhub/foxar):
 
 ```sh
 # clone the repository

@@ -10,7 +10,7 @@ function ffi(string[] calldata) external returns (bytes memory);
 
 ### Description
 
-Calls an arbitrary command if [`ffi`](../config/testing/#ffi) is enabled.
+Calls an arbitrary command if [`ffi`](../config/testing#ffi) is enabled.
 
 It is generally advised to use this cheat code as a last resort, and to not enable it by default, as anyone who can change the tests of a project will be able to execute arbitrary commands on devices that run the tests.
 

@@ -149,7 +149,7 @@ Dynamic linking is not supported: you should predeploy your libraries and manual
 &nbsp;&nbsp;&nbsp;&nbsp;The Etherscan chain.
 
 `--etherscan-api-key` *key*  
-&nbsp;&nbsp;&nbsp;&nbsp;Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan#etherscan).  
+&nbsp;&nbsp;&nbsp;&nbsp;Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan).  
 &nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETHERSCAN_API_KEY`
 
 #### Cache Options

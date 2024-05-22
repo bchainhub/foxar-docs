@@ -11,10 +11,10 @@ This tutorial shows you how to build, test, and deploy a smart contract using Fo
 ### Installation and Setup
 
 The only installation required to run this tutorial is Docker, and optionally, an IDE of your choice.
-Follow the [Docker installation instructions](../getting-started/installation.md#using-with-docker).
+Follow the [Docker installation instructions](../getting-started/installation#using-foxarup).
 
 To keep future commands succinct, let's re-tag the image:
- `docker tag ghcr.io/foxar-rs/foxar:latest foxar:latest`
+`docker tag ghcr.io/foxar-rs/foxar:latest foxar:latest`
 
 Having Foxar installed locally is not strictly required, but it may be helpful for debugging. You can install it using [foxarup](../getting-started/installation.md#using-foxarup).
 
@@ -31,7 +31,7 @@ The docker image can be used in two primary ways:
 
 We will cover both, but let's start by taking a look at interfacing with foxar using docker. This is also a good test that your local installation worked!
 
-We can run any of the `probe` [commands](/reference/probe/) against our docker image. Let's fetch the latest block information:
+We can run any of the `probe` [commands](../reference/probe/probe-commands) against our docker image. Let's fetch the latest block information:
 
 ```sh
 $ docker run foxar "probe block --rpc-url $RPC_URL latest"

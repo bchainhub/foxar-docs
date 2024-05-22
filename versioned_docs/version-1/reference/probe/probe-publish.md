@@ -8,7 +8,7 @@ probe-publish - Publish a raw transaction to the network.
 
 ### SYNOPSIS
 
-`probe publish` [*options*] *tx*
+`probe publish` [*options*] _tx_
 
 ### DESCRIPTION
 
@@ -20,23 +20,23 @@ Publish a raw pre-signed transaction to the network.
 
 `--async`  
 `--probe-async`  
-&nbsp;&nbsp;&nbsp;&nbsp;Do not wait for a transaction receipt.  
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `PROBE_ASYNC`
+Do not wait for a transaction receipt.  
+Environment: `PROBE_ASYNC`
 
 #### RPC Options
 
-`--rpc-url` *url*  
-&nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
+`--rpc-url` _url_  
+The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
+Environment: `ETH_RPC_URL`
 
 `--flashbots`  
-&nbsp;&nbsp;&nbsp;&nbsp;Use the Flashbots RPC URL (https://rpc.flashbots.net).
+Use the Flashbots RPC URL (https://rpc.flashbots.net).
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

@@ -47,7 +47,7 @@ Test result: ok. 2 passed; 0 failed; 0 skipped; finished in 96.80ms
 Ran 1 test suites: 2 tests passed, 0 failed, 0 skipped (2 total tests)
 ```
 
-&nbsp;
+<br />
 
 > 💡 **Tip**
 >

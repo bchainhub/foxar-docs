@@ -8,13 +8,13 @@ probe-calldata-decode - Decode ABI-encoded input data.
 
 ### SYNOPSIS
 
-`probe calldata-decode` [*options*] *sig* *calldata*
+`probe calldata-decode` [*options*] _sig_ _calldata_
 
 ### DESCRIPTION
 
 Decode ABI-encoded input data.
 
-The signature (*sig*) is a fragment in the form `<function name>(<types...>)`.
+The signature (_sig_) is a fragment in the form `<function name>(<types...>)`.
 
 ### OPTIONS
 
@@ -22,7 +22,7 @@ The signature (*sig*) is a fragment in the form `<function name>(<types...>)`.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

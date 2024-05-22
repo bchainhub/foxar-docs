@@ -8,13 +8,13 @@ probe-interface - Generate a Solidity interface from a given ABI.
 
 ### SYNOPSIS
 
-`probe interface` [*options*] *address_or_path*
+`probe interface` [*options*] _address_or_path_
 
 ### DESCRIPTION
 
 Generates a Solidity interface from a given ABI.
 
-The argument (*address_or_path*) can either be the path to a file containing an ABI, or an address.
+The argument (_address_or_path_) can either be the path to a file containing an ABI, or an address.
 
 If an address is provided, then the interface is generated from the ABI of the account, which is fetched from Etherscan.
 
@@ -26,35 +26,35 @@ If an address is provided, then the interface is generated from the ABI of the a
 
 #### Interface Options
 
-`-n` *name*  
-`--name` *name*  
-&nbsp;&nbsp;&nbsp;&nbsp;The name to use for the generated interface. The default name is `Interface`.
+`-n` _name_  
+`--name` _name_  
+The name to use for the generated interface. The default name is `Interface`.
 
-`-o` *path*  
-&nbsp;&nbsp;&nbsp;&nbsp;The path to the output file. If not specified, the interface will be output to stdout.
+`-o` _path_  
+The path to the output file. If not specified, the interface will be output to stdout.
 
-`-p` *version*  
-`--pragma` *version*  
-&nbsp;&nbsp;&nbsp;&nbsp;The Solidity pragma version to use in the interface. Default: `^0.8.10`.
+`-p` _version_  
+`--pragma` _version_  
+The Solidity pragma version to use in the interface. Default: `^0.8.10`.
 
 `-j`  
 `--json`  
-&nbsp;&nbsp;&nbsp;&nbsp;Output the contract's JSON ABI.
+Output the contract's JSON ABI.
 
 #### Etherscan Options
 
-`--chain` *chain_name*  
-&nbsp;&nbsp;&nbsp;&nbsp;The Etherscan chain.
+`--chain` _chain_name_  
+The Etherscan chain.
 
-`--etherscan-api-key` *key*  
-&nbsp;&nbsp;&nbsp;&nbsp;Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan#etherscan).  
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETHERSCAN_API_KEY`
+`--etherscan-api-key` _key_  
+Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan#etherscan).  
+Environment: `ETHERSCAN_API_KEY`
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

@@ -8,7 +8,7 @@ spark-upload-selectors - Uploads abi of given contract to https://sig.eth.samczs
 
 ### SYNOPSIS
 
-`spark upload-selectors` [*options*] *contract*
+`spark upload-selectors` [*options*] _contract_
 
 ### DESCRIPTION
 
@@ -19,43 +19,43 @@ Uploads abi of given contract to https://sig.eth.samczsun.com function selector 
 #### Project Options
 
 `--build-info`  
-&nbsp;&nbsp;&nbsp;&nbsp;Generate build info files.
+Generate build info files.
 
-`--build-info-path` *path*  
-&nbsp;&nbsp;&nbsp;&nbsp;Output path to directory that build info files will be written to.
+`--build-info-path` _path_  
+Output path to directory that build info files will be written to.
 
-`--root` *path*  
-&nbsp;&nbsp;&nbsp;&nbsp;The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
+`--root` _path_  
+The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
 
-`-C` *path*  
-`--contracts` *path*  
-&nbsp;&nbsp;&nbsp;&nbsp;The contracts source directory.  
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `DAPP_SRC`
+`-C` _path_  
+`--contracts` _path_  
+The contracts source directory.  
+Environment: `DAPP_SRC`
 
-`--lib-paths` *path*  
-&nbsp;&nbsp;&nbsp;&nbsp;The path to the library folder.
+`--lib-paths` _path_  
+The path to the library folder.
 
-`-R` *remappings*  
-`--remappings` *remappings*  
-&nbsp;&nbsp;&nbsp;&nbsp;The project's remappings.
+`-R` _remappings_  
+`--remappings` _remappings_  
+The project's remappings.
 
-&nbsp;&nbsp;&nbsp;&nbsp;The parameter is a comma-separated list of remappings in the format `<source>=<dest>`.
+The parameter is a comma-separated list of remappings in the format `<source>=<dest>`.
 
-`--cache-path` *path*  
-&nbsp;&nbsp;&nbsp;&nbsp;The path to the compiler cache.
+`--cache-path` _path_  
+The path to the compiler cache.
 
-`--config-path` *file*  
-&nbsp;&nbsp;&nbsp;&nbsp;Path to the config file.
+`--config-path` _file_  
+Path to the config file.
 
 `--hh`  
 `--hardhat`  
-&nbsp;&nbsp;&nbsp;&nbsp;This is a convenience flag, and is the same as passing `--contracts contracts --lib-paths node-modules`.
+This is a convenience flag, and is the same as passing `--contracts contracts --lib-paths node-modules`.
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

@@ -111,7 +111,7 @@ $ spark verify-check --chain-id 11155111 <GUID> <your_etherscan_api_key>
 Contract successfully verified.
 ```
 
-&nbsp;
+<br />
 
 > 💡 **Tip**
 >
@@ -119,7 +119,7 @@ Contract successfully verified.
 >
 > In this example, we ran `probe abi-encode "constructor(string,string,uint8,uint256)" "SparkUSD" "FUSD" 18 1000000000000000000000` to ABI-encode the arguments.
 
-&nbsp;
+<br />
 
 ### Troubleshooting
 

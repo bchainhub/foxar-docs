@@ -8,13 +8,13 @@ probe-to-hexdata - Normalize the input to lowercase, 0x-prefixed hex.
 
 ### SYNOPSIS
 
-`probe to-hexdata` [*options*] *input*
+`probe to-hexdata` [*options*] _input_
 
 ### DESCRIPTION
 
 Normalize the input to lowercase, 0x-prefixed hex.
 
-The input data (*input*) can either be:
+The input data (_input_) can either be:
 
 - Mixed case hex with or without the 0x prefix.
 - 0x prefixed hex that should be concatenated, separated by `:`.
@@ -27,7 +27,7 @@ The input data (*input*) can either be:
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

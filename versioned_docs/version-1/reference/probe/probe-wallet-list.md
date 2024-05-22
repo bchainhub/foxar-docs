@@ -20,7 +20,7 @@ List all the accounts in the keystore default directory `~/.foxar/keystores`.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### SEE ALSO
 

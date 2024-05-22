@@ -8,7 +8,7 @@ spark-verify-contract - Verify smart contracts on a chosen verification provider
 
 ### SYNOPSIS
 
-`spark verify-contract` [*options*] *address* *contract*
+`spark verify-contract` [*options*] _address_ _contract_
 
 ### DESCRIPTION
 
@@ -37,96 +37,96 @@ you can specify a file containing **space-separated** constructor arguments with
 
 #### Verify Contract Options
 
-`--verifier` *name*
-&nbsp;&nbsp;&nbsp;&nbsp;The verification provider. Available options: `etherscan`, `sourcify` & `blockscout`. Default: `etherscan`. Note: make sure you add "/api\?" to the end of the Blockscout homepage explorer URL.
+`--verifier` _name_
+The verification provider. Available options: `etherscan`, `sourcify` & `blockscout`. Default: `etherscan`. Note: make sure you add "/api\?" to the end of the Blockscout homepage explorer URL.
 
-`--verifier-url` *url*
-&nbsp;&nbsp;&nbsp;&nbsp;The optional verifier url for submitting the verification request.
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `VERIFIER_URL`
+`--verifier-url` _url_
+The optional verifier url for submitting the verification request.
+Environment: `VERIFIER_URL`
 
-`--compiler-version` *version*
-&nbsp;&nbsp;&nbsp;&nbsp;The compiler version used to build the smart contract.
+`--compiler-version` _version_
+The compiler version used to build the smart contract.
 
-&nbsp;&nbsp;&nbsp;&nbsp;To find the exact compiler version, run `~/.svm/x.y.z/solc-x.y.z --version` where `x` and
+To find the exact compiler version, run `~/.svm/x.y.z/solc-x.y.z --version` where `x` and
 `y` are major and minor version numbers respectively, then search for the 8 hex digits in the version string.
 
-`--num-of-optimizations` *num*
-`--optimizer-runs` *num*
-&nbsp;&nbsp;&nbsp;&nbsp;The number of optimization runs used to build the smart contract.
+`--num-of-optimizations` _num_
+`--optimizer-runs` _num_
+The number of optimization runs used to build the smart contract.
 
-`--constructor-args` *args*
-&nbsp;&nbsp;&nbsp;&nbsp;The ABI-encoded constructor arguments. Conflicts with `--constructor-args-path`.
+`--constructor-args` _args_
+The ABI-encoded constructor arguments. Conflicts with `--constructor-args-path`.
 
-`--constructor-args-path` *file*
-&nbsp;&nbsp;&nbsp;&nbsp;The path to a file containing the constructor arguments. Conflicts with `--constructor-args`.
+`--constructor-args-path` _file_
+The path to a file containing the constructor arguments. Conflicts with `--constructor-args`.
 
-`--chain-id` *chain*
-`--chain` *chain*
-&nbsp;&nbsp;&nbsp;&nbsp;The ID or name of the chain the contract is deployed to.
-&nbsp;&nbsp;&nbsp;&nbsp;Default: mainnet
+`--chain-id` _chain_
+`--chain` _chain_
+The ID or name of the chain the contract is deployed to.
+Default: mainnet
 
 `--flatten`
-&nbsp;&nbsp;&nbsp;&nbsp;Flag indicating whether to flatten the source code before verifying.
+Flag indicating whether to flatten the source code before verifying.
 
-&nbsp;&nbsp;&nbsp;&nbsp;If this flag is not provided, the JSON standard input will be used instead.
+If this flag is not provided, the JSON standard input will be used instead.
 
 `-f`
 `--force`
-&nbsp;&nbsp;&nbsp;&nbsp;Do not compile the flattened smart contract before verifying.
+Do not compile the flattened smart contract before verifying.
 
-`--delay` *delay*
-&nbsp;&nbsp;&nbsp;&nbsp;Optional timeout to apply in between attempts in seconds. Defaults to 3.
+`--delay` _delay_
+Optional timeout to apply in between attempts in seconds. Defaults to 3.
 
-`--retries` *retries*
-&nbsp;&nbsp;&nbsp;&nbsp;Number of attempts for retrying. Defaults to 15.
+`--retries` _retries_
+Number of attempts for retrying. Defaults to 15.
 
 `--show-standard-json-input`
-&nbsp;&nbsp;&nbsp;&nbsp;Command outputs JSON suitable for saving to a file and uploading to block explorers for verification.
+Command outputs JSON suitable for saving to a file and uploading to block explorers for verification.
 
 `--watch`
-&nbsp;&nbsp;&nbsp;&nbsp;Wait for verification result after submission.
-&nbsp;&nbsp;&nbsp;&nbsp;Automatically runs `spark verify-check` until the verification either fails or succeeds.
+Wait for verification result after submission.
+Automatically runs `spark verify-check` until the verification either fails or succeeds.
 
 #### Project Options
 
 `--build-info`
-&nbsp;&nbsp;&nbsp;&nbsp;Generate build info files.
+Generate build info files.
 
-`--build-info-path` *path*
-&nbsp;&nbsp;&nbsp;&nbsp;Output path to directory that build info files will be written to.
+`--build-info-path` _path_
+Output path to directory that build info files will be written to.
 
-`--root` *path*
-&nbsp;&nbsp;&nbsp;&nbsp;The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
+`--root` _path_
+The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
 
-`-C` *path*
-`--contracts` *path*
-&nbsp;&nbsp;&nbsp;&nbsp;The contracts source directory.
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `DAPP_SRC`
+`-C` _path_
+`--contracts` _path_
+The contracts source directory.
+Environment: `DAPP_SRC`
 
-`--lib-paths` *path*
-&nbsp;&nbsp;&nbsp;&nbsp;The path to the library folder.
+`--lib-paths` _path_
+The path to the library folder.
 
-`-R` *remappings*
-`--remappings` *remappings*
-&nbsp;&nbsp;&nbsp;&nbsp;The project's remappings.
+`-R` _remappings_
+`--remappings` _remappings_
+The project's remappings.
 
-&nbsp;&nbsp;&nbsp;&nbsp;The parameter is a comma-separated list of remappings in the format `<source>=<dest>`.
+The parameter is a comma-separated list of remappings in the format `<source>=<dest>`.
 
-`--cache-path` *path*
-&nbsp;&nbsp;&nbsp;&nbsp;The path to the compiler cache.
+`--cache-path` _path_
+The path to the compiler cache.
 
-`--config-path` *file*
-&nbsp;&nbsp;&nbsp;&nbsp;Path to the config file.
+`--config-path` _file_
+Path to the config file.
 
 `--hh`
 `--hardhat`
-&nbsp;&nbsp;&nbsp;&nbsp;This is a convenience flag, and is the same as passing `--contracts contracts --lib-paths node-modules`.
+This is a convenience flag, and is the same as passing `--contracts contracts --lib-paths node-modules`.
 
 #### Common Options
 
 `-h`
 `--help`
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

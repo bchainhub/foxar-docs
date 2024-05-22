@@ -30,52 +30,52 @@ You can overwrite the existing bindings by passing `--overwrite`.
 
 #### Project Options
 
-`-b` *path*  
-`--bindings-path` *path*  
-&nbsp;&nbsp;&nbsp;&nbsp;The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
+`-b` _path_  
+`--bindings-path` _path_  
+The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
 
-`--crate-name` *name*  
-&nbsp;&nbsp;&nbsp;&nbsp;The name of the Rust crate to generate, if you are generating a crate (default).  
-&nbsp;&nbsp;&nbsp;&nbsp;This should be a valid crates.io crate name.
+`--crate-name` _name_  
+The name of the Rust crate to generate, if you are generating a crate (default).  
+This should be a valid crates.io crate name.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Default: foxar-contracts
+Default: foxar-contracts
 
-`--crate-version` *semver*  
-&nbsp;&nbsp;&nbsp;&nbsp;The version of the Rust crate to generate, if you are generating a crate (default).  
-&nbsp;&nbsp;&nbsp;&nbsp;This should be a standard semver version string.
+`--crate-version` _semver_  
+The version of the Rust crate to generate, if you are generating a crate (default).  
+This should be a standard semver version string.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Default: 0.0.1
+Default: 0.0.1
 
 `--module`  
-&nbsp;&nbsp;&nbsp;&nbsp;Generate the bindings as a module instead of a crate.
+Generate the bindings as a module instead of a crate.
 
 `--single-file`  
-&nbsp;&nbsp;&nbsp;&nbsp;Generate bindings as a single file.
+Generate bindings as a single file.
 
 `--overwrite`  
-&nbsp;&nbsp;&nbsp;&nbsp;Overwrite existing generated bindings. By default, the command will check that the bindings are correct, and then exit.  
-&nbsp;&nbsp;&nbsp;&nbsp;If `--overwrite` is passed, it will instead delete and overwrite the bindings.
+Overwrite existing generated bindings. By default, the command will check that the bindings are correct, and then exit.  
+If `--overwrite` is passed, it will instead delete and overwrite the bindings.
 
-`--root` *path*  
-&nbsp;&nbsp;&nbsp;&nbsp;The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
+`--root` _path_  
+The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
 
 `--skip-cargo-toml`  
-&nbsp;&nbsp;&nbsp;&nbsp;Skip Cargo.toml consistency checks.  
-&nbsp;&nbsp;&nbsp;&nbsp;This allows you to manage the [ethers](https://github.com/gakonst/ethers-rs) version without giving up on consistency checks.  
-&nbsp;&nbsp;&nbsp;&nbsp;An example would be if you use additional features of ethers like `ws`, `ipc`, or `rustls` and get an `ethers-providers` version mismatch.
+Skip Cargo.toml consistency checks.  
+This allows you to manage the [ethers](https://github.com/gakonst/ethers-rs) version without giving up on consistency checks.  
+An example would be if you use additional features of ethers like `ws`, `ipc`, or `rustls` and get an `ethers-providers` version mismatch.
 
 `--skip-build`  
-&nbsp;&nbsp;&nbsp;&nbsp;Skips running spark build before generating binding.  
-&nbsp;&nbsp;&nbsp;&nbsp;This allows you to skip the default `spark build` step that's executed first and instead generate bindings using the already existing artifacts.
+Skips running spark build before generating binding.  
+This allows you to skip the default `spark build` step that's executed first and instead generate bindings using the already existing artifacts.
 
 `--select-all`  
-&nbsp;&nbsp;&nbsp;&nbsp;By default all contracts ending with `Test` or `Script` are excluded. This will explicitly generate bindings for all contracts. Conflicts with `--select` and `--skip`.
+By default all contracts ending with `Test` or `Script` are excluded. This will explicitly generate bindings for all contracts. Conflicts with `--select` and `--skip`.
 
-`--select` *regex+*  
-&nbsp;&nbsp;&nbsp;&nbsp;Create bindings only for contracts whose names match the specified filter(s). Conflicts with `--skip`.
+`--select` _regex+_  
+Create bindings only for contracts whose names match the specified filter(s). Conflicts with `--skip`.
 
-`--skip` *regex+*  
-&nbsp;&nbsp;&nbsp;&nbsp;Create bindings only for contracts whose names do not match the specified filter(s). Conflicts with `--select`.
+`--skip` _regex+_  
+Create bindings only for contracts whose names do not match the specified filter(s). Conflicts with `--select`.
 
 ### SEE ALSO
 

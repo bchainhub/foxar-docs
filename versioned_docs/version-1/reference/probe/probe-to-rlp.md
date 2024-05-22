@@ -8,7 +8,7 @@ probe-to-rlp - Encodes hex data to RLP.
 
 ### SYNOPSIS
 
-`probe to-rlp` *array*
+`probe to-rlp` _array_
 
 ### DESCRIPTION
 
@@ -20,7 +20,7 @@ RLP encodes a hex string or a JSON array of hex strings.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

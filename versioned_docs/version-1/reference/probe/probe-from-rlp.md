@@ -8,13 +8,13 @@ probe-from-rlp - Decodes RLP-encoded data.
 
 ### SYNOPSIS
 
-`probe from-rlp` *data*
+`probe from-rlp` _data_
 
 ### DESCRIPTION
 
 Decodes RLP-encoded data.
 
-The *data* is a hexadecimal string with optional 0x prefix.
+The _data_ is a hexadecimal string with optional 0x prefix.
 
 ### OPTIONS
 
@@ -22,7 +22,7 @@ The *data* is a hexadecimal string with optional 0x prefix.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

@@ -12,7 +12,7 @@ spark-init - Create a new Spark project.
 
 ### DESCRIPTION
 
-Create a new Spark project in the directory *root* (by default the current working directory).
+Create a new Spark project in the directory _root_ (by default the current working directory).
 
 The default template creates the following project layout:
 
@@ -52,37 +52,37 @@ If you do not want this behavior, pass `--no-git`.
 #### Init Options
 
 `--force`  
-&nbsp;&nbsp;&nbsp;&nbsp;Create the project even if the specified root directory is not empty.
+Create the project even if the specified root directory is not empty.
 
-`-t` *template*  
-`--template` *template*  
-&nbsp;&nbsp;&nbsp;&nbsp;The template to start from.
+`-t` _template_  
+`--template` _template_  
+The template to start from.
 
 `--vscode`  
-&nbsp;&nbsp;&nbsp;&nbsp;Create a `.vscode/settings.json` file with Solidity settings, and generate a `remappings.txt` file.
+Create a `.vscode/settings.json` file with Solidity settings, and generate a `remappings.txt` file.
 
 `--offline`  
-&nbsp;&nbsp;&nbsp;&nbsp;Do not install dependencies from the network.
+Do not install dependencies from the network.
 
 #### VCS Options
 
 `--no-commit`  
-&nbsp;&nbsp;&nbsp;&nbsp;Do not create an initial commit.
+Do not create an initial commit.
 
 `--no-git`  
-&nbsp;&nbsp;&nbsp;&nbsp;Do not create a git repository.
+Do not create a git repository.
 
 #### Display Options
 
 `-q`  
 `--quiet`  
-&nbsp;&nbsp;&nbsp;&nbsp;Do not print any messages.
+Do not print any messages.
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

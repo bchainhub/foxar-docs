@@ -8,7 +8,7 @@ probe-wallet-verify - Verify the signature of a message.
 
 ### SYNOPSIS
 
-`probe wallet verify` [*options*] `--address` *address* *message* *signature*
+`probe wallet verify` [*options*] `--address` _address_ _message_ _signature_
 
 ### DESCRIPTION
 
@@ -18,15 +18,15 @@ Verify the signature of a message.
 
 #### Signature Options
 
-`-a` *address*  
-`--address` *address*  
-&nbsp;&nbsp;&nbsp;&nbsp;The address of the message signer.
+`-a` _address_  
+`--address` _address_  
+The address of the message signer.
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### SEE ALSO
 

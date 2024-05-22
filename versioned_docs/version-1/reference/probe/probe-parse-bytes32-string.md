@@ -8,7 +8,7 @@ probe-parse-bytes32-string - Parses a string from bytes32 encoding.
 
 ### SYNOPSIS
 
-`probe parse-bytes32-string` [*options*] *bytes*
+`probe parse-bytes32-string` [*options*] _bytes_
 
 ### DESCRIPTION
 
@@ -20,7 +20,7 @@ Parses a [Solidity string literal](https://docs.soliditylang.org/en/v0.8.16/type
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

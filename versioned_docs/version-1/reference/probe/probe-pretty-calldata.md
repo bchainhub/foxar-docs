@@ -8,7 +8,7 @@ probe-pretty-calldata - Pretty print calldata.
 
 ### SYNOPSIS
 
-`probe pretty-calldata` [*options*] *calldata*
+`probe pretty-calldata` [*options*] _calldata_
 
 ### DESCRIPTION
 
@@ -22,13 +22,13 @@ Tries to decode the calldata using https://sig.eth.samczsun.com unless `--offlin
 
 `-o`  
 `--offline`  
-&nbsp;&nbsp;&nbsp;&nbsp;Skip the https://sig.eth.samczsun.com lookup.
+Skip the https://sig.eth.samczsun.com lookup.
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

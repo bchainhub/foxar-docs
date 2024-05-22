@@ -311,124 +311,124 @@ Gets the transaction hash and the address which created a contract.
 #### General Options
 
 `-a, --accounts <ACCOUNTS>`
-&nbsp;&nbsp;&nbsp;&nbsp; Set the number of accounts [default: 10]
+Set the number of accounts [default: 10]
 
 `--auto-impersonate`
-&nbsp;&nbsp;&nbsp;&nbsp; Enable autoImpersonate on startup
+Enable autoImpersonate on startup
 
 `-b, --block-time <block-time>`
-&nbsp;&nbsp;&nbsp;&nbsp; Block time in seconds for interval mining
+Block time in seconds for interval mining
 
 `--balance <BALANCE>`
-&nbsp;&nbsp;&nbsp;&nbsp; Set the balance of the accounts [default: 10000]
+Set the balance of the accounts [default: 10000]
 
 `--derivation-path <DERIVATION_PATH>`
-&nbsp;&nbsp;&nbsp;&nbsp; Set the derivation path of the child key to be derived [default: m/44'/60'/0'/0/]
+Set the derivation path of the child key to be derived [default: m/44'/60'/0'/0/]
 
 `-h, --help`
-&nbsp;&nbsp;&nbsp;&nbsp; Print help information
+Print help information
 
 `--hardfork <HARDFORK>`
-&nbsp;&nbsp;&nbsp;&nbsp; Choose the EVM hardfork to use
-&nbsp;&nbsp;&nbsp;&nbsp; Choose the hardfork by name, e.g. `shanghai`, `paris`, `london`, etc...
-&nbsp;&nbsp;&nbsp;&nbsp; [default: latest]
+Choose the EVM hardfork to use
+Choose the hardfork by name, e.g. `shanghai`, `paris`, `london`, etc...
+[default: latest]
 
 `--init <PATH>`
-&nbsp;&nbsp;&nbsp;&nbsp; Initialize the genesis block with the given `genesis.json` file.
+Initialize the genesis block with the given `genesis.json` file.
 
 `-m, --mnemonic <MNEMONIC>`
-&nbsp;&nbsp;&nbsp;&nbsp; BIP39 mnemonic phrase used for generating accounts
+BIP39 mnemonic phrase used for generating accounts
 
 `--no-mining`
-&nbsp;&nbsp;&nbsp;&nbsp; Disable auto and interval mining, and mine on demand instead
+Disable auto and interval mining, and mine on demand instead
 
 `--order <ORDER>`
-&nbsp;&nbsp;&nbsp;&nbsp; How transactions are sorted in the mempool [default: fees]
+How transactions are sorted in the mempool [default: fees]
 
 `-p, --port <PORT>`
-&nbsp;&nbsp;&nbsp;&nbsp; Port number to listen on [default: 8545]
+Port number to listen on [default: 8545]
 
 `--steps-tracing`
-&nbsp;&nbsp;&nbsp;&nbsp; Enable steps tracing used for debug calls returning geth-style traces [aliases: tracing]
+Enable steps tracing used for debug calls returning geth-style traces [aliases: tracing]
 
 `--ipc [<PATH>]`
-&nbsp;&nbsp;&nbsp;&nbsp; Starts an IPC endpoint at the given `PATH` argument or the default path: unix: `tmp/shuttle.ipc`, windows: `\\.\pipe\shuttle.ipc`
+Starts an IPC endpoint at the given `PATH` argument or the default path: unix: `tmp/shuttle.ipc`, windows: `\\.\pipe\shuttle.ipc`
 
 `--silent`
-&nbsp;&nbsp;&nbsp;&nbsp; Don't print anything on startup
+Don't print anything on startup
 
 `--timestamp <TIMESTAMP>`
-&nbsp;&nbsp;&nbsp;&nbsp; Set the timestamp of the genesis block
+Set the timestamp of the genesis block
 
 `-V, --version`
-&nbsp;&nbsp;&nbsp;&nbsp; Print version information
+Print version information
 
 `--disable-default-create2-deployer`
-&nbsp;&nbsp;&nbsp;&nbsp; Disables deploying the default CREATE2 factory when running Shuttle without forking
+Disables deploying the default CREATE2 factory when running Shuttle without forking
 
 #### EVM Options
 
 `-f, --fork-url <URL>`
-&nbsp;&nbsp;&nbsp;&nbsp; Fetch state over a remote endpoint instead of starting from an empty state
+Fetch state over a remote endpoint instead of starting from an empty state
 
 `--fork-block-number <BLOCK>`
-&nbsp;&nbsp;&nbsp;&nbsp; Fetch state from a specific block number over a remote endpoint (Must pass --fork-url in the same command-line)
+Fetch state from a specific block number over a remote endpoint (Must pass --fork-url in the same command-line)
 
 `--fork-retry-backoff <BACKOFF>`
-&nbsp;&nbsp;&nbsp;&nbsp; Initial retry backoff on encountering errors.
+Initial retry backoff on encountering errors.
 
 `--retries <retries>`
-&nbsp;&nbsp;&nbsp;&nbsp; Number of retry requests for spurious networks (timed out requests). [default value= 5]
+Number of retry requests for spurious networks (timed out requests). [default value= 5]
 
 `--timeout <timeout>`
-&nbsp;&nbsp;&nbsp;&nbsp; Timeout in ms for requests sent to remote JSON-RPC server in forking mode. [default value= 45000]
+Timeout in ms for requests sent to remote JSON-RPC server in forking mode. [default value= 45000]
 
 `--compute-units-per-second <CUPS>`
-&nbsp;&nbsp;&nbsp;&nbsp; Sets the number of assumed available compute units per second for this provider [default value=330]
-&nbsp;&nbsp;&nbsp;&nbsp; See also, [Alchemy Ratelimits](https://github.com/alchemyplatform/alchemy-docs/blob/master/documentation/compute-units.md#rate-limits-cups)
+Sets the number of assumed available compute units per second for this provider [default value=330]
+See also, [Alchemy Ratelimits](https://github.com/alchemyplatform/alchemy-docs/blob/master/documentation/compute-units.md#rate-limits-cups)
 
 `--no-rate-limit`
-&nbsp;&nbsp;&nbsp;&nbsp; Disables rate limiting for this node's provider. Will always override `--compute-units-per-second` if present. [default value= false]
-&nbsp;&nbsp;&nbsp;&nbsp; See also, [Alchemy Ratelimits](https://github.com/alchemyplatform/alchemy-docs/blob/master/documentation/compute-units.md#rate-limits-cups)
+Disables rate limiting for this node's provider. Will always override `--compute-units-per-second` if present. [default value= false]
+See also, [Alchemy Ratelimits](https://github.com/alchemyplatform/alchemy-docs/blob/master/documentation/compute-units.md#rate-limits-cups)
 
 `--no-storage-caching>`
-&nbsp;&nbsp;&nbsp;&nbsp; Explicitly disables the use of RPC caching. All storage slots are read entirely from the endpoint. This flag overrides the project's configuration file (Must pass --fork-url in the same command-line)
+Explicitly disables the use of RPC caching. All storage slots are read entirely from the endpoint. This flag overrides the project's configuration file (Must pass --fork-url in the same command-line)
 
 #### Executor Environment Config
 
 `--base-fee <FEE>`
 `--block-base-fee-per-gas <FEE>`
-&nbsp;&nbsp;&nbsp;&nbsp; The base fee in a block
+The base fee in a block
 
 `--chain-id <CHAIN_ID>`
-&nbsp;&nbsp;&nbsp;&nbsp; The chain ID [default: 31337]
+The chain ID [default: 31337]
 
 `--code-size-limit <CODE_SIZE>`
-&nbsp;&nbsp;&nbsp;&nbsp; EIP-170: Contract code size limit in bytes. Useful to increase this because of tests.
+EIP-170: Contract code size limit in bytes. Useful to increase this because of tests.
 By default, it is 0x6000 (~25kb)
 
 `--gas-limit <GAS_LIMIT>`
-&nbsp;&nbsp;&nbsp;&nbsp; The block gas limit
+The block gas limit
 
 `--gas-price <GAS_PRICE>`
-&nbsp;&nbsp;&nbsp;&nbsp; The gas price
+The gas price
 
 #### Server Options
 
 `--allow-origin <allow-origin>`
-&nbsp;&nbsp;&nbsp;&nbsp; Set the CORS allow_origin [default: *]
+Set the CORS allow_origin [default: *]
 
 `--no-cors`
-&nbsp;&nbsp;&nbsp;&nbsp; Disable CORS
+Disable CORS
 
 `--host <HOST>`
-&nbsp;&nbsp;&nbsp;&nbsp; The IP address the server will listen on
+The IP address the server will listen on
 
 `--config-out <OUT_FILE>`
-&nbsp;&nbsp;&nbsp;&nbsp; Writes output of `shuttle` as json to user-specified file
+Writes output of `shuttle` as json to user-specified file
 
 `--prune-history`
-&nbsp;&nbsp;&nbsp;&nbsp; Don't keep full chain history
+Don't keep full chain history
 
 ### EXAMPLES
 
@@ -452,7 +452,7 @@ shuttle --order fifo
 
 ### Shell Completions
 
-`shuttle completions` *shell*
+`shuttle completions` _shell_
 
 Generates a shell completions script for the given shell.
 

@@ -8,7 +8,7 @@ probe-abi-decode - Decode ABI-encoded input or output data.
 
 ### SYNOPSIS
 
-`probe abi-decode` [*options*] *sig* *calldata*
+`probe abi-decode` [*options*] _sig_ _calldata_
 
 ### DESCRIPTION
 
@@ -16,7 +16,7 @@ Decode ABI-encoded input or output data.
 
 By default, the command will decode output data. To decode input data, pass `--input` or use [`probe calldata-decode`](./probe-calldata-decode.md).
 
-The signature (*sig*) is a fragment in the form `<function name>(<types...>)(<types...>)`.
+The signature (_sig_) is a fragment in the form `<function name>(<types...>)(<types...>)`.
 
 ### OPTIONS
 
@@ -24,13 +24,13 @@ The signature (*sig*) is a fragment in the form `<function name>(<types...>)(<ty
 
 `-i`  
 `--input`  
-&nbsp;&nbsp;&nbsp;&nbsp;Decode input data.
+Decode input data.
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

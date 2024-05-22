@@ -22,7 +22,7 @@ The input is taken from stdin.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### SEE ALSO
 

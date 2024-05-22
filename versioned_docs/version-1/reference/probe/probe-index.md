@@ -8,7 +8,7 @@ probe-index - Compute the storage slot location for an entry in a mapping.
 
 ### SYNOPSIS
 
-`probe index` *key_type* *key* *slot*
+`probe index` _key_type_ _key_ _slot_
 
 ### DESCRIPTION
 
@@ -22,7 +22,7 @@ Use `probe storage` to get the value.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

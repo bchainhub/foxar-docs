@@ -18,16 +18,16 @@ Removes files in the `~/.foxar/cache` folder which is used to cache Etherscan ve
 
 `-b`  
 `--blocks`  
-&nbsp;&nbsp;&nbsp;&nbsp;One or more block numbers separated by comma with no spaces
+One or more block numbers separated by comma with no spaces
 
 `--etherscan`
-&nbsp;&nbsp;&nbsp;&nbsp;A boolean flag that specifies to only remove the block explorer portion of the cache
+A boolean flag that specifies to only remove the block explorer portion of the cache
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

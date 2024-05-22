@@ -8,7 +8,7 @@ probe-parse-bytes32-address - Parses a checksummed address from bytes32 encoding
 
 ### SYNOPSIS
 
-`probe parse-bytes32-address` [*options*] *bytes*
+`probe parse-bytes32-address` [*options*] _bytes_
 
 ### DESCRIPTION
 
@@ -20,7 +20,7 @@ Parses a checksummed address from its bytes32 encoding representation.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

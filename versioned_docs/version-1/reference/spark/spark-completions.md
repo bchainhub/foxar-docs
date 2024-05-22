@@ -8,7 +8,7 @@ spark-completions - Generate shell completions script
 
 ### SYNOPSIS
 
-`spark completions` *shell*
+`spark completions` _shell_
 
 ### DESCRIPTION
 
@@ -28,7 +28,7 @@ Supported shells are:
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

@@ -8,7 +8,7 @@ probe-from-utf8 - Convert UTF8 text to hex.
 
 ### SYNOPSIS
 
-`probe from-utf8` [*options*] *text*
+`probe from-utf8` [*options*] _text_
 
 ### DESCRIPTION
 
@@ -20,7 +20,7 @@ Convert UTF8 text to hex.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

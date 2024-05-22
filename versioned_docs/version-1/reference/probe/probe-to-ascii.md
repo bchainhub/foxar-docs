@@ -8,7 +8,7 @@ probe-to-ascii - Convert hex data to an ASCII string.
 
 ### SYNOPSIS
 
-`probe to-ascii` [*options*] *text*
+`probe to-ascii` [*options*] _text_
 
 ### DESCRIPTION
 
@@ -20,7 +20,7 @@ Convert hex data to an ASCII string.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

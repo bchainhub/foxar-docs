@@ -8,11 +8,11 @@ spark-debug - Debug a single smart contract as a script.
 
 ### SYNOPSIS
 
-`spark debug` [*options*] *path* [*args...*]
+`spark debug` [*options*] _path_ [*args...*]
 
 ### DESCRIPTION
 
-Debugs a single smart contract located in the source file (*path*) as a script.
+Debugs a single smart contract located in the source file (_path_) as a script.
 
 If multiple contracts are in the specified source file, you must pass `--target-contract` to specify
 what contract you want to run.
@@ -26,7 +26,7 @@ run a different function, pass `--sig <SIGNATURE>`.
 
 The signature can be a fragment (`<function name>(<types>)`), or raw calldata.
 
-If you pass a fragment, and the function has parameters, you can add the call parameters to the end of the command (*args*).
+If you pass a fragment, and the function has parameters, you can add the call parameters to the end of the command (_args_).
 
 #### Forking
 
@@ -49,57 +49,58 @@ More information on the debugger can be found in the [debugger chapter][debugger
 
 #### Debug Options
 
-`--target-contract` *contract_name*  
-&nbsp;&nbsp;&nbsp;&nbsp;The name of the contract you want to run
+`--target-contract` _contract_name_  
+The name of the contract you want to run
 
-`-s` *signature*  
-`--sig` *signature*  
-&nbsp;&nbsp;&nbsp;&nbsp;The signature of the function you want to call in the contract, or raw calldata. Default: `run()`
+`-s` _signature_  
+`--sig` _signature_  
+The signature of the function you want to call in the contract, or raw calldata. Default: `run()`
 
 `--debug`  
-&nbsp;&nbsp;&nbsp;&nbsp;Open the script in the [debugger][debugger].
+Open the script in the [debugger][debugger].
 
 #### EVM Options
 
-`-f` *url*  
-`--rpc-url` *url*  
-`--fork-url` *url*  
-&nbsp;&nbsp;&nbsp;&nbsp;Fetch state over a remote endpoint instead of starting from an empty state.
+`-f` _url_  
+`--rpc-url` _url_  
+`--fork-url` _url_  
+Fetch state over a remote endpoint instead of starting from an empty state.
 
-&nbsp;&nbsp;&nbsp;&nbsp;If you want to fetch state from a specific block number, see
+If you want to fetch state from a specific block number, see
 `--fork-block-number`.
 
-`--fork-block-number` *block*  
-&nbsp;&nbsp;&nbsp;&nbsp;Fetch state from a specific block number over a remote endpoint. See `--fork-url`.
+`--fork-block-number` _block_  
+Fetch state from a specific block number over a remote endpoint. See `--fork-url`.
 
 `--fork-retry-backoff <BACKOFF>`  
-&nbsp;&nbsp;&nbsp;&nbsp; Initial retry backoff on encountering errors.
+ Initial retry backoff on encountering errors.
 
 `--no-storage-caching`  
-&nbsp;&nbsp;&nbsp;&nbsp;Explicitly disables the use of RPC caching.
+Explicitly disables the use of RPC caching.
 
-&nbsp;&nbsp;&nbsp;&nbsp;All storage slots are read entirely from the endpoint. See `--fork-url`.
+All storage slots are read entirely from the endpoint. See `--fork-url`.
 
 `-v`  
 `--verbosity`  
-&nbsp;&nbsp;&nbsp;&nbsp;Verbosity of the EVM.
+Verbosity of the EVM.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Pass multiple times to increase the verbosity (e.g. `-v`, `-vv`, `-vvv`).
+Pass multiple times to increase the verbosity (e.g. `-v`, `-vv`, `-vvv`).
 
-&nbsp;&nbsp;&nbsp;&nbsp;Verbosity levels:  
-&nbsp;&nbsp;&nbsp;&nbsp;- 2: Print logs for all tests  
-&nbsp;&nbsp;&nbsp;&nbsp;- 3: Print execution traces for failing tests  
-&nbsp;&nbsp;&nbsp;&nbsp;- 4: Print execution traces for all tests, and setup traces for failing tests  
-&nbsp;&nbsp;&nbsp;&nbsp;- 5: Print execution and setup traces for all tests
+Verbosity levels:
 
-`--sender` *address*  
-&nbsp;&nbsp;&nbsp;&nbsp;The address which will be executing tests
+- 2: Print logs for all tests
+- 3: Print execution traces for failing tests
+- 4: Print execution traces for all tests, and setup traces for failing tests
+- 5: Print execution and setup traces for all tests
 
-`--initial-balance` *balance*  
-&nbsp;&nbsp;&nbsp;&nbsp;The initial balance of deployed contracts
+`--sender` _address_  
+The address which will be executing tests
+
+`--initial-balance` _balance_  
+The initial balance of deployed contracts
 
 `--ffi`  
-&nbsp;&nbsp;&nbsp;&nbsp;Enables the [FFI cheatcode][ffi-cheatcode]
+Enables the [FFI cheatcode][ffi-cheatcode]
 
 [ffi-cheatcode]: ../cheatcodes/ffi
 
@@ -107,143 +108,143 @@ More information on the debugger can be found in the [debugger chapter][debugger
 
 `--base-fee <FEE>`  
 `--block-base-fee-per-gas <FEE>`  
-&nbsp;&nbsp;&nbsp;&nbsp;The base fee in a block (in wei).
+The base fee in a block (in wei).
 
-`--block-coinbase` *address*  
-&nbsp;&nbsp;&nbsp;&nbsp;The coinbase of the block.
+`--block-coinbase` _address_  
+The coinbase of the block.
 
-`--block-difficulty` *difficulty*  
-&nbsp;&nbsp;&nbsp;&nbsp;The block difficulty.
+`--block-difficulty` _difficulty_  
+The block difficulty.
 
-`--block-gas-limit` *gas_limit*  
-&nbsp;&nbsp;&nbsp;&nbsp;The block gas limit.
+`--block-gas-limit` _gas_limit_  
+The block gas limit.
 
-`--block-number` *block*  
-&nbsp;&nbsp;&nbsp;&nbsp;The block number.
+`--block-number` _block_  
+The block number.
 
-`--block-timestamp` *timestamp*  
-&nbsp;&nbsp;&nbsp;&nbsp;The timestamp of the block (in seconds).
+`--block-timestamp` _timestamp_  
+The timestamp of the block (in seconds).
 
-`--chain-id` *chain_id*  
-&nbsp;&nbsp;&nbsp;&nbsp;The chain ID.
+`--chain-id` _chain_id_  
+The chain ID.
 
-`--gas-limit` *gas_limit*  
-&nbsp;&nbsp;&nbsp;&nbsp;The block gas limit.
+`--gas-limit` _gas_limit_  
+The block gas limit.
 
-`--gas-price` *gas_price*  
-&nbsp;&nbsp;&nbsp;&nbsp;The gas price (in wei).
+`--gas-price` _gas_price_  
+The gas price (in wei).
 
-`--tx-origin` *address*  
-&nbsp;&nbsp;&nbsp;&nbsp;The transaction origin.
+`--tx-origin` _address_  
+The transaction origin.
 
 #### Cache Options
 
 `--force`  
-&nbsp;&nbsp;&nbsp;&nbsp;Clear the cache and artifacts folder and recompile.
+Clear the cache and artifacts folder and recompile.
 
 #### Linker Options
 
-`--libraries` *libraries*  
-&nbsp;&nbsp;&nbsp;&nbsp;Set pre-linked libraries.
+`--libraries` _libraries_  
+Set pre-linked libraries.
 
-&nbsp;&nbsp;&nbsp;&nbsp;The parameter must be in the format `<remapped path to lib>:<library name>:<address>`, e.g. `src/Contract.sol:Library:0x...`.
+The parameter must be in the format `<remapped path to lib>:<library name>:<address>`, e.g. `src/Contract.sol:Library:0x...`.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Can also be set in your configuration file as `libraries = ["<path>:<lib name>:<address>"]`.
+Can also be set in your configuration file as `libraries = ["<path>:<lib name>:<address>"]`.
 
 #### Compiler Options
 
 `--optimize`  
-&nbsp;&nbsp;&nbsp;&nbsp;Activate the Solidity optimizer.
+Activate the Solidity optimizer.
 
-`--optimizer-runs` *runs*  
-&nbsp;&nbsp;&nbsp;&nbsp;The number of optimizer runs.
+`--optimizer-runs` _runs_  
+The number of optimizer runs.
 
 `--via-ir`  
-&nbsp;&nbsp;&nbsp;&nbsp;Use the Yul intermediate representation compilation pipeline.
+Use the Yul intermediate representation compilation pipeline.
 
 `--revert-strings`  
-&nbsp;&nbsp;&nbsp;&nbsp;How to treat revert and require reason strings.
+How to treat revert and require reason strings.
 
-`--use` *solc_version*  
-&nbsp;&nbsp;&nbsp;&nbsp;Specify the solc version, or a path to a local solc, to build with.
+`--use` _solc_version_  
+Specify the solc version, or a path to a local solc, to build with.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Valid values are in the format `x.y.z`, `solc:x.y.z` or `path/to/solc`.
+Valid values are in the format `x.y.z`, `solc:x.y.z` or `path/to/solc`.
 
 `--offline`  
-&nbsp;&nbsp;&nbsp;&nbsp;Do not access the network. Missing solc versions will not be installed.
+Do not access the network. Missing solc versions will not be installed.
 
 `--no-auto-detect`  
-&nbsp;&nbsp;&nbsp;&nbsp;Do not auto-detect solc.
+Do not auto-detect solc.
 
-`--ignored-error-codes` *error_codes*  
-&nbsp;&nbsp;&nbsp;&nbsp;Ignore solc warnings by error code. The parameter is a comma-separated list of error codes.
+`--ignored-error-codes` _error_codes_  
+Ignore solc warnings by error code. The parameter is a comma-separated list of error codes.
 
-`--extra-output` *selector*  
-&nbsp;&nbsp;&nbsp;&nbsp;Extra output to include in the contract's artifact.
+`--extra-output` _selector_  
+Extra output to include in the contract's artifact.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Example keys: `abi`, `storageLayout`, `evm.assembly`, `ewasm`, `ir`, `ir-optimized`, `metadata`.
+Example keys: `abi`, `storageLayout`, `evm.assembly`, `ewasm`, `ir`, `ir-optimized`, `metadata`.
 
-&nbsp;&nbsp;&nbsp;&nbsp;For a full description, see the [Solidity docs][output-desc].
+For a full description, see the [Solidity docs][output-desc].
 
-`--extra-output-files` *selector*  
-&nbsp;&nbsp;&nbsp;&nbsp;Extra output to write to separate files.
+`--extra-output-files` _selector_  
+Extra output to write to separate files.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Example keys: `abi`, `storageLayout`, `evm.assembly`, `ewasm`, `ir`, `ir-optimized`, `metadata`.
+Example keys: `abi`, `storageLayout`, `evm.assembly`, `ewasm`, `ir`, `ir-optimized`, `metadata`.
 
-&nbsp;&nbsp;&nbsp;&nbsp;For a full description, see the [Solidity docs][output-desc].
+For a full description, see the [Solidity docs][output-desc].
 
-`--evm-version` *version*  
-&nbsp;&nbsp;&nbsp;&nbsp;The target EVM version.
+`--evm-version` _version_  
+The target EVM version.
 
 [output-desc]: https://docs.soliditylang.org/en/latest/using-the-compiler.html#compiler-api
 
 #### Project Options
 
 `--build-info`  
-&nbsp;&nbsp;&nbsp;&nbsp;Generate build info files.
+Generate build info files.
 
-`--build-info-path` *path*  
-&nbsp;&nbsp;&nbsp;&nbsp;Output path to directory that build info files will be written to.
+`--build-info-path` _path_  
+Output path to directory that build info files will be written to.
 
-`--root` *path*  
-&nbsp;&nbsp;&nbsp;&nbsp;The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
+`--root` _path_  
+The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
 
-`-C` *path*  
-`--contracts` *path*  
-&nbsp;&nbsp;&nbsp;&nbsp;The contracts source directory.  
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `DAPP_SRC`
+`-C` _path_  
+`--contracts` _path_  
+The contracts source directory.  
+Environment: `DAPP_SRC`
 
-`--lib-paths` *path*  
-&nbsp;&nbsp;&nbsp;&nbsp;The path to the library folder.
+`--lib-paths` _path_  
+The path to the library folder.
 
-`-R` *remappings*  
-`--remappings` *remappings*  
-&nbsp;&nbsp;&nbsp;&nbsp;The project's remappings.
+`-R` _remappings_  
+`--remappings` _remappings_  
+The project's remappings.
 
-&nbsp;&nbsp;&nbsp;&nbsp;The parameter is a comma-separated list of remappings in the format `<source>=<dest>`.
+The parameter is a comma-separated list of remappings in the format `<source>=<dest>`.
 
-`--cache-path` *path*  
-&nbsp;&nbsp;&nbsp;&nbsp;The path to the compiler cache.
+`--cache-path` _path_  
+The path to the compiler cache.
 
-`--config-path` *file*  
-&nbsp;&nbsp;&nbsp;&nbsp;Path to the config file.
+`--config-path` _file_  
+Path to the config file.
 
 `--hh`  
 `--hardhat`  
-&nbsp;&nbsp;&nbsp;&nbsp;This is a convenience flag, and is the same as passing `--contracts contracts --lib-paths node-modules`.
+This is a convenience flag, and is the same as passing `--contracts contracts --lib-paths node-modules`.
 
-`-o` *path*  
-`--out` *path*  
-&nbsp;&nbsp;&nbsp;&nbsp;The project's artifacts directory.
+`-o` _path_  
+`--out` _path_  
+The project's artifacts directory.
 
 `--silent`  
-&nbsp;&nbsp;&nbsp;&nbsp;Suppress all output.
+Suppress all output.
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

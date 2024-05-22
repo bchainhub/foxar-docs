@@ -27,8 +27,9 @@ Besides the profile sections, the configuration file can also contain standalone
 i.e. `[fmt]` is equivalent to `[profile.default.fmt]`.
 
 To configure the standalone section for different profiles other than `default`, use syntax `[profile.<profile name>.<standalone>]`.
-i.e. `[profile.ci.fuzz]`.   
+i.e. `[profile.ci.fuzz]`.
 
+<br />
 
 > 📚 **Reference**
 >

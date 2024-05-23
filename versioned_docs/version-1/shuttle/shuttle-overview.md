@@ -20,7 +20,7 @@ Some basic options are:
 #  Number of dev accounts to generate and configure. [default: 10]
 shuttle -a, --accounts <ACCOUNTS>
 
-# The EVM hardfork to use. [default: latest]
+# The CVM hardfork to use. [default: latest]
 shuttle --hardfork <HARDFORK>
 
 # Port number to listen on. [default: 8545]

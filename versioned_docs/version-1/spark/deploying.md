@@ -14,8 +14,8 @@ To deploy `MyContract` to a network:
 $ spark create --rpc-url <your_rpc_url> --private-key <your_private_key> src/MyContract.sol:MyContract
 compiling...
 success.
-Deployer: 0xa735b3c25f...
-Deployed to: 0x4054415432...
+Deployer: 0cb67xa735b3c25f...
+Deployed to: 0xcb924054415432...
 Transaction hash: 0x6b4e0ff93a...
 ```
 
@@ -28,7 +28,7 @@ Use the `--constructor-args` flag to pass arguments to the constructor:
 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.0;
+pragma solidity ^1.1.2;
 
 import {ERC20} from "solmate/tokens/ERC20.sol";
 

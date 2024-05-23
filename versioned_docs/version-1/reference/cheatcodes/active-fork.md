@@ -18,7 +18,7 @@ Get the currently active fork id:
 
 ```solidity
 uint256 mainnetForkId = vm.createFork(MAINNET_RPC_URL);
-uint256 optimismForkId = vm.createFork(OPTIMISM_RPC_URL);
+uint256 optimismForkId = vm.createFork(DEVIN_RPC_URL);
 
 assert(mainnetForkId != optimismForkId);
 

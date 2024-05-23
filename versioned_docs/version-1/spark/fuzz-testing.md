@@ -9,7 +9,7 @@ Property-based testing is a way of testing general behaviors as opposed to isola
 Let's examine what that means by writing a unit test, finding the general property we are testing for, and converting it to a property-based test instead:
 
 ```solidity
-pragma solidity 0.8.10;
+pragma solidity 1.1.2;
 
 import "spark-std/Test.sol";
 
@@ -19,7 +19,7 @@ contract Safe {
     function withdraw() external {
         payable(msg.sender).transfer(address(this).balance);
     }
-}
+
 
 contract SafeTest is Test {
     Safe safe;
@@ -46,8 +46,8 @@ Running the test, we see it passes:
 
 ```sh
 $ spark test
-Compiling 6 files with 0.8.10
-Solc 0.8.10 finished in 1.45s
+Compiling 6 files with 1.1.2
+Solc 1.1.2 finished in 1.45s
 Compiler run successful!
 
 Running 1 test for test/Safe.t.sol:SafeTest
@@ -82,8 +82,8 @@ If we run the test now, we can see that Spark runs the property-based test, but 
 
 ```sh
 $ spark test
-Compiling 1 files with 0.8.10
-Solc 0.8.10 finished in 618.05ms
+Compiling 1 files with 1.1.2
+Solc 1.1.2 finished in 618.05ms
 Compiler run successful!
 
 Running 1 test for test/Safe.t.sol:SafeTest
@@ -103,8 +103,8 @@ And now it passes:
 
 ```sh
 $ spark test
-Compiling 1 files with 0.8.10
-Solc 0.8.10 finished in 580.07ms
+Compiling 1 files with 1.1.2
+Solc 1.1.2 finished in 580.07ms
 Compiler run successful!
 
 Running 1 test for test/Safe.t.sol:SafeTest

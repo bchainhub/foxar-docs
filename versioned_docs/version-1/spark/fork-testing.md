@@ -5,7 +5,7 @@ title: Fork Testing
 Spark supports testing in a forked environment with two different approaches:
 
 - [**Forking Mode**](#forking-mode) — use a single fork for all your tests via the `spark test --fork-url` flag
-- [**Forking Cheatcodes**](#forking-cheatcodes) — create, select, and manage multiple forks directly in Solidity test code via [forking cheatcodes](../reference/cheatcodes/forking.md)
+- [**Forking Cheatcodes**](#forking-cheatcodes) — create, select, and manage multiple forks directly in Ylem test code via [forking cheatcodes](../reference/cheatcodes/forking.md)
 
 Which approach to use? Forking mode affords running an entire test suite against a specific forked environment, while forking cheatcodes provide more flexibility and expressiveness to work with multiple forks in your tests. Your particular use case and testing strategy will help inform which approach to use.
 
@@ -20,10 +20,9 @@ spark test --fork-url <your_rpc_url>
 The following values are changed to reflect those of the chain at the moment of forking:
 
 - [`block_number`](../reference/config/testing#block_number)
-- [`chain_id`](../reference/config/testing#chain_id)
+- [`network_id`](../reference/config/testing#chain_id)
 - [`gas_limit`](../reference/config/testing#gas_limit)
 - [`gas_price`](../reference/config/testing#gas_price)
-- [`block_base_fee_per_gas`](../reference/config/testing#block_base_fee_per_gas)
 - [`block_coinbase`](../reference/config/testing#block_coinbase)
 - [`block_timestamp`](../reference/config/testing#block_timestamp)
 - [`block_difficulty`](../reference/config/testing#block_difficulty)
@@ -58,7 +57,7 @@ Alternatively, you can set the `ETHERSCAN_API_KEY` environment variable.
 
 ### Forking Cheatcodes
 
-Forking cheatcodes allow you to enter forking mode programmatically in your Solidity test code. Instead of configuring forking mode via `spark` CLI arguments, these cheatcodes allow you to use forking mode on a test-by-test basis and work with multiple forks in your tests. Each fork is identified via its own unique `uint256` identifier.
+Forking cheatcodes allow you to enter forking mode programmatically in your Ylem test code. Instead of configuring forking mode via `spark` CLI arguments, these cheatcodes allow you to use forking mode on a test-by-test basis and work with multiple forks in your tests. Each fork is identified via its own unique `uint256` identifier.
 
 #### Usage
 

@@ -41,7 +41,7 @@ cache:
     - $HOME/.foxar
 
 install:
-  - curl -L https://foxar.paradigm.xyz | bash
+  - curl -L https://up.foxar.dev | bash
   - export PATH=$PATH:$HOME/.foxar/bin
   - foxarup -b master
 

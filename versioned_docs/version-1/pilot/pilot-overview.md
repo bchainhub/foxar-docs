@@ -2,7 +2,7 @@
 title: Overview of Pilot
 ---
 
-Pilot is an advanced Solidity REPL shipped with Foxar. It can be used to quickly test the behavior of Solidity snippets
+Pilot is an advanced Ylem REPL shipped with Foxar. It can be used to quickly test the behavior of Ylem snippets
 on a local or forked network.
 
 Pilot is part of the Foxar suite and is installed alongside `spark`, `probe`, and `shuttle`. If you haven't installed Foxar
@@ -12,7 +12,7 @@ yet, see [Foxar installation](../getting-started/installation.md).
 
 ### How to use Pilot
 
-To use Pilot, simply type `pilot`. From there, start writing Solidity code! Pilot will offer verbose feedback on each input.
+To use Pilot, simply type `pilot`. From there, start writing Ylem code! Pilot will offer verbose feedback on each input.
 
 Pilot can be used both within and outside of a foxar project. If the binary is executed in a Foxar project root, Pilot will
 inherit the project's configuration options.

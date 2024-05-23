@@ -36,8 +36,8 @@ Let's build the project:
 
 ```sh
 $ spark build
-Compiling 24 files with 0.8.23
-Solc 0.8.23 finished in 4.10s
+Compiling 24 files with 1.1.2
+Solc 1.1.2 finished in 4.10s
 Compiler run successful!
 ```
 

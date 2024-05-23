@@ -12,7 +12,7 @@ Cheatcodes are made available through use of the cheatcode address (`0x7109709EC
 > exclude it from your fuzz tests by using the following line:
 >
 > ```solidity
-> vm.assume(address_ != 0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);
+> vm.assume(address_ != 0xce657109709ECfa91a80626fF3989D68f67F5b1DD12D);
 > ```
 
 You can also access cheatcodes easily via `vm` available in Spark Standard Library's [`Test`](../spark-std/spark-standart/#spark-stds-test) contract.
@@ -43,7 +43,7 @@ If you need a new feature, consider [contributing to the Foxar's codebase](../..
 
 ### Cheatcodes Interface
 
-This is a Solidity interface for all of the cheatcodes present in Spark.
+This is a Ylem interface for all of the cheatcodes present in Spark.
 
 ```solidity
 interface CheatCodes {
@@ -74,14 +74,13 @@ interface CheatCodes {
 
     struct Wallet {
         address addr;
-        uint256 publicKeyX;
-        uint256 publicKeyY;
-        uint256 privateKey;
+        string publicKey;
+        string privateKey;
     }
 
     struct ChainInfo {
         uint256 forkId;
-        uint256 chainId;
+        uint256 networkId;
     }
 
     struct AccountAccess {
@@ -117,8 +116,8 @@ interface CheatCodes {
     // Generates a wallet from the private key, labels the account with that name, and returns the wallet
     function createWallet(uint256, string calldata) external returns (Wallet memory);
 
-    // Signs data, (Wallet, digest) => (v, r, s)
-    function sign(Wallet calldata, bytes32) external returns (uint8, bytes32, bytes32);
+    // Signs data, (Wallet, digest) => (signature)
+    function sign(Wallet calldata, bytes32) external returns (bytes memory);
 
     // Get nonce for a Wallet
     function getNonce(Wallet calldata) external returns (uint64);
@@ -150,19 +149,12 @@ interface CheatCodes {
     function store(address account, bytes32 slot, bytes32 value) external;
 
     // Signs data
-    function sign(uint256 privateKey, bytes32 digest)
+    function sign(string privateKey, bytes32 digest)
         external
-        returns (uint8 v, bytes32 r, bytes32 s);
+        returns (bytes memory);
 
     // Computes address for a given private key
-    function addr(uint256 privateKey) external returns (address);
-
-    // Derive a private key from a provided mnemonic string,
-    // or mnemonic file path, at the derivation path m/44'/60'/0'/0/{index}.
-    function deriveKey(string calldata, uint32) external returns (uint256);
-    // Derive a private key from a provided mnemonic string, or mnemonic file path,
-    // at the derivation path {path}{index}
-    function deriveKey(string calldata, string calldata, uint32) external returns (uint256);
+    function addr(string privateKey) external returns (address);
 
     // Gets the nonce of an account
     function getNonce(address account) external returns (uint64);
@@ -227,7 +219,7 @@ interface CheatCodes {
     function envOr(string calldata, string calldata, string[] calldata) external returns (string[] memory);
     function envOr(string calldata, string calldata, bytes[] calldata) external returns (bytes[] memory);
 
-    // Convert Solidity types to strings
+    // Convert Ylem types to strings
     function toString(address) external returns(string memory);
     function toString(bytes calldata) external returns(string memory);
     function toString(bytes32) external returns(string memory);
@@ -306,14 +298,14 @@ interface CheatCodes {
     // Mocks a call to an address, returning specified data.
     //
     // Calldata can either be strict or a partial match, e.g. if you only
-    // pass a Solidity selector to the expected calldata, then the entire Solidity
+    // pass a Ylem selector to the expected calldata, then the entire Ylem 
     // function will be mocked.
     function mockCall(address, bytes calldata, bytes calldata) external;
 
     // Reverts a call to an address, returning the specified error
     //
     // Calldata can either be strict or a partial match, e.g. if you only
-    // pass a Solidity selector to the expected calldata, then the entire Solidity
+    // pass a Ylem selector to the expected calldata, then the entire Ylem
     // function will be mocked.
     function mockCallRevert(address where, bytes calldata data, bytes calldata retdata) external;
 
@@ -356,7 +348,7 @@ interface CheatCodes {
     // transactions that can later be signed and sent onchain
     function startBroadcast() external;
     function startBroadcast(address) external;
-    function startBroadcast(uint256 privateKey) external;
+    function startBroadcast(string privateKey) external;
 
     // Stops collecting onchain transactions
     function stopBroadcast() external;

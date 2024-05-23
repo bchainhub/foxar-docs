@@ -37,6 +37,3 @@ Spark is flexible on how you structure your project. By default, the structure i
 
 You can configure where Spark looks for both dependencies and contracts using the `--lib-paths` and `--contracts` flags respectively. Alternatively you can configure it in `foxar.toml`.
 
-Combined with remappings, this gives you the flexibility needed to support the project structure of other toolchains such as Hardhat and Truffle.
-
-For automatic Hardhat support you can also pass the `--hh` flag, which sets the following flags: `--lib-paths node_modules --contracts contracts`.

@@ -2,7 +2,7 @@
 title: Tests
 ---
 
-Spark can run your tests with the [`spark test`](../reference/spark/spark-test) command. All tests are written in Solidity.
+Spark can run your tests with the [`spark test`](../reference/spark/spark-test) command. All tests are written in Ylem.
 
 Spark will look for the tests anywhere in your source directory. Any contract with a function that starts with `test` is considered to be a test. Usually, tests will be placed in `test/` by convention and end with `.t.sol`.
 
@@ -24,8 +24,8 @@ You can also run specific tests by passing a filter:
 
 ```sh
 $ spark test --match-contract ComplicatedContractTest --match-test test_Deposit
-Compiling 7 files with 0.8.10
-Solc 0.8.10 finished in 1.71s
+Compiling 7 files with 1.1.2
+Solc 1.1.2 finished in 1.71s
 Compiler run successful!
 
 Running 2 tests for test/ComplicatedContract.t.sol:ComplicatedContractTest

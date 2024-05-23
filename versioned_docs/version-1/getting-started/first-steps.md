@@ -28,8 +28,8 @@ We can build the project with [`spark build`](../reference/spark/spark-build.md)
 
 ```sh
 $ spark build
-Compiling 24 files with 0.8.23
-Solc 0.8.23 finished in 4.10s
+Compiling 24 files with 1.1.2
+Ylem 1.1.2 finished in 4.10s
 Compiler run successful!
 ```
 

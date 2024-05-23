@@ -19,9 +19,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Use Node.js 22.x
-          uses: actions/setup-node@v4
-          with:
-            node-version: '22.x'
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22.x"
       - name: Run markdownlint
         uses: ruzickap/action-my-markdown-linter@v1
         with:

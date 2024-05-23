@@ -146,7 +146,7 @@ This is something to be mindful of when designing target contracts, as target co
 
 ### Invariant Test Helper Functions
 
-Invariant test helper functions are included in [`spark-std`](https://github.com/foxar-rs/spark-std/blob/master/src/StdInvariant.sol) to allow for configurable invariant test setup. The helper functions are outlined below:
+Invariant test helper functions are included in [`spark-std`](https://github.com/bchainhub/spark-std/blob/master/src/StdInvariant.sol) to allow for configurable invariant test setup. The helper functions are outlined below:
 
 | Function                                                                   | Description                                                                                                                                                                                         |
 | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

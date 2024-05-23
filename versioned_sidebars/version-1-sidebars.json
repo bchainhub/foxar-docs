@@ -91,8 +91,8 @@
         "config/continuous-integration",
         "config/vscode",
         "config/shell-autocompletion",
-        "config/static-analyzers",
-        "config/hardhat"
+        "config/static-analyzers"
+        
       ]
     },
     {

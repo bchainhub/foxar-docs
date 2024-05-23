@@ -15,13 +15,13 @@ Cheatcodes are made available through use of the cheatcode address (`0x7109709EC
 > vm.assume(address_ != 0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);
 > ```
 
-You can also access cheatcodes easily via `vm` available in Spark Standard Library's [`Test`](../spark-std/spark-standart/#spark-stds-test) contract.
+You can also access cheatcodes easily via `vm` available in Spark Standard Library's [`Test`](../spark-std/spark-standart#spark-stds-test) contract.
 
 ### Spark Standard Library Cheatcodes
 
 Spark Std implements wrappers around cheatcodes, which combine multiple standard cheatcodes to improve development experience. These are not technically cheatcodes, but rather compositions of Spark's cheatcodes.
 
-You can view the list of Spark Standard Library's cheatcode wrappers [in the references section](../spark-std/std-cheats). You can reference the [Spark Std source code](https://github.com/foxar-rs/spark-std/blob/master/src/Test.sol) to learn more about how the wrappers work under the hood.
+You can view the list of Spark Standard Library's cheatcode wrappers [in the references section](../spark-std/std-cheats). You can reference the [Spark Std source code](https://github.com/bchainhub/spark-std/blob/master/src/Test.sol) to learn more about how the wrappers work under the hood.
 
 ### Cheatcode Types
 

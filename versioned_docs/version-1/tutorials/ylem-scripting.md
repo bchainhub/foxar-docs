@@ -294,4 +294,4 @@ Then run the following script:
 spark script script/NFT.s.sol:MyScript --fork-url http://localhost:8545 --broadcast
 ```
 
-> 💡 Note: A full implementation of this tutorial can be found [here](https://github.com/Perelyn-sama/ylem-scripting) and for further reading about solidity scripting, you can check out the `spark script` [reference](../reference/spark/spark-script.md).
+> 💡 Note: A full implementation of this tutorial can be found [here](https://github.com/Perelyn-sama/solidity-scripting) and for further reading about solidity scripting, you can check out the `spark script` [reference](../reference/spark/spark-script.md).

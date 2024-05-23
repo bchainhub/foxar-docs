@@ -4,7 +4,7 @@ title: Writing Tests
 
 Tests are written in Solidity. If the test function reverts, the test fails, otherwise it passes.
 
-Let's go over the most common way of writing tests, using the [Spark Standard Library](https://github.com/foxar-rs/spark-std)'s `Test` contract, which is the preferred way of writing tests with Spark.
+Let's go over the most common way of writing tests, using the [Spark Standard Library](https://github.com/bchainhub/spark-std)'s `Test` contract, which is the preferred way of writing tests with Spark.
 
 In this section, we'll go over the basics using the functions from the Spark Std's `Test` contract, which is itself a superset of [DSTest](https://github.com/dapphub/ds-test). You will learn how to use more advanced stuff from the Spark Standard Library [soon](./spark-std.md).
 

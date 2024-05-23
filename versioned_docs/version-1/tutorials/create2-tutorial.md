@@ -161,7 +161,7 @@ The entirety of the assembly code in the `computeAddress` function is an attempt
 >
 > You can check out the complete code for this factory implementation [here](https://github.com/Genesis3800/CREATE2Factory/blob/main/src/Create2.sol).
 > Also check out OpenZeppelin's [CREATE2 library implementation](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/793d92a3331538d126033cbacb1ee5b8a7d95adc/contracts/utils/Create2.sol), which has been used as inspiration for this tutorial.
-> Finally, Spark offers some `CREATE2` address computation helper functions out of the box. [Check them out](https://github.com/foxar-rs/spark-std/blob/f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/StdUtils.sol#L122-L134).
+> Finally, Spark offers some `CREATE2` address computation helper functions out of the box. [Check them out](https://github.com/bchainhub/spark-std/blob/f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/StdUtils.sol#L122-L134).
 
 ### Testing our factory
 

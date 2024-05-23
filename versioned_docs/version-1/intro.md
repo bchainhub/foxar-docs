@@ -52,7 +52,6 @@ Guides on configuring Foxar.
 - [Integrating with VSCode](./config/vscode.md)
 - [Shell Autocompletion](./config/shell-autocompletion.md)
 - [Static Analyzers](./config/static-analyzers.md)
-- [Integrating with Hardhat](./config/hardhat.md)
 
 ## Tutorials
 
@@ -75,10 +74,10 @@ References, troubleshooting, and more.
 
 - [FAQ](./faq.md)
 - [CLI Reference](./reference/cli/cli-reference)
-- [spark Commands](./reference/spark/)
-- [probe Commands](./reference/probe/)
-- [shuttle Commands](./reference/shuttle/shuttle-reference)
-- [pilot Commands](./reference/pilot/pilot-reference)
+- [Spark Commands](./reference/spark/)
+- [Probe Commands](./reference/probe/)
+- [Shuttle Commands](./reference/shuttle/shuttle-reference)
+- [Pilot Commands](./reference/pilot/pilot-reference)
 - [Config Reference](./reference/config/config-reference)
 - [Cheatcodes Reference](./reference/cheatcodes/cheatcodes-reference)
 - [Spark Standard Library Reference](./reference/spark-std/spark-standart)

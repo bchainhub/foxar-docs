@@ -166,4 +166,4 @@ The location of the Spark-managed solc binaries.
 
 ### BUGS
 
-See https://github.com/foxar-rs/foxar/issues for issues.
+See https://github.com/bchainhub/foxar/issues for issues.

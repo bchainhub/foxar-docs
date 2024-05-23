@@ -50,7 +50,7 @@ Use the Flashbots RPC URL (https://rpc.flashbots.net).
 The Etherscan chain.
 
 `--etherscan-api-key` _key_  
-Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan#etherscan).  
+Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan).  
 Environment: `ETHERSCAN_API_KEY`
 
 #### Common Options

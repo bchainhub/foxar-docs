@@ -189,7 +189,7 @@ Failed to create artifact parent folder "/.../MyProject/out/IsolationModeMagic.s
 
 Then there's likely a folder permission issue. Ensure `user` has write access in the project root's folder.
 
-It has been [reported](https://github.com/foxar-rs/foxar/issues/3268) that on linux, canonicalizing paths can result in weird paths (`/_1/...`). This can be resolved by nuking the entire project folder and initializing again.
+It has been [reported](https://github.com/bchainhub/foxar/issues/3268) that on linux, canonicalizing paths can result in weird paths (`/_1/...`). This can be resolved by nuking the entire project folder and initializing again.
 
 ### Connection refused when running `spark build`
 
@@ -211,5 +211,5 @@ You could run `export http_proxy=http://127.0.0.1:7890 https_proxy=http://127.0.
 [config]: ./config/configuration
 [spark-build]: ./reference/spark/spark-build.md
 [console-log]: ./reference/spark-std/console-log.md
-[spark-std]: https://github.com/foxar-rs/spark-std
+[spark-std]: https://github.com/bchainhub/spark-std
 [dstestplus]: https://github.com/transmissions11/solmate/blob/19a4f345970ed39ee6369f343d145e0d4071c18a/src/test/utils/DSTestPlus.sol#L10

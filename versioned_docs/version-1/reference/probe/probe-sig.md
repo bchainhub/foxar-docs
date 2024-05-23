@@ -8,13 +8,13 @@ probe-sig - Get the selector for a function.
 
 ### SYNOPSIS
 
-`probe sig` [*options*] *sig*
+`probe sig` [*options*] _sig_
 
 ### DESCRIPTION
 
 Get the selector for a function.
 
-The signature (*sig*) is a fragment in the form `<function name>(<types...>)`.
+The signature (_sig_) is a fragment in the form `<function name>(<types...>)`.
 
 ### OPTIONS
 
@@ -22,7 +22,7 @@ The signature (*sig*) is a fragment in the form `<function name>(<types...>)`.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

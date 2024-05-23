@@ -14,31 +14,31 @@ probe-block - Get information about a block.
 
 Get information about a block.
 
-The specified *block* can be a block number, or any of the tags: `earliest`, `finalized`, `safe`, `latest` or `pending`. Default to `latest`.
+The specified _block_ can be a block number, or any of the tags: `earliest`, `finalized`, `safe`, `latest` or `pending`. Default to `latest`.
 
 ### OPTIONS
 
-`-f` *field*  
-`--field` *field*  
-&nbsp;&nbsp;&nbsp;&nbsp; If specified, only get the given field of the block.
+`-f` _field_  
+`--field` _field_  
+ If specified, only get the given field of the block.
 
 #### Display Options
 
 `-j`  
 `--json`  
-&nbsp;&nbsp;&nbsp;&nbsp; Print the deployment information as JSON.
+ Print the deployment information as JSON.
 
 #### RPC Options
 
-`--rpc-url` *url*  
-&nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
+`--rpc-url` _url_  
+The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
+Environment: `ETH_RPC_URL`
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

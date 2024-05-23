@@ -8,13 +8,13 @@ probe-proof - Generate a storage proof for a given storage slot.
 
 ### SYNOPSIS
 
-`probe proof` [*options*] *address* [*slots...*]
+`probe proof` [*options*] _address_ [*slots...*]
 
 ### DESCRIPTION
 
 Generate a storage proof for a given storage slot.
 
-The address (*address*) can be an ENS name or an address.
+The address (_address_) can be an ENS name or an address.
 
 The displayed output is a JSON object with the following keys:
 
@@ -33,29 +33,29 @@ The displayed output is a JSON object with the following keys:
 
 #### Query Options
 
-`-B` *block*  
-`--block` *block*  
-&nbsp;&nbsp;&nbsp;&nbsp;The block height you want to query at.
+`-B` _block_  
+`--block` _block_  
+The block height you want to query at.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Can be a block number, or any of the tags: `earliest`, `finalized`, `safe`, `latest` or `pending`.
+Can be a block number, or any of the tags: `earliest`, `finalized`, `safe`, `latest` or `pending`.
 
 #### RPC Options
 
-`--rpc-url` *url*  
-&nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
+`--rpc-url` _url_  
+The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
+Environment: `ETH_RPC_URL`
 
 #### Display Options
 
 `-j`  
 `--json`  
-&nbsp;&nbsp;&nbsp;&nbsp; Print the deployment information as JSON.
+ Print the deployment information as JSON.
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

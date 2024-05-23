@@ -8,7 +8,7 @@ probe-resolve-name - Perform an ENS lookup.
 
 ### SYNOPSIS
 
-`probe resolve-name` [*options*] *who*
+`probe resolve-name` [*options*] _who_
 
 ### DESCRIPTION
 
@@ -22,19 +22,19 @@ If `--verify` is passed, then a reverse lookup is performed after the normal loo
 
 `-v`  
 `--verify`  
-&nbsp;&nbsp;&nbsp;&nbsp;Perform a reverse lookup to verify that the name is correct.
+Perform a reverse lookup to verify that the name is correct.
 
 #### RPC Options
 
-`--rpc-url` *url*  
-&nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
+`--rpc-url` _url_  
+The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
+Environment: `ETH_RPC_URL`
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

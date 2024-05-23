@@ -8,7 +8,7 @@ probe-find-block - Get the block number closest to the provided timestamp.
 
 ### SYNOPSIS
 
-`probe find-block` [*options*] *timestamp*
+`probe find-block` [*options*] _timestamp_
 
 ### DESCRIPTION
 
@@ -18,15 +18,15 @@ Get the block number closest to the provided timestamp.
 
 #### RPC Options
 
-`--rpc-url` *url*  
-&nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
+`--rpc-url` _url_  
+The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
+Environment: `ETH_RPC_URL`
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

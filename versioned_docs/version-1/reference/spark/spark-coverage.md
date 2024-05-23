@@ -23,19 +23,19 @@ Displays which parts of your code are covered by tests.
 It has three different options and is set to `summary` by default.
 
 `summary`  
-&nbsp;&nbsp;&nbsp;&nbsp;Outputs a chart showing what percentage of your code is covered by tests.
+Outputs a chart showing what percentage of your code is covered by tests.
 
 `lcov`  
-&nbsp;&nbsp;&nbsp;&nbsp;Creates a lcov.info file containing your coverage data in the root of your project's directory.
+Creates a lcov.info file containing your coverage data in the root of your project's directory.
 
 `debug`  
-&nbsp;&nbsp;&nbsp;&nbsp;Outputs lines describing the location of uncovered code.
+Outputs lines describing the location of uncovered code.
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 #### Optimization Option
 

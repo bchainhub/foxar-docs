@@ -8,15 +8,15 @@ probe-access-list - Create an access list for a transaction.
 
 ### SYNOPSIS
 
-`probe access-list` [*options*] *to* *sig* [*args...*]
+`probe access-list` [*options*] _to_ _sig_ [*args...*]
 
 ### DESCRIPTION
 
 Create an access list for a transaction.
 
-The destination (*to*) can be an ENS name or an address.
+The destination (_to_) can be an ENS name or an address.
 
-The signature (*sig*) can be:
+The signature (_sig_) can be:
 
 - A fragment: `someFunction(uint256,bytes32)`
 - A selector and encoded calldata: `0xcdba2fd40000000000000000000000000000000000000000000000000000000000007a69`
@@ -26,94 +26,94 @@ The signature (*sig*) can be:
 
 #### Query Options
 
-`-B`  *block*  
-`--block`  *block*  
-&nbsp;&nbsp;&nbsp;&nbsp;The block height you want to query at.
+`-B` _block_  
+`--block` _block_  
+The block height you want to query at.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Can be a block number, or any of the tags: `earliest`, `finalized`, `safe`, `latest` or `pending`.
+Can be a block number, or any of the tags: `earliest`, `finalized`, `safe`, `latest` or `pending`.
 
 #### WALLET OPTIONS - RAW:
 
 `-i`  
 `--interactive <NUM>`  
-&nbsp;&nbsp;&nbsp;&nbsp; Open an interactive prompt to enter your private key. Takes a value for the number of keys to enter.  
-&nbsp;&nbsp;&nbsp;&nbsp; Defaults to `0`.
+ Open an interactive prompt to enter your private key. Takes a value for the number of keys to enter.  
+ Defaults to `0`.
 
 `--mnemonic-derivation-path <PATHS>`  
-&nbsp;&nbsp;&nbsp;&nbsp; The wallet derivation path. Works with both `--mnemonic-path` and hardware wallets.
+ The wallet derivation path. Works with both `--mnemonic-path` and hardware wallets.
 
 `--mnemonic-indexes <INDEXES>`  
-&nbsp;&nbsp;&nbsp;&nbsp; Use the private key from the given mnemonic index. Used with --mnemonic-paths.  
-&nbsp;&nbsp;&nbsp;&nbsp; Defaults to `0`.
+ Use the private key from the given mnemonic index. Used with --mnemonic-paths.  
+ Defaults to `0`.
 
 `--mnemonic-passphrase <PASSPHRASE>`  
-&nbsp;&nbsp;&nbsp;&nbsp; Use a BIP39 passphrases for the mnemonic.
+ Use a BIP39 passphrases for the mnemonic.
 
 `--mnemonic <PATHS>`  
-&nbsp;&nbsp;&nbsp;&nbsp; Use the mnemonic phrases or mnemonic files at the specified paths.
+ Use the mnemonic phrases or mnemonic files at the specified paths.
 
 `--private-key <RAW_PRIVATE_KEY>`  
-&nbsp;&nbsp;&nbsp;&nbsp; Use the provided private key.
+ Use the provided private key.
 
 `--private-keys <RAW_PRIVATE_KEYS>`  
-&nbsp;&nbsp;&nbsp;&nbsp; Use the provided private keys.
+ Use the provided private keys.
 
 #### Wallet Options - Keystore
 
-`--keystore`  *path*  
-&nbsp;&nbsp;&nbsp;&nbsp;Use the keystore in the given folder or file.  
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_KEYSTORE`
+`--keystore` _path_  
+Use the keystore in the given folder or file.  
+Environment: `ETH_KEYSTORE`
 
-`--account` *account-name*  
-&nbsp;&nbsp;&nbsp;&nbsp;Use a keystore from the default keystores folder (~/.foxar/keystores) by its filename.  
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_KEYSTORE_ACCOUNT`
+`--account` _account-name_  
+Use a keystore from the default keystores folder (~/.foxar/keystores) by its filename.  
+Environment: `ETH_KEYSTORE_ACCOUNT`
 
 `--interactive`
 
-`--password` *password*  
-&nbsp;&nbsp;&nbsp;&nbsp;The keystore password. Used with `--keystore`.
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_PASSWORD`
+`--password` _password_  
+The keystore password. Used with `--keystore`.
+Environment: `ETH_PASSWORD`
 
 #### Wallet Options - Hardware Wallet
 
 `-t`  
 `--trezor`  
-&nbsp;&nbsp;&nbsp;&nbsp;Use a Trezor hardware wallet.
+Use a Trezor hardware wallet.
 
 `-l`  
 `--ledger`  
-&nbsp;&nbsp;&nbsp;&nbsp;Use a Ledger hardware wallet.
+Use a Ledger hardware wallet.
 
 #### Wallet Options - Remote
 
-`-f` *address*  
-`--from` *address*  
-&nbsp;&nbsp;&nbsp;&nbsp;Sign the transaction with the specified account on the RPC.  
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_FROM`
+`-f` _address_  
+`--from` _address_  
+Sign the transaction with the specified account on the RPC.  
+Environment: `ETH_FROM`
 
 #### RPC Options
 
-`--rpc-url` *url*  
-&nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
+`--rpc-url` _url_  
+The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
+Environment: `ETH_RPC_URL`
 
 `--flashbots`  
-&nbsp;&nbsp;&nbsp;&nbsp;Use the Flashbots RPC URL (https://rpc.flashbots.net).
+Use the Flashbots RPC URL (https://rpc.flashbots.net).
 
 #### Etherscan Options
 
-`--chain` *chain_name*  
-&nbsp;&nbsp;&nbsp;&nbsp;The Etherscan chain.
+`--chain` _chain_name_  
+The Etherscan chain.
 
-`--etherscan-api-key` *key*  
-&nbsp;&nbsp;&nbsp;&nbsp;Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan).  
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETHERSCAN_API_KEY`
+`--etherscan-api-key` _key_  
+Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan).  
+Environment: `ETHERSCAN_API_KEY`
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### SEE ALSO
 

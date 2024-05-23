@@ -8,15 +8,15 @@ probe-estimate - Estimate the gas cost of a transaction.
 
 ### SYNOPSIS
 
-`probe estimate` [*options*] *to* *sig* [*args...*]
+`probe estimate` [*options*] _to_ _sig_ [*args...*]
 
 ### DESCRIPTION
 
 Estimate the gas cost of a transaction.
 
-The destination (*to*) can be an ENS name or an address.
+The destination (_to_) can be an ENS name or an address.
 
-The signature (*sig*) can be:
+The signature (_sig_) can be:
 
 - A fragment: `someFunction(uint256,bytes32)`
 - A selector and encoded calldata: `0xcdba2fd40000000000000000000000000000000000000000000000000000000000007a69`
@@ -26,37 +26,38 @@ The signature (*sig*) can be:
 
 #### Transaction Options
 
-`--value` *value*  
-&nbsp;&nbsp;&nbsp;&nbsp;Ether to send in the transaction.
+`--value` _value_  
+Ether to send in the transaction.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Either specified as an integer (wei), or as a string with a unit, for example:  
-&nbsp;&nbsp;&nbsp;&nbsp;- `1ether`  
-&nbsp;&nbsp;&nbsp;&nbsp;- `10gwei`  
-&nbsp;&nbsp;&nbsp;&nbsp;- `0.01ether`
+Either specified as an integer (wei), or as a string with a unit, for example:
+
+- `1ether`
+- `10gwei`
+- `0.01ether`
 
 #### RPC Options
 
-`--rpc-url` *url*  
-&nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
+`--rpc-url` _url_  
+The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
+Environment: `ETH_RPC_URL`
 
 `--flashbots`  
-&nbsp;&nbsp;&nbsp;&nbsp;Use the Flashbots RPC URL (https://rpc.flashbots.net).
+Use the Flashbots RPC URL (https://rpc.flashbots.net).
 
 #### Etherscan Options
 
-`--chain` *chain_name*  
-&nbsp;&nbsp;&nbsp;&nbsp;The Etherscan chain.
+`--chain` _chain_name_  
+The Etherscan chain.
 
-`--etherscan-api-key` *key*  
-&nbsp;&nbsp;&nbsp;&nbsp;Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan).  
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETHERSCAN_API_KEY`
+`--etherscan-api-key` _key_  
+Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan).  
+Environment: `ETHERSCAN_API_KEY`
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

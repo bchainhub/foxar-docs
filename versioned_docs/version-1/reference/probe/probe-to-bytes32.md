@@ -8,7 +8,7 @@ probe-to-bytes32 - Right-pads hex data to 32 bytes.
 
 ### SYNOPSIS
 
-`probe to-bytes32` [*options*] *bytes*
+`probe to-bytes32` [*options*] _bytes_
 
 ### DESCRIPTION
 
@@ -22,7 +22,7 @@ Note that this command is for padding a byte string only. If you're looking to f
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### SEE ALSO
 

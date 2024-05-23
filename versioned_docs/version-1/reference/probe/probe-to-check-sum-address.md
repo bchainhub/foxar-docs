@@ -8,7 +8,7 @@ probe-to-check-sum-address - Convert an address to a checksummed format ([EIP-55
 
 ### SYNOPSIS
 
-`probe to-check-sum-address` *address*
+`probe to-check-sum-address` _address_
 
 ### DESCRIPTION
 
@@ -20,7 +20,7 @@ Convert an address to a checksummed format ([EIP-55][eip55]).
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### SEE ALSO
 

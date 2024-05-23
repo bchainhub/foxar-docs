@@ -8,7 +8,7 @@ probe-4byte-event - Get the event signature for a given topic 0 from https://sig
 
 ### SYNOPSIS
 
-`probe 4byte-event` [*options*] *topic_0*
+`probe 4byte-event` [*options*] _topic_0_
 
 ### DESCRIPTION
 
@@ -20,7 +20,7 @@ Get the event signature for a given topic 0 from https://sig.eth.samczsun.com.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

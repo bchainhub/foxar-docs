@@ -8,7 +8,7 @@ probe-concat-hex - Concatenate hex strings.
 
 ### SYNOPSIS
 
-`probe concat-hex` *data...*
+`probe concat-hex` _data..._
 
 ### DESCRIPTION
 
@@ -20,7 +20,7 @@ Concatenate hex strings.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

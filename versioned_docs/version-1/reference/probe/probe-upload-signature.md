@@ -20,7 +20,7 @@ Upload the given signatures to [https://sig.eth.samczsun.com](https://sig.eth.sa
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

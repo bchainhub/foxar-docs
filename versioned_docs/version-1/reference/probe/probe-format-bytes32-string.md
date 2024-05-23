@@ -8,7 +8,7 @@ probe-format-bytes32-string - Formats a string into bytes32 encoding.
 
 ### SYNOPSIS
 
-`probe format-bytes32-string` [*options*] *string*
+`probe format-bytes32-string` [*options*] _string_
 
 ### DESCRIPTION
 
@@ -22,7 +22,7 @@ Note that this command is for formatting a [Solidity string literal](https://doc
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

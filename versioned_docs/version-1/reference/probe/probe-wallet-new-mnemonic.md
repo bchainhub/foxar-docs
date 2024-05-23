@@ -20,11 +20,11 @@ Generates a random BIP39 mnemonic phrase.
 
 `-w`
 `--words`
-&nbsp;&nbsp;&nbsp;&nbsp;The amount of words for the mnemonic. Defaults to 12.
+The amount of words for the mnemonic. Defaults to 12.
 
 `-a`
 `--accounts`
-&nbsp;&nbsp;&nbsp;&nbsp;The number of accounts to display, which are derived from the mnemonic. Defaults to 1.
+The number of accounts to display, which are derived from the mnemonic. Defaults to 1.
 
 ### EXAMPLES
 

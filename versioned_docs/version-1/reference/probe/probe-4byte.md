@@ -8,7 +8,7 @@ probe-4byte - Get the function signatures for the given selector from https://si
 
 ### SYNOPSIS
 
-`probe 4byte` [*options*] *sig*
+`probe 4byte` [*options*] _sig_
 
 ### DESCRIPTION
 
@@ -20,7 +20,7 @@ Get the function signatures for the given selector from https://sig.eth.samczsun
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

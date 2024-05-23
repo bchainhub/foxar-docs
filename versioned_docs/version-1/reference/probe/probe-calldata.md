@@ -8,13 +8,13 @@ probe-calldata - ABI-encode a function with arguments.
 
 ### SYNOPSIS
 
-`probe calldata` [*options*] *sig* [*args...*]
+`probe calldata` [*options*] _sig_ [*args...*]
 
 ### DESCRIPTION
 
 ABI-encode a function with arguments.
 
-The signature (*sig*) is a fragment in the form `<function name>(<types...>)`.
+The signature (_sig_) is a fragment in the form `<function name>(<types...>)`.
 
 ### OPTIONS
 
@@ -22,7 +22,7 @@ The signature (*sig*) is a fragment in the form `<function name>(<types...>)`.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

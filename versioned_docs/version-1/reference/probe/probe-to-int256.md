@@ -8,7 +8,7 @@ probe-to-int256 - Convert a number to a hex-encoded int256.
 
 ### SYNOPSIS
 
-`probe to-int256` [*options*] *value*
+`probe to-int256` [*options*] _value_
 
 ### DESCRIPTION
 
@@ -20,7 +20,7 @@ Convert a number to a hex-encoded int256.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### SEE ALSO
 

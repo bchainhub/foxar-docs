@@ -12,7 +12,7 @@ Arguments:
 
   [UNIT]
           The unit to convert from (ether, gwei, wei)
-          
+
           [default: eth]
 
 Options:

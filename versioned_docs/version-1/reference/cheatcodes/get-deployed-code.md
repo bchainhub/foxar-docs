@@ -56,5 +56,3 @@ Spark Standard Library
 
 [`getCode`](./get-code.md)
 [`etch`](./etch.md)
-
-[spark-std]: ../reference/spark-std

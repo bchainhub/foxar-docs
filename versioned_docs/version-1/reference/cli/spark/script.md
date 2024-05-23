@@ -9,7 +9,7 @@ Usage: spark script [OPTIONS] <PATH> [ARGS]...
 Arguments:
   <PATH>
           The contract you want to run. Either the file path or contract name.
-          
+
           If multiple contracts exist in the same file you must specify the target contract with --target-contract.
 
   [ARGS]...
@@ -18,22 +18,22 @@ Arguments:
 Options:
       --target-contract <CONTRACT_NAME>
           The name of the contract you want to run
-          
+
           [aliases: tc]
 
   -s, --sig <SIG>
           The signature of the function you want to call in the contract, or raw calldata
-          
+
           [default: run()]
 
       --priority-gas-price <PRICE>
           Max priority fee per gas for EIP1559 transactions
-          
+
           [env: ETH_PRIORITY_GAS_PRICE=]
 
       --legacy
           Use legacy transactions instead of EIP1559 ones.
-          
+
           This is auto-enabled for common networks without EIP1559.
 
       --broadcast
@@ -44,7 +44,7 @@ Options:
 
   -g, --gas-estimate-multiplier <GAS_ESTIMATE_MULTIPLIER>
           Relative percentage to multiply gas estimates by
-          
+
           [default: 130]
 
       --unlocked
@@ -52,9 +52,9 @@ Options:
 
       --resume
           Resumes submitting transactions that failed or timed-out previously.
-          
+
           It DOES NOT simulate the script again and it expects nonces to have remained the same.
-          
+
           Example: If transaction N has a nonce of 22, then the account should have a nonce of 22, otherwise it fails.
 
       --multi
@@ -62,7 +62,7 @@ Options:
 
       --debug
           Open the script in the debugger.
-          
+
           Takes precedence over broadcast.
 
       --slow
@@ -70,12 +70,12 @@ Options:
 
       --non-interactive
           Disables interactive prompts that might appear when deploying big contracts.
-          
+
           For more info on the contract size limit, see EIP-170: <https://eips.ethereum.org/EIPS/eip-170>
 
       --etherscan-api-key <KEY>
           The Etherscan (or equivalent) API key
-          
+
           [env: ETHERSCAN_API_KEY=]
 
       --verify
@@ -86,7 +86,7 @@ Options:
 
       --with-gas-price <PRICE>
           Gas price for legacy transactions, or max fee per gas for EIP1559 transactions
-          
+
           [env: ETH_GAS_PRICE=]
 
   -h, --help
@@ -101,7 +101,7 @@ Build options:
 
       --skip <SKIP>...
           Skip building files whose names contain the given filter.
-          
+
           `test` and `script` are aliases for `.t.sol` and `.s.sol`.
 
       --no-cache
@@ -114,7 +114,7 @@ Cache options:
 Linker options:
       --libraries <LIBRARIES>
           Set pre-linked libraries
-          
+
           [env: DAPP_LIBRARIES=]
 
 Compiler options:
@@ -129,12 +129,12 @@ Compiler options:
 
       --use <SOLC_VERSION>
           Specify the solc version, or a path to a local solc, to build with.
-          
+
           Valid values are in the format `x.y.z`, `solc:x.y.z` or `path/to/solc`.
 
       --offline
           Do not access the network.
-          
+
           Missing solc versions will not be installed.
 
       --via-ir
@@ -154,14 +154,14 @@ Compiler options:
 
       --extra-output <SELECTOR>...
           Extra output to include in the contract's artifact.
-          
+
           Example keys: evm.assembly, ewasm, ir, irOptimized, metadata
-          
+
           For a full description, see https://docs.soliditylang.org/en/v0.8.13/using-the-compiler.html#input-description
 
       --extra-output-files <SELECTOR>...
           Extra output to write to separate files.
-          
+
           Valid values: metadata, ir, irOptimized, ewasm, evm.assembly
 
 Project options:
@@ -170,7 +170,7 @@ Project options:
 
       --revert-strings <REVERT>
           Revert string configuration.
-          
+
           Possible values are "default", "strip" (remove), "debug" (Solidity-generated revert strings) and "verboseDebug"
 
       --build-info
@@ -181,7 +181,7 @@ Project options:
 
       --root <PATH>
           The project's root path.
-          
+
           By default root of the Git repository, if in one, or the current working directory.
 
   -C, --contracts <PATH>
@@ -201,9 +201,9 @@ Project options:
 
       --hardhat
           Use the Hardhat-style project layout.
-          
+
           This is the same as using: `--contracts contracts --lib-paths node_modules`.
-          
+
           [aliases: hh]
 
       --config-path <FILE>
@@ -212,7 +212,7 @@ Project options:
 Watch options:
   -w, --watch [<PATH>...]
           Watch the given files or directories for changes.
-          
+
           If no paths are provided, the source and test directories of the project are watched.
 
       --no-restart
@@ -220,17 +220,17 @@ Watch options:
 
       --run-all
           Explicitly re-run all tests when a change is made.
-          
+
           By default, only the tests of the last modified test file are executed.
 
       --watch-delay <DELAY>
           File update debounce delay.
-          
+
           During the delay, incoming change events are accumulated and only once the delay has passed, is an action taken. Note that this does not mean a command will be started: if --no-restart is given and a command is already running,
           the outcome of the action will be to do nothing.
-          
+
           Defaults to 50ms. Parses as decimal seconds by default, but using an integer with the `ms` suffix may be more convenient.
-          
+
           When using --poll mode, you'll want a larger duration, or risk overloading disk I/O.
 
       --format-json
@@ -239,14 +239,14 @@ Watch options:
 Wallet options - raw:
   -a, --froms [<ADDRESSES>...]
           The sender accounts
-          
+
           [env: ETH_FROM=]
 
   -i, --interactives <NUM>
           Open an interactive prompt to enter your private key.
-          
+
           Takes a value for the number of keys to enter.
-          
+
           [default: 0]
 
       --private-keys <RAW_PRIVATE_KEYS>
@@ -263,39 +263,39 @@ Wallet options - raw:
 
       --mnemonic-derivation-paths <PATH>
           The wallet derivation path.
-          
+
           Works with both --mnemonic-path and hardware wallets.
 
       --mnemonic-indexes <INDEXES>
           Use the private key from the given mnemonic index.
-          
+
           Can be used with --mnemonics, --ledger, --aws and --trezor.
-          
+
           [default: 0]
 
 Wallet options - keystore:
       --keystore <PATHS>
           Use the keystore in the given folder or file
-          
+
           [env: ETH_KEYSTORE=]
           [aliases: keystores]
 
       --account <ACCOUNT_NAMES>
           Use a keystore from the default keystores folder (~/.foxar/keystores) by its filename
-          
+
           [env: ETH_KEYSTORE_ACCOUNT=]
           [aliases: accounts]
 
       --password <PASSWORDS>
           The keystore password.
-          
+
           Used with --keystore.
 
       --password-file <PATHS>
           The keystore password file path.
-          
+
           Used with --keystore.
-          
+
           [env: ETH_PASSWORD=]
 
 Wallet options - hardware wallet:
@@ -312,33 +312,33 @@ Wallet options - remote:
 EVM options:
   -f, --fork-url <URL>
           Fetch state over a remote endpoint instead of starting from an empty state.
-          
+
           If you want to fetch state from a specific block number, see --fork-block-number.
-          
+
           [aliases: rpc-url]
 
       --fork-block-number <BLOCK>
           Fetch state from a specific block number over a remote endpoint.
-          
+
           See --fork-url.
 
       --fork-retries <RETRIES>
           Number of retries.
-          
+
           See --fork-url.
 
       --fork-retry-backoff <BACKOFF>
           Initial retry backoff on encountering errors.
-          
+
           See --fork-url.
 
       --no-storage-caching
           Explicitly disables the use of RPC caching.
-          
+
           All storage slots are read entirely from the endpoint.
-          
+
           This flag overrides the project's configuration file.
-          
+
           See --fork-url.
 
       --initial-balance <BALANCE>
@@ -352,9 +352,9 @@ EVM options:
 
   -v, --verbosity...
           Verbosity of the EVM.
-          
+
           Pass multiple times to increase the verbosity (e.g. -v, -vv, -vvv).
-          
+
           Verbosity levels:
           - 2: Print logs for all tests
           - 3: Print execution traces for failing tests
@@ -364,16 +364,16 @@ EVM options:
 Fork config:
       --compute-units-per-second <CUPS>
           Sets the number of assumed available compute units per second for this provider
-          
+
           default value: 330
-          
+
           See also --fork-url and https://docs.alchemy.com/reference/compute-units#what-are-cups-compute-units-per-second
 
       --no-rpc-rate-limit
           Disables rate limiting for this node's provider.
-          
+
           See also --fork-url and https://docs.alchemy.com/reference/compute-units#what-are-cups-compute-units-per-second
-          
+
           [aliases: no-rate-limit]
 
 Executor environment config:
@@ -385,7 +385,7 @@ Executor environment config:
 
       --chain <CHAIN>
           The chain name or EIP-155 chain ID
-          
+
           [aliases: chain-id]
 
       --gas-price <GAS_PRICE>
@@ -393,7 +393,7 @@ Executor environment config:
 
       --block-base-fee-per-gas <FEE>
           The base fee in a block
-          
+
           [aliases: base-fee]
 
       --tx-origin <ADDRESS>
@@ -419,28 +419,28 @@ Executor environment config:
 
       --memory-limit <MEMORY_LIMIT>
           The memory limit per EVM execution in bytes. If this limit is exceeded, a `MemoryLimitOOG` result is thrown.
-          
+
           The default is 128MiB.
 
       --retries <RETRIES>
           Number of attempts for retrying verification
-          
+
           [default: 5]
 
       --delay <DELAY>
           Optional delay to apply inbetween verification attempts, in seconds
-          
+
           [default: 5]
 
 Verifier options:
       --verifier <VERIFIER>
           The contract verification provider to use
-          
+
           [default: etherscan]
           [possible values: etherscan, sourcify, blockscout]
 
       --verifier-url <VERIFIER_URL>
           The verifier URL, if using a custom provider
-          
+
           [env: VERIFIER_URL=]
 ```

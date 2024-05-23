@@ -20,13 +20,13 @@ Verify the signature of a message.
 
 `-a` _address_  
 `--address` _address_  
-&nbsp;&nbsp;&nbsp;&nbsp;The address of the message signer.
+The address of the message signer.
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### SEE ALSO
 

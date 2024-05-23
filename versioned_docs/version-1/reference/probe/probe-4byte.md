@@ -20,7 +20,7 @@ Get the function signatures for the given selector from https://sig.eth.samczsun
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

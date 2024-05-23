@@ -57,7 +57,7 @@ Test result: ok. 1 passed; 0 failed; 0 skipped; finished in 3.97ms
 Ran 1 test suites: 1 tests passed, 0 failed, 0 skipped (1 total tests)
 ```
 
-This unit test _does test_ that we can withdraw ether from our safe. However, who is to say that it works for all amounts, not just 1 ether?
+This unit test *does test* that we can withdraw ether from our safe. However, who is to say that it works for all amounts, not just 1 ether?
 
 The general property here is: given a safe balance, when we withdraw, we should get whatever is in the safe.
 

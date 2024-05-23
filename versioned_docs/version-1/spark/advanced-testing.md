@@ -10,7 +10,7 @@ Spark comes with a number of advanced testing methods:
 
 In the future, Spark will also support these:
 
-- [Symbolic Execution](#)
-- [Mutation Testing](#)
+- [Symbolic Execution](./advanced-testing.md)
+- [Mutation Testing](./advanced-testing.md)
 
 Each chapter dives into what problem the testing methods solve, and how to apply them to your own project.

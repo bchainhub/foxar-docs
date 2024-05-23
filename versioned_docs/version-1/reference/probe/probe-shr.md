@@ -19,28 +19,28 @@ Perform a right shifting operation.
 #### Base Options
 
 `--base-in` _base_
-&nbsp;&nbsp;&nbsp;&nbsp;The base of the input number. Available options:
+The base of the input number. Available options:
 
-&nbsp;&nbsp;&nbsp;&nbsp;10, d, dec, decimal
+10, d, dec, decimal
 
-&nbsp;&nbsp;&nbsp;&nbsp;16, h, hex, hexadecimal
+16, h, hex, hexadecimal
 
 `--base-out` _base_
-&nbsp;&nbsp;&nbsp;&nbsp;The desired base of the output. Available options:
+The desired base of the output. Available options:
 
-&nbsp;&nbsp;&nbsp;&nbsp;2, b, bin, binary
+2, b, bin, binary
 
-&nbsp;&nbsp;&nbsp;&nbsp;8, o, oct, octal
+8, o, oct, octal
 
-&nbsp;&nbsp;&nbsp;&nbsp;10, d, dec, decimal
+10, d, dec, decimal
 
-&nbsp;&nbsp;&nbsp;&nbsp;16, h, hex, hexadecimal
+16, h, hex, hexadecimal
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

@@ -24,33 +24,33 @@ You can also open the transaction in a debugger by passing `--debug`.
 #### Run Options
 
 `--label` _label_  
-&nbsp;&nbsp;&nbsp;&nbsp;Labels an address in the trace.  
-&nbsp;&nbsp;&nbsp;&nbsp;The format is `<address>:<label>`. Can be passed multiple times.
+Labels an address in the trace.  
+The format is `<address>:<label>`. Can be passed multiple times.
 
 `-q`  
 `--quick`  
-&nbsp;&nbsp;&nbsp;&nbsp;Executes the transaction only with the state from the previous block.  
-&nbsp;&nbsp;&nbsp;&nbsp;May result in different results than the live execution!
+Executes the transaction only with the state from the previous block.  
+May result in different results than the live execution!
 
 `-v`  
 `--verbose`  
-&nbsp;&nbsp;&nbsp;&nbsp;Addresses are fully displayed instead of being truncated.
+Addresses are fully displayed instead of being truncated.
 
 `-d`  
 `--debug`  
-&nbsp;&nbsp;&nbsp;&nbsp;Open the script in the [debugger][debugger].
+Open the script in the [debugger][debugger].
 
 #### RPC Options
 
 `--rpc-url` _url_  
-&nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
+The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
+Environment: `ETH_RPC_URL`
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

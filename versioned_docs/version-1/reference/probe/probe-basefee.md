@@ -21,14 +21,14 @@ The specified _block_ can be a block number, or any of the tags: `earliest`, `fi
 #### RPC Options
 
 `--rpc-url` _url_  
-&nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
+The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
+Environment: `ETH_RPC_URL`
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

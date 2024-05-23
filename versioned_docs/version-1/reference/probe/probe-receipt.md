@@ -22,30 +22,30 @@ If _field_ is specified, then only the given field of the receipt is displayed.
 
 `--async`  
 `--probe-async`  
-&nbsp;&nbsp;&nbsp;&nbsp;Do not wait for the transaction receipt if it does not exist yet.  
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `PROBE_ASYNC`
+Do not wait for the transaction receipt if it does not exist yet.  
+Environment: `PROBE_ASYNC`
 
 `-c` _confirmations_  
 `--confirmations` _confirmations_  
-&nbsp;&nbsp;&nbsp;&nbsp;Wait a number of confirmations before exiting. Default: `1`.
+Wait a number of confirmations before exiting. Default: `1`.
 
 #### RPC Options
 
 `--rpc-url` _url_  
-&nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
+The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
+Environment: `ETH_RPC_URL`
 
 #### Display Options
 
 `-j`  
 `--json`  
-&nbsp;&nbsp;&nbsp;&nbsp; Print the deployment information as JSON.
+ Print the deployment information as JSON.
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

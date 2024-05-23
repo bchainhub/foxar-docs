@@ -21,23 +21,23 @@ The destination (_to_) can be an ENS name or an address.
 #### Output Options
 
 `-d` _directory_  
-&nbsp;&nbsp;&nbsp;&nbsp;The output directory to expand the source tree into.
-&nbsp;&nbsp;&nbsp;&nbsp;If not provided, the source will be outputted to stdout.
+The output directory to expand the source tree into.
+If not provided, the source will be outputted to stdout.
 
 #### Etherscan Options
 
 `--chain` _chain_name_  
-&nbsp;&nbsp;&nbsp;&nbsp;The Etherscan chain.
+The Etherscan chain.
 
 `--etherscan-api-key` _key_  
-&nbsp;&nbsp;&nbsp;&nbsp;Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan#etherscan).  
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETHERSCAN_API_KEY`
+Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan#etherscan).  
+Environment: `ETHERSCAN_API_KEY`
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

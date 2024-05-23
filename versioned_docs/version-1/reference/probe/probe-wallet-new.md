@@ -23,20 +23,20 @@ If _path_ is specified, then the new keypair will be written to a JSON keystore 
 
 `-p`  
 `--password`  
-&nbsp;&nbsp;&nbsp;&nbsp;Triggers a hidden password prompt for the JSON keystore.  
-&nbsp;&nbsp;&nbsp;&nbsp;**Deprecated: prompting for a hidden password is now the default.**
+Triggers a hidden password prompt for the JSON keystore.  
+**Deprecated: prompting for a hidden password is now the default.**
 
 `--unsafe-password` _password_  
-&nbsp;&nbsp;&nbsp;&nbsp;Password for the JSON keystore in cleartext.
+Password for the JSON keystore in cleartext.
 
-&nbsp;&nbsp;&nbsp;&nbsp;This is **unsafe** to use and we recommend using `--password` instead.  
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `PROBE_PASSWORD`
+This is **unsafe** to use and we recommend using `--password` instead.  
+Environment: `PROBE_PASSWORD`
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

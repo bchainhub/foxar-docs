@@ -22,7 +22,7 @@ Note that this command is for padding a byte string only. If you're looking to f
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### SEE ALSO
 

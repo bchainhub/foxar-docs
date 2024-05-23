@@ -20,7 +20,7 @@ Parses a checksummed address from its bytes32 encoding representation.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

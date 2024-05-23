@@ -17,37 +17,37 @@ Generate a deterministic contract address using CREATE2
 ### OPTIONS
 
 `--starts-with` _hex_
-&nbsp;&nbsp;&nbsp;&nbsp;Prefix for the contract address.
+Prefix for the contract address.
 
 `--ends-with` _hex_
-&nbsp;&nbsp;&nbsp;&nbsp;Suffix for the contract address
+Suffix for the contract address
 
 `--matching` _hex_
-&nbsp;&nbsp;&nbsp;&nbsp;Sequence that the address has to match
+Sequence that the address has to match
 
 `--case-sensitive`
-&nbsp;&nbsp;&nbsp;&nbsp;Case sensitive matching
+Case sensitive matching
 
 `--deployer` _address_
-&nbsp;&nbsp;&nbsp;&nbsp;Address of the contract deployer [default: `0x4e59b44847b379578588920ca78fbf26c0b4956c`]
+Address of the contract deployer [default: `0x4e59b44847b379578588920ca78fbf26c0b4956c`]
 
 `--init-code` _hex_
-&nbsp;&nbsp;&nbsp;&nbsp;Init code of the contract to be deployed
+Init code of the contract to be deployed
 
 `--init-code-hash` _hash_
-&nbsp;&nbsp;&nbsp;&nbsp;Init code hash of the contract to be deployed
+Init code hash of the contract to be deployed
 
 `--jobs` _jobs_
-&nbsp;&nbsp;&nbsp;&nbsp;Number of threads to use. Defaults to and caps at the number of logical cores
+Number of threads to use. Defaults to and caps at the number of logical cores
 
 `--caller` _address_
-&nbsp;&nbsp;&nbsp;&nbsp;Address of the caller. Used for the first 20 bytes of the salt
+Address of the caller. Used for the first 20 bytes of the salt
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

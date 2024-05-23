@@ -24,13 +24,13 @@ The signature (_sig_) is a fragment in the form `<function name>(<types...>)(<ty
 
 `-i`  
 `--input`  
-&nbsp;&nbsp;&nbsp;&nbsp;Decode input data.
+Decode input data.
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

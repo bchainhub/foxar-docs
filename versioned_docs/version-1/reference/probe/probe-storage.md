@@ -24,21 +24,21 @@ The address (_address_) can be an ENS name or an address.
 
 `-B` _block_
 `--block` _block_
-&nbsp;&nbsp;&nbsp;&nbsp;The block height you want to query at.
+The block height you want to query at.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Can be a block number, or any of the tags: `earliest`, `finalized`, `safe`, `latest` or `pending`.
+Can be a block number, or any of the tags: `earliest`, `finalized`, `safe`, `latest` or `pending`.
 
 #### RPC Options
 
 `--rpc-url` _url_  
-&nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
+The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
+Environment: `ETH_RPC_URL`
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

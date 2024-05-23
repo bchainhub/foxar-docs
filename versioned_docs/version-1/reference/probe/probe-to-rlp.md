@@ -20,7 +20,7 @@ RLP encodes a hex string or a JSON array of hex strings.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

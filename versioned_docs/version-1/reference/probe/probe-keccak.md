@@ -20,7 +20,7 @@ Hash arbitrary data using keccak-256.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### SEE ALSO
 

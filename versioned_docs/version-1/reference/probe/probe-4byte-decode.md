@@ -19,16 +19,16 @@ Decode ABI-encoded calldata using https://sig.eth.samczsun.com.
 #### 4byte Options
 
 `--id` _id_  
-&nbsp;&nbsp;&nbsp;&nbsp;The index of the resolved signature to use.
-&nbsp;&nbsp;&nbsp;&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;https://sig.eth.samczsun.com can have multiple possible signatures for a given selector.  
-&nbsp;&nbsp;&nbsp;&nbsp;The index can be an integer, or the tags "earliest" and "latest".
+The index of the resolved signature to use.
+
+https://sig.eth.samczsun.com can have multiple possible signatures for a given selector.  
+The index can be an integer, or the tags "earliest" and "latest".
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

@@ -27,36 +27,37 @@ The signature (_sig_) can be:
 #### Transaction Options
 
 `--value` _value_  
-&nbsp;&nbsp;&nbsp;&nbsp;Ether to send in the transaction.
+Ether to send in the transaction.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Either specified as an integer (wei), or as a string with a unit, for example:  
-&nbsp;&nbsp;&nbsp;&nbsp;- `1ether`  
-&nbsp;&nbsp;&nbsp;&nbsp;- `10gwei`  
-&nbsp;&nbsp;&nbsp;&nbsp;- `0.01ether`
+Either specified as an integer (wei), or as a string with a unit, for example:
+
+- `1ether`
+- `10gwei`
+- `0.01ether`
 
 #### RPC Options
 
 `--rpc-url` _url_  
-&nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
+The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
+Environment: `ETH_RPC_URL`
 
 `--flashbots`  
-&nbsp;&nbsp;&nbsp;&nbsp;Use the Flashbots RPC URL (https://rpc.flashbots.net).
+Use the Flashbots RPC URL (https://rpc.flashbots.net).
 
 #### Etherscan Options
 
 `--chain` _chain_name_  
-&nbsp;&nbsp;&nbsp;&nbsp;The Etherscan chain.
+The Etherscan chain.
 
 `--etherscan-api-key` _key_  
-&nbsp;&nbsp;&nbsp;&nbsp;Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan#etherscan).  
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETHERSCAN_API_KEY`
+Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan#etherscan).  
+Environment: `ETHERSCAN_API_KEY`
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

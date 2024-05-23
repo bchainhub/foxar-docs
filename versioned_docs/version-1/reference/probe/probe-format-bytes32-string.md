@@ -22,7 +22,7 @@ Note that this command is for formatting a [Solidity string literal](https://doc
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

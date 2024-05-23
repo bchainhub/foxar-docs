@@ -18,13 +18,13 @@ Extracts function selectors and arguments from bytecode using the [EVMole librar
 
 `-r`  
 `--resolve`  
-&nbsp;&nbsp;&nbsp;&nbsp;Resolve the function signatures for the extracted selectors using https://openchain.xyz
+Resolve the function signatures for the extracted selectors using https://openchain.xyz
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

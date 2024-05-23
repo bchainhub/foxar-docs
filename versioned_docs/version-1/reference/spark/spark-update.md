@@ -25,7 +25,7 @@ If no argument is provided, then all dependencies are updated.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

@@ -22,7 +22,7 @@ Consider using [`probe to-unit`](./probe-to-unit.md).
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### SEE ALSO
 

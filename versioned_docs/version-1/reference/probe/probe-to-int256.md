@@ -20,7 +20,7 @@ Convert a number to a hex-encoded int256.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### SEE ALSO
 

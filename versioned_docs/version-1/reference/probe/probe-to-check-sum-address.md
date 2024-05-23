@@ -20,7 +20,7 @@ Convert an address to a checksummed format ([EIP-55][eip55]).
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### SEE ALSO
 

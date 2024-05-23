@@ -2,31 +2,31 @@
 
 `--base-fee <FEE>`  
 `--block-base-fee-per-gas <FEE>`  
-&nbsp;&nbsp;&nbsp;&nbsp;The base fee in a block (in wei).
+The base fee in a block (in wei).
 
-`--block-coinbase` *address*  
-&nbsp;&nbsp;&nbsp;&nbsp;The coinbase of the block.
+`--block-coinbase` _address_  
+The coinbase of the block.
 
-`--block-difficulty` *difficulty*  
-&nbsp;&nbsp;&nbsp;&nbsp;The block difficulty.
+`--block-difficulty` _difficulty_  
+The block difficulty.
 
-`--block-gas-limit` *gas_limit*  
-&nbsp;&nbsp;&nbsp;&nbsp;The block gas limit.
+`--block-gas-limit` _gas_limit_  
+The block gas limit.
 
-`--block-number` *block*  
-&nbsp;&nbsp;&nbsp;&nbsp;The block number.
+`--block-number` _block_  
+The block number.
 
-`--block-timestamp` *timestamp*  
-&nbsp;&nbsp;&nbsp;&nbsp;The timestamp of the block (in seconds).
+`--block-timestamp` _timestamp_  
+The timestamp of the block (in seconds).
 
-`--chain-id` *chain_id*  
-&nbsp;&nbsp;&nbsp;&nbsp;The chain ID.
+`--chain-id` _chain_id_  
+The chain ID.
 
-`--gas-limit` *gas_limit*  
-&nbsp;&nbsp;&nbsp;&nbsp;The block gas limit.
+`--gas-limit` _gas_limit_  
+The block gas limit.
 
-`--gas-price` *gas_price*  
-&nbsp;&nbsp;&nbsp;&nbsp;The gas price (in wei).
+`--gas-price` _gas_price_  
+The gas price (in wei).
 
-`--tx-origin` *address*  
-&nbsp;&nbsp;&nbsp;&nbsp;The transaction origin.
+`--tx-origin` _address_  
+The transaction origin.

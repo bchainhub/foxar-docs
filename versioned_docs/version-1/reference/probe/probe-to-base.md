@@ -19,17 +19,17 @@ Convert a number of one base to another.
 #### Base Options
 
 `--base-in` _base_
-&nbsp;&nbsp;&nbsp;&nbsp;The base of the input number. Available options:
+The base of the input number. Available options:
 
-&nbsp;&nbsp;&nbsp;&nbsp;10, d, dec, decimal
+10, d, dec, decimal
 
-&nbsp;&nbsp;&nbsp;&nbsp;16, h, hex, hexadecimal
+16, h, hex, hexadecimal
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

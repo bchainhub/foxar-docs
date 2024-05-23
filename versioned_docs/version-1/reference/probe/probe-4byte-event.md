@@ -20,7 +20,7 @@ Get the event signature for a given topic 0 from https://sig.eth.samczsun.com.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

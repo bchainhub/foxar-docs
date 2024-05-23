@@ -20,7 +20,7 @@ Parses a [Solidity string literal](https://docs.soliditylang.org/en/v0.8.16/type
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

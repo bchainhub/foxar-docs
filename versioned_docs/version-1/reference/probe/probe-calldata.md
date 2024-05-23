@@ -22,7 +22,7 @@ The signature (_sig_) is a fragment in the form `<function name>(<types...>)`.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

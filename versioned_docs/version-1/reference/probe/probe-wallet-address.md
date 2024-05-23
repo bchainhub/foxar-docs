@@ -22,59 +22,59 @@ Convert a private key to an address.
 
 `-i`  
 `--interactive <NUM>`  
-&nbsp;&nbsp;&nbsp;&nbsp; Open an interactive prompt to enter your private key. Takes a value for the number of keys to enter.  
-&nbsp;&nbsp;&nbsp;&nbsp; Defaults to `0`.
+ Open an interactive prompt to enter your private key. Takes a value for the number of keys to enter.  
+ Defaults to `0`.
 
 `--mnemonic-derivation-path <PATHS>`  
-&nbsp;&nbsp;&nbsp;&nbsp; The wallet derivation path. Works with both `--mnemonic-path` and hardware wallets.
+ The wallet derivation path. Works with both `--mnemonic-path` and hardware wallets.
 
 `--mnemonic-indexes <INDEXES>`  
-&nbsp;&nbsp;&nbsp;&nbsp; Use the private key from the given mnemonic index. Used with --mnemonic-paths.  
-&nbsp;&nbsp;&nbsp;&nbsp; Defaults to `0`.
+ Use the private key from the given mnemonic index. Used with --mnemonic-paths.  
+ Defaults to `0`.
 
 `--mnemonic-passphrase <PASSPHRASE>`  
-&nbsp;&nbsp;&nbsp;&nbsp; Use a BIP39 passphrases for the mnemonic.
+ Use a BIP39 passphrases for the mnemonic.
 
 `--mnemonic <PATHS>`  
-&nbsp;&nbsp;&nbsp;&nbsp; Use the mnemonic phrases or mnemonic files at the specified paths.
+ Use the mnemonic phrases or mnemonic files at the specified paths.
 
 `--private-key <RAW_PRIVATE_KEY>`  
-&nbsp;&nbsp;&nbsp;&nbsp; Use the provided private key.
+ Use the provided private key.
 
 `--private-keys <RAW_PRIVATE_KEYS>`  
-&nbsp;&nbsp;&nbsp;&nbsp; Use the provided private keys.
+ Use the provided private keys.
 
 #### Wallet Options - Keystore
 
 `--keystore` _path_  
-&nbsp;&nbsp;&nbsp;&nbsp;Use the keystore in the given folder or file.  
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_KEYSTORE`
+Use the keystore in the given folder or file.  
+Environment: `ETH_KEYSTORE`
 
 `--account` _account-name_  
-&nbsp;&nbsp;&nbsp;&nbsp;Use a keystore from the default keystores folder (~/.foxar/keystores) by its filename.  
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_KEYSTORE_ACCOUNT`
+Use a keystore from the default keystores folder (~/.foxar/keystores) by its filename.  
+Environment: `ETH_KEYSTORE_ACCOUNT`
 
 `--interactive`
 
 `--password` _password_  
-&nbsp;&nbsp;&nbsp;&nbsp;The keystore password. Used with `--keystore`.
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_PASSWORD`
+The keystore password. Used with `--keystore`.
+Environment: `ETH_PASSWORD`
 
 #### Wallet Options - Hardware Wallet
 
 `-t`  
 `--trezor`  
-&nbsp;&nbsp;&nbsp;&nbsp;Use a Trezor hardware wallet.
+Use a Trezor hardware wallet.
 
 `-l`  
 `--ledger`  
-&nbsp;&nbsp;&nbsp;&nbsp;Use a Ledger hardware wallet.
+Use a Ledger hardware wallet.
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

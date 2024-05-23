@@ -22,7 +22,7 @@ The _data_ is a hexadecimal string with optional 0x prefix.
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

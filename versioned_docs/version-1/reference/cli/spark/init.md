@@ -9,7 +9,7 @@ Usage: spark init [OPTIONS] [PATH]
 Arguments:
   [PATH]
           The root directory of the new project
-          
+
           [default: .]
 
 Options:
@@ -21,7 +21,7 @@ Options:
 
       --offline
           Do not install dependencies from the network
-          
+
           [aliases: no-deps]
 
       --force
@@ -32,7 +32,7 @@ Options:
 
       --shallow
           Perform shallow clones instead of deep ones.
-          
+
           Improves performance and reduces disk usage, but prevents switching branches or tags.
 
       --no-git

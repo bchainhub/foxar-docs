@@ -37,27 +37,27 @@ the repository. If you want to change the name of the folder, prepend `<folder>=
 #### Project Options
 
 `--root` _path_  
-&nbsp;&nbsp;&nbsp;&nbsp;The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
+The project's root path. By default, this is the root directory of the current git repository, or the current working directory.
 
 #### VCS Options
 
 `--no-commit`  
-&nbsp;&nbsp;&nbsp;&nbsp;Do not create a commit.
+Do not create a commit.
 
 `--no-git`  
-&nbsp;&nbsp;&nbsp;&nbsp;Install without adding the dependency as a submodule.
+Install without adding the dependency as a submodule.
 
 #### Display Options
 
 `-q`  
 `--quiet`  
-&nbsp;&nbsp;&nbsp;&nbsp;Do not print any messages.
+Do not print any messages.
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

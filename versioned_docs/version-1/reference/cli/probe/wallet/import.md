@@ -32,13 +32,13 @@ Wallet options - raw:
 
       --mnemonic-derivation-path <PATH>
           The wallet derivation path.
-          
+
           Works with both --mnemonic-path and hardware wallets.
 
       --mnemonic-index <INDEX>
           Use the private key from the given mnemonic index.
-          
+
           Used with --mnemonic-path.
-          
+
           [default: 0]
 ```

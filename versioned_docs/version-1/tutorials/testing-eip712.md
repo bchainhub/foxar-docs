@@ -6,7 +6,7 @@ title: Testing EIP-712 Signatures
 
 [EIP-712](https://eips.ethereum.org/EIPS/eip-712) introduced the ability to sign transactions off-chain which other users can later execute on-chain. A common example is [EIP-2612](https://eips.ethereum.org/EIPS/eip-2612) gasless token approvals.
 
-Traditionally, setting a user or contract allowance to transfer ERC-20 tokens from an owner's balance required the owner to submit an approval on-chain. As this proved to be poor UX, DAI introduced ERC-20 `permit` (later standardized as EIP-2612) allowing the owner to sign the approval _off-chain_ which the spender (or anyone else!) can submit on-chain prior to the `transferFrom`.
+Traditionally, setting a user or contract allowance to transfer ERC-20 tokens from an owner's balance required the owner to submit an approval on-chain. As this proved to be poor UX, DAI introduced ERC-20 `permit` (later standardized as EIP-2612) allowing the owner to sign the approval *off-chain* which the spender (or anyone else!) can submit on-chain prior to the `transferFrom`.
 
 This guide will cover testing this pattern in Solidity using Foxar.
 
@@ -451,7 +451,7 @@ contract ERC20Test is Test {
 
 ### Bundled Example
 
-Here is a section of a [mock contract](https://github.com/kulkarohan/deposit/blob/main/src/Deposit.sol) that just deposits ERC-20 tokens. Note how `deposit` requires a preliminary `approve` or `permit` tx in order to transfer tokens, while `depositWithPermit` sets the allowance _and_ transfers the tokens in a single tx.
+Here is a section of a [mock contract](https://github.com/kulkarohan/deposit/blob/main/src/Deposit.sol) that just deposits ERC-20 tokens. Note how `deposit` requires a preliminary `approve` or `permit` tx in order to transfer tokens, while `depositWithPermit` sets the allowance *and* transfers the tokens in a single tx.
 
 ```solidity
     ///                                                          ///
@@ -546,7 +546,7 @@ contract DepositTest is Test {
 - Compute its digest using `sigUtils.getTypedDataHash`
 - Sign the digest using the `vm.sign` [cheatcode](https://book.getfoxar.sh/cheatcodes/sign.html) with the owner's private key
 - Store the `uint8 v, bytes32 r, bytes32 s` of the signature
-  - _Note:_ can convert to bytes via `bytes signature = abi.encodePacked(r, s, v)`
+  - *Note:* can convert to bytes via `bytes signature = abi.encodePacked(r, s, v)`
 - Call `depositWithPermit` with the signed approval and signature to transfer the tokens into the contract
 
 ```solidity

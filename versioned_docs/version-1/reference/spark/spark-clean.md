@@ -19,13 +19,13 @@ Remove the build artifacts and cache directories.
 #### Clean Options
 
 `--root` _path_  
-&nbsp;&nbsp;&nbsp;&nbsp;The project's root path. Defaults to the current working directory.
+The project's root path. Defaults to the current working directory.
 
 #### Common Options
 
 -h  
 --help  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

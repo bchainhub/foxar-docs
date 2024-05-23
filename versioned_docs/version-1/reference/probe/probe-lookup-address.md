@@ -22,19 +22,19 @@ If `--verify` is passed, then a normal lookup is performed after the reverse loo
 
 `-v`  
 `--verify`  
-&nbsp;&nbsp;&nbsp;&nbsp;Perform a normal lookup to verify that the address is correct.
+Perform a normal lookup to verify that the address is correct.
 
 #### RPC Options
 
 `--rpc-url` _url_  
-&nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
+The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
+Environment: `ETH_RPC_URL`
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

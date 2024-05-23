@@ -20,25 +20,25 @@ The specified _block_ can be a block number, or any of the tags: `earliest`, `fi
 
 `-f` _field_  
 `--field` _field_  
-&nbsp;&nbsp;&nbsp;&nbsp; If specified, only get the given field of the block.
+ If specified, only get the given field of the block.
 
 #### Display Options
 
 `-j`  
 `--json`  
-&nbsp;&nbsp;&nbsp;&nbsp; Print the deployment information as JSON.
+ Print the deployment information as JSON.
 
 #### RPC Options
 
 `--rpc-url` _url_  
-&nbsp;&nbsp;&nbsp;&nbsp;The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETH_RPC_URL`
+The RPC endpoint. Accepts a URL or an existing alias in the [rpc_endpoints] table, like `mainnet`.
+Environment: `ETH_RPC_URL`
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

@@ -26,10 +26,10 @@ overriding values in the displayed configuration.
 #### Config Options
 
 `--basic`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints a basic configuration file.
+Prints a basic configuration file.
 
 `--fix`  
-&nbsp;&nbsp;&nbsp;&nbsp;Attempts to fix any configuration warnings.
+Attempts to fix any configuration warnings.
 
 ### EXAMPLES
 

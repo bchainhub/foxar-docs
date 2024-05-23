@@ -426,3 +426,5 @@ Sets the model checker targets. Valid values are:
 - `popEmptyArray`: Popping an empty array
 - `outOfBounds`: Out of bounds array/fixed bytes index access
 - `default`: All of the above (note: not the default for Spark)
+
+[output-desc]: https://docs.soliditylang.org/en/latest/using-the-compiler.html#compiler-api

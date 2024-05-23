@@ -28,33 +28,33 @@ If an address is provided, then the interface is generated from the ABI of the a
 
 `-n` _name_  
 `--name` _name_  
-&nbsp;&nbsp;&nbsp;&nbsp;The name to use for the generated interface. The default name is `Interface`.
+The name to use for the generated interface. The default name is `Interface`.
 
 `-o` _path_  
-&nbsp;&nbsp;&nbsp;&nbsp;The path to the output file. If not specified, the interface will be output to stdout.
+The path to the output file. If not specified, the interface will be output to stdout.
 
 `-p` _version_  
 `--pragma` _version_  
-&nbsp;&nbsp;&nbsp;&nbsp;The Solidity pragma version to use in the interface. Default: `^0.8.10`.
+The Solidity pragma version to use in the interface. Default: `^0.8.10`.
 
 `-j`  
 `--json`  
-&nbsp;&nbsp;&nbsp;&nbsp;Output the contract's JSON ABI.
+Output the contract's JSON ABI.
 
 #### Etherscan Options
 
 `--chain` _chain_name_  
-&nbsp;&nbsp;&nbsp;&nbsp;The Etherscan chain.
+The Etherscan chain.
 
 `--etherscan-api-key` _key_  
-&nbsp;&nbsp;&nbsp;&nbsp;Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan#etherscan).  
-&nbsp;&nbsp;&nbsp;&nbsp;Environment: `ETHERSCAN_API_KEY`
+Etherscan API key, or the key of an [Etherscan configuration table](../config/etherscan#etherscan).  
+Environment: `ETHERSCAN_API_KEY`
 
 #### Common Options
 
 `-h`  
 `--help`  
-&nbsp;&nbsp;&nbsp;&nbsp;Prints help information.
+Prints help information.
 
 ### EXAMPLES
 

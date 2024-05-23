@@ -20,15 +20,15 @@ Perform a simple JSON-RPC POST request for the given method and with the params
 
 `-r` _url_
 `--rpc-url` _url_
-&nbsp;&nbsp;&nbsp;&nbsp;The URL of the provider
+The URL of the provider
 
 `-w`
 `--raw`
-&nbsp;&nbsp;&nbsp;&nbsp;Pass the "params" as is
-&nbsp;&nbsp;&nbsp;&nbsp; If --raw is passed the first PARAM will be taken as the value of "params". If no params are given, stdin will be used. For example:
-&nbsp;&nbsp;&nbsp;&nbsp; rpc eth_getBlockByNumber '["0x123", false]' --raw
+Pass the "params" as is
+If --raw is passed the first PARAM will be taken as the value of "params". If no params are given, stdin will be used. For example:
+rpc eth_getBlockByNumber '["0x123", false]' --raw
 
-&nbsp;&nbsp;&nbsp;&nbsp; => \{"method": "eth_getBlockByNumber", "params": ["0x123", false] ... }
+=> \{"method": "eth_getBlockByNumber", "params": ["0x123", false] ... }
 
 ### EXAMPLES
 

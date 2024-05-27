@@ -107,17 +107,14 @@ interface CheatCodes {
         bool reverted;
     }
 
-    // Derives a private key from the name, labels the account with that name, and returns the wallet
-    function createWallet(string calldata) external returns (Wallet memory);
-
     // Generates a wallet from the private key and returns the wallet
-    function createWallet(uint256) external returns (Wallet memory);
+    function createWallet(string memory privateKey) external returns (Wallet memory);
 
     // Generates a wallet from the private key, labels the account with that name, and returns the wallet
-    function createWallet(uint256, string calldata) external returns (Wallet memory);
+    function createWallet(string memory privateKey, string calldata) external returns (Wallet memory);
 
-    // Signs data, (Wallet, digest) => (v, r, s)
-    function sign(Wallet calldata, bytes32) external returns (uint8, bytes32, bytes32);
+    // Signs data, (Wallet, digest) => (sig)
+    function sign(Wallet calldata, bytes32) external returns (bytes memory sig);
 
     // Get nonce for a Wallet
     function getNonce(Wallet calldata) external returns (uint64);
@@ -135,10 +132,6 @@ interface CheatCodes {
     // Does not work from the Paris hard fork and onwards, and will revert instead.
     function difficulty(uint256) external;
 
-    // Set block.prevrandao
-    // Does not work before the Paris hard fork, and will revert instead.
-    function prevrandao(bytes32) external;
-
     // Set block.chainid
     function chainId(uint256) external;
 
@@ -149,19 +142,12 @@ interface CheatCodes {
     function store(address account, bytes32 slot, bytes32 value) external;
 
     // Signs data
-    function sign(uint256 privateKey, bytes32 digest)
+    function sign(string memory privateKey, bytes32 digest)
         external
-        returns (uint8 v, bytes32 r, bytes32 s);
+        returns (bytes memory sig);
 
     // Computes address for a given private key
-    function addr(uint256 privateKey) external returns (address);
-
-    // Derive a private key from a provided mnemonic string,
-    // or mnemonic file path, at the derivation path m/44'/60'/0'/0/{index}.
-    function deriveKey(string calldata, uint32) external returns (uint256);
-    // Derive a private key from a provided mnemonic string, or mnemonic file path,
-    // at the derivation path {path}{index}
-    function deriveKey(string calldata, string calldata, uint32) external returns (uint256);
+    function addr(string memory privateKey) external returns (address);
 
     // Gets the nonce of an account
     function getNonce(address account) external returns (uint64);

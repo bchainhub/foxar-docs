@@ -13,7 +13,7 @@ function startBroadcast(address who) external;
 ```
 
 ```solidity
-function startBroadcast(uint256 privateKey) external;
+function startBroadcast(string memory privateKey) external;
 ```
 
 ### Description

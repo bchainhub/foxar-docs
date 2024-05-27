@@ -34,7 +34,7 @@ There are 3 signatures:
 >
 > Normally, a call that succeeds returns a status of `true` (along with any return data) and a call that reverts returns `false`.
 >
-> The Solidity compiler will insert checks that ensures that the call succeeded, and revert if it did not.
+> The Ylem compiler will insert checks that ensures that the call succeeded, and revert if it did not.
 >
 > On low level calls, the `expectRevert` cheatcode works by making the `status` boolean returned by the low level call correspond to whether the `expectRevert` succeeded or not, NOT whether or not the low-level call succeeds. Therefore, `status` being false corresponds to the cheatcode failing.
 >

@@ -59,7 +59,7 @@ Create the project even if the specified root directory is not empty.
 The template to start from.
 
 `--vscode`  
-Create a `.vscode/settings.json` file with Solidity settings, and generate a `remappings.txt` file.
+Create a `.vscode/settings.json` file with Ylem settings, and generate a `remappings.txt` file.
 
 `--offline`  
 Do not install dependencies from the network.

@@ -55,9 +55,9 @@ For example `vm.parseJsonUint(json, key)` will coerce the value to a `uint256`. 
 
 Similarly, there are cheatcodes for all types (including `bytes` and `bytes32`) and their arrays (`vm.parseJsonUintArray`).
 
-### Decoding JSON objects into Solidity structs
+### Decoding JSON objects into Ylem structs
 
-JSON objects are encoded as tuples, and can be decoded via tuples or structs. That means that you can define a `struct` in Solidity and it will decode the entire JSON object into that `struct`.
+JSON objects are encoded as tuples, and can be decoded via tuples or structs. That means that you can define a `struct` in Ylem and it will decode the entire JSON object into that `struct`.
 
 For example:
 
@@ -121,7 +121,7 @@ If your JSON object has `hex numbers`, they will be encoded as bytes. The way to
 2. Define its usage with `string`: `using stdJson for string;`
 3. If you want to parse simple values (numbers, address, etc.) use the helper functions
 4. If you want to parse entire JSON objects:
-   1. Define the `struct` in Solidity. Make sure to follow the alphabetical order -- it's hard to debug
+   1. Define the `struct` in Ylem. Make sure to follow the alphabetical order -- it's hard to debug
    2. Use the `parseRaw()` helper function to return abi-encoded `bytes` and then decode them to your struct
 
 ```solidity

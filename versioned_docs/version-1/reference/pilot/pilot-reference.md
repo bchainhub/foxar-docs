@@ -4,7 +4,7 @@ title: Pilot
 
 ### NAME
 
-`pilot` - Test and receive verbose feedback on Solidity inputs within a REPL environment.
+`pilot` - Test and receive verbose feedback on Ylem inputs within a REPL environment.
 
 ### SYNOPSIS
 
@@ -29,17 +29,17 @@ See `man pilot` or `pilot --help` for all available environment configuration fl
 
 ### DESCRIPTION
 
-Pilot is a Solidity REPL (short for "read-eval-print loop") that allows developers to write
-and test Solidity code snippets. It provides an interactive environment for writing and executing
-Solidity code, as well as a set of built-in commands for working with and debugging your code. This
-makes it a useful tool for quickly testing and experimenting with Solidity code without having to
+Pilot is a Ylem REPL (short for "read-eval-print loop") that allows developers to write
+and test Ylem code snippets. It provides an interactive environment for writing and executing
+Ylem code, as well as a set of built-in commands for working with and debugging your code. This
+makes it a useful tool for quickly testing and experimenting with Ylem code without having to
 spin up a sandbox foxar test suite.
 
 ### Usage
 
 To open pilot, simply execute the `pilot` binary.
 
-From there, input valid Solidity code. There are two kinds of inputs to the pilot prompt apart from commands:
+From there, input valid Ylem code. There are two kinds of inputs to the pilot prompt apart from commands:
 
 1. Expressions
    - Expressions are statements that return a value or otherwise can be evaluated on their own. For example,

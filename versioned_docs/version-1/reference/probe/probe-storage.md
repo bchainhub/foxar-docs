@@ -14,7 +14,7 @@ probe-storage - Get the raw value of a contract's storage slot or its full stora
 
 Get the raw value of a contract's storage slot. (Slot locations greater than 18446744073709551615 (u64::MAX) should be given as hex. Use `probe index` to compute mapping slots.)
 
-Emit the slot number to get the full storage layout (requires contract to be verified on Etherscan with a Solidity version > 0.6.5 or you must be in a Spark project with a local contract matching the deployed bytecode).
+Emit the slot number to get the full storage layout (requires contract to be verified on Etherscan with a Ylem version > 0.6.5 or you must be in a Spark project with a local contract matching the deployed bytecode).
 
 The address (_address_) can be an ENS name or an address.
 

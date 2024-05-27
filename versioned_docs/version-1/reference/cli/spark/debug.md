@@ -76,7 +76,7 @@ Compiler options:
           The target EVM version
 
       --optimize
-          Activate the Solidity optimizer
+          Activate the Ylem optimizer
 
       --optimizer-runs <RUNS>
           The number of optimizer runs
@@ -100,7 +100,7 @@ Project options:
       --revert-strings <REVERT>
           Revert string configuration.
 
-          Possible values are "default", "strip" (remove), "debug" (Solidity-generated revert strings) and "verboseDebug"
+          Possible values are "default", "strip" (remove), "debug" (Ylem-generated revert strings) and "verboseDebug"
 
       --build-info
           Generate build info files

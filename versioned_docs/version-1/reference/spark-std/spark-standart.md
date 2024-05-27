@@ -57,7 +57,7 @@ What's included:
   - [Std Logs](./std-logs.md): Expand upon the logging events from the DSTest library.
   - [Std Assertions](./std-assertions.md): Expand upon the assertion functions from the DSTest library.
   - [Std Cheats](./std-cheats.md): Wrappers around Spark cheatcodes for improved safety and DX.
-  - [Std Errors](./std-errors.md): Wrappers around common internal Solidity errors and reverts.
+  - [Std Errors](./std-errors.md): Wrappers around common internal Ylem errors and reverts.
   - [Std Storage](./std-storage.md): Utilities for storage manipulation.
   - [Std Math](./std-math.md): Useful mathematical functions.
   - [Script Utils](./script-utils.md): Utility functions which can be accessed in tests and scripts.

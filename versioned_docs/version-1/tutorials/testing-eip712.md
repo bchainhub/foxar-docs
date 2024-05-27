@@ -8,7 +8,7 @@ title: Testing EIP-712 Signatures
 
 Traditionally, setting a user or contract allowance to transfer ERC-20 tokens from an owner's balance required the owner to submit an approval on-chain. As this proved to be poor UX, DAI introduced ERC-20 `permit` (later standardized as EIP-2612) allowing the owner to sign the approval *off-chain* which the spender (or anyone else!) can submit on-chain prior to the `transferFrom`.
 
-This guide will cover testing this pattern in Solidity using Foxar.
+This guide will cover testing this pattern in Ylem using Foxar.
 
 ### Diving In
 
@@ -75,7 +75,7 @@ We'll also be using a custom `SigUtils` contract to help create, hash, and sign 
 
 ```solidity
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.20;
+pragma solidity 1.1.2;
 
 contract SigUtils {
     bytes32 internal DOMAIN_SEPARATOR;

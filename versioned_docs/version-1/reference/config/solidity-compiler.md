@@ -1,8 +1,8 @@
 ---
-title: Solidity compiler
+title: Ylem compiler
 ---
 
-Configuration related to the behavior of the Solidity compiler.
+Configuration related to the behavior of the Ylem compiler.
 
 **Sections**
 
@@ -12,7 +12,7 @@ Configuration related to the behavior of the Solidity compiler.
 
 ### General
 
-Configuration related to the behavior of the Solidity compiler.
+Configuration related to the behavior of the Ylem compiler.
 
 ##### `remappings`
 
@@ -22,7 +22,7 @@ Configuration related to the behavior of the Solidity compiler.
 
 An array of remappings in the following format: `<name>=<target>`.
 
-A remapping _remaps_ Solidity imports to different directories. For example, the following remapping
+A remapping _remaps_ Ylem imports to different directories. For example, the following remapping
 
 ```ignore
 @openzeppelin/=node_modules/@openzeppelin/openzeppelin-contracts/
@@ -84,9 +84,9 @@ An array of libraries to link against in the following format: `<file>:<lib>:<ad
 - Default: none
 - Environment: `FOXAR_SOLC_VERSION` or `DAPP_SOLC_VERSION`
 
-If specified, overrides the auto-detection system (more below) and uses a single Solidity compiler version for the project.
+If specified, overrides the auto-detection system (more below) and uses a single Ylem compiler version for the project.
 
-Only strict versions are supported (i.e. `0.8.11` is valid, but `^0.8.0` is not).
+Only strict versions are supported (i.e. `1.1.2` is valid, but `^1.1.2` is not).
 
 ##### `auto_detect_solc`
 
@@ -94,7 +94,7 @@ Only strict versions are supported (i.e. `0.8.11` is valid, but `^0.8.0` is not)
 - Default: true
 - Environment: `FOXAR_AUTO_DETECT_SOLC` or `DAPP_AUTO_DETECT_SOLC`
 
-If enabled, Foxar will automatically try to resolve appropriate Solidity compiler versions to compile your project.
+If enabled, Foxar will automatically try to resolve appropriate Ylem compiler versions to compile your project.
 
 This key is ignored if `solc_version` is set.
 
@@ -129,7 +129,7 @@ This configuration will cause the compiler to ignore any warnings that originate
 - Default: none for source, SPDX license identifiers and contract size for tests
 - Environment: `FOXAR_IGNORED_ERROR_CODES` or `DAPP_IGNORED_ERROR_CODES`
 
-An array of Solidity compiler error codes to ignore during build, such as warnings.
+An array of Ylem compiler error codes to ignore during build, such as warnings.
 
 Valid values are:
 
@@ -153,7 +153,7 @@ Valid values are:
 - Default: false
 - Environment: `FOXAR_DENY_WARNINGS` or `DAPP_DENY_WARNINGS`
 
-If enabled, Foxar will treat Solidity compiler warnings as errors, stopping artifacts from being written to disk.
+If enabled, Foxar will treat Ylem compiler warnings as errors, stopping artifacts from being written to disk.
 
 ##### `evm_version`
 
@@ -182,7 +182,7 @@ Possible values are:
 - Default: none
 - Environment: N/A
 
-Extra output from the Solidity compiler that should be written to files in the artifacts directory.
+Extra output from the Ylem compiler that should be written to files in the artifacts directory.
 
 Valid values are:
 
@@ -211,7 +211,7 @@ extra_output = [
 ]
 ```
 
-For a list of valid values, see the [Solidity docs][output-desc].
+For a list of valid values, see the [Ylem docs][output-desc].
 
 ##### `bytecode_hash`
 
@@ -237,7 +237,7 @@ Enables [sparse mode](../spark/spark-build.md#sparse-mode-experimental) for buil
 
 ### Optimizer
 
-Configuration related to the Solidity optimizer.
+Configuration related to the Ylem optimizer.
 
 ##### `optimizer`
 
@@ -245,7 +245,7 @@ Configuration related to the Solidity optimizer.
 - Default: true
 - Environment: `FOXAR_OPTIMIZER` or `DAPP_OPTIMIZER`
 
-Whether or not to enable the Solidity optimizer.
+Whether or not to enable the Ylem optimizer.
 
 ##### `optimizer_runs`
 
@@ -265,7 +265,7 @@ If set to true, changes compilation pipeline to go through the new IR optimizer.
 
 ##### `[optimizer_details]`
 
-The optimizer details section is used to tweak how the Solidity optimizer behaves. There are several configurable values in this section (each of them are booleans):
+The optimizer details section is used to tweak how the Ylem optimizer behaves. There are several configurable values in this section (each of them are booleans):
 
 - `peephole`
 - `inliner`
@@ -276,7 +276,7 @@ The optimizer details section is used to tweak how the Solidity optimizer behave
 - `constant_optimizer`
 - `yul`
 
-Refer to the Solidity [compiler input description](https://docs.soliditylang.org/en/latest/using-the-compiler.html#compiler-input-and-output-json-description) for the default values.
+Refer to the Ylem [compiler input description](https://docs.soliditylang.org/en/latest/using-the-compiler.html#compiler-input-and-output-json-description) for the default values.
 
 ##### `[optimizer_details.yul_details]`
 
@@ -285,14 +285,14 @@ The Yul details subsection of the optimizer details section is used to tweak how
 - `stack_allocation`: Tries to improve the allocation of stack slots by freeing them up earlier.
 - `optimizer_steps`: Selects the optimizer steps to be applied.
 
-Refer to the Solidity [compiler input description](https://docs.soliditylang.org/en/latest/using-the-compiler.html#compiler-input-and-output-json-description) for the default values.
+Refer to the Ylem [compiler input description](https://docs.soliditylang.org/en/latest/using-the-compiler.html#compiler-input-and-output-json-description) for the default values.
 
 > ℹ️ **Note**
 > If you encounter compiler errors when using `via_ir`, explicitly enable the legacy `optimizer` and leave `optimizer_steps` as an empty string
 
 ### Model checker
 
-The Solidity model checker is a built-in opt-in module that is available in Solidity compilers for OSX and Linux. Learn more about the model checker in the [Solidity compiler documentation](https://docs.soliditylang.org/en/latest/smtchecker.html#tutorial)
+The Ylem model checker is a built-in opt-in module that is available in Ylem compilers for OSX and Linux. Learn more about the model checker in the [Ylem compiler documentation](https://docs.soliditylang.org/en/latest/smtchecker.html#tutorial)
 
 > ℹ️ **Note**
 > The model checker requires `z3` version 4.8.8 or 4.8.14 on Linux.
@@ -348,7 +348,7 @@ contracts = { "src/MyContracts.sol" = ["ContractA", "ContractB"] }
 
 Sets how division and modulo operations should be encoded.
 
-Refer to the [Solidity documentation](https://docs.soliditylang.org/en/latest/smtchecker.html#division-and-modulo-with-slack-variables) for more information.
+Refer to the [Ylem documentation](https://docs.soliditylang.org/en/latest/smtchecker.html#division-and-modulo-with-slack-variables) for more information.
 
 ###### `model_checker.engine`
 
@@ -362,7 +362,7 @@ Specifies the model checker engine to run. Valid values are:
 - `bmc`: The bounded model checker engine
 - `all`: Runs both engines
 
-Refer to the [Solidity documentation](https://docs.soliditylang.org/en/latest/smtchecker.html#model-checking-engines) for more information on the engines.
+Refer to the [Ylem documentation](https://docs.soliditylang.org/en/latest/smtchecker.html#model-checking-engines) for more information on the engines.
 
 ###### `model_checker.invariants`
 
@@ -375,7 +375,7 @@ Sets the model checker invariants. Valid values are:
 - `contract`: Contract Invariants
 - `reentrancy`: Reentrancy Properties
 
-Refer to the [Solidity documentation](https://docs.soliditylang.org/en/latest/smtchecker.html#reported-inferred-inductive-invariants) for more information on the invariants.
+Refer to the [Ylem documentation](https://docs.soliditylang.org/en/latest/smtchecker.html#reported-inferred-inductive-invariants) for more information on the invariants.
 
 ###### `model_checker.show_unproved`
 
@@ -385,7 +385,7 @@ Refer to the [Solidity documentation](https://docs.soliditylang.org/en/latest/sm
 
 Whether or not to output all unproved targets.
 
-Refer to the [Solidity documentation](https://docs.soliditylang.org/en/latest/smtchecker.html#unproved-targets) for more information.
+Refer to the [Ylem documentation](https://docs.soliditylang.org/en/latest/smtchecker.html#unproved-targets) for more information.
 
 ###### `model_checker.solvers`
 
@@ -396,11 +396,11 @@ Refer to the [Solidity documentation](https://docs.soliditylang.org/en/latest/sm
 Sets the model checker solvers. Valid values are:
 
 - `cvc4`
-- `eld`: introduced in v0.8.18
+- `eld`: introduced in v1.1.2
 - `smtlib2`
 - `z3`
 
-Refer to the [Solidity documentation](https://docs.soliditylang.org/en/latest/smtchecker.html#smt-and-horn-solvers) for more information.
+Refer to the [Ylem documentation](https://docs.soliditylang.org/en/latest/smtchecker.html#smt-and-horn-solvers) for more information.
 
 ###### `model_checker.timeout`
 

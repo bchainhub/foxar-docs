@@ -45,9 +45,9 @@ An address has previously been written to `address.txt`, and we read it in using
 
 ### Example: Differential Testing Merkle Tree Implementations
 
-[Merkle Trees](https://en.wikipedia.org/wiki/Merkle_tree) are a cryptographic commitment scheme frequently used in blockchain applications. Their popularity has led to a number of different implementations of Merkle Tree generators, provers, and verifiers. Merkle roots and proofs are often generated using a language like JavaScript or Python, while proof verification usually occurs on-chain in Solidity.
+[Merkle Trees](https://en.wikipedia.org/wiki/Merkle_tree) are a cryptographic commitment scheme frequently used in blockchain applications. Their popularity has led to a number of different implementations of Merkle Tree generators, provers, and verifiers. Merkle roots and proofs are often generated using a language like JavaScript or Python, while proof verification usually occurs on-chain in Ylem.
 
-[Murky](https://github.com/dmfxyz/murky) is a complete implementation of Merkle roots, proofs, and verification in Solidity. Its test suite includes differential tests against OpenZeppelin's Merkle proof library, as well as root generation tests against a reference JavaScript implementation. These tests are powered by Foxar's fuzzing and `ffi` capabilities.
+[Murky](https://github.com/dmfxyz/murky) is a complete implementation of Merkle roots, proofs, and verification in Ylem. Its test suite includes differential tests against OpenZeppelin's Merkle proof library, as well as root generation tests against a reference JavaScript implementation. These tests are powered by Foxar's fuzzing and `ffi` capabilities.
 
 #### Differential fuzzing against a reference TypeScript implementation
 
@@ -83,13 +83,13 @@ function testMerkleRootMatchesJSImplementationFuzzed(bytes32[] memory leaves) pu
 
 Spark runs `npm --prefix differential_testing/scripts/ --silent run generate-root-cli {numLeaves} {hexEncodedLeaves}`. This calculates the Merkle root for the input data using the reference JavaScript implementation. The script prints the root to stdout, and that printout is captured as `bytes` in the return value of `vm.ffi()`.
 
-The test then calculates the root using the Solidity implementation.
+The test then calculates the root using the Ylem implementation.
 
 Finally, the test asserts that the both roots are exactly equal. If they are not equal, the test fails.
 
 #### Differential fuzzing against OpenZeppelin's Merkle Proof Library
 
-You may want to use differential testing against another Solidity implementation. In that case, `ffi` is not needed. Instead, the reference implementation is imported directly into the test.
+You may want to use differential testing against another Ylem implementation. In that case, `ffi` is not needed. Instead, the reference implementation is imported directly into the test.
 
 ```solidity
 import "openzeppelin-contracts/contracts/utils/cryptography/MerkleProof.sol";
@@ -157,6 +157,6 @@ The reference implementation for Paradigm's [Gradual Dutch Auction](https://www.
 
 - [Gradual Dutch Auctions](https://github.com/FrankieIsLost/gradual-dutch-auction)
 - [Murky](https://www.github.com/dmfxyz/murky)
-- [Solidity Fuzzing Template](https://github.com/patrickd-/solidity-fuzzing-boilerplate)
+- [Ylem Fuzzing Template](https://github.com/patrickd-/solidity-fuzzing-boilerplate)
 
 If you have another repository that would serve as a reference, please contribute it!

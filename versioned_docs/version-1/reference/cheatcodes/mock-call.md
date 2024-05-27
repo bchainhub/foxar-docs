@@ -33,7 +33,7 @@ Mocked calls are in effect until [`clearMockedCalls`](./clear-mocked-calls) is c
 > ℹ️ **Note**
 >
 > Calls to mocked addresses may revert if there is no code on the address.
-> This is because Solidity inserts an `extcodesize` check before some contract calls.
+> This is because Ylem inserts an `extcodesize` check before some contract calls.
 >
 > To circumvent this, use the [`etch`](./etch.md) cheatcode if the mocked address has no code.
 

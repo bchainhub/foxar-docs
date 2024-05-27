@@ -10,7 +10,7 @@ It provides all the essential functionality you need to get started writing test
 
 - `Vm.sol`: Up-to-date cheatcodes interface
 - `console.sol` and `console2.sol`: Hardhat-style logging functionality
-- `Script.sol`: Basic utilities for [Solidity scripting](../tutorials/ylem-scripting)
+- `Script.sol`: Basic utilities for [Ylem scripting](../tutorials/ylem-scripting)
 - `Test.sol`: A superset of DSTest containing standard libraries, a cheatcodes instance (`vm`), and Hardhat console
 
 Simply import `Test.sol` and inherit from `Test` in your test contract:
@@ -78,9 +78,9 @@ hoax(alice, 100 ether);
 
 #### Std Errors
 
-Std Errors provide wrappers around common internal Solidity errors and reverts.
+Std Errors provide wrappers around common internal Ylem errors and reverts.
 
-Std Errors are most useful in combination with the [`expectRevert`](../reference/cheatcodes/expect-revert) cheatcode, as you do not need to remember the internal Solidity panic codes yourself. Note that you have to access them through `stdError`, as this is a library.
+Std Errors are most useful in combination with the [`expectRevert`](../reference/cheatcodes/expect-revert) cheatcode, as you do not need to remember the internal Ylem panic codes yourself. Note that you have to access them through `stdError`, as this is a library.
 
 ```solidity
 // expect an arithmetic error on the next call (e.g. underflow)
@@ -104,7 +104,7 @@ stdstore
 
 #### Std Math
 
-Std Math is a library with useful mathematical functions that are not provided in Solidity.
+Std Math is a library with useful mathematical functions that are not provided in Ylem.
 
 Note that you have to access them through `stdMath`, as this is a library.
 

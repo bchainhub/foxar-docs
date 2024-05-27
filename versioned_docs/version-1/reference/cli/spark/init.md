@@ -28,7 +28,7 @@ Options:
           Create the project even if the specified root directory is not empty
 
       --vscode
-          Create a .vscode/settings.json file with Solidity settings, and generate a remappings.txt file
+          Create a .vscode/settings.json file with Ylem settings, and generate a remappings.txt file
 
       --shallow
           Perform shallow clones instead of deep ones.

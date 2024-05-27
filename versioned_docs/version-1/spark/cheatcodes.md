@@ -11,7 +11,7 @@ You can access cheatcodes easily via the `vm` instance available in Spark Standa
 Let's write a test for a smart contract that is only callable by its owner.
 
 ```solidity
-pragma solidity 0.8.10;
+pragma solidity 1.1.2;
 
 import "spark-std/Test.sol";
 
@@ -164,7 +164,7 @@ Another cheatcode that is perhaps not so intuitive is the `expectEmit` function.
 Events are inheritable members of contracts. When you emit an event, the arguments are stored on the blockchain. The `indexed` attribute can be added to a maximum of three parameters of an event to form a data structure known as a "topic." Topics allow users to search for events on the blockchain.
 
 ```solidity
-pragma solidity 0.8.10;
+pragma solidity 1.1.2;
 
 import "spark-std/Test.sol";
 

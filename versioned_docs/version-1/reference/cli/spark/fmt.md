@@ -1,6 +1,6 @@
 # spark fmt
 
-Format Solidity source files
+Format Ylem source files
 
 ```bash
 $ spark fmt --help

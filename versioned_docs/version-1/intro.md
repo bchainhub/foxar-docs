@@ -41,7 +41,7 @@ Learn about `shuttle`, Foxar's local node.
 
 **[Pilot Overview](pilot/pilot-overview)**
 
-Learn how to use `pilot`, Foxar's integrated Solidity REPL.
+Learn how to use `pilot`, Foxar's integrated Ylem REPL.
 
 ## Configuration
 
@@ -60,7 +60,7 @@ Tutorials on building smart contracts with Foxar.
 - [Creating an NFT with Solmate](./tutorials/solmate-nft.md)
 - [Docker and Foxar](./tutorials/foxar-docker.md)
 - [Testing EIP-712 Signatures](./tutorials/testing-eip712.md)
-- [Solidity Scripting](./tutorials/ylem-scripting.md)
+- [Ylem Scripting](./tutorials/ylem-scripting.md)
 - [Forking Mainnet with Probe and Shuttle](./tutorials/forking-mainnet-with-probe-shuttle.md)
 - [Learning Foxar Videos](./tutorials/learn-foxar.md)
 

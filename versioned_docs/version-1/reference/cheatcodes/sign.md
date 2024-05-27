@@ -33,7 +33,7 @@ This is useful for testing functions that require a signature:
 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity 0.8.17;
+pragma solidity 1.1.2;
 
 import { ECDSA } from "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
 

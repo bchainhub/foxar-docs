@@ -43,7 +43,7 @@ If you need a new feature, consider [contributing to the Foxar's codebase](../..
 
 ### Cheatcodes Interface
 
-This is a Solidity interface for all of the cheatcodes present in Spark.
+This is a Ylem interface for all of the cheatcodes present in Spark.
 
 ```solidity
 interface CheatCodes {
@@ -74,9 +74,8 @@ interface CheatCodes {
 
     struct Wallet {
         address addr;
-        uint256 publicKeyX;
-        uint256 publicKeyY;
-        uint256 privateKey;
+        string publicKey;
+        string privateKey;
     }
 
     struct ChainInfo {
@@ -227,7 +226,7 @@ interface CheatCodes {
     function envOr(string calldata, string calldata, string[] calldata) external returns (string[] memory);
     function envOr(string calldata, string calldata, bytes[] calldata) external returns (bytes[] memory);
 
-    // Convert Solidity types to strings
+    // Convert Ylem types to strings
     function toString(address) external returns(string memory);
     function toString(bytes calldata) external returns(string memory);
     function toString(bytes32) external returns(string memory);
@@ -306,14 +305,14 @@ interface CheatCodes {
     // Mocks a call to an address, returning specified data.
     //
     // Calldata can either be strict or a partial match, e.g. if you only
-    // pass a Solidity selector to the expected calldata, then the entire Solidity
+    // pass a Ylem selector to the expected calldata, then the entire Ylem
     // function will be mocked.
     function mockCall(address, bytes calldata, bytes calldata) external;
 
     // Reverts a call to an address, returning the specified error
     //
     // Calldata can either be strict or a partial match, e.g. if you only
-    // pass a Solidity selector to the expected calldata, then the entire Solidity
+    // pass a Ylem selector to the expected calldata, then the entire Ylem
     // function will be mocked.
     function mockCallRevert(address where, bytes calldata data, bytes calldata retdata) external;
 

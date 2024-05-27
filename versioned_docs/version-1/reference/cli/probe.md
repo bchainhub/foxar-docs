@@ -50,7 +50,7 @@ Commands:
   help                   Print this message or the help of the given subcommand(s)
   implementation         Fetch the EIP-1967 implementation account [aliases: impl]
   index                  Compute the storage slot for an entry in a mapping [aliases: in]
-  interface              Generate a Solidity interface from a given ABI [aliases: i]
+  interface              Generate a Ylem interface from a given ABI [aliases: i]
   keccak                 Hash arbitrary data using Keccak-256 [aliases: k]
   logs                   Get logs by signature or topic [aliases: l]
   lookup-address         Perform an ENS reverse lookup [aliases: la]

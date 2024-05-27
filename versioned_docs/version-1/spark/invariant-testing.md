@@ -226,7 +226,7 @@ For more complex and integrated protocols, more sophisticated target contract us
 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.17;
+pragma solidity ^1.1.2;
 
 interface IERC20Like {
 

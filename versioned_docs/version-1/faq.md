@@ -72,17 +72,17 @@ import "spark-std/console.sol";
 If you want to run only a few tests, you can use `--match-test` to filter test functions,
 `--match-contract` to filter test contracts, and `--match-path` to filter test files on [`spark test`][spark-test].
 
-### How do I use a specific Solidity compiler?
+### How do I use a specific Ylem compiler?
 
-Spark will try to auto-detect what Solidity compiler works for your project.
+Spark will try to auto-detect what Ylem compiler works for your project.
 
-To use a specific Solidity compiler, you can set [`solc`][config-solc] in your [config file][config],
+To use a specific Ylem compiler, you can set [`solc`][config-solc] in your [config file][config],
 or pass `--use solc:<version>` to a Spark command that supports it (e.g. [`spark build`][spark-build]
 or [`spark test`][spark-test]).
 Paths to a solc binary are also accepted. To use a specific local solc binary, you can set `solc = "<path to solc>"` in your config file, or pass `--use "<path to solc>"`.
 The solc version/path can also be set via the env variable `FOXAR_SOLC=<version/path>`, but the cli arg `--use` has priority.
 
-For example, if you have a project that supports all 0.7.x Solidity versions, but you want to compile with solc 0.7.0, you could use `spark build --use solc:0.7.0`.
+For example, if you have a project that supports all 0.7.x Ylem versions, but you want to compile with solc 0.7.0, you could use `spark build --use solc:0.7.0`.
 
 ### How do I fork from a live network?
 
@@ -125,7 +125,7 @@ For a good example of a base test contract that has helper methods and custom as
 
 ### How do I use Spark offline?
 
-Spark will sometimes check for newer Solidity versions that fit your project. To use Spark offline, use the `--offline` flag.
+Spark will sometimes check for newer Ylem versions that fit your project. To use Spark offline, use the `--offline` flag.
 
 ### I'm getting Solc errors
 
@@ -135,7 +135,7 @@ All solc versions are installed under `~/.svm/`. If you encounter solc related e
 
 If you're on apple silicon, please ensure the [`z3` theorem prover](https://github.com/Z3Prover/z3) is installed: `brew install z3`
 
-> **Note**: native apple silicon builds are only available from `0.8.5` upwards. If you need older versions, you must enable apple silicon rosetta to run them.
+> **Note**: native apple silicon builds are only available from `1.1.2` upwards. If you need older versions, you must enable apple silicon rosetta to run them.
 
 ### Spark fails in JavaScript monorepos (`pnpm`)
 

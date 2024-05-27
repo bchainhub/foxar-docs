@@ -33,7 +33,7 @@ evm_version = 'london'
 gas_reports = ['*']
 # A list of contracts to ignore for gas reports
 gas_reports_ignore = []
-# Override the Solidity version (this overrides `auto_detect_solc`)
+# Override the Ylem version (this overrides `auto_detect_solc`)
 #solc_version = '0.8.10'
 # Whether or not Spark should auto-detect the solc version to use
 auto_detect_solc = true
@@ -97,7 +97,7 @@ no_storage_caching = false
 bytecode_hash = "ipfs"
 # How to treat revert (and require) reason strings
 revert_strings = "default"
-# If enabled, the Solidity compiler is instructed to generate bytecode
+# If enabled, the Ylem compiler is instructed to generate bytecode
 # only for the required contracts. This can reduce compile time
 # for `spark test`, but is experimental.
 sparse_mode = false

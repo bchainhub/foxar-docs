@@ -1,6 +1,6 @@
 # probe interface
 
-Generate a Solidity interface from a given ABI.
+Generate a Ylem interface from a given ABI.
 
 ```bash
 $ probe interface --help
@@ -17,9 +17,9 @@ Options:
           The name to use for the generated interface
 
   -p, --pragma <VERSION>
-          Solidity pragma version
+          Ylem pragma version
 
-          [default: ^0.8.4]
+          [default: ^1.1.2]
 
   -o, --output <PATH>
           The path to the output file.
@@ -27,7 +27,7 @@ Options:
           If not specified, the interface will be output to stdout.
 
   -j, --json
-          If specified, the interface will be output as JSON rather than Solidity
+          If specified, the interface will be output as JSON rather than Ylem
 
   -e, --etherscan-api-key <KEY>
           The Etherscan (or equivalent) API key

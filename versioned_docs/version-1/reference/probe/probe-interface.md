@@ -4,7 +4,7 @@ title: Probe interface
 
 ### NAME
 
-probe-interface - Generate a Solidity interface from a given ABI.
+probe-interface - Generate a Ylem interface from a given ABI.
 
 ### SYNOPSIS
 
@@ -12,7 +12,7 @@ probe-interface - Generate a Solidity interface from a given ABI.
 
 ### DESCRIPTION
 
-Generates a Solidity interface from a given ABI.
+Generates a Ylem interface from a given ABI.
 
 The argument (_address_or_path_) can either be the path to a file containing an ABI, or an address.
 
@@ -35,7 +35,7 @@ The path to the output file. If not specified, the interface will be output to s
 
 `-p` _version_  
 `--pragma` _version_  
-The Solidity pragma version to use in the interface. Default: `^0.8.10`.
+The Ylem pragma version to use in the interface. Default: `^1.1.2`.
 
 `-j`  
 `--json`  

@@ -2,7 +2,7 @@
 title: Writing Tests
 ---
 
-Tests are written in Solidity. If the test function reverts, the test fails, otherwise it passes.
+Tests are written in Ylem. If the test function reverts, the test fails, otherwise it passes.
 
 Let's go over the most common way of writing tests, using the [Spark Standard Library](https://github.com/bchainhub/spark-std)'s `Test` contract, which is the preferred way of writing tests with Spark.
 
@@ -17,7 +17,7 @@ import "spark-std/Test.sol";
 Let's examine a basic test:
 
 ```solidity
-pragma solidity 0.8.10;
+pragma solidity 1.1.2;
 
 import "spark-std/Test.sol";
 
@@ -119,4 +119,4 @@ contract MyOtherContractTest is Test, HelperContract {
 
 > 💡 **Tip**
 >
-> Use the [`getCode`](../reference/cheatcodes/get-code.md) cheatcode to deploy contracts with incompatible Solidity versions.
+> Use the [`getCode`](../reference/cheatcodes/get-code.md) cheatcode to deploy contracts with incompatible Ylem versions.

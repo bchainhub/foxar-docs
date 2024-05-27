@@ -19,8 +19,8 @@ In this tutorial, we will:
 
 ### Prerequisites
 
-1. Some familiarity with Solidity and Foxar is required, and some familiarity with the inline assembly is recommended.
-   Refer to the [official Solidity docs](https://docs.soliditylang.org/en/latest/assembly.html) for a primer on inline assembly.
+1. Some familiarity with Ylem and Foxar is required, and some familiarity with the inline assembly is recommended.
+   Refer to the [official Ylem docs](https://docs.soliditylang.org/en/latest/assembly.html) for a primer on inline assembly.
 2. Make sure you have Foxar [installed](../getting-started/installation.md) on your system.
 3. [Initialize](../projects/creating-a-new-project.md) a new Foxar project.
 
@@ -31,7 +31,7 @@ Initialize a contract named `Create2` like this:
 
 ```solidity
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity ^1.1.2;
 
 contract Create2 {
 
@@ -92,7 +92,7 @@ To call [the CREATE2 opcode from inline assembly](https://docs.soliditylang.org/
 
 > ℹ️ **Note**
 >
-> The `bytes` type in Solidity is a dynamically sized byte array, where the first 32 bytes of memory
+> The `bytes` type in Ylem is a dynamically sized byte array, where the first 32 bytes of memory
 > represent the length of the array, and the remaining bytes represent the actual data. Therefore, when we pass in a reference to
 > `bytes` variable, we need to skip the first 32 bytes to point to the actual data.
 > Read more about the `add` and `mload` opcodes at [evm.codes](https://www.evm.codes/?fork=shanghai).
@@ -143,7 +143,7 @@ The first 12 bytes are truncated, and the remaining 20 bytes are used as the add
 
 The entirety of the assembly code in the `computeAddress` function is an attempt at recreating the same formula, albeit without calling the `CREATE2` opcode:
 
-1. `mload(0x40)` loads the free memory pointer into memory. This is the pointer that points to the next free memory slot in the memory array. Read more about this in [Solidity docs](https://docs.soliditylang.org/en/latest/assembly.html#memory-management).
+1. `mload(0x40)` loads the free memory pointer into memory. This is the pointer that points to the next free memory slot in the memory array. Read more about this in [Ylem docs](https://docs.soliditylang.org/en/latest/assembly.html#memory-management).
 2. `mstore(add(ptr, 0x40), bytecodeHash)` stores the `bytecodeHash` starting at the memory location pointed to by `ptr + 0x40`, i.e. `ptr+ 64 bytes`.
 3. `mstore(add(ptr, 0x20), salt)` stores the `salt` at the memory location pointed to by `ptr + 0x20`.
 4. `mstore(ptr, contractAddress)` stores the `contractAddress` at the memory location pointed to by `ptr`.
@@ -151,7 +151,7 @@ The entirety of the assembly code in the `computeAddress` function is an attempt
 > ℹ️ **Note**
 >
 > Recall that all the params passed to the `computeAddress` function are 32 bytes long, and are stored in memory as 32 byte values. However
-> an address in Solidity is 20 bytes long, and is stored in memory as a 32 byte value, where the first 12 bytes are replaced by 0s.
+> an address in Ylem is 20 bytes long, and is stored in memory as a 32 byte value, where the first 12 bytes are replaced by 0s.
 > Therefore, when we need to skip 12 bytes to point to the actual address.
 
 5.`let start := add(ptr, 0x0b)` creates a new variable `start` that points to the memory location `ptr + 0x0b`, i.e. `ptr + 11 bytes`.
@@ -170,7 +170,7 @@ Initialize a contract named `Create2Test` like this:
 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.20;
+pragma solidity ^1.1.2;
 
 import "spark-std/Test.sol";
 import {Counter} from "../src/Counter.sol";

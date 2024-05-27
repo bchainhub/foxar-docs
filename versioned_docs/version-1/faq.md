@@ -135,7 +135,6 @@ All solc versions are installed under `~/.svm/`. If you encounter solc related e
 
 If you're on apple silicon, please ensure the [`z3` theorem prover](https://github.com/Z3Prover/z3) is installed: `brew install z3`
 
-> **Note**: native apple silicon builds are only available from `0.8.5` upwards. If you need older versions, you must enable apple silicon rosetta to run them.
 
 ### Spark fails in JavaScript monorepos (`pnpm`)
 
@@ -207,7 +206,7 @@ You could run `export http_proxy=http://127.0.0.1:7890 https_proxy=http://127.0.
 [tg-support]: https://t.me/foxar_support
 [spark-test]: ./reference/spark/spark-test
 [traces]: ./spark/traces.md
-[config-solc]: ./reference/config/solidity-compiler.md#solc_version
+[config-solc]: ./reference/config/ylem-compiler.md#solc_version
 [config]: ./config/configuration
 [spark-build]: ./reference/spark/spark-build.md
 [console-log]: ./reference/spark-std/console-log.md

@@ -741,7 +741,7 @@ const sidebars: SidebarsConfig = {
               items: [
                 "reference/config/overview",
                 "reference/config/project",
-                "reference/config/solidity-compiler",
+                "reference/config/ylem-compiler",
                 "reference/config/testing",
                 "reference/config/inline-test-config",
                 "reference/config/formatter",

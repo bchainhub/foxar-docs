@@ -76,19 +76,17 @@ See also [solc path resolution](https://docs.soliditylang.org/en/latest/path-res
 - Default: none
 - Environment: `FOXAR_LIBRARIES` or `DAPP_LIBRARIES`
 
-An array of libraries to link against in the following format: `<file>:<lib>:<address>`, for example: `src/MyLibrary.sol:MyLibrary:0xfD88CeE74f7D78697775aBDAE53f9Da1559728E4`.
+An array of libraries to link against in the following format: `<file>:<lib>:<address>`, for example: `src/MyLibrary.sol:MyLibrary:0xce66fD88CeE74f7D78697775aBDAE53f9Da1559728E4`.
 
-##### `solc_version`
+##### `ylem_version`
 
 - Type: string (semver)
 - Default: none
-- Environment: `FOXAR_SOLC_VERSION` or `DAPP_SOLC_VERSION`
+- Environment: `FOXAR_YLEM_VERSION`
 
 If specified, overrides the auto-detection system (more below) and uses a single Solidity compiler version for the project.
 
-Only strict versions are supported (i.e. `0.8.11` is valid, but `^0.8.0` is not).
-
-##### `auto_detect_solc`
+##### `auto_detect_ylem`
 
 - Type: boolean
 - Default: true
@@ -96,17 +94,17 @@ Only strict versions are supported (i.e. `0.8.11` is valid, but `^0.8.0` is not)
 
 If enabled, Foxar will automatically try to resolve appropriate Solidity compiler versions to compile your project.
 
-This key is ignored if `solc_version` is set.
+This key is ignored if `ylem_version` is set.
 
 ##### `offline`
 
 - Type: boolean
 - Default: false
-- Environment: `FOXAR_OFFLINE` or `DAPP_OFFLINE`
+- Environment: `FOXAR_OFFLINE`
 
 If enabled, Foxar will not attempt to download any missing solc versions.
 
-If both `offline` and `auto-detect-solc` are set to `true`, the required version(s) of solc will be auto detected but any missing versions will _not_ be installed.
+If both `offline` and `auto-detect-ylem` are set to `true`, the required version(s) of solc will be auto detected but any missing versions will _not_ be installed.
 
 ##### `ignored_warnings_from`
 

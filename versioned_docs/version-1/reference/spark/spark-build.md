@@ -348,6 +348,6 @@ The model checker will run when `spark build` is invoked, and will show findings
 
 [spark](./spark.md), [spark clean](./spark-clean.md), [spark inspect](./spark-inspect.md)
 
-[sparse-mode]: ../config/solidity-compiler#sparse_mode
+[sparse-mode]: ../config/ylem-compiler#sparse_mode
 [ir-pipeline]: https://docs.soliditylang.org/en/latest/ir-breaking-changes.html
 [output-desc]: https://docs.soliditylang.org/en/latest/using-the-compiler.html#compiler-api

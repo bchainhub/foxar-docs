@@ -35,7 +35,7 @@ If an address is provided, then the interface is generated from the ABI of the a
 
 `-p` _version_  
 `--pragma` _version_  
-&nbsp;&nbsp;&nbsp;&nbsp;The Solidity pragma version to use in the interface. Default: `^0.8.10`.
+&nbsp;&nbsp;&nbsp;&nbsp;The Solidity pragma version to use in the interface. Default: `^1.1.2`.
 
 `-j`  
 `--json`  

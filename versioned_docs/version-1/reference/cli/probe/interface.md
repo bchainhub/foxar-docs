@@ -19,7 +19,7 @@ Options:
   -p, --pragma <VERSION>
           Solidity pragma version
           
-          [default: ^0.8.4]
+          [default: ^1.1.2]
 
   -o, --output <PATH>
           The path to the output file.

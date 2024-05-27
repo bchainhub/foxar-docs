@@ -34,12 +34,9 @@ Commands:
   test               Run the project's tests [aliases: t]
   tree               Display a tree visualization of the project's dependency graph [aliases: tr]
   update             Update one or multiple dependencies [aliases: u]
-  verify-check       Check verification status on Etherscan [aliases: vc]
-  verify-contract    Verify smart contracts on Etherscan [aliases: v]
 
 Options:
   -h, --help     Print help
   -V, --version  Print version
 
-Find more information in the book: http://book.getfoxar.sh/reference/spark/spark.html
 ```

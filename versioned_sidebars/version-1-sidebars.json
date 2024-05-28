@@ -89,9 +89,8 @@
       "items": [
         "config/configuration",
         "config/continuous-integration",
-        "config/vscode",
-        "config/shell-autocompletion",
-        "config/static-analyzers"
+        "config/shell-autocompletion"
+        
         
       ]
     },
@@ -100,13 +99,13 @@
       "label": "Tutorials",
       "items": [
         "tutorials/best-practices",
-        "tutorials/solmate-nft",
+      
         "tutorials/foxar-docker",
         "tutorials/testing-eip712",
         "tutorials/ylem-scripting",
-        "tutorials/create2-tutorial",
-        "tutorials/forking-mainnet-with-probe-shuttle",
-        "tutorials/learn-foxar"
+        "tutorials/create2-tutorial"
+        
+        
       ]
     },
     {
@@ -202,9 +201,7 @@
                     "reference/cli/spark/snapshot",
                     "reference/cli/spark/test",
                     "reference/cli/spark/tree",
-                    "reference/cli/spark/update",
-                    "reference/cli/spark/verify-check",
-                    "reference/cli/spark/verify-contract"
+                    "reference/cli/spark/update"
                   ]
                 },
                 {
@@ -334,7 +331,7 @@
                         "reference/cli/probe/wallet/address",
                         "reference/cli/probe/wallet/sign",
 
-                        "reference/cli/probe/wallet/verify",
+                        
                         "reference/cli/probe/wallet/import",
                         "reference/cli/probe/wallet/list",
                         "reference/cli/probe/wallet/derive-private-key"
@@ -452,7 +449,7 @@
                   },
                   "items": [
                     "reference/spark/spark-create",
-                    "reference/spark/spark-verify-contract",
+                    
                     "reference/spark/spark-verify-check",
                     "reference/spark/spark-flatten"
                   ]
@@ -756,7 +753,6 @@
                     "reference/cheatcodes/get-block-timestamp",
                     "reference/cheatcodes/get-block-number",
                     "reference/cheatcodes/difficulty",
-                    "reference/cheatcodes/prevrandao",
                     "reference/cheatcodes/chain-id",
                     "reference/cheatcodes/store",
                     "reference/cheatcodes/load",
@@ -877,7 +873,6 @@
                     "reference/cheatcodes/skip",
                     "reference/cheatcodes/label",
                     "reference/cheatcodes/get-label",
-                    "reference/cheatcodes/derive-key",
                     "reference/cheatcodes/parse-bytes",
                     "reference/cheatcodes/parse-address",
                     "reference/cheatcodes/parse-uint",
@@ -966,8 +961,8 @@
                     "reference/spark-std/deployCodeTo",
                     "reference/spark-std/bound",
                     "reference/spark-std/change-prank",
-                    "reference/spark-std/make-addr",
-                    "reference/spark-std/make-addr-and-key",
+                    
+                   
                     "reference/spark-std/noGasMetering",
                     "reference/spark-std/assume-no-precompiles",
                     "reference/spark-std/assume-payable"

@@ -64,8 +64,6 @@ Note that for Etherscan [`ETHERSCAN_API_KEY`](../reference/config/etherscan) mus
 
 If you are verifying an already deployed contract, read on.
 
-You can verify a contract on Etherscan, Sourcify or Blockscout with the [`spark verify-contract`](../reference/spark/spark-verify-contract.md) command.
-
 You must provide:
 
 - the contract address
@@ -99,9 +97,6 @@ Submitted contract for verification:
                 GUID: `a6yrbjp5prvakia6bqp5qdacczyfhkyi5j1r6qbds1js41ak1a`
                 url: https://sepolia.etherscan.io//address/0x6a54…3a4c#code
 ```
-
-It is recommended to use the [`--watch`](../reference/spark/spark-verify-contract.md#verify-contract-options) flag along
-with `verify-contract` command in order to poll for the verification result.
 
 If the `--watch` flag was not supplied, you can check
 the verification status with the [`spark verify-check`](../reference/spark/spark-verify-check.md) command:

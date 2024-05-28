@@ -4,7 +4,6 @@ title: Config Reference
 
 - [Overview](./overview)
 - [Project](./project)
-- [Ylem Compiler](./ylem-compiler)
 - [Testing](./testing)
 - [In-line test configuration](./inline-test-config)
 - [Formatter](./formatter)

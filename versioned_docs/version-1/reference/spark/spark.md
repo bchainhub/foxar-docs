@@ -79,9 +79,6 @@ Generate coverage reports.
 [spark create](./spark-create.md)  
 Deploy a smart contract.
 
-[spark verify-contract](./spark-verify-contract.md)  
-Verify smart contracts on Etherscan.
-
 [spark verify-check](./spark-verify-check.md)  
 Check verification status on Etherscan.
 

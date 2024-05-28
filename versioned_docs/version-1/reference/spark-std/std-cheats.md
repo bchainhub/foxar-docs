@@ -11,6 +11,4 @@ title: Std Cheats
 - [`deployCodeTo`](./deployCodeTo)
 - [`bound`](./bound)
 - [`changePrank`](./change-prank)
-- [`makeAddr`](./make-addr)
-- [`makeAddrAndKey`](./make-addr-and-key)
 - [`noGasMetering`](./noGasMetering)

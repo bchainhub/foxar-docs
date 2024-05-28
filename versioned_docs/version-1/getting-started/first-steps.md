@@ -52,5 +52,3 @@ Ran 1 test suites: 2 tests passed, 0 failed, 0 skipped (2 total tests)
 > 💡 **Tip**
 >
 > You can always print help for any subcommand (or their subcommands) by adding `--help` at the end.
-
-You can watch [these](../tutorials/learn-foxar.md) beginner tutorials if you are a visual learner.

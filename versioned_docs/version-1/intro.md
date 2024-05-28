@@ -49,20 +49,16 @@ Guides on configuring Foxar.
 
 - [Configuring with `foxar.toml`](./config/configuration/)
 - [Continuous Integration](./config/continuous-integration.md)
-- [Integrating with VSCode](./config/vscode.md)
 - [Shell Autocompletion](./config/shell-autocompletion.md)
-- [Static Analyzers](./config/static-analyzers.md)
 
 ## Tutorials
 
 Tutorials on building smart contracts with Foxar.
 
-- [Creating an NFT with Solmate](./tutorials/solmate-nft.md)
+-
 - [Docker and Foxar](./tutorials/foxar-docker.md)
 - [Testing EIP-712 Signatures](./tutorials/testing-eip712.md)
 - [Ylem Scripting](./tutorials/ylem-scripting.md)
-- [Forking Mainnet with Probe and Shuttle](./tutorials/forking-mainnet-with-probe-shuttle.md)
-- [Learning Foxar Videos](./tutorials/learn-foxar.md)
 
 ## Contributing
 

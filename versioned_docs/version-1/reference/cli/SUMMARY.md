@@ -1,4 +1,5 @@
 - [`spark`](./spark.md)
+
   - [`spark bind`](./spark/bind.md)
   - [`spark build`](./spark/build.md)
   - [`spark cache`](./spark/cache.md)
@@ -31,10 +32,9 @@
   - [`spark test`](./spark/test.md)
   - [`spark tree`](./spark/tree.md)
   - [`spark update`](./spark/update.md)
-  - [`spark verify-check`](./spark/verify-check.md)
-  - [`spark verify-contract`](./spark/verify-contract.md)
 
 - [`probe`](./probe.md)
+
   - [`probe 4byte`](./probe/4byte.md)
   - [`probe 4byte-decode`](./probe/4byte-decode.md)
   - [`probe 4byte-event`](./probe/4byte-event.md)
@@ -126,12 +126,12 @@
     - [`probe wallet vanity`](./probe/wallet/vanity.md)
     - [`probe wallet address`](./probe/wallet/address.md)
     - [`probe wallet sign`](./probe/wallet/sign.md)
-    - [`probe wallet verify`](./probe/wallet/verify.md)
     - [`probe wallet import`](./probe/wallet/import.md)
     - [`probe wallet list`](./probe/wallet/list.md)
     - [`probe wallet derive-private-key`](./probe/wallet/derive-private-key.md)
 
 - [`shuttle`](./shuttle.md)
+
   - [`shuttle completions`](./shuttle/completions.md)
   - [`shuttle generate-fig-spec`](./shuttle/generate-fig-spec.md)
 
@@ -140,4 +140,3 @@
   - [`pilot load`](./pilot/load.md)
   - [`pilot view`](./pilot/view.md)
   - [`pilot clear-cache`](./pilot/clear-cache.md)
-

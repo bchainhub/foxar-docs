@@ -283,6 +283,6 @@ Prints help information.
 
 ### SEE ALSO
 
-[spark](./spark.md), [spark build](./spark-build.md), [spark verify-contract](./spark-verify-contract.md)
+[spark](./spark.md), [spark build](./spark-build.md)
 
 [eip1559]: https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1559.md

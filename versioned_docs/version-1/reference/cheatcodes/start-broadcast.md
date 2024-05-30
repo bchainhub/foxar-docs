@@ -41,7 +41,7 @@ function deployOther() public {
     vm.stopBroadcast();
 
     // broadcast again, this time using a private key from your environment variables
-    vm.startBroadcast(vm.envUint("PRIVATE_KEY"));
+    vm.startBroadcast(vm.envString("PRIVATE_KEY"));
     test.t(3);
     vm.stopBroadcast();
 }

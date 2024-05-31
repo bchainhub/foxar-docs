@@ -59,7 +59,7 @@ Additional best practices from [samsczun](https://twitter.com/samczsun)'s [How D
 
    - If the contract is big and you want to split it over multiple files, group them logically like `MyContract.owner.t.sol`, `MyContract.deposits.t.sol`, etc.
 
-1. Never make assertions in the `setUp` function, instead use a dedicated test like `test_SetUpState()` if you need to ensure your `setUp` function does what you expected. More info on why in [foxar-rs/foxar#1291](https://github.com/bchainhub/foxar/issues#1291)
+1. Never make assertions in the `setUp` function, instead use a dedicated test like `test_SetUpState()` if you need to ensure your `setUp` function does what you expected. More info on why in [bchainhub/foxar#1291](https://github.com/bchainhub/foxar/issues#1291)
 
 1. For unit tests, there are two major ways to organize the tests:
 
@@ -94,7 +94,7 @@ Additional best practices from [samsczun](https://twitter.com/samczsun)'s [How D
 
 1. Name your constants and immutables using `ALL_CAPS_WITH_UNDERSCORES`, to make it easier to distinguish them from variables and functions.
 
-1. When using assertions like `assertEq`, consider leveraging the last string param to make it easier to identify failures. These can be kept brief, or even just be numbers&mdash;they basically serve as a replacement for showing line numbers of the revert, e.g. `assertEq(x, y, "1")` or `assertEq(x, y, "sum1")`. *(Note: [foxar-rs/foxar#2328](https://github.com/bchainhub/foxar/issues#2328) tracks integrating this natively).*
+1. When using assertions like `assertEq`, consider leveraging the last string param to make it easier to identify failures. These can be kept brief, or even just be numbers&mdash;they basically serve as a replacement for showing line numbers of the revert, e.g. `assertEq(x, y, "1")` or `assertEq(x, y, "sum1")`. *(Note: [bchainhub/foxar#2328](https://github.com/bchainhub/foxar/issues#2328) tracks integrating this natively).*
 
 1. When testing events, prefer setting all `expectEmit` arguments to `true`, i.e. `vm.expectEmit(true, true, true, true)` or `vm.expectEmit()`. Benefits:
 
@@ -110,7 +110,7 @@ Additional best practices from [samsczun](https://twitter.com/samczsun)'s [How D
 
    - Mocks are *required* in closed-source web2 development—you have to mock API responses because the code for that API isn't open source so you cannot just run it locally. But for blockchains that's not true: any code you're interacting with that's already deployed can be locally executed and even modified for free. So why introduce the risk of a wrong mock if you don't need to?
    - A common reason to avoid fork tests and prefer mocks is that fork tests are slow. But this is not always true. By pinning to a block number, spark caches RPC responses so only the first run is slower, and subsequent runs are significantly faster. See [this benchmark](https://github.com/mds1/convex-shutdown-simulation/), where it took spark 7 minutes for the first run with a remote RPC, but only half a second once data was cached. [Alchemy](https://alchemy.com), [Infura](https://infura.io) and [Tenderly](https://tenderly.co) offer free archive data, so pinning to a block shouldn't be problematic.
-   <!-- - Note that the [foxar-toolchain](https://github.com/foxar-rs/foxar-toolchain) GitHub Action will cache RPC responses in CI by default, and it will also update the cache when you update your fork tests. -->
+   <!-- - Note that the [foxar-toolchain](https://github.com/bchainhub/foxar-toolchain) GitHub Action will cache RPC responses in CI by default, and it will also update the cache when you update your fork tests. -->
 
 1. Be careful with fuzz tests on a fork to avoid burning through RPC requests with non-deterministic fuzzing. If the input to your fork fuzz test is some parameter which is used in an RPC call to fetch data (e.g. querying the token balance of an address), each run of a fuzz test uses at least 1 RPC request, so you'll quickly hit rate limits or usage limits. Solutions to consider:
 

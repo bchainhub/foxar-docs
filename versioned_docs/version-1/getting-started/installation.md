@@ -59,14 +59,14 @@ foxarup --path path/to/foxar
 Or, by using a single Cargo command:
 
 ```sh
-cargo install --git https://github.com/foxar-rs/foxar --profile local --locked spark probe pilot shuttle
+cargo install --git https://github.com/bchainhub/foxar --profile local --locked spark probe pilot shuttle
 ```
 
 Or, by manually building from a local copy of the [Foxar repository](https://github.com/bchainhub/foxar):
 
 ```sh
 # clone the repository
-git clone https://github.com/foxar-rs/foxar.git
+git clone https://github.com/bchainhub/foxar.git
 cd foxar
 # install Spark
 cargo install --path ./crates/spark --profile local --force --locked
@@ -80,7 +80,7 @@ cargo install --path ./crates/pilot --profile local --force --locked
 
 ### Installing for CI in Github Action
 
-See the [foxar-rs/foxar-toolchain](https://github.com/foxar-rs/foxar-toolchain) GitHub Action.
+See the [bchainhub/foxar-toolchain](https://github.com/bchainhub/foxar-toolchain) GitHub Action.
 
 ### Using Foxar with Docker
 
@@ -89,7 +89,7 @@ Foxar can also be used entirely within a Docker container. If you don't have it,
 Once installed, you can download the latest release by running:
 
 ```sh
-docker pull ghcr.io/foxar-rs/foxar:latest
+docker pull ghcr.io/bchainhub/foxar:latest
 ```
 
 It is also possible to build the docker image locally. From the Foxar repository, run:

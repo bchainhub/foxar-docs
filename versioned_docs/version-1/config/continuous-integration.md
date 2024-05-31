@@ -59,7 +59,7 @@ variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
 jobs:
-  image: ghcr.io/foxar-rs/foxar
+  image: ghcr.io/bchainhub/foxar
   script:
     - spark install
     - spark test -vvv

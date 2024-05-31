@@ -39,7 +39,7 @@ Mocked calls are in effect until [`clearMockedCalls`](./clear-mocked-calls) is c
 
 > ℹ️ **Internal calls**
 >
-> This cheatcode does not currently work on internal calls. See issue [#432](https://github.com/foxar-rs/foxar/issues/432).
+> This cheatcode does not currently work on internal calls. See issue [#432](https://github.com/bchainhub/foxar/issues/432).
 
 ### Examples
 

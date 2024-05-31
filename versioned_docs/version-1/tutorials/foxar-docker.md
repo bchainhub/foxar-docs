@@ -14,7 +14,7 @@ The only installation required to run this tutorial is Docker, and optionally, a
 Follow the [Docker installation instructions](../getting-started/installation#using-foxarup).
 
 To keep future commands succinct, let's re-tag the image:
-`docker tag ghcr.io/foxar-rs/foxar:latest foxar:latest`
+`docker tag ghcr.io/bchainhub/foxar:latest foxar:latest`
 
 Having Foxar installed locally is not strictly required, but it may be helpful for debugging. You can install it using [foxarup](../getting-started/installation.md#using-foxarup).
 
@@ -80,7 +80,7 @@ A simple `Dockerfile` can accomplish these two goals:
 
 ```docker
 # Use the latest foxar image
-FROM ghcr.io/foxar-rs/foxar
+FROM ghcr.io/bchainhub/foxar
 
 # Copy our source code into the container
 WORKDIR /app
@@ -120,7 +120,7 @@ Now, we'll move on to a bit more of an advanced Dockerfile. Let's add an entrypo
 
 ```docker
 # Use the latest foxar image
-FROM ghcr.io/foxar-rs/foxar
+FROM ghcr.io/bchainhub/foxar
 
 # Copy our source code into the container
 WORKDIR /app

@@ -41,5 +41,5 @@ Options:
   -h, --help     Print help
   -V, --version  Print version
 
-Find more information in the book: http://book.getfoxar.sh/reference/spark/spark.html
+Find more information in the book: http://foxar.dev/reference/spark/spark.html
 ```

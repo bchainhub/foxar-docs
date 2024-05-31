@@ -96,5 +96,5 @@ Options:
   -h, --help     Print help
   -V, --version  Print version
 
-Find more information in the book: http://book.getfoxar.sh/reference/probe/probe.html
+Find more information in the book: http://foxar.dev/reference/probe/probe.html
 ```

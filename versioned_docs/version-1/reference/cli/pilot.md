@@ -1,6 +1,6 @@
 # pilot
 
-Fast, utilitarian, and verbose Solidity REPL
+Fast, utilitarian, and verbose Ylem REPL
 
 ```bash
 $ pilot --help
@@ -22,7 +22,7 @@ Options:
 
 REPL options:
       --prelude <PRELUDE>
-          Path to a directory containing Solidity files to import, or path to a single Solidity file.
+          Path to a directory containing Ylem files to import, or path to a single Ylem file.
 
           These files will be evaluated before the top-level of the REPL, therefore functioning as a prelude
 
@@ -75,7 +75,7 @@ Compiler options:
           The target EVM version
 
       --optimize
-          Activate the Solidity optimizer
+          Activate the Ylem optimizer
 
       --optimizer-runs <RUNS>
           The number of optimizer runs
@@ -99,7 +99,7 @@ Project options:
       --revert-strings <REVERT>
           Revert string configuration.
 
-          Possible values are "default", "strip" (remove), "debug" (Solidity-generated revert strings) and "verboseDebug"
+          Possible values are "default", "strip" (remove), "debug" (Ylem-generated revert strings) and "verboseDebug"
 
       --build-info
           Generate build info files

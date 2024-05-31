@@ -1,12 +1,12 @@
 ---
-title: Solidity Scripting
+title: Ylem Scripting
 ---
 
 ### Introduction
 
-Solidity scripting is a way to declaratively deploy contracts using Solidity, instead of using the more limiting and less user friendly [`spark create`](../reference/spark/spark-create).
+Ylem scripting is a way to declaratively deploy contracts using Ylem, instead of using the more limiting and less user friendly [`spark create`](../reference/spark/spark-create).
 
-Solidity scripts are like the scripts you write when working with tools like Hardhat; what makes Solidity scripting different is that they are written in Solidity instead of JavaScript, and they are run on the fast Foxar EVM backend, which provides dry-run capabilities.
+Ylem scripts are like the scripts you write when working with tools like Hardhat; what makes Ylem scripting different is that they are written in Ylem instead of JavaScript, and they are run on the fast Foxar EVM backend, which provides dry-run capabilities.
 
 ### High Level Overview
 
@@ -49,7 +49,7 @@ Once that’s done, you should open up your preferred code editor and copy the c
 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity >=0.8.10;
+pragma solidity >=1.1.2;
 
 import "solmate/tokens/ERC721.sol";
 import "openzeppelin-contracts/contracts/utils/Strings.sol";
@@ -163,7 +163,7 @@ The contents of `NFT.s.sol` should look like this:
 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.13;
+pragma solidity ^1.1.2;
 
 import "spark-std/Script.sol";
 import "../src/NFT.sol";
@@ -184,10 +184,10 @@ Now let’s read through the code and figure out what it actually means and does
 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.13;
+pragma solidity ^1.1.2;
 ```
 
-Remember even if it’s a script it still works like a smart contract, but is never deployed, so just like any other smart contract written in Solidity the `pragma version` has to be specified.
+Remember even if it’s a script it still works like a smart contract, but is never deployed, so just like any other smart contract written in Ylem the `pragma version` has to be specified.
 
 ```solidity
 import "spark-std/Script.sol";
@@ -211,7 +211,7 @@ function run() external {
 By default, scripts are executed by calling the function named `run`, our entrypoint.
 
 ```solidity
-uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
+string deployerPrivateKey = vm.envString("PRIVATE_KEY");
 ```
 
 This loads in the private key from our `.env` file. **Note:** you must be careful when exposing private keys in a `.env` file and loading them into programs. This is only recommended for use with non-privileged deployers or for local / test setups. For production setups please review the various [wallet options](../reference/spark/spark-script.md#wallet-options---raw) that Foxar supports.

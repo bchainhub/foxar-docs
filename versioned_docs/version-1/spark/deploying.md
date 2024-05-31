@@ -19,16 +19,16 @@ Deployed to: 0x4054415432...
 Transaction hash: 0x6b4e0ff93a...
 ```
 
-Solidity files may contain multiple contracts. `:MyContract` above specifies which contract to deploy from the `src/MyContract.sol` file.
+Ylem files may contain multiple contracts. `:MyContract` above specifies which contract to deploy from the `src/MyContract.sol` file.
 
 Use the `--constructor-args` flag to pass arguments to the constructor:
 
 <!--DOCUSAURUS_CODE_TABS-->
-<!--Solidity-->
+<!--Ylem-->
 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.0;
+pragma solidity ^1.1.2;
 
 import {ERC20} from "solmate/tokens/ERC20.sol";
 
@@ -64,8 +64,6 @@ Note that for Etherscan [`ETHERSCAN_API_KEY`](../reference/config/etherscan) mus
 
 If you are verifying an already deployed contract, read on.
 
-You can verify a contract on Etherscan, Sourcify or Blockscout with the [`spark verify-contract`](../reference/spark/spark-verify-contract.md) command.
-
 You must provide:
 
 - the contract address
@@ -76,7 +74,7 @@ Moreover, you may need to provide:
 
 - the constructor arguments in the ABI-encoded format, if there are any
 - [compiler version](https://etherscan.io/solcversions) used for build, with 8 hex digits from the commit version prefix (the commit will usually not be a nightly build). It is auto-detected if not specified.
-- the number of optimizations, if the Solidity optimizer was activated. It is auto-detected if not specified.
+- the number of optimizations, if the Ylem optimizer was activated. It is auto-detected if not specified.
 - the [chain ID](https://evm-chainlist.netlify.app/), if the contract is not on Ethereum Mainnet
 
 Let's say you want to verify `MyToken` (see above). You set the [number of optimizations](../reference/config/solidity-compiler.md#optimizer_runs) to 1 million, compiled it with v0.8.10, and deployed it, as shown above, to the Sepolia testnet (chain ID: 11155111). Note that `--num-of-optimizations` will default to 0 if not set on verification, while it defaults to 200 if not set on deployment, so make sure you pass `--num-of-optimizations 200` if you left the default compilation settings.
@@ -99,9 +97,6 @@ Submitted contract for verification:
                 GUID: `a6yrbjp5prvakia6bqp5qdacczyfhkyi5j1r6qbds1js41ak1a`
                 url: https://sepolia.etherscan.io//address/0x6a54…3a4c#code
 ```
-
-It is recommended to use the [`--watch`](../reference/spark/spark-verify-contract.md#verify-contract-options) flag along
-with `verify-contract` command in order to poll for the verification result.
 
 If the `--watch` flag was not supplied, you can check
 the verification status with the [`spark verify-check`](../reference/spark/spark-verify-check.md) command:

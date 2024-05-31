@@ -240,7 +240,7 @@ Compute the contract address from a given nonce and deployer address.
 Generate a deterministic contract address using CREATE2
 
 [probe interface](./probe-interface.md)
-Generate a Solidity interface from a given ABI.
+Generate a Ylem interface from a given ABI.
 
 [probe index](./probe-index.md)
 Compute the storage slot for an entry in a mapping.

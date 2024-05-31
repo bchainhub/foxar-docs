@@ -38,8 +38,6 @@ Automatically-generated CLI reference from `--help` output.
   - [`spark test`](./spark/test.md)
   - [`spark tree`](./spark/tree.md)
   - [`spark update`](./spark/update.md)
-  - [`spark verify-check`](./spark/verify-check.md)
-  - [`spark verify-contract`](./spark/verify-contract.md)
 
 - [`probe`](./probe.md)
 
@@ -134,7 +132,6 @@ Automatically-generated CLI reference from `--help` output.
     - [`probe wallet vanity`](./probe/wallet/vanity.md)
     - [`probe wallet address`](./probe/wallet/address.md)
     - [`probe wallet sign`](./probe/wallet/sign.md)
-    - [`probe wallet verify`](./probe/wallet/verify.md)
     - [`probe wallet import`](./probe/wallet/import.md)
     - [`probe wallet list`](./probe/wallet/list.md)
     - [`probe wallet derive-private-key`](./probe/wallet/derive-private-key.md)

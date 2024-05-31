@@ -47,4 +47,4 @@ Prints help information.
 
 ### SEE ALSO
 
-[spark](./spark.md), [spark create](./spark-create.md), [spark verify-contract](./spark-verify-contract.md)
+[spark](./spark.md), [spark create](./spark-create.md)

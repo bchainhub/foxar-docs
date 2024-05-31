@@ -292,7 +292,7 @@ This section lives outside of profiles and defines a table of RPC endpoints, whe
 
 The value can either be a valid RPC endpoint or a reference to an environment variable (wrapped with in `${}`).
 
-These RPC endpoints can be used in tests and Solidity scripts (see [`vm.rpc`](../cheatcodes/rpc.md)).
+These RPC endpoints can be used in tests and Ylem scripts (see [`vm.rpc`](../cheatcodes/rpc.md)).
 
 The following example defines an endpoint named `optimism` and an endpoint named `mainnet` that references an environment variable `RPC_MAINNET`:
 

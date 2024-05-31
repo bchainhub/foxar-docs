@@ -45,5 +45,4 @@ vm.stopBroadcast();
 
 Cheatcodes:
 
-- [deriveKey](../cheatcodes/derive-key)
 - [rememberKey](../cheatcodes/remember-key)

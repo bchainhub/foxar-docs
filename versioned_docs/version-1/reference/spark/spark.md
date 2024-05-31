@@ -4,7 +4,7 @@ title: Spark
 
 ### NAME
 
-spark - Build, test, fuzz, debug and deploy Solidity contracts.
+spark - Build, test, fuzz, debug and deploy Ylem contracts.
 
 ### SYNOPSIS
 
@@ -14,7 +14,7 @@ spark - Build, test, fuzz, debug and deploy Solidity contracts.
 
 ### DESCRIPTION
 
-This program is a set of tools to build, test, fuzz, debug and deploy Solidity smart contracts.
+This program is a set of tools to build, test, fuzz, debug and deploy Ylem smart contracts.
 
 ### COMMANDS
 
@@ -79,9 +79,6 @@ Generate coverage reports.
 [spark create](./spark-create.md)  
 Deploy a smart contract.
 
-[spark verify-contract](./spark-verify-contract.md)  
-Verify smart contracts on Etherscan.
-
 [spark verify-check](./spark-verify-check.md)  
 Check verification status on Etherscan.
 
@@ -112,7 +109,7 @@ Run a smart contract as a script, building transactions that can be sent onchain
 Uploads abi of given contract to https://sig.eth.samczsun.com function selector database.
 
 [spark doc](./spark-doc.md)  
-Generate documentation for Solidity source files.
+Generate documentation for Ylem source files.
 
 ### OPTIONS
 

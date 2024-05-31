@@ -6,7 +6,6 @@ title: Environment
 - [`roll`](roll)
 - [`fee`](./fee)
 - [`difficulty`](./difficulty)
-- [`prevrandao`](./prevrandao)
 - [`chainId`](./chain-id)
 - [`store`](./store)
 - [`load`](./load)

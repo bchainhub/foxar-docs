@@ -14,7 +14,7 @@ spark-script - Run a smart contract as a script, building transactions that can 
 
 Run a smart contract as a script, building transactions that can be sent onchain.
 
-Scripts can be used to apply state transitions on live contracts, or deploy and initialize a complex set of smart contracts using Solidity.
+Scripts can be used to apply state transitions on live contracts, or deploy and initialize a complex set of smart contracts using Ylem.
 
 ### OPTIONS
 
@@ -110,7 +110,7 @@ Can also be set in your configuration file as `libraries = ["<path>:<lib name>:<
 #### Compiler Options
 
 `--optimize`
-Activate the Solidity optimizer.
+Activate the Ylem optimizer.
 
 `--optimizer-runs` _runs_
 The number of optimizer runs.
@@ -140,14 +140,14 @@ Extra output to include in the contract's artifact.
 
 Example keys: `abi`, `storageLayout`, `evm.assembly`, `ewasm`, `ir`, `ir-optimized`, `metadata`.
 
-For a full description, see the [Solidity docs][output-desc].
+For a full description, see the [Ylem docs][output-desc].
 
 `--extra-output-files` _selector_
 Extra output to write to separate files.
 
 Example keys: `abi`, `storageLayout`, `evm.assembly`, `ewasm`, `ir`, `ir-optimized`, `metadata`.
 
-For a full description, see the [Solidity docs][output-desc].
+For a full description, see the [Ylem docs][output-desc].
 
 `--evm-version` _version_
 The target EVM version.

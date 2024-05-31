@@ -4,7 +4,7 @@ title: Docker and Foxar
 
 ## Dockerizing a Foxar project
 
-This tutorial shows you how to build, test, and deploy a smart contract using Foxar's Docker image. It adapts code from the [solmate nft](./solmate-nft.md) tutorial. If you haven't completed that tutorial yet, and are new to solidity, you may want to start with it first. Alternatively, if you have some familiarity with Docker and Solidity, you can use your own existing project and adjust accordingly. The full source code for both the NFT and the Docker stuff is available [here](https://github.com/dmfxyz/foxar-docker-tutorial).
+This tutorial shows you how to build, test, and deploy a smart contract using Foxar's Docker image. Alternatively, if you have some familiarity with Docker and Ylem, you can use your own existing project and adjust accordingly. The full source code for both the NFT and the Docker stuff is available [here](https://github.com/dmfxyz/foxar-docker-tutorial).
 
 > This tutorial is for illustrative purposes only and provided on an as-is basis. The tutorial is not audited nor fully tested. No code in this tutorial should be used in a production environment.
 
@@ -58,7 +58,7 @@ transactions         [...]
 uncles               []
 ```
 
-If we're in a directory with some Solidity [source code](https://github.com/dmfxyz/foxar-docker-tutorial), we can mount that directory into docker and use `spark` however we wish. For example:
+If we're in a directory with some Ylem [source code](https://github.com/dmfxyz/foxar-docker-tutorial), we can mount that directory into docker and use `spark` however we wish. For example:
 
 ```sh
 $ docker run -v $PWD:/app foxar "spark test --root /app --watch"

@@ -6,7 +6,7 @@ Foxar users are enabled to specify overall test configurations, using a combinat
 
 Despite this may work in the general case, some tests may need finer control over their configuration. For such reason Spark provides a way to specify per-test configs for invariant and fuzz testing scenarios.
 
-Users can in-line test config statements directly in Solidity comments. This would affect the behavior of the `spark test` command for a specific test instance, as illustrated in the example below.
+Users can in-line test config statements directly in Ylem comments. This would affect the behavior of the `spark test` command for a specific test instance, as illustrated in the example below.
 
 ```solidity
 contract MyTest is Test {

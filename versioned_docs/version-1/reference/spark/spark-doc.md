@@ -4,7 +4,7 @@ title: Spark doc
 
 ### NAME
 
-spark-doc - Generate documentation for Solidity source files.
+spark-doc - Generate documentation for Ylem source files.
 
 ### SYNOPSIS
 
@@ -12,7 +12,7 @@ spark-doc - Generate documentation for Solidity source files.
 
 ### DESCRIPTION
 
-Generates and builds an mdbook from Solidity source files.
+Generates and builds an mdbook from Ylem source files.
 
 ### OPTIONS
 

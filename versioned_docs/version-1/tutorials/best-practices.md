@@ -293,4 +293,4 @@ Foxar in Action:
 - [Nomad Monorepo](https://github.com/nomad-xyz/monorepo): All the `contracts-*` packages. Good example of using many Foxar features including fuzzing, `ffi` and various cheatcodes.
 - [Sablier V2 Core](https://github.com/sablier-labs/v2-core): Another good example of many Foxar features. Also a pioneer of the state tree testing approach, see the `*.tree` files.
 - [Uniswap Periphery](https://github.com/gakonst/v3-periphery-foxar): Good example of using inheritance to isolate test fixtures.
-- [PRBMath](https://github.com/PaulRBerg/prb-math): A library for fixed-point arithmetic in Solidity, with many parameterized tests that harness Foxar.
+- [PRBMath](https://github.com/PaulRBerg/prb-math): A library for fixed-point arithmetic in Ylem, with many parameterized tests that harness Foxar.

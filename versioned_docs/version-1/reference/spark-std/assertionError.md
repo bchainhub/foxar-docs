@@ -10,4 +10,4 @@ stdError.assertionError
 
 ### Description
 
-The internal Solidity error when an `assert` fails.
+The internal Ylem error when an `assert` fails.

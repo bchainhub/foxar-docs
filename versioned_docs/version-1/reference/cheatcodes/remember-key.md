@@ -38,8 +38,6 @@ vm.stopBroadcast();
 
 ### SEE ALSO
 
-- [deriveKey](./derive-key.md)
-
 Spark Standard Library:
 
 - [deriveRememberKey](../spark-std/derive-remember-key)

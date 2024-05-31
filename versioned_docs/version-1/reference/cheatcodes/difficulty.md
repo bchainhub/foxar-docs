@@ -12,7 +12,7 @@ function difficulty(uint256) external;
 
 Sets `block.difficulty`.
 
-If used with a post-merge EVM version (Paris and onwards), it will revert. In that case, use [`vm.prevrandao`][prevrandao] instead.
+If used with a post-merge EVM version (Paris and onwards), it will revert.
 
 ### Examples
 
@@ -20,5 +20,3 @@ If used with a post-merge EVM version (Paris and onwards), it will revert. In th
 vm.difficulty(25);
 emit log_uint(block.difficulty); // 25
 ```
-
-[prevrandao]: ./prevrandao

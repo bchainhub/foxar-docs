@@ -25,7 +25,7 @@ title: Console Logging
   - `console.logBytes32(bytes32 b)`
 - console.log implements the same formatting options that can be found in Hardhat's console.log.
   - Example: `console.log("Changing owner from %s to %s", currentOwner, newOwner)`
-- console.log is implemented in standard Solidity and it is compatible Shuttle and Hardhat Networks.
+- console.log is implemented in standard Ylem and it is compatible Shuttle and Hardhat Networks.
 - console.log calls can run in other networks, like mainnet, kovan, ropsten, etc. They do nothing in those networks, but do spend a minimal amount of gas.
 
 ### `console.log(format[,...args])`

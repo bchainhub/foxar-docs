@@ -1,6 +1,6 @@
 # spark
 
-Build, test, fuzz, debug and deploy Solidity contracts
+Build, test, fuzz, debug and deploy Ylem contracts
 
 ```bash
 $ spark --help
@@ -18,7 +18,7 @@ Commands:
   debug              Debugs a single smart contract as a script [aliases: d]
   doc                Generate documentation for the project
   flatten            Flatten a source file and all of its imports into one file [aliases: f]
-  fmt                Format Solidity source files
+  fmt                Format Ylem source files
   geiger             Detects usage of unsafe cheat codes in a project and its dependencies
   generate           Generate scaffold files
   generate-fig-spec  Generate Fig autocompletion spec [aliases: fig]
